@@ -5,14 +5,18 @@
   
   <title>Java-Enum用法 | 由来</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="枚举主要是硬编码的问题。下面是一个Enum用法示例 Phone.java 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849/** * Description * &amp;lt;p&amp;gt; * &amp;lt;/p&amp;gt; * DATE 17/11/10. * * @author fu">
+<meta name="keywords" content="enum,枚举">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Java-Enum用法">
 <meta property="og:url" content="http://youletter.cn/2017/11/10/Java-Enum用法/index.html">
 <meta property="og:site_name" content="由来">
+<meta property="og:description" content="枚举主要是硬编码的问题。下面是一个Enum用法示例 Phone.java 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849/** * Description * &amp;lt;p&amp;gt; * &amp;lt;/p&amp;gt; * DATE 17/11/10. * * @author fu">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-10T01:22:28.000Z">
+<meta property="og:updated_time" content="2017-11-13T04:36:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-Enum用法">
+<meta name="twitter:description" content="枚举主要是硬编码的问题。下面是一个Enum用法示例 Phone.java 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849/** * Description * &amp;lt;p&amp;gt; * &amp;lt;/p&amp;gt; * DATE 17/11/10. * * @author fu">
   
     <link rel="alternate" href="/atom.xml" title="由来" type="application/atom+xml">
   
@@ -83,18 +87,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>枚举主要是硬编码的问题。<br>下面是一个Enum用法示例</p>
+<p>Phone.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Description</span></div><div class="line"><span class="comment"> * &lt;p&gt;</span></div><div class="line"><span class="comment"> * &lt;/p&gt;</span></div><div class="line"><span class="comment"> * DATE 17/11/10.</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@author</span> fupeng.</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Phone &#123;</div><div class="line">    IPHONE &#123;</div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">price</span><span class="params">()</span> </span>&#123;</div><div class="line">            <span class="keyword">return</span> IPHONE_PRICE;</div><div class="line">        &#125;</div><div class="line">    &#125;, XIAOMI &#123;</div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">price</span><span class="params">()</span> </span>&#123;</div><div class="line">            <span class="keyword">return</span> XIAOMI_PRICE;</div><div class="line">        &#125;</div><div class="line">    &#125;, HUAWEI &#123;</div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">price</span><span class="params">()</span> </span>&#123;</div><div class="line">            <span class="keyword">return</span> HUAWEI_PRICE;</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> IPHONE_PRICE = <span class="number">9888</span>;</div><div class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> XIAOMI_PRICE = <span class="number">3888</span>;</div><div class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> HUAWEI_PRICE = <span class="number">4888</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">price</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> AbstractMethodError();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Phone <span class="title">ofPrice</span><span class="params">(<span class="keyword">int</span> p)</span> </span>&#123;</div><div class="line">        <span class="keyword">switch</span> (p) &#123;</div><div class="line">            <span class="keyword">case</span> IPHONE_PRICE:</div><div class="line">                <span class="keyword">return</span> IPHONE;</div><div class="line">            <span class="keyword">case</span> HUAWEI_PRICE:</div><div class="line">                <span class="keyword">return</span> HUAWEI;</div><div class="line">            <span class="keyword">case</span> XIAOMI_PRICE:</div><div class="line">                <span class="keyword">return</span> XIAOMI;</div><div class="line">            <span class="keyword">default</span>:</div><div class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>TestEnum.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Description</span></div><div class="line"><span class="comment"> * &lt;p&gt;</span></div><div class="line"><span class="comment"> * &lt;/p&gt;</span></div><div class="line"><span class="comment"> * DATE 17/11/10.</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@author</span> fupeng.</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestEnum</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        System.out.println(Phone.IPHONE.price());</div><div class="line">        System.out.println(Phone.IPHONE.name());</div><div class="line"></div><div class="line">        System.out.println(Phone.valueOf(<span class="string">"IPHONE"</span>) == Phone.IPHONE);</div><div class="line">        System.out.println(Phone.ofPrice(<span class="number">9888</span>) == Phone.IPHONE);</div><div class="line">        System.out.println(Phone.ofPrice(<span class="number">9888</span>) == Phone.HUAWEI);</div><div class="line">        System.out.println(Phone.ofPrice(<span class="number">9888</span>) == Phone.XIAOMI);</div><div class="line">        System.out.println(Phone.ofPrice(<span class="number">3888</span>) == Phone.XIAOMI);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://youletter.cn/2017/11/10/Java-Enum用法/" data-id="cj9t9augc0000n0fy6lmtasdc" class="article-share-link">Share</a>
+      <a data-url="http://youletter.cn/2017/11/10/Java-Enum用法/" data-id="cj9xp5ldq00006ffyt0in07mk" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/enum/">enum</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/枚举/">枚举</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
+  
+    <a href="/2017/11/10/3种方法将String转为JSON/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          3种方法将String转为JSON
+        
+      </div>
+    </a>
   
   
     <a href="/2017/11/10/Java-时间utils/" id="article-nav-older" class="article-nav-link-wrap">
@@ -118,7 +137,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/TimeUnit/">TimeUnit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/时间单位/">时间单位</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/时间工具/">时间工具</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/TimeUnit/">TimeUnit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/enum/">enum</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/一句/">一句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/时间单位/">时间单位</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/时间工具/">时间工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/枚举/">枚举</a></li></ul>
     </div>
   </div>
 
@@ -128,7 +147,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/TimeUnit/" style="font-size: 10px;">TimeUnit</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/时间单位/" style="font-size: 10px;">时间单位</a> <a href="/tags/时间工具/" style="font-size: 10px;">时间工具</a>
+      <a href="/tags/TimeUnit/" style="font-size: 10px;">TimeUnit</a> <a href="/tags/enum/" style="font-size: 10px;">enum</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/一句/" style="font-size: 10px;">一句</a> <a href="/tags/时间单位/" style="font-size: 10px;">时间单位</a> <a href="/tags/时间工具/" style="font-size: 10px;">时间工具</a> <a href="/tags/枚举/" style="font-size: 10px;">枚举</a>
     </div>
   </div>
 
@@ -148,6 +167,14 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/11/10/一句话/">一句话</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/10/3种方法将String转为JSON/">3种方法将String转为JSON</a>
+          </li>
         
           <li>
             <a href="/2017/11/10/Java-Enum用法/">Java-Enum用法</a>
