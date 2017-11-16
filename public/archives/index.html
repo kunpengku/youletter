@@ -74,7 +74,23 @@
       </div>
     </div>
   </div>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 </header>
+
       <div class="outer">
         <section id="main">
   
@@ -88,6 +104,25 @@
           <a href="/archives/2017" class="archive-year">2017</a>
         </div>
         <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2017/11/16/maven-settings-xml的重要配置/" class="archive-article-date">
+  <time datetime="2017-11-16T03:11:32.000Z" itemprop="datePublished">11月 16</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/11/16/maven-settings-xml的重要配置/">maven settings.xml的重要配置</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
@@ -229,6 +264,10 @@
       <ul>
         
           <li>
+            <a href="/2017/11/16/maven-settings-xml的重要配置/">maven settings.xml的重要配置</a>
+          </li>
+        
+          <li>
             <a href="/2017/11/16/4种方法将String转为JSON/">Java中4种方法将String转为JSON</a>
           </li>
         
@@ -242,10 +281,6 @@
         
           <li>
             <a href="/2017/11/10/Java-时间utils/">Java-时间utils</a>
-          </li>
-        
-          <li>
-            <a href="/2017/11/04/Linux下安装nodejs-node-npm/">Linux下安装nodejs/node/npm</a>
           </li>
         
       </ul>

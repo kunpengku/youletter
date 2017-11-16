@@ -79,7 +79,23 @@
       </div>
     </div>
   </div>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 </header>
+
       <div class="outer">
         <section id="main"><article id="post-Java-Enum用法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -111,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://youletter.cn/2017/11/10/Java-Enum用法/" data-id="cja1anft10002ibon86g5mguy" class="article-share-link">Share</a>
+      <a data-url="http://youletter.cn/2017/11/10/Java-Enum用法/" data-id="cja2hbrqe000079fynmp0h5rd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/enum/">enum</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/枚举/">枚举</a></li></ul>
@@ -185,6 +201,10 @@
       <ul>
         
           <li>
+            <a href="/2017/11/16/maven-settings-xml的重要配置/">maven settings.xml的重要配置</a>
+          </li>
+        
+          <li>
             <a href="/2017/11/16/4种方法将String转为JSON/">Java中4种方法将String转为JSON</a>
           </li>
         
@@ -198,10 +218,6 @@
         
           <li>
             <a href="/2017/11/10/Java-时间utils/">Java-时间utils</a>
-          </li>
-        
-          <li>
-            <a href="/2017/11/04/Linux下安装nodejs-node-npm/">Linux下安装nodejs/node/npm</a>
           </li>
         
       </ul>
