@@ -94,6 +94,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-spring-cloud-netflix之服务发现Eureka-Client" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/18/spring-cloud-netflix之服务发现Eureka-Client/" class="article-date">
+  <time datetime="2017-11-18T14:38:44.000Z" itemprop="datePublished">2017-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/18/spring-cloud-netflix之服务发现Eureka-Client/">spring-cloud-netflix之服务发现Eureka Client</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="spring-nexflix-微服务系列"><a href="#spring-nexflix-微服务系列" class="headerlink" title="spring nexflix 微服务系列"></a>spring nexflix 微服务系列</h2><ul>
+<li><a href="http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/">spring-cloud-netflix之服务发现Eureka Server</a></li>
+<li><a href="">spring-cloud-netflix之服务发现Eureka Client</a></li>
+</ul>
+<p>Eureka 是nexflix提供的 服务发现 解决方案。 当起来一个Eureka Server之后，目的就是让 其他微服务注册到其上面来 。 那么如何 成为一个Eureka 的client呢？</p>
+<h3 id="1-添加pom依赖"><a href="#1-添加pom依赖" class="headerlink" title="1 添加pom依赖"></a>1 添加pom依赖</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</div><div class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</div><div class="line">	xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</div><div class="line">	&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</div><div class="line"></div><div class="line">	&lt;groupId&gt;com.example&lt;/groupId&gt;</div><div class="line">	&lt;artifactId&gt;demo&lt;/artifactId&gt;</div><div class="line">	&lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;</div><div class="line">	&lt;packaging&gt;jar&lt;/packaging&gt;</div><div class="line"></div><div class="line">	&lt;name&gt;demo&lt;/name&gt;</div><div class="line">	&lt;description&gt;Demo project for Spring Boot&lt;/description&gt;</div><div class="line"></div><div class="line">	&lt;parent&gt;</div><div class="line">		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">		&lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;</div><div class="line">		&lt;version&gt;1.5.4.RELEASE&lt;/version&gt;</div><div class="line">		&lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;</div><div class="line">	&lt;/parent&gt;</div><div class="line"></div><div class="line">	&lt;properties&gt;</div><div class="line">		&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</div><div class="line">		&lt;project.reporting.outputEncoding&gt;UTF-8&lt;/project.reporting.outputEncoding&gt;</div><div class="line">		&lt;java.version&gt;1.8&lt;/java.version&gt;</div><div class="line">		&lt;spring-cloud.version&gt;Dalston.RELEASE&lt;/spring-cloud.version&gt;</div><div class="line">	&lt;/properties&gt;</div><div class="line"></div><div class="line">	&lt;dependencies&gt;</div><div class="line">		&lt;dependency&gt;</div><div class="line">			&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">			&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</div><div class="line">		&lt;/dependency&gt;</div><div class="line"></div><div class="line">		&lt;dependency&gt;</div><div class="line">			&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">			&lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;</div><div class="line">			&lt;scope&gt;test&lt;/scope&gt;</div><div class="line">		&lt;/dependency&gt;</div><div class="line"></div><div class="line">		&lt;dependency&gt;</div><div class="line">			&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;</div><div class="line">			&lt;artifactId&gt;spring-cloud-starter-eureka&lt;/artifactId&gt;</div><div class="line">		&lt;/dependency&gt;</div><div class="line"></div><div class="line">	&lt;/dependencies&gt;</div><div class="line"></div><div class="line">	&lt;dependencyManagement&gt;</div><div class="line">		&lt;dependencies&gt;</div><div class="line">			&lt;dependency&gt;</div><div class="line">				&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;</div><div class="line">				&lt;artifactId&gt;spring-cloud-dependencies&lt;/artifactId&gt;</div><div class="line">				&lt;version&gt;$&#123;spring-cloud.version&#125;&lt;/version&gt;</div><div class="line">				&lt;type&gt;pom&lt;/type&gt;</div><div class="line">				&lt;scope&gt;import&lt;/scope&gt;</div><div class="line">			&lt;/dependency&gt;</div><div class="line">		&lt;/dependencies&gt;</div><div class="line">	&lt;/dependencyManagement&gt;</div><div class="line"></div><div class="line">	&lt;build&gt;</div><div class="line">		&lt;plugins&gt;</div><div class="line">			&lt;plugin&gt;</div><div class="line">				&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">				&lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</div><div class="line">			&lt;/plugin&gt;</div><div class="line">		&lt;/plugins&gt;</div><div class="line">	&lt;/build&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;/project&gt;</div></pre></td></tr></table></figure>
+<p>其中关键的部分是 一下两段</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;properties&gt;</div><div class="line">	&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</div><div class="line">	&lt;project.reporting.outputEncoding&gt;UTF-8&lt;/project.reporting.outputEncoding&gt;</div><div class="line">	&lt;java.version&gt;1.8&lt;/java.version&gt;</div><div class="line">	&lt;spring-cloud.version&gt;Dalston.RELEASE&lt;/spring-cloud.version&gt;</div><div class="line">&lt;/properties&gt;</div><div class="line"></div><div class="line">	&lt;dependency&gt;</div><div class="line">		&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;</div><div class="line">		&lt;artifactId&gt;spring-cloud-starter-eureka&lt;/artifactId&gt;</div><div class="line">	&lt;/dependency&gt;</div></pre></td></tr></table></figure>
+<p>这其实是一组 jar包。 在<artifactid>spring-cloud-starter-eureka</artifactid>之下可以看到具体的许多包。</p>
+<h3 id="2-注册到Eureka"><a href="#2-注册到Eureka" class="headerlink" title="2 注册到Eureka"></a>2 注册到Eureka</h3><p>一个Spring boot的服务，如何注册到Eureka呢？需要加上@EnableEurekaClient 这个注解。 另外有一个注解是 @EnableDiscoveryClient。这两个注解有什么区别呢？<br>可以说 Eureka是 服务发现的一种具体实现，还可以有别的 方法实现服务发现。 当可用的 服务发现 只有Eureka时， EnableDiscoveryClient 所指的也 就是EnableEurekaClient。  可以说EnableEurekaClient是EnableDiscoveryClient的一种特例吧</p>
+<p>Example code：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.example.demo;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</div><div class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</div><div class="line"><span class="keyword">import</span> org.springframework.cloud.netflix.eureka.EnableEurekaClient;</div><div class="line"></div><div class="line"><span class="meta">@SpringBootApplication</span></div><div class="line"><span class="meta">@EnableEurekaClient</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoApplication</span> </span>&#123;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		SpringApplication.run(DemoApplication.class, args);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="3-配置文件"><a href="#3-配置文件" class="headerlink" title="3 配置文件"></a>3 配置文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">eureka:</div><div class="line">  client:</div><div class="line">    serviceUrl:</div><div class="line">      defaultZone: http://localhost:23001/eureka/</div><div class="line">    healthcheck:</div><div class="line">      enabled: true    </div><div class="line">server:</div><div class="line">  port: 23003</div><div class="line"></div><div class="line">spring:</div><div class="line">  application:</div><div class="line">    name: business01</div></pre></td></tr></table></figure>
+<p>defaultZone 会指定 ，去哪里注册服务。</p>
+<p>默认的，${spring.application.name} 就是 在Eureka 注册的服务名，未来，别的Client在Eureka 只要提${spring.application.name} 这个名字， 也就找到了此服务。</p>
+<h3 id="4-启动"><a href="#4-启动" class="headerlink" title="4 启动"></a>4 启动</h3><p>经过上面的配置， 就已经注册成为Eureka的client了。 启动之后 ，可以在Eureka的管理端中看到。</p>
+<img src="/2017/11/18/spring-cloud-netflix之服务发现Eureka-Client/client1.png">
+<h3 id="5-Eureka-原生client"><a href="#5-Eureka-原生client" class="headerlink" title="5 Eureka 原生client"></a>5 Eureka 原生client</h3><p>可以通过Eureka 方便的获取服务的ip和端口。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Autowired</span></div><div class="line"><span class="keyword">private</span> EurekaClient discoveryClient;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">serviceUrl</span><span class="params">()</span> </span>&#123;</div><div class="line">    InstanceInfo instance = discoveryClient.getNextServerFromEureka(<span class="string">"business01"</span>, <span class="keyword">false</span>);</div><div class="line">    <span class="keyword">return</span> instance.getHomePageUrl();</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/test"</span>)</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">defaultKaptcha</span><span class="params">()</span></span>&#123;</div><div class="line">    String s = serviceUrl();</div><div class="line">    System.out.println(s);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>serviceUrl()的返回结果是 <a href="http://192.168.31.44:23003/，" target="_blank" rel="external">http://192.168.31.44:23003/，</a> 这正是 business01 向Eureka注册的信息。避免了直接将ip，端口写在服务中。</p>
+<h3 id="6-Feign-client"><a href="#6-Feign-client" class="headerlink" title="6 Feign client"></a>6 Feign client</h3><p>更进一步，其实也不需要使用原始的Eureka client来单纯的获取 调用服务的ip信息， Feign作为 Http的客户端，可以进一步的封装。对于Feign的用例，放到下一篇中。</p>
+<p>参考文章<br><a href="http://www.itmuch.com/spring-cloud-sum-eureka/" target="_blank" rel="external">http://www.itmuch.com/spring-cloud-sum-eureka/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.youletter.cn/2017/11/18/spring-cloud-netflix之服务发现Eureka-Client/" data-id="cja9s5dod00054don56kqy3wh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-spring-cloud-netflix之服务发现Eureka-Server" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/11/16/spring-cloud-netflix之服务发现Eureka-Server/" class="article-date">
@@ -133,11 +191,14 @@
 <p>访问<br><a href="http://localhost:23001/" target="_blank" rel="external">http://localhost:23001/</a> 可以看到Eureka的管理页面 ，显示 有哪些服务注册了。</p>
 <img src="/2017/11/16/spring-cloud-netflix之服务发现Eureka-Server/eureka.png" title="eureka">
 <p>参考官方文档<br><a href="https://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html#spring-cloud-eureka-server" target="_blank" rel="external">https://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html#spring-cloud-eureka-server</a></p>
+<p>在Eureka Server上有两个默认的endpoint</p>
+<p>/info    可以查看Eureka的信息</p>
+<p>/health  可以查看Eureka的健康状态</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.youletter.cn/2017/11/16/spring-cloud-netflix之服务发现Eureka-Server/" data-id="cja3b85ub00002zfyam4rzdh6" class="article-share-link">Share</a>
+      <a data-url="http://www.youletter.cn/2017/11/16/spring-cloud-netflix之服务发现Eureka-Server/" data-id="cja9s5doe00074donlnr05ym6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -209,7 +270,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.youletter.cn/2017/11/16/4种方法将String转为JSON/" data-id="cja3a8v010001u7fyxy2fjbhq" class="article-share-link">Share</a>
+      <a data-url="http://www.youletter.cn/2017/11/16/4种方法将String转为JSON/" data-id="cja9s5do100004donew1s7tf1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/json/">json</a></li></ul>
@@ -251,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.youletter.cn/2017/11/10/Java-Enum用法/" data-id="cja3a8uzx0000u7fyhttzssqu" class="article-share-link">Share</a>
+      <a data-url="http://www.youletter.cn/2017/11/10/Java-Enum用法/" data-id="cja9s5do500014don75kczewr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/enum/">enum</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/枚举/">枚举</a></li></ul>
@@ -307,7 +368,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.youletter.cn/2017/11/10/Java-时间utils/" data-id="cja3a8v050003u7fyhuxqv3jr" class="article-share-link">Share</a>
+      <a data-url="http://www.youletter.cn/2017/11/10/Java-时间utils/" data-id="cja9s5do900034donolb9dqar" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TimeUnit/">TimeUnit</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/时间单位/">时间单位</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/时间工具/">时间工具</a></li></ul>
@@ -374,7 +435,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.youletter.cn/2017/11/04/Linux下安装nodejs-node-npm/" data-id="cja3a8v060004u7fyj4ivsz9h" class="article-share-link">Share</a>
+      <a data-url="http://www.youletter.cn/2017/11/04/Linux下安装nodejs-node-npm/" data-id="cja9s5dob00044don2dzxjepn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm/">npm</a></li></ul>
@@ -430,6 +491,10 @@
       <ul>
         
           <li>
+            <a href="/2017/11/18/spring-cloud-netflix之服务发现Eureka-Client/">spring-cloud-netflix之服务发现Eureka Client</a>
+          </li>
+        
+          <li>
             <a href="/2017/11/16/spring-cloud-netflix之服务发现Eureka-Server/">spring-cloud-netflix之服务发现Eureka Server</a>
           </li>
         
@@ -443,10 +508,6 @@
         
           <li>
             <a href="/2017/11/10/Java-时间utils/">Java-时间utils</a>
-          </li>
-        
-          <li>
-            <a href="/2017/11/04/Linux下安装nodejs-node-npm/">Linux下安装nodejs/node/npm</a>
           </li>
         
       </ul>

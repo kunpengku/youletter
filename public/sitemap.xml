@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
+    
+    <lastmod>2017-11-21T15:35:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
     
-    <lastmod>2017-11-17T02:57:42.000Z</lastmod>
+    <lastmod>2017-11-18T15:09:29.000Z</lastmod>
     
   </url>
   
