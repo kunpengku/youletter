@@ -4,6 +4,85 @@
 
     
   <url>
+    <loc>http://www.youletter.cn/2017/11/26/%E5%AF%B9github%E8%AE%BE%E7%BD%AEsock5%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2017-11-26T01:51:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>对github设置sock5代理</title>
+        <pubTime>2017-11-26T00:50:44.000Z</pubTime>
+        
+        <tag>github</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2017/11/26/%E4%BF%AE%E6%94%B9Github-commit%E7%9A%84%E4%BD%9C%E8%80%85%E4%BF%A1%E6%81%AF/</loc>
+    <lastmod>2017-11-26T01:51:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>修改Github commit的作者信息</title>
+        <pubTime>2017-11-26T01:11:45.000Z</pubTime>
+        
+        <tag>github</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2017/11/25/applicatoin-yml-application-properties%E9%85%8D%E7%BD%AE%E6%A0%B7%E4%BE%8B/</loc>
+    <lastmod>2017-11-26T01:49:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>applicatoin.yml/application.properties配置样例</title>
+        <pubTime>2017-11-25T02:20:16.000Z</pubTime>
+        
+        <tag>spring</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2017/11/23/spring-cloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E4%B9%8BFeign/</loc>
+    <lastmod>2017-11-24T08:46:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>spring-cloud微服务之Feign</title>
+        <pubTime>2017-11-23T03:01:36.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>spring</tag>
+         
+        <tag>cloud</tag>
+         
+        <tag>feign</tag>
+         
+        <tag>eureka</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     <data>
@@ -34,31 +113,6 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/23/spring-cloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E4%B9%8BFeign/</loc>
-    <lastmod>2017-11-24T02:11:55.000Z</lastmod>
-    <data>
-        <display>
-        <title>spring-cloud微服务之Feign</title>
-        <pubTime>2017-11-23T03:01:36.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>spring</tag>
-         
-        <tag>cloud</tag>
-         
-        <tag>feign</tag>
-         
-        <tag>eureka</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.youletter.cn/2017/11/23/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B7%A6%E6%89%8B%E5%92%8C%E5%8F%B3%E6%89%8B%E7%94%A8%E7%9A%84%E4%B8%80%E6%A0%B7%E5%A4%9A%E5%90%97/</loc>
     <lastmod>2017-11-23T15:54:17.000Z</lastmod>
     <data>
@@ -74,7 +128,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://www.youletter.cn/2017/11/04/Linux%E4%B8%8B%E5%AE%89%E8%A3%85nodejs-node-npm/</loc>
