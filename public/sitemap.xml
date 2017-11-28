@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.youletter.cn/2017/11/27/git%E5%91%BD%E4%BB%A4/</loc>
+    <loc>http://www.youletter.cn/2017/11/27/spring-cloud-%E7%AE%80%E4%BB%8B/</loc>
     
-    <lastmod>2017-11-28T09:10:14.000Z</lastmod>
+    <lastmod>2017-11-28T16:01:37.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.youletter.cn/2017/11/27/spring-cloud-%E7%AE%80%E4%BB%8B/</loc>
+    <loc>http://www.youletter.cn/2017/11/27/%E7%A8%8B%E5%BA%8F%E5%91%98words/</loc>
     
-    <lastmod>2017-11-28T09:09:44.000Z</lastmod>
+    <lastmod>2017-11-28T15:44:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2017/11/27/git%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2017-11-28T09:10:14.000Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://www.youletter.cn/2017/11/27/spring-boot%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A300/</loc>
     
     <lastmod>2017-11-27T03:02:51.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.youletter.cn/2017/11/27/%E7%A8%8B%E5%BA%8F%E5%91%98words/</loc>
-    
-    <lastmod>2017-11-27T01:47:52.000Z</lastmod>
     
   </url>
   
