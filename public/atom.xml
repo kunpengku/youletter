@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2017-11-26T01:51:24.000Z</updated>
+  <updated>2017-11-28T09:08:12.000Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,148 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件版本中的黑话(行话)</title>
+    <link href="http://www.youletter.cn/2017/11/28/%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E9%BB%91%E8%AF%9D-%E8%A1%8C%E8%AF%9D/"/>
+    <id>http://www.youletter.cn/2017/11/28/软件版本中的黑话-行话/</id>
+    <published>2017-11-28T08:46:05.000Z</published>
+    <updated>2017-11-28T09:08:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">Spring Cloud Sleuth</div><div class="line"></div><div class="line">2017/01/30 - Released version 1.2.0.M1 (issues)</div><div class="line">2017/03/17 - Released version 1.2.0.RC1 (issues)</div><div class="line">2017/04/11 - Released version 1.2.0.RELEASE (issues)</div><div class="line">Notable changes:</div><div class="line"></div><div class="line">Baggage API</div><div class="line">Annotation based span creation / continuation</div><div class="line">Spring Cloud Stream</div><div class="line"></div><div class="line">2017/01/11 - Released version Chelsea.M1 (blog)</div><div class="line">2017/03/13 - Released version Chelsea.RC1 (blog) (release notes)</div><div class="line">2017/04/04 - Released version Chelsea.RELEASE (release notes)</div><div class="line">2017/03/13 - Released version Chelsea.SR1 (release notes)</div></pre></td></tr></table></figure><p>如上，在Spring的各种版本中，总是带一些 RC1， M1， RELEASE， SR1， GA的方言，看着就这么专业（懵逼）</p><ul><li><p>GA = General availability (a release) ==  稳定版</p></li><li><p>RC = Release candidate;  很接近GA版本，可能有一些小bug，修复后就是发行版。</p></li><li><p>M = Milestone build 里程碑版本，完成了TODO list上的很多功能,项目进入一个新的里程碑。 但并不是完整的功能，所有会有M1 M2 M4等等。</p></li><li>SR4 = Service Release 4 在Spring cloud看到这样的简写 Dalston SR4 </li></ul><a id="more"></a><p>参考：</p><p><a href="https://spring.io/blog/2017/10/03/spring-cloud-dalston-sr4-is-now-available" target="_blank" rel="external">Spring Cloud Dalston SR4 Is Now Available</a></p><p><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle" target="_blank" rel="external">https://en.wikipedia.org/wiki/Software_release_life_cycle</a></p><p><a href="https://stackoverflow.com/questions/2107484/what-is-the-difference-between-springs-ga-rc-and-m2-releases" target="_blank" rel="external">What is the difference between Spring’s GA, RC and M2 releases?</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;Spring Cloud Sleuth&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2017/01/30 - Released version 1.2.0.M1 (issues)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2017/03/17 - Released version 1.2.0.RC1 (issues)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2017/04/11 - Released version 1.2.0.RELEASE (issues)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Notable changes:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Baggage API&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Annotation based span creation / continuation&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Spring Cloud Stream&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2017/01/11 - Released version Chelsea.M1 (blog)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2017/03/13 - Released version Chelsea.RC1 (blog) (release notes)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2017/04/04 - Released version Chelsea.RELEASE (release notes)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2017/03/13 - Released version Chelsea.SR1 (release notes)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;如上，在Spring的各种版本中，总是带一些 RC1， M1， RELEASE， SR1， GA的方言，看着就这么专业（懵逼）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;GA = General availability (a release) ==  稳定版&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;RC = Release candidate;  很接近GA版本，可能有一些小bug，修复后就是发行版。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;M = Milestone build 里程碑版本，完成了TODO list上的很多功能,项目进入一个新的里程碑。 但并不是完整的功能，所有会有M1 M2 M4等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;SR4 = Service Release 4 在Spring cloud看到这样的简写 Dalston SR4 &lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="maven" scheme="http://www.youletter.cn/tags/maven/"/>
+    
+      <category term="release" scheme="http://www.youletter.cn/tags/release/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spring-cloud 00</title>
+    <link href="http://www.youletter.cn/2017/11/27/spring-cloud-%E7%AE%80%E4%BB%8B/"/>
+    <id>http://www.youletter.cn/2017/11/27/spring-cloud-简介/</id>
+    <published>2017-11-27T13:24:25.000Z</published>
+    <updated>2017-11-28T09:09:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/spring-projects/spring-cloud/wiki" target="_blank" rel="external">官方github地址</a></p><p><a href="https://projects.spring.io/spring-cloud/" target="_blank" rel="external">spring-cloud官网</a></p><p>spring-cloud是一个全家桶。而且还有各种不同的全家桶。</p><ul><li><p>Angel</p></li><li><p>Brixton</p></li><li><p>Camden</p></li><li><p>Dalston</p></li><li><p>Edgware</p></li><li><p>Finchley</p></li></ul><p>spring-cloud并不是一个jar包，而是一个jia包组合，或者说是一个配方。他们之间的不同有基于不同的 spring boot版本等。</p><p>Dalston 基于 Spring Boot 1.5.x.<br>Brixton 基于 Spring Boot 1.3.x.等</p><a id="more"></a><ul><li><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Angel-Release-Notes" target="_blank" rel="external">Spring Cloud Angel Release Notes</a></li><li><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Brixton-Release-Notes" target="_blank" rel="external">Spring Cloud Brixton Release Notes</a></li><li><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Camden-Release-Notes" target="_blank" rel="external">Spring Cloud Camden Release Notes</a></li><li><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Dalston-Release-Notes" target="_blank" rel="external">Spring Cloud Dalston Release Notes</a></li><li><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes" target="_blank" rel="external">Spring Cloud Edgware Release Notes</a></li><li><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Finchley-Release-Notes" target="_blank" rel="external">Spring Cloud Finchley Release Notes</a></li></ul><p>spring cloud包含很多项目 ，慢慢更。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://github.com/spring-projects/spring-cloud/wiki&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方github地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://projects.spring.io/spring-cloud/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;spring-cloud官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;spring-cloud是一个全家桶。而且还有各种不同的全家桶。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Angel&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Brixton&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Camden&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dalston&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Edgware&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Finchley&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;spring-cloud并不是一个jar包，而是一个jia包组合，或者说是一个配方。他们之间的不同有基于不同的 spring boot版本等。&lt;/p&gt;
+&lt;p&gt;Dalston 基于 Spring Boot 1.5.x.&lt;br&gt;Brixton 基于 Spring Boot 1.3.x.等&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="spring-cloud" scheme="http://www.youletter.cn/tags/spring-cloud/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git命令</title>
+    <link href="http://www.youletter.cn/2017/11/27/git%E5%91%BD%E4%BB%A4/"/>
+    <id>http://www.youletter.cn/2017/11/27/git命令/</id>
+    <published>2017-11-27T03:16:05.000Z</published>
+    <updated>2017-11-28T09:10:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>列出所有全局配置<br>git config –global -l </p><p>删除某个配置<br>git config –global –unset http.proxy</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;列出所有全局配置&lt;br&gt;git config –global -l &lt;/p&gt;
+&lt;p&gt;删除某个配置&lt;br&gt;git config –global –unset http.proxy&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://www.youletter.cn/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spring-boot官方文档00</title>
+    <link href="http://www.youletter.cn/2017/11/27/spring-boot%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A300/"/>
+    <id>http://www.youletter.cn/2017/11/27/spring-boot官方文档00/</id>
+    <published>2017-11-27T01:54:52.000Z</published>
+    <updated>2017-11-27T03:02:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.</p><p><a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/" target="_blank" rel="external">官方文档地址</a></p><p>我们(Spring-boot)对Spring平台和第三方库有自己的看法，言外之意Spring-boot有大量的默认配置。所以，用户什么配置都没有，依然可以启动。然后在开发过程中，只修改那些默认配置不能满足需要的地方。</p><p>Spring-bootd的目标：</p><ul><li>为所有Spring开发提供一个更快，更广泛的入门体验。</li><li>开箱即用，但是随着需求开始偏离默认值，便于修改。</li><li>提供大量 项目通用的一系列非功能性组件（如嵌入式服务器，安全性，指标，运行状况检查和外部配置）。</li><li>绝对不会生成代码，也不需要XML配置。</li></ul><a id="more"></a><p><a href="https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-introducing-spring-boot" target="_blank" rel="external">https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-introducing-spring-boot</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我们(Spring-boot)对Spring平台和第三方库有自己的看法，言外之意Spring-boot有大量的默认配置。所以，用户什么配置都没有，依然可以启动。然后在开发过程中，只修改那些默认配置不能满足需要的地方。&lt;/p&gt;
+&lt;p&gt;Spring-bootd的目标：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为所有Spring开发提供一个更快，更广泛的入门体验。&lt;/li&gt;
+&lt;li&gt;开箱即用，但是随着需求开始偏离默认值，便于修改。&lt;/li&gt;
+&lt;li&gt;提供大量 项目通用的一系列非功能性组件（如嵌入式服务器，安全性，指标，运行状况检查和外部配置）。&lt;/li&gt;
+&lt;li&gt;绝对不会生成代码，也不需要XML配置。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="spring-boot" scheme="http://www.youletter.cn/tags/spring-boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员words</title>
+    <link href="http://www.youletter.cn/2017/11/27/%E7%A8%8B%E5%BA%8F%E5%91%98words/"/>
+    <id>http://www.youletter.cn/2017/11/27/程序员words/</id>
+    <published>2017-11-27T01:47:21.000Z</published>
+    <updated>2017-11-27T01:47:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>SNAPSHOT 快照</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;SNAPSHOT 快照&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>修改Github commit的作者信息</title>
@@ -59,9 +201,9 @@
     </summary>
     
     
-      <category term="github" scheme="http://www.youletter.cn/tags/github/"/>
-    
       <category term="git" scheme="http://www.youletter.cn/tags/git/"/>
+    
+      <category term="github" scheme="http://www.youletter.cn/tags/github/"/>
     
   </entry>
   
