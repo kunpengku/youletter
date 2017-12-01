@@ -4,6 +4,27 @@
 
     
   <url>
+    <loc>http://www.youletter.cn/2017/11/30/spring-data-redis-%E4%B8%80/</loc>
+    <lastmod>2017-12-01T02:54:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>spring data redis(一 对象序列化存入redis)</title>
+        <pubTime>2017-11-30T03:16:28.000Z</pubTime>
+        
+        <tag>redis</tag>
+         
+        <tag>spring-data</tag>
+         
+        <tag>序列化</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.youletter.cn/2017/11/30/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     <lastmod>2017-11-30T02:50:44.000Z</lastmod>
     <data>
