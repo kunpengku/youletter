@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2017-12-01T02:54:52.000Z</updated>
+  <updated>2017-12-02T00:56:26.000Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring initializr使用</title>
+    <link href="http://www.youletter.cn/2017/12/02/Spring-initializr%E4%BD%BF%E7%94%A8/"/>
+    <id>http://www.youletter.cn/2017/12/02/Spring-initializr使用/</id>
+    <published>2017-12-02T00:54:21.000Z</published>
+    <updated>2017-12-02T00:56:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Spring initializr 是Spring 官方提供的一个很好的工具，用来初始化一个Spring boot 的项目。</p><p>有两种方式可以使用Spring initializr来创建一个项目</p><ul><li><p><a href="http://start.spring.io/" target="_blank" rel="external">http://start.spring.io/</a> 登录该网站，填写项目信息，选择依赖后，点击 Generate Project，然后下载一个该项目的压缩包。下一步是将这个压缩包解压，然后在Idea中，File-&gt;New-&gt;Project from existing sources,选择好文件夹后， 点击OK，在Import Project中，选择Import project from external model， 默认是用Maven工程，选择Maven，点击Next，下面看情况，一路Next，JDK选择JDK8，到Finish，点击Finish。工程就建立好。 刚开始，可能会下载 很多依赖，稍等一会。这样工程就建立好了。</p></li><li><p>另一种方法，其实 Spring initializr 已经默认集成到Idea中了，直接 File-&gt;New-&gt;Project, 在左侧就能看到Spring initializr， 点击Next 就可以选择组件。 但是，由于某些原因，<a href="http://start.spring.io" target="_blank" rel="external">http://start.spring.io</a> 这个网站上不去 ，所以，直接就超时失败了。</p></li></ul><p>包括在用第一种方法<a href="http://start.spring.io" target="_blank" rel="external">http://start.spring.io</a> 登录该网站时，可能也是需要科学上网的。</p><p>来源： <a href="www.youletter.cn">由来</a><br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Spring initializr 是Spring 官方提供的一个很好的工具，用来初始化一个Spring boot 的项目。&lt;/p&gt;
+&lt;p&gt;有两种方式可以使用Spring initializr来创建一个项目&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://start.spring.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://start.spring.io/&lt;/a&gt; 登录该网站，填写项目信息，选择依赖后，点击 Generate Project，然后下载一个该项目的压缩包。下一步是将这个压缩包解压，然后在Idea中，File-&amp;gt;New-&amp;gt;Project from existing sources,选择好文件夹后， 点击OK，在Import Project中，选择Import project from external model， 默认是用Maven工程，选择Maven，点击Next，下面看情况，一路Next，JDK选择JDK8，到Finish，点击Finish。工程就建立好。 刚开始，可能会下载 很多依赖，稍等一会。这样工程就建立好了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;另一种方法，其实 Spring initializr 已经默认集成到Idea中了，直接 File-&amp;gt;New-&amp;gt;Project, 在左侧就能看到Spring initializr， 点击Next 就可以选择组件。 但是，由于某些原因，&lt;a href=&quot;http://start.spring.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://start.spring.io&lt;/a&gt; 这个网站上不去 ，所以，直接就超时失败了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;包括在用第一种方法&lt;a href=&quot;http://start.spring.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://start.spring.io&lt;/a&gt; 登录该网站时，可能也是需要科学上网的。&lt;/p&gt;
+&lt;p&gt;来源： &lt;a href=&quot;www.youletter.cn&quot;&gt;由来&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring-boot" scheme="http://www.youletter.cn/tags/Spring-boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jenkins(一)-安装</title>
+    <link href="http://www.youletter.cn/2017/12/01/jenkins-%E4%B8%80-%E5%AE%89%E8%A3%85/"/>
+    <id>http://www.youletter.cn/2017/12/01/jenkins-一-安装/</id>
+    <published>2017-12-01T15:24:02.000Z</published>
+    <updated>2017-12-01T15:24:25.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="jenkins" scheme="http://www.youletter.cn/tags/jenkins/"/>
+    
+  </entry>
   
   <entry>
     <title>spring data redis(一 对象序列化存入redis)</title>
