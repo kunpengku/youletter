@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2017-12-07T03:10:59.000Z</updated>
+  <updated>2017-12-09T10:29:42.000Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spring-boot 测试-mock resttemplate</title>
+    <link href="http://www.youletter.cn/2017/12/09/spring-boot-%E6%B5%8B%E8%AF%95-mock-resttemplate/"/>
+    <id>http://www.youletter.cn/2017/12/09/spring-boot-测试-mock-resttemplate/</id>
+    <published>2017-12-09T09:53:10.000Z</published>
+    <updated>2017-12-09T10:29:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>example<br>在spring boot中 进行 restTemplate的模拟 替换。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">@RunWith(SpringRunner.class)</div><div class="line">@SpringBootTest(classes = SomeApplication.class)</div><div class="line">public class SomeServiceTest</div><div class="line"></div><div class="line">    @Autowired</div><div class="line">    @InjectMocks</div><div class="line">    SomeService someService;</div><div class="line"></div><div class="line">    @Mock</div><div class="line">    RestTemplate restTemplate;</div><div class="line">    </div><div class="line">    @Test</div><div class="line">    public void isVipkidTest() &#123;</div><div class="line">    </div><div class="line">doReturn(makeResp()).when(restTemplate).exchange(</div><div class="line">    Matchers.any(URI.class),</div><div class="line">    Matchers.any(HttpMethod.class),</div><div class="line">    Matchers.any(HttpEntity.class),</div><div class="line">    Matchers.any(Class.class)</div><div class="line">);</div><div class="line">    </div><div class="line">someService.me();</div><div class="line">    </div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;example&lt;br&gt;在spring boot中 进行 restTemplate的模拟 替换。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;@RunWith(SpringRunner.class)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;@SpringBootTest(classes = SomeApplication.class)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;public class SomeServiceTest&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @Autowired&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @InjectMocks&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    SomeService someService;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @Mock&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    RestTemplate restTemplate;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @Test&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    public void isVipkidTest() &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		doReturn(makeResp()).when(restTemplate).exchange(&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    Matchers.any(URI.class),&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    Matchers.any(HttpMethod.class),&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    Matchers.any(HttpEntity.class),&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    Matchers.any(Class.class)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		someService.me();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="spring-boot" scheme="http://www.youletter.cn/tags/spring-boot/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机系统漫游</title>
@@ -567,39 +588,6 @@
     
     
       <category term="spring" scheme="http://www.youletter.cn/tags/spring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程序员的左手和右手用的一样多吗?</title>
-    <link href="http://www.youletter.cn/2017/11/23/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B7%A6%E6%89%8B%E5%92%8C%E5%8F%B3%E6%89%8B%E7%94%A8%E7%9A%84%E4%B8%80%E6%A0%B7%E5%A4%9A%E5%90%97/"/>
-    <id>http://www.youletter.cn/2017/11/23/程序员的左手和右手用的一样多吗/</id>
-    <published>2017-11-23T15:26:37.000Z</published>
-    <updated>2017-11-23T15:54:17.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>程序员的左手和右手用的一样多吗？</p><p>我觉得程序员的左手，连带左臂用的多一点。</p><p>为什么会出现这样的情况？</p><ul><li><p>原因1<br>  可能control+c / control+v 用的比较多，而复制粘贴这个操作用的是左手。<br>  为什么不能用右手做这个动作呢？ 因为右边的control离C和V都比较远。</p></li><li><p>原因2<br>  因为右手要拿鼠标，所以左手需要更多的按键盘。<br>  虽然使用MAC时，更多时候已经不用鼠标了，但是养成的喜欢还是 更多地使用 左边的shift 和 control，alt。</p></li><li><p>原因3<br>  数字键12345在左边， 67890在右边。123使用的频率要高于789。使得左手用的更多。</p></li></ul><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><ul><li>左手的使用会更多。</li><li>为了你的身体健康，和更长的职业生涯，对左手/左臂要有更多地放松和锻炼。        <a id="more"></a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;程序员的左手和右手用的一样多吗？&lt;/p&gt;
-&lt;p&gt;我觉得程序员的左手，连带左臂用的多一点。&lt;/p&gt;
-&lt;p&gt;为什么会出现这样的情况？&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;原因1&lt;br&gt;  可能control+c / control+v 用的比较多，而复制粘贴这个操作用的是左手。&lt;br&gt;  为什么不能用右手做这个动作呢？ 因为右边的control离C和V都比较远。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;原因2&lt;br&gt;  因为右手要拿鼠标，所以左手需要更多的按键盘。&lt;br&gt;  虽然使用MAC时，更多时候已经不用鼠标了，但是养成的喜欢还是 更多地使用 左边的shift 和 control，alt。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;原因3&lt;br&gt;  数字键12345在左边， 67890在右边。123使用的频率要高于789。使得左手用的更多。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;结论&quot;&gt;&lt;a href=&quot;#结论&quot; class=&quot;headerlink&quot; title=&quot;结论&quot;&gt;&lt;/a&gt;结论&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;左手的使用会更多。&lt;/li&gt;
-&lt;li&gt;为了你的身体健康，和更长的职业生涯，对左手/左臂要有更多地放松和锻炼。
-    
-    </summary>
-    
-    
-      <category term="life" scheme="http://www.youletter.cn/tags/life/"/>
     
   </entry>
   
