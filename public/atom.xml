@@ -47,9 +47,9 @@
     <link href="http://www.youletter.cn/2017/12/14/ID3-tag-version-2-4-0/"/>
     <id>http://www.youletter.cn/2017/12/14/ID3-tag-version-2-4-0/</id>
     <published>2017-12-14T07:48:35.000Z</published>
-    <updated>2017-12-14T07:58:43.518Z</updated>
+    <updated>2017-12-14T11:08:34.235Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://id3.org/id3v2.4.0-structure" target="_blank" rel="external">id3v2.4.0-structure</a></p><p><a href="https://baike.baidu.com/item/MSB/7147777?fr=aladdin" target="_blank" rel="external">MSB</a></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://id3.org/id3v2.4.0-structure" target="_blank" rel="external">id3v2.4.0-structure</a></p><p><a href="https://baike.baidu.com/item/MSB/7147777?fr=aladdin" target="_blank" rel="external">MSB</a></p><p>id3 解析程序</p><p><a href="https://nedbatchelder.com/code/modules/id3reader.html" target="_blank" rel="external">id3reader</a></p>]]></content>
     
     <summary type="html">
     
