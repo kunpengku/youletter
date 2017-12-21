@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-7674654031652018",
+enable_page_level_ads: true
+});</script><title> ID3v2中文文档(版本2.4.0) · 由来</title><meta name="description" content="ID3v2中文文档(版本2.4.0) - kunpengku"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="http://www.youletter.cn/atom.xml" title="由来"></head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">由来</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p>主页</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>归档</p></a><a href="/about" target="_self" class="li component-nav-item"><p>关于我</p></a><ul class="shortcut-icons"><a href="https://github.com/kunpengku" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="post-container"><div class="post"><article class="post-block"><h1 class="post-title">ID3v2中文文档(版本2.4.0)</h1><div class="post-info">2017年12月15日</div><div class="post-content"><p>2000.11.01</p>
+<p>M. Nilsson</p>
+<h2 id="文档状态"><a href="#文档状态" class="headerlink" title="文档状态"></a>文档状态</h2><p>本文是一个非正式的标准，用来替代ID3v2.3.0 标准[ID3v2]。正式的标准将用另一个版本号，即使与本文完全一样。本文的内容可能会为了 更加清晰的表述而进行修改 ，但一定不会进行功能上的修改或添加。</p>
+<p>本文可以不受限制的发行。</p>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>本文描述了ID3v2.4.0的主要框架。这是ID3v2.3.0的修订版。ID3v2提供了一个灵活的方式来存储音频的元信息，在音频文件内。存储的信息可能是技术参数，如均衡器设置，也可能是标题，演唱者，版权信息等。</p>
+<p>ID3v2.4.0 尽可能地和ID3v2.3.0接近，这样的目的是 你的那些已经实现了ID3v2.3.0的程序， 在向ID3v2.4.0修改的时候，也尽可能的容易一些。</p>
+<h2 id="1-目录"><a href="#1-目录" class="headerlink" title="1 目录"></a>1 目录</h2><ul>
+<li>文档状态</li>
+<li>摘要</li>
+<li><ol>
+<li>目录</li>
+</ol>
+</li>
+<li><ol>
+<li>文档约定</li>
+</ol>
+</li>
+<li><p>3 . ID3v2 综述</p>
+<ul>
+<li>3.1 ID3v2头部</li>
+<li>3.2 ID3v2 扩展头部</li>
+<li>3.3 填充部分</li>
+<li>3.4 ID3v2 footer</li>
+</ul>
+</li>
+<li><p>4 . ID3v2 frames 概述</p>
+<ul>
+<li>4.1 Frame 头部</li>
+<li>4.1.1 Frame 状态标志</li>
+<li>4.1.2 Frame 格式标志</li>
+</ul>
+</li>
+<li>5 Tag location</li>
+<li>6 非同步编码<ul>
+<li>6.1 The unsynchronisation scheme</li>
+<li>6.2 Synchsafe integers</li>
+</ul>
+</li>
+<li>7 版权</li>
+<li>8 引用</li>
+<li>9 作者地址</li>
+</ul>
+<h1 id="2-约定"><a href="#2-约定" class="headerlink" title="2 约定"></a>2 约定</h1><pre><code>在本文例子中，在双引号(&quot;&quot;)内的文本表示一个文本字符串，与它在tag中出现的一样。 以$开头的数字是十六进制的，以%开头的是二进制。$xx用来表示一个数值未定的字节(byte)。%x用来表示一位数值未知的比特(bit)。一个字节的最高有效位(MSB)是第7位，最低有效位(LSB)是第0位。
+标签(tag)表示整个ID3标签信息。帧(frame)表示标签(tag)内的一段信息。标签(tag)是由标准头(header)，帧(frame)和可选的填充数据(padding)组成的。域(field)指的是一段信息内的一小段数据，一个数值，或者一个字符串等。数字字符串表示一串只由“0123456789”组成的字符串。
+</code></pre><h1 id="3-ID3v2概述"><a href="#3-ID3v2概述" class="headerlink" title="3 ID3v2概述"></a>3 ID3v2概述</h1><p>ID3v2是一个通用的标签格式，用于音频上，使得在 音频文件内 存储音频的元信息成为可能。<br>ID3标签主要目标是 用MPEG-1/2 layer I, MPEG-1/2 layer II, MPEG-1/2 layer III编码的文件，但也可以用于其他类型编码的音频文件或者 作为表示音频元信息的独立的格式。</p>
+<p>ID3v2的设计方向是 灵活性和扩展性。可以应付未来出现的新的元信息。为了实现这样的特性，ID3v2 就像一个容器，其内包含被称作 “帧” 的一些信息块，而且这些帧的格式 不需要被 处理它的软件知道。 因为 在每个帧的开头部分，是一个独立的预定义的 标识符，一个大小标识符，这些信息 可以使得 处理软件能够 跳过 不理解的帧和flag字段。 flags字段描述了编码的细节信息，以及是否该帧应该在 tag中保留，是否该帧 可能软件无法识别， 是否文件已经被修改了。</p>
+<p>ID3v2的位顺序是最高有效位(MSB)。例如，如果要写入$12345678, 则要写$12 34 45 78<br>这种字节序也叫 大端字节序，或 网络字节序。</p>
+<h2 id="标签结构"><a href="#标签结构" class="headerlink" title="标签结构"></a>标签结构</h2><pre><code>+-----------------------------+
+|      Header (10 bytes)      |
++-----------------------------+
+|       Extended Header       |
+| (variable length, OPTIONAL) |
++-----------------------------+
+|   Frames (variable length)  |
++-----------------------------+
+|           Padding           |
+| (variable length, OPTIONAL) |
++-----------------------------+
+| Footer (10 bytes, OPTIONAL) |
++-----------------------------+
+</code></pre><p>通常 padding 和 footer 是互斥的。</p>
+<h2 id="3-1-ID3v2-头部"><a href="#3-1-ID3v2-头部" class="headerlink" title="3.1. ID3v2 头部"></a>3.1. ID3v2 头部</h2><p>整个ID3V2 标签 一般在 音频文件的最开头。</p>
+<p>为了说明这个ID3v2，我正好用vi 打开了一个 简单的mp3文件 ，来配合文档说明 其在实际中的应用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1 00000000: 4944 3304 0000 0000 0023 5453 5345 0000  ID3......#TSSE..</div><div class="line">2 00000010: 000f 0000 034c 6176 6635 372e 3235 2e31  .....Lavf57.25.1</div><div class="line">3 00000020: 3030 0000 0000 0000 0000 0000 00c3 bfc3  00..............</div><div class="line">4 00000030: bb70 0000 0000 0000 0000 0000 0000 0000  .p..............</div><div class="line">5 00000040: 0000 0000 0000 0000 0000 0000 0000 0000  ................</div></pre></td></tr></table></figure>
+<p>ID3v2标签的第一部分是 音频文件最开头是10字节，即 标签头部。其格式为</p>
+<pre><code>ID3v2/file identifier      &quot;ID3&quot;
+ID3v2 version              $04 00
+ID3v2 flags                %abcd0000
+ID3v2 size             4 * %0xxxxxxx
+</code></pre><p> 例子中的头部是  4944 3304 0000 0000 0023</p>
+<p> ID3v2的标签头(header)总是以三个字节的”ID3”字符串开头，以此来标识这是ID3v2信息。即 49 44 33。</p>
+<p> 紧接着的两个字节是 版本，即 04 00。 第一个字节是 主版本，第二个字节是修订数字。 因为是 2.4.0，所以第一个字节是 4， 第二个字节是0.<br>版本的意义是 ，所有的修订版都是 向后兼容的。但主版本是 不向后兼容。也就是说 2.4.1 的程序 可以在 2.4.0的协议上正常运行，但是在2.3.0上并不保证 好使。<br>如果支持ID3v2.4.0或者更低版本的程序，遇到了5或者更高版本的 ID3v2tag，应该直接忽略。因为解析不了。主版本号和 副版本号都不能是 <code>$ff</code></p>
+<p>接下来的一个字节是 flags字节， 目前有4个flag在使用。上一版2.3.0 只有3个flag。 相比上一版，多了一个 Footer present的flag。</p>
+<ul>
+<li><p>a - 非同步编码(Unsynchronisation)</p>
+<p>标签头标识(flags)的第7位用来表示当前ID3v2信息是否经过非同步编码。当这位为1时，表示ID3v2信息经过非同步编码。</p>
+</li>
+<li><p>b - 扩展标签头(Extended header)</p>
+<p>标签头标识(flags)的第6位用来表示标签头数据后面是否有扩展标签头数据。扩展标签头请参照第三章第二节。 这一位 为1 表示 有扩展标签头</p>
+</li>
+<li><p>c - 测试指示位(Experimemtalindicator)</p>
+<p>标签头标识(flags)的第5位用来表示当前是否为测试版。如果本tag处于测试阶段，请将此位置1。</p>
+</li>
+</ul>
+<ul>
+<li><p>d - Footer 标志 （新增）</p>
+<p>标签头标识(flags)的第4位用来表示tag中是否有 footer在标签的最后。。如果本tag含有footer，请将此位置1。</p>
+</li>
+</ul>
+<p>例子中 flags 为 00 ，表示 不是非同步编码， 没有扩展头，不是测试tag，没有footer。</p>
+<p>其他位必须是0，如果那些未定义的flags上也有值，这个tag可能 无法解析。</p>
+<p>头部的最后4个字节中存储 整个tag的长度。每个字节 有7位可以使用。一共有28位的有效位数（意味着tag最多可以有256M这么大）<br>  这个tag size 是 除了tag header之外的 其余部分的长度。<br>  也就是说 ，如果有 footer时， tag size 是 （整个tag - 20） 字节。<br>  没有footer时，tag size是 （整个tag - 10） 字节。</p>
+<p>本例子中 tag size 是 0000 0023 ，转换成10进制就是 35。 说明后面还有35个字节属于 ID3v2 tag。</p>
+<p>ID3v2 tag可以用如下的 模式来 检测。</p>
+<p>  <code>$49 44 33 yy yy xx zz zz zz zz</code></p>
+<p>其中 yy 小于 $FF, xx 是 ‘flags’ byte ， zz 小于 $80.</p>
+<p>如在Python中有一个模块 struct ，可以直接 取出头部 各部分的信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">name = &quot;a.mp3&quot;; #要读取的文件</div><div class="line">fp = open(name,&apos;rb&apos;);</div><div class="line">head = fp.read(10)</div><div class="line">id3,ver,revision,flag,length  = struct.unpack(&quot;!3sBBBI&quot;,head);</div></pre></td></tr></table></figure>
+<h2 id="3-2-扩展的头部-header"><a href="#3-2-扩展的头部-header" class="headerlink" title="3.2. 扩展的头部 header"></a>3.2. 扩展的头部 header</h2><p>   The extended header contains information that can provide further<br>   insight in the structure of the tag, but is not vital to the correct<br>   parsing of the tag information; hence the extended header is<br>   optional.</p>
+<pre><code>Extended header size   4 * %0xxxxxxx
+Number of flag bytes       $01
+Extended Flags             $xx
+</code></pre><p>   Where the ‘Extended header size’ is the size of the whole extended<br>   header, stored as a 32 bit synchsafe integer. An extended header can<br>   thus never have a size of fewer than six bytes.</p>
+<p>   The extended flags field, with its size described by ‘number of flag<br>   bytes’, is defined as:</p>
+<pre><code>%0bcd0000
+</code></pre><p>   Each flag that is set in the extended header has data attached, which<br>   comes in the order in which the flags are encountered (i.e. the data<br>   for flag ‘b’ comes before the data for flag ‘c’). Unset flags cannot<br>   have any attached data. All unknown flags MUST be unset and their<br>   corresponding data removed when a tag is modified.</p>
+<p>   Every set flag’s data starts with a length byte, which contains a<br>   value between 0 and 128 ($00 - $7f), followed by data that has the<br>   field length indicated by the length byte. If a flag has no attached<br>   data, the value $00 is used as length byte.</p>
+<p>   b - Tag is an update</p>
+<pre><code>If this flag is set, the present tag is an update of a tag found
+earlier in the present file or stream. If frames defined as unique
+are found in the present tag, they are to override any
+corresponding ones found in the earlier tag. This flag has no
+corresponding data.
+
+    Flag data length      $00
+</code></pre><p>   c - CRC data present</p>
+<pre><code>If this flag is set, a CRC-32 [ISO-3309] data is included in the
+extended header. The CRC is calculated on all the data between the
+header and footer as indicated by the header&apos;s tag length field,
+minus the extended header. Note that this includes the padding (if
+there is any), but excludes the footer. The CRC-32 is stored as an
+35 bit synchsafe integer, leaving the upper four bits always
+zeroed.
+
+   Flag data length       $05
+   Total frame CRC    5 * %0xxxxxxx
+</code></pre><p>   d - Tag restrictions</p>
+<pre><code>For some applications it might be desired to restrict a tag in more
+ways than imposed by the ID3v2 specification. Note that the
+presence of these restrictions does not affect how the tag is
+decoded, merely how it was restricted before encoding. If this flag
+is set the tag is restricted as follows:
+
+   Flag data length       $01
+   Restrictions           %ppqrrstt
+
+p - Tag size restrictions
+
+  00   No more than 128 frames and 1 MB total tag size.
+  01   No more than 64 frames and 128 KB total tag size.
+  10   No more than 32 frames and 40 KB total tag size.
+  11   No more than 32 frames and 4 KB total tag size.
+
+q - Text encoding restrictions
+
+  0    No restrictions
+  1    Strings are only encoded with ISO-8859-1 [ISO-8859-1] or
+       UTF-8 [UTF-8].
+
+r - Text fields size restrictions
+
+  00   No restrictions
+  01   No string is longer than 1024 characters.
+  10   No string is longer than 128 characters.
+  11   No string is longer than 30 characters.
+
+  Note that nothing is said about how many bytes is used to
+  represent those characters, since it is encoding dependent. If a
+  text frame consists of more than one string, the sum of the
+  strungs is restricted as stated.
+
+s - Image encoding restrictions
+
+  0   No restrictions
+  1   Images are encoded only with PNG [PNG] or JPEG [JFIF].
+
+t - Image size restrictions
+
+  00  No restrictions
+  01  All images are 256x256 pixels or smaller.
+  10  All images are 64x64 pixels or smaller.
+  11  All images are exactly 64x64 pixels, unless required
+      otherwise.
+</code></pre><h2 id="3-3-Padding"><a href="#3-3-Padding" class="headerlink" title="3.3.   Padding"></a>3.3.   Padding</h2><p>在最后一个帧后面 增加 填充是可选的， 填充必须全部是 $00.<br>不可以在 头部和 帧之间有填充。填充只能出现在尾部。 同时 有footer时，不能有 填充。<br>填充有时可以用来 标识最后一个帧的结束。</p>
+<h2 id="3-4-ID3v2-footer"><a href="#3-4-ID3v2-footer" class="headerlink" title="3.4.   ID3v2 footer"></a>3.4.   ID3v2 footer</h2><p>为了从文件尾部快速定位ID3V2标签，设计了ID3v2 footer。如果整个ID3V2标签在 整个音频文件的 最后，那么这个ID3v2 footer 就是必须包含的。 ID3v2 footer的内容 和 头部是一样的，只是identifier 不同。 格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ID3v2 identifier           &quot;3DI&quot;</div><div class="line">ID3v2 version              $04 00</div><div class="line">ID3v2 flags                %abcd0000</div><div class="line">ID3v2 size             4 * %0xxxxxxx</div></pre></td></tr></table></figure>
+<h2 id="4-ID3v2-帧-概述"><a href="#4-ID3v2-帧-概述" class="headerlink" title="4.   ID3v2 帧 概述"></a>4.   ID3v2 帧 概述</h2><p>帧是 主要的 信息承载的地方。所有的帧的组成是由一个 帧头部和 一个或多个域组成。这些域中就是真正的携带的信息。帧头部也是10字节，结构如下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">Frame ID      $xx xx xx xx  (four characters)</div><div class="line">Size      4 * %0xxxxxxx</div><div class="line">Flags         $xx xx</div></pre></td></tr></table></figure></p>
+<p>帧ID是由大些字符和数字组成。以X， Y， Z 开头的帧表示实验性的帧。你要注意，有可能别人用的帧ID 和你的 帧ID一样。除此以外的帧ID 被保留了，或已经被使用了。</p>
+<p>   The frame ID is followed by a size descriptor containing the size of<br>   the data in the final frame, after encryption, compression and<br>   unsynchronisation. The size is excluding the frame header (‘total<br>   frame size’ - 10 bytes) and stored as a 32 bit synchsafe integer.</p>
+<p>   In the frame header the size descriptor is followed by two flag<br>   bytes. These flags are described in section 4.1.</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://id3.org/id3v2.4.0-structure" target="_blank" rel="external">ID3 tag version 2.4.0 - Main Structure</a></p>
+</div></article></div><div id="disqus_thread"></div></div><div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;"><img src="/images/WechatIMG5.jpeg" width="180px"><p>简单点，讨钱的方式简单点</p><button style="display: inline-block;      width: 80px;      height: 35px;      border-radius: 5px;      color: #fff;      font-weight: 400;      font-style: normal;      font-variant: normal;      font-stretch: normal;      font-size: 18px;      background: #f44336;"><span>赏</span></button></div><div id="ads"></div><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- 底部01--><ins style="display:block" data-ad-client="ca-pub-7674654031652018" data-ad-slot="3127803056" data-ad-format="auto" class="adsbygoogle"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});
+
+</script><div id="SOHUCS"></div><script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script><script type="text/javascript">window.changyan.api.config({
+appid: 'cytkri3BC',
+conf: 'prod_1e787a373da7a5fa9ef7156a6dae5e6b'
+});
+</script></main><footer class="footer-container"><div class="paginator"><a href="/2017/12/21/dalston-sr4是什么意思/" class="prev">PREV</a><a href="/2017/12/14/vim查看二进制文件内容/" class="next">NEXT</a></div><div class="copyright"><p>© 2017 <a href="mailto:fupeng_2005@126.com">kunpengku</a>, <a href="http://www.miitbeian.gov.cn">京ICP备17058936号-1</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"angrypowman",'auto');ga('send','pageview');</script></body></html>
