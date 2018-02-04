@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-01-13T07:16:27.583Z</updated>
+  <updated>2018-02-04T04:26:16.632Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -17,13 +17,79 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>spring boot 接收参数的几种姿势</title>
+    <link href="http://www.youletter.cn/2018/02/04/spring-boot-%E6%8E%A5%E6%94%B6%E5%8F%82%E6%95%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E5%A7%BF%E5%8A%BF/"/>
+    <id>http://www.youletter.cn/2018/02/04/spring-boot-接收参数的几种姿势/</id>
+    <published>2018-02-04T03:12:29.000Z</published>
+    <updated>2018-02-04T04:26:16.632Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="RequestBody"><a href="#RequestBody" class="headerlink" title="@RequestBody"></a>@RequestBody</h1><p>适用场景：请求方传入一个JSON串，将这个json反序列化成一个对象，赋值给一个变量。<br>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@RequestMapping(value = &quot;/friend&quot;, method = RequestMethod.POST)</div><div class="line">public String create(@RequestBody Friend friend) &#123;</div><div class="line">    System.out.println(friend);</div><div class="line"></div><div class="line">    return &quot;ok&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">public class Friend &#123;</div><div class="line">    String name;</div><div class="line">    String stage;</div><div class="line">    String location;</div><div class="line"></div><div class="line">    public String getName() &#123;</div><div class="line">        return name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setName(String name) &#123;</div><div class="line">        this.name = name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public String getStage() &#123;</div><div class="line">        return stage;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setStage(String stage) &#123;</div><div class="line">        this.stage = stage;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public String getLocation() &#123;</div><div class="line">        return location;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setLocation(String location) &#123;</div><div class="line">        this.location = location;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public String toString() &#123;</div><div class="line">        return &quot;Friend&#123;&quot; + &quot;name=&apos;&quot; + name + &apos;\&apos;&apos; + &quot;, stage=&apos;&quot; + stage + &apos;\&apos;&apos; + &quot;, location=&apos;&quot; + location + &apos;\&apos;&apos; + &apos;&#125;&apos;;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>注意：该类Friend应该是一个POJO, 写好setter/getter方法。</p><p>其中 序列化和反序列化的工作由 HttpMessageConverter 来完成。默认的HttpMessageConverter使用的是jackson的序列化方法，如果需要修改成别的，参考另一篇博文<br><a href="http://youletter.cn/2017/12/06/spring-boot%E4%B8%AD%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E7%9A%84HttpMessageConverter%E4%B8%BAGsonHttpMessageConverter/" target="_blank" rel="external">spring-boot中修改默认的HttpMessageConverter为GsonHttpMessageConverter</a></p><p>参考：<br><a href="https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-requestbody" target="_blank" rel="external">Mapping the request body with the @RequestBody annotation</a></p><h1 id="PathVariable"><a href="#PathVariable" class="headerlink" title="@PathVariable"></a>@PathVariable</h1><p>如果需要将path中的值，赋给变量。</p><p>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@GetMapping(&quot;/friend/&#123;friendId&#125;&quot;)</div><div class="line">public String findOwner(@PathVariable String friendId) &#123;</div><div class="line">    System.out.println(friendId);</div><div class="line">    return &quot;displayOwner&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>{friendId} 这个位置的 值就会 赋给 friendId这个变量。</p><p>注意： 如果URI template中的变量和参数的变量一致，可以忽略@PathVariable中的参数。 如果不一致，需要显示指出，如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@GetMapping(&quot;/friend/&#123;friendId&#125;&quot;)</div><div class="line">public String findOwner(@PathVariable(&quot;friendId&quot;) String notfriendId) &#123;</div><div class="line">    System.out.println(notfriendId);</div><div class="line">    return &quot;displayOwner&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>参考 <a href="https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-requestmapping-uri-templates" target="_blank" rel="external">URI Template Patterns</a></p><h1 id="RequestParam"><a href="#RequestParam" class="headerlink" title="@RequestParam"></a>@RequestParam</h1><p>绑定参数， 默认是必选的。如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@GetMapping(&quot;/friend/me&quot;)</div><div class="line">public String findOwner(@RequestParam(&quot;location&quot;) String location,</div><div class="line">                        @RequestParam(&quot;stage&quot;) String stage) &#123;</div><div class="line">    System.out.println(location);</div><div class="line">    System.out.println(stage);</div><div class="line">    return &quot;displayOwner&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>如果某个参数不是必选，需设置required属性。<br><code>@RequestParam(name=&quot;id&quot;, required=false)</code></p><p>参考 <a href="https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-requestparam" target="_blank" rel="external">Binding request parameters to method parameters with @RequestParam</a></p><h1 id="RequestHeader"><a href="#RequestHeader" class="headerlink" title="@RequestHeader"></a>@RequestHeader</h1><p>映射header属性</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@GetMapping(&quot;/friend/me2&quot;)</div><div class="line">public void displayHeaderInfo(@RequestHeader(&quot;Authorization&quot;) String authorization,</div><div class="line">                              @RequestHeader(&quot;Keep-Alive&quot;) long keepAlive) &#123;</div><div class="line"></div><div class="line">    System.out.println(authorization);</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure><p>参考 <a href="https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-requestheader" target="_blank" rel="external">Mapping request header attributes with the @RequestHeader annotation</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;RequestBody&quot;&gt;&lt;a href=&quot;#RequestBody&quot; class=&quot;headerlink&quot; title=&quot;@RequestBody&quot;&gt;&lt;/a&gt;@RequestBody&lt;/h1&gt;&lt;p&gt;适用场景：请求方传入一个JSON串，将这个json反序列化成一个
+      
+    
+    </summary>
+    
+    
+      <category term="spring-boot" scheme="http://www.youletter.cn/tags/spring-boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>elasticesarch 旧版本下载地址</title>
+    <link href="http://www.youletter.cn/2018/01/22/elasticesarch-%E6%97%A7%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
+    <id>http://www.youletter.cn/2018/01/22/elasticesarch-旧版本下载地址/</id>
+    <published>2018-01-22T05:29:09.000Z</published>
+    <updated>2018-01-22T05:29:30.738Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.elastic.co/downloads/past-releases" target="_blank" rel="external">https://www.elastic.co/downloads/past-releases</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.elastic.co/downloads/past-releases&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.elastic.co/downloads/past-releases&lt;/a
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>spring boot elasticsearch</title>
+    <link href="http://www.youletter.cn/2018/01/19/spring-boot-elasticsearch/"/>
+    <id>http://www.youletter.cn/2018/01/19/spring-boot-elasticsearch/</id>
+    <published>2018-01-19T03:56:05.000Z</published>
+    <updated>2018-01-19T03:57:03.295Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了方便调试， 最好把DSL打印出来。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">String s = requestBuilder.toString();</div><div class="line">System.out.println(s);</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;为了方便调试， 最好把DSL打印出来。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>notions and expression of notions</title>
     <link href="http://www.youletter.cn/2018/01/11/notions-and-expression-of-notions/"/>
     <id>http://www.youletter.cn/2018/01/11/notions-and-expression-of-notions/</id>
     <published>2018-01-11T09:38:25.000Z</published>
-    <updated>2018-01-13T07:16:27.583Z</updated>
+    <updated>2018-01-17T15:54:51.206Z</updated>
     
-    <content type="html"><![CDATA[<p>It rains      天下雨了</p><p>Does it rain？  下雨了吗？</p><p>Is it raining?  正在下雨吗？</p><p>It is going to rain   要下雨了</p><p>Has it rained?      下过了雨吗？</p><p>Dit it rain (yesterday)?  (昨天)下雨的吗？</p><p>He strikes me    他打我<br>I strikes him    我打他</p><p>中文用词序 表达 ，英文用  I -&gt; me ， He -&gt; him 来表达宾语。</p><p>宾语意念 。</p><p>中文有一种 用 把 字介绍宾语的语法工具</p><p>push open the door   把门推开</p><p>kill the man         把人打死</p><p>rob his money        把钱抢走</p><p>more than sixty     六十多</p><p>less hot  不怎么热</p><p>not so very hot  不十分热</p><p>rather hot 颇有点热</p><p>just hot enough 热的正好</p><p>too hot  太热</p><p>hot enough to burn your fingers  热的烫手</p><p>as hot as a furnace 热的如火炉一般</p><p>so hot that you can hardly breathe 热的透不过起来</p><p>eighty percent 八成</p><p>fifteen percent discount 八五折</p><p>the whiteness of the white horse 白马之白</p><p>the rich  富人</p><p>the poor  穷人</p><p>He is afraid 他怕</p><p>英文里有 事实fact 和 想象fancy 的区别</p><p>I think so  事实</p><p>I should think so   想象</p><p>It is all right 事实</p><p>It should be all right 想象</p><p>He becomes tired  他累了</p><h1 id="八大词类"><a href="#八大词类" class="headerlink" title="八大词类"></a>八大词类</h1><p>名词 Nouns</p><p>代名词 pronoun</p><p>动词 verb</p><p>形容词 adjective</p><p>副词 adverbs</p><p>介词  preposition</p><p>连词 conjunction</p><p>叹词 exclamation</p><p>介词后面必定有一个名词 ，构成 介词短语。 介词短语 不是 当做 形容词用，便是当做副词作用。</p><p>同一个词，在不同句子中的 职务不同</p><p>He sleeps 动词</p><p>He talks in his sleep 名词</p><p>He walked before 副词</p><p>He walked before me 介词</p><p>He had walked a mile before he came to the house 连词</p><p>At the back of the house 。 名词back</p><p>back parlour  back pay 欠薪  形容词</p><p>Stand back 副词</p><p>To back up a friend 做朋友的后盾 动词</p><p>I brought a new hat which you saw this morning  。代词和连词 which</p><p>green sky  青天</p><p>natural gift 天资</p><p>heavenly palace 天堂</p><p>natural calamity 天灾</p><p>everyday 天天</p><p>to explain one’s mind 自白其志</p><p>to meet a loss without compensation 白受损失</p><p>在英文里，词形随着作用的变化而变化</p><p>admire 动词 - admiration 名词 - admirable , admiring 形 - admirably ，admiringly 副词</p><p>作用的意味</p><p>事物的意味， 凡是具体的东西</p><p>动作名词</p><p>I love books.      I love reading.</p><p>Have you learnt this?  Have you learnt swimming?</p><p>The geography lesson is difficult. Breathing under water is difficult.</p><p>A pocket-knife is useful.     Letter-writing is useful.</p><p>He stopped the car.       She stopped singing.</p><p>I teach grammar.         You teach dancing.</p><p>The boy slept during the class.    He slept also during the meeting.</p><p>Then he slept before seven o’clock.  Then he slept before going to bed.</p><p>He is like his father in his laziness. This is like playing with fire.   like是介词。</p><p>He learn to punctuate.  He learn punctuation. </p><p>We compose sentences.    We learn composition.</p><p>He is promoted.   We heard about of his promotion.</p><p>You were examined.  You pass the examination. </p><p>This is esay to prepare. This requires no preparation.</p><p>You must not be afraid to repeat the sentences.  Repetition is good to you , but don’t repeat mistakes. </p><p>品性和情况的名词</p><p>He is poor, but he enjoys his poverty.      poverty 就是名词。</p><p>Lovers are blind, but never mind the blindess of the lovers. so long as love lasts.  bliend = adj.     blindness = n.</p><p>He is a good man .but his goodness can not help him to pay  debts.</p><p>Goodness is such a virable term.  According to the servant. </p>]]></content>
+    <content type="html"><![CDATA[<p>It rains      天下雨了</p><p>Does it rain？  下雨了吗？</p><p>Is it raining?  正在下雨吗？</p><p>It is going to rain   要下雨了</p><p>Has it rained?      下过了雨吗？</p><p>Dit it rain (yesterday)?  (昨天)下雨的吗？</p><p>He strikes me    他打我<br>I strikes him    我打他</p><p>中文用词序 表达 ，英文用  I -&gt; me ， He -&gt; him 来表达宾语。</p><p>宾语意念 。</p><p>中文有一种 用 把 字介绍宾语的语法工具</p><p>push open the door   把门推开</p><p>kill the man         把人打死</p><p>rob his money        把钱抢走</p><p>more than sixty     六十多</p><p>less hot  不怎么热</p><p>not so very hot  不十分热</p><p>rather hot 颇有点热</p><p>just hot enough 热的正好</p><p>too hot  太热</p><p>hot enough to burn your fingers  热的烫手</p><p>as hot as a furnace 热的如火炉一般</p><p>so hot that you can hardly breathe 热的透不过起来</p><p>eighty percent 八成</p><p>fifteen percent discount 八五折</p><p>the whiteness of the white horse 白马之白</p><p>the rich  富人</p><p>the poor  穷人</p><p>He is afraid 他怕</p><p>英文里有 事实fact 和 想象fancy 的区别</p><p>I think so  事实</p><p>I should think so   想象</p><p>It is all right 事实</p><p>It should be all right 想象</p><p>He becomes tired  他累了</p><h1 id="八大词类"><a href="#八大词类" class="headerlink" title="八大词类"></a>八大词类</h1><p>名词 Nouns</p><p>代名词 pronoun</p><p>动词 verb</p><p>形容词 adjective</p><p>副词 adverbs</p><p>介词  preposition</p><p>连词 conjunction</p><p>叹词 exclamation</p><p>介词后面必定有一个名词 ，构成 介词短语。 介词短语 不是 当做 形容词用，便是当做副词作用。</p><p>同一个词，在不同句子中的 职务不同</p><p>He sleeps 动词</p><p>He talks in his sleep 名词</p><p>He walked before 副词</p><p>He walked before me 介词</p><p>He had walked a mile before he came to the house 连词</p><p>At the back of the house 。 名词back</p><p>back parlour  back pay 欠薪  形容词</p><p>Stand back 副词</p><p>To back up a friend 做朋友的后盾 动词</p><p>I brought a new hat which you saw this morning  。代词和连词 which</p><p>green sky  青天</p><p>natural gift 天资</p><p>heavenly palace 天堂</p><p>natural calamity 天灾</p><p>everyday 天天</p><p>to explain one’s mind 自白其志</p><p>to meet a loss without compensation 白受损失</p><p>在英文里，词形随着作用的变化而变化</p><p>admire 动词 - admiration 名词 - admirable , admiring 形 - admirably ，admiringly 副词</p><h1 id="作用的意味"><a href="#作用的意味" class="headerlink" title="作用的意味"></a>作用的意味</h1><h1 id="事物的意味，-凡是具体的东西"><a href="#事物的意味，-凡是具体的东西" class="headerlink" title="事物的意味， 凡是具体的东西"></a>事物的意味， 凡是具体的东西</h1><p>动作名词</p><p>I love books.      I love reading.</p><p>Have you learnt this?  Have you learnt swimming?</p><p>The geography lesson is difficult. Breathing under water is difficult.</p><p>A pocket-knife is useful.     Letter-writing is useful.</p><p>He stopped the car.       She stopped singing.</p><p>I teach grammar.         You teach dancing.</p><p>The boy slept during the class.    He slept also during the meeting.</p><p>Then he slept before seven o’clock.  Then he slept before going to bed.</p><p>He is like his father in his laziness. This is like playing with fire.   like是介词。</p><p>He learn to punctuate.  He learn punctuation. </p><p>We compose sentences.    We learn composition.</p><p>He is promoted.   We heard about of his promotion.</p><p>You were examined.  You pass the examination. </p><p>This is esay to prepare. This requires no preparation.</p><p>You must not be afraid to repeat the sentences.  Repetition is good to you , but don’t repeat mistakes. </p><p>品性和情况的名词</p><p>He is poor, but he enjoys his poverty.      poverty 就是名词。</p><p>Lovers are blind, but never mind the blindess of the lovers. so long as love lasts.  bliend = adj.     blindness = n.</p><p>He is a good man .but his goodness can not help him to pay  debts.</p><p>Goodness is such a virable term.  According to the servant. </p><h1 id="动作和品性的意味"><a href="#动作和品性的意味" class="headerlink" title="动作和品性的意味"></a>动作和品性的意味</h1><h1 id="情状和方面的意味"><a href="#情状和方面的意味" class="headerlink" title="情状和方面的意味"></a>情状和方面的意味</h1><p>You want to be independent- how , Financially or spiritually</p><p>In what respect are men and women unequal? Physically, mentally, socially, legally, or economically? Are the equal in brains, in looks ,in courage, in patience ,in jealousy, in interest, in babies.</p><p>The Chinese are superior to the English in patience, and the English are superior to the Chinese in political organization.</p><p>There is physical courage, and there is moral courage.</p><p>A man who dare not say what he belives is a moral coward.</p><p>E officials are great men to their families, but criminals to the nation.</p><h1 id="介词力量的意味"><a href="#介词力量的意味" class="headerlink" title="介词力量的意味"></a>介词力量的意味</h1><p>Go with him. He comes for his hat.</p><p>介词后面跟名词</p><h1 id="作用的转变"><a href="#作用的转变" class="headerlink" title="作用的转变"></a>作用的转变</h1><p>名词当形容词，而词形不用变化</p><p>stone wall.</p><p>名词变 形容词 </p><p>gold  golden</p><p>wood   wooden</p><p>earth earthen</p><h1 id="名词当动词用"><a href="#名词当动词用" class="headerlink" title="名词当动词用"></a>名词当动词用</h1><p>Hand the money to me</p><p>they stoned him to death</p><p>The gun was fired.</p><h1 id="动词当名词"><a href="#动词当名词" class="headerlink" title="动词当名词"></a>动词当名词</h1><p>Fishing is pleasant to lovers even when there is no fish</p><p>It’s difficult to remember the last lie that you told</p><p>There is nothing finer than to chat with you old friend around a fire</p><p>To call oneself a revolutionist is one thing, to be is another thing.</p><h1 id="动词当形容词"><a href="#动词当形容词" class="headerlink" title="动词当形容词"></a>动词当形容词</h1><p>分词<br>一种是 现在分词 present participle<br>一种是 过去分词 past participle</p><p>temporarily occupied areas</p><p>rapidly rising reputation</p><p>his broken health</p><p>flying carpet</p><p>determined look</p><p>over-protected</p><p>howling monkey</p><p>ill-smelling thing</p><p>well-written essays</p><p>mimic  mimicking</p><p>picnic   picnicking</p><h1 id="动词变形容词"><a href="#动词变形容词" class="headerlink" title="动词变形容词"></a>动词变形容词</h1><h1 id="形容词变名词"><a href="#形容词变名词" class="headerlink" title="形容词变名词"></a>形容词变名词</h1><p>I have no fear of his power.</p><p>I was impressed by her kindness.</p><p>strong - strength</p><p>broad - breadth</p><p>wide - width</p><p>cleanly - cleanliness</p><p>kind - kindness</p><p>cold - coldness</p><p>faithful - faithfulness</p><p>sorry - sorrow</p><p>hungry - hunger</p><p>proud - pride</p><p>savage - savagery</p><p>diligent - diligence</p><h1 id="the-poor-and-the-rich"><a href="#the-poor-and-the-rich" class="headerlink" title="the poor and the rich"></a>the poor and the rich</h1><p>the righteous and the wicked</p>]]></content>
     
     <summary type="html">
     
@@ -90,9 +156,9 @@
     <link href="http://www.youletter.cn/2018/01/08/2018-01/"/>
     <id>http://www.youletter.cn/2018/01/08/2018-01/</id>
     <published>2018-01-08T15:17:18.000Z</published>
-    <updated>2018-01-08T15:19:25.902Z</updated>
+    <updated>2018-01-16T15:00:35.021Z</updated>
     
-    <content type="html"><![CDATA[<p>1月8日</p><p>青山遮不住</p><p>毕竟东流去</p><p>江晚正愁余</p><p>山深闻鹧鸪</p>]]></content>
+    <content type="html"><![CDATA[<p>1月8日</p><p>青山遮不住</p><p>毕竟东流去</p><p>江晚正愁余</p><p>山深闻鹧鸪</p><p>1月14日</p><p>北京是什么地方，北京是舞台。表演结束后，还得回家。</p><p>1月16日</p><p>我为你唱最后的古谣 </p><p>红雨瓢泼泛起了回忆怎么潜</p><p>你美目如当年</p><p>流转我心间</p><p>渡口边最后一面洒下了句点</p><p>与你若只如初见</p><p>何须感伤离别</p>]]></content>
     
     <summary type="html">
     
@@ -103,7 +169,10 @@
 &lt;p&gt;毕竟东流去&lt;/p&gt;
 &lt;p&gt;江晚正愁余&lt;/p&gt;
 &lt;p&gt;山深闻鹧鸪&lt;/p&gt;
-
+&lt;p&gt;1月14日&lt;/p&gt;
+&lt;p&gt;北京是什么地方，北京是舞台。表演结束后，还得回家。&lt;/p&gt;
+&lt;p&gt;1月16日&lt;/p&gt;
+&lt;p&gt;我为你唱最后的古谣 &lt;/p&gt;
       
     
     </summary>
@@ -482,87 +551,6 @@
     
     
       <category term="spring-security" scheme="http://www.youletter.cn/tags/spring-security/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>过秦论</title>
-    <link href="http://www.youletter.cn/2017/12/11/%E8%BF%87%E7%A7%A6%E8%AE%BA/"/>
-    <id>http://www.youletter.cn/2017/12/11/过秦论/</id>
-    <published>2017-12-11T02:20:38.000Z</published>
-    <updated>2017-12-11T02:22:48.381Z</updated>
-    
-    <content type="html"><![CDATA[<p>贾谊 </p><p>秦孝公据崤函之固，拥雍州之地，君臣固守以窥周室，有席卷天下，包举宇内，囊括四海之意，并吞八荒之心。当是时也，商君佐之，内立法度，务耕织，修守战之具，外连衡而斗诸侯。于是秦人拱手而取西河之外。</p><p>孝公既没，惠文、武、昭襄蒙故业，因遗策，南取汉中，西举巴、蜀，东割膏腴之地，北收要害之郡。诸侯恐惧，会盟而谋弱秦，不爱珍器重宝肥饶之地，以致天下之士，合从缔交，相与为一。当此之时，齐有孟尝，赵有平原，楚有春申，魏有信陵。此四君者，皆明智而忠信，宽厚而爱人，尊贤而重士，约从离衡，兼韩、魏、燕、楚、齐、赵、宋、卫、中山之众。于是六国之士，有宁越、徐尚、苏秦、杜赫之属为之谋，齐明、周最、陈轸、召滑、楼缓、翟景、苏厉、乐毅之徒通其意，吴起、孙膑、带佗、倪良、王廖、田忌、廉颇、赵奢之伦制其兵。尝以十倍之地，百万之众，叩关而攻秦。秦人开关延敌，九国之师，逡巡而不敢进。秦无亡矢遗镞之费，而天下诸侯已困矣。于是从散约败，争割地而赂秦。秦有余力而制其弊，追亡逐北，伏尸百万，流血漂橹；因利乘便，宰割天下，分裂山河。强国请服，弱国入朝。</p><p>延及孝文王、庄襄王，享国之日浅，国家无事。</p><p>及至始皇，奋六世之余烈，振长策而御宇内，吞二周而亡诸侯，履至尊而制六合，执敲扑而鞭笞天下，威振四海。南取百越之地，以为桂林、象郡；百越之君，俯首系颈，委命下吏。乃使蒙恬北筑长城而守藩篱，却匈奴七百余里；胡人不敢南下而牧马，士不敢弯弓而报怨。于是废先王之道，焚百家之言，以愚黔首；隳名城，杀豪杰；收天下之兵，聚之咸阳，销锋镝，铸以为金人十二，以弱天下之民。然后践华为城，因河为池，据亿丈之城，临不测之渊，以为固。良将劲弩守要害之处，信臣精卒陈利兵而谁何。天下已定，始皇之心，自以为关中之固，金城千里，子孙帝王万世之业也。</p><p>秦王既没，余威震于殊俗。然陈涉瓮牖绳枢之子，氓隶之人，而迁徙之徒也；才能不及中人，非有仲尼，墨翟之贤，陶朱、猗顿之富；蹑足行伍之间，而倔起阡陌之中，率疲弊之卒，将数百之众，转而攻秦；斩木为兵，揭竿为旗，天下云集响应，赢粮而景从。山东豪俊遂并起而亡秦族矣。</p><p>且夫天下非小弱也，雍州之地，崤函之固，自若也。陈涉之位，非尊于齐、楚、燕、赵、韩、魏、宋、卫、中山之君也；锄懮棘矜，非铦于钩戟长铩也；谪戍之众，非抗于九国之师也；深谋远虑，行军用兵之道，非及向时之士也。然而成败异变，功业相反，何也？试使山东之国与陈涉度长絜大，比权量力，则不可同年而语矣。然秦以区区之地，致万乘之势，序八州而朝同列，百有余年矣；然后以六合之家，崤函为宫；一夫作难而七庙隳，身死人手，为天下笑者，何也？仁义不施而攻守之势异也。</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;贾谊 &lt;/p&gt;
-&lt;p&gt;秦孝公据崤函之固，拥雍州之地，君臣固守以窥周室，有席卷天下，包举宇内，囊括四海之意，并吞八荒之心。当是时也，商君佐之，内立法度，务耕织，修守战之具，外连衡而斗诸侯。于是秦人拱手而取西河之外。&lt;/p&gt;
-&lt;p&gt;孝公既没，惠文、武、昭襄蒙故业，因遗策，南取汉中，西举巴、蜀，东割膏腴之地，北收要害之郡。诸侯恐惧，会盟而谋弱秦，不爱珍器重宝肥饶之地，以致天下之士，合从缔交，相与为一。当此之时，齐有孟尝，赵有平原，楚有春申，魏有信陵。此四君者，皆明智而忠信，宽厚而爱人，尊贤而重士，约从离衡，兼韩、魏、燕、楚、齐、赵、宋、卫、中山之众。于是六国之士，有宁越、徐尚、苏秦、杜赫之属为之谋，齐明、周最、陈轸、召滑、楼缓、翟景、苏厉、乐毅之徒通其意，吴起、孙膑、带佗、倪良、王廖、田忌、廉颇、赵奢之伦制其兵。尝以十倍之地，百万之众，叩关而攻秦。秦人开关延敌，九国之师，逡巡而不敢进。秦无亡矢遗镞之费，而天下诸侯已困矣。于是从散约败，争割地而赂秦。秦有余力而制其弊，追亡逐北，伏尸百万，流血漂橹；因利乘便，宰割天下，分裂山河。强国请服，弱国入朝。&lt;/p&gt;
-&lt;p&gt;延及孝文王、庄襄王，享国之日浅，国家无事。&lt;/p&gt;
-&lt;p&gt;及至始皇，奋六世之余烈，振长策而御宇内，吞二周而亡诸侯，履至尊而制六合，执敲扑而鞭笞天下，威振四海。南取百越之地，以为桂林、象郡；百越之君，俯首系颈，委命下吏。乃使蒙恬北筑长城而守藩篱，却匈奴七百余里；胡人不敢南下而牧马，士不敢弯弓而报怨。于是废先王之道，焚百家之言，以愚黔首；隳名城，杀豪杰；收天下之兵，聚之咸阳，销锋镝，铸以为金人十二，以弱天下之民。然后践华为城，因河为池，据亿丈之城，临不测之渊，以为固。良将劲弩守要害之处，信臣精卒陈利兵而谁何。天下已定，始皇之心，自以为关中之固，金城千里，子孙帝王万世之业也。&lt;/p&gt;
-&lt;p&gt;秦王既没，余威震于殊俗。然陈涉瓮牖绳枢之子，氓隶之人，而迁徙之徒也；才能不及中人，非有仲尼，墨翟之贤，陶朱、猗顿之富；蹑足行伍之间，而倔起阡陌之中，率疲弊之卒，将数百之众，转而攻秦；斩木为兵，揭竿为旗，天下云集响应，赢粮而景从。山东豪俊遂并起而亡秦族矣。&lt;/p&gt;
-&lt;p&gt;且夫天下非小弱也，雍州之地，崤函之固，自若也。陈涉之位，非尊于齐、楚、燕、赵、韩、魏、宋、卫、中山之君也；锄懮棘矜，非铦于钩戟长铩也；谪戍之众，非抗于九国之师也；深谋远虑，行军用兵之道，非及向时之士也。然而成败异变，功业相反，何也？试使山东之国与陈涉度长絜大，比权量力，则不可同年而语矣。然秦以区区之地，致万乘之势，序八州而朝同列，百有余年矣；然后以六合之家，崤函为宫；一夫作难而七庙隳，身死人手，为天下笑者，何也？仁义不施而攻守之势异也。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="文学" scheme="http://www.youletter.cn/tags/%E6%96%87%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>spring-boot 测试-mock resttemplate</title>
-    <link href="http://www.youletter.cn/2017/12/09/spring-boot-%E6%B5%8B%E8%AF%95-mock-resttemplate/"/>
-    <id>http://www.youletter.cn/2017/12/09/spring-boot-测试-mock-resttemplate/</id>
-    <published>2017-12-09T09:53:10.000Z</published>
-    <updated>2017-12-09T10:29:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>example<br>在spring boot中 进行 restTemplate的模拟 替换。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">@RunWith(SpringRunner.class)</div><div class="line">@SpringBootTest(classes = SomeApplication.class)</div><div class="line">public class SomeServiceTest</div><div class="line"></div><div class="line">    @Autowired</div><div class="line">    @InjectMocks</div><div class="line">    SomeService someService;</div><div class="line"></div><div class="line">    @Mock</div><div class="line">    RestTemplate restTemplate;</div><div class="line">    </div><div class="line">    @Test</div><div class="line">    public void isVipkidTest() &#123;</div><div class="line">    </div><div class="line">doReturn(makeResp()).when(restTemplate).exchange(</div><div class="line">    Matchers.any(URI.class),</div><div class="line">    Matchers.any(HttpMethod.class),</div><div class="line">    Matchers.any(HttpEntity.class),</div><div class="line">    Matchers.any(Class.class)</div><div class="line">);</div><div class="line">    </div><div class="line">someService.me();</div><div class="line">    </div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;example&lt;br&gt;在spring boot中 进行 restTemplate的模拟 替换。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;@RunWith(SpringRunner.class)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;@SpringBootTest(classes = SomeApplication.class)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;public class SomeServiceTest&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @Autowired&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @InjectMocks&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    SomeService someService;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @Mock&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    RestTemplate restTemplate;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @Test&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    public void isVipkidTest() &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		doReturn(makeResp()).when(restTemplate).exchange(&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    Matchers.any(URI.class),&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    Matchers.any(HttpMethod.class),&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    Matchers.any(HttpEntity.class),&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    Matchers.any(Class.class)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		someService.me();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="spring-boot" scheme="http://www.youletter.cn/tags/spring-boot/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机系统漫游</title>
-    <link href="http://www.youletter.cn/2017/12/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%AB%E6%B8%B8/"/>
-    <id>http://www.youletter.cn/2017/12/07/计算机系统漫游/</id>
-    <published>2017-12-07T02:03:56.000Z</published>
-    <updated>2017-12-07T03:10:59.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ascii码"><a href="#ascii码" class="headerlink" title="ascii码"></a>ascii码</h1><p>现在计算机系统采用ascii标准来表示 文本字符。 c语言的源文件就是用ascii字符编写的。</p><p>8个bit位 为一组，称为字节。 每个字节都是一个整数值，对应着一个 字符。</p><h1 id="文本文件"><a href="#文本文件" class="headerlink" title="文本文件"></a>文本文件</h1><p>只有ascii字符构成的文件 称为 文本文件， 其他文件称为二进制文件。</p><h1 id="为什么会乱码"><a href="#为什么会乱码" class="headerlink" title="为什么会乱码"></a>为什么会乱码</h1><p>因为二进制文件，不是全是字符构成的， 当你用 文本编辑器打开 这样的文件的时， 依然按照字符来解读，但是部分二进制无法找到对应的字符， 编辑器不知道如何显示这些 非ascii码的东西，所以就乱码显示。</p><h1 id="数字的机器表示"><a href="#数字的机器表示" class="headerlink" title="数字的机器表示"></a>数字的机器表示</h1><p>数字的机器表示和 实际的整数和实数是不同的，它们是对真值的有限近似值。</p><h1 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h1><p>C编译器和Fortran编译器 产生的 汇编语言是一样的。</p><h1 id="编译系统"><a href="#编译系统" class="headerlink" title="编译系统"></a>编译系统</h1><p>编译系统将 源文件 -&gt; 可执行文件</p><h1 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h1><p>进程使得 操作系统可以 同时运行多个程序。</p><h1 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h1><p>文件就是字节序列， 每个I/O设备，键盘，显示器，网络都是文件。</p><h1 id="系统之间利用网络通信"><a href="#系统之间利用网络通信" class="headerlink" title="系统之间利用网络通信"></a>系统之间利用网络通信</h1><p>通过网络接口，字节从一台电脑传递到了另一他电脑，开启了Internet。从此单机也变得更有用。</p><h1 id="故事开始"><a href="#故事开始" class="headerlink" title="故事开始"></a>故事开始</h1><p>Hello everybody out there using minix -</p><p>I’m doing a (free) operating system (just a hobby, won’t be big and professional like gnu) for 386(486) AT clones. This has been brewing since april, and is starting to get ready. I’d like any feedback on things people like/dislike in minix, as my OS resembles it somewhat (same physical layout of the file-system (due to practical reasons) among other things).</p><p>I’ve currently ported bash(1.08) and gcc(1.40), and things seem to work. This implies that I’ll get something practical within a few months, and I’d like to know what features most people would want. Any suggestions are welcome, but I won’t promise I’ll implement them :-)</p><p>Linus (torvalds@kruuna.helsinki.fi)</p><p>PS. Yes - it’s free of any minix code, and it has a multi-threaded fs. It is NOT portable (uses 386 task switching etc), and it probably never will support anything other than AT-harddisks, as that’s all I have :-(.<br>— Linus Torvalds[14]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;ascii码&quot;&gt;&lt;a href=&quot;#ascii码&quot; class=&quot;headerlink&quot; title=&quot;ascii码&quot;&gt;&lt;/a&gt;ascii码&lt;/h1&gt;&lt;p&gt;现在计算机系统采用ascii标准来表示 文本字符。 c语言的源文件就是用ascii字符编写的。&lt;/p&gt;
-&lt;p&gt;8个bit位 为一组，称为字节。 每个字节都是一个整数值，对应着一个 字符。&lt;/p&gt;
-&lt;h1 id=&quot;文本文件&quot;&gt;&lt;a href=&quot;#文本文件&quot; class=&quot;headerlink&quot; title=&quot;文本文件&quot;&gt;&lt;/a&gt;文本文件&lt;/h1&gt;&lt;p&gt;只有ascii字符构成的文件 称为 文本文件， 其他文件称为二进制文件。&lt;/p&gt;
-&lt;h1 id=&quot;为什么会乱码&quot;&gt;&lt;a href=&quot;#为什么会乱码&quot; class=&quot;headerlink&quot; title=&quot;为什么会乱码&quot;&gt;&lt;/a&gt;为什么会乱码&lt;/h1&gt;&lt;p&gt;因为二进制文件，不是全是字符构成的， 当你用 文本编辑器打开 这样的文件的时， 依然按照字符来解读，但是部分二进制无法找到对应的字符， 编辑器不知道如何显示这些 非ascii码的东西，所以就乱码显示。&lt;/p&gt;
-&lt;h1 id=&quot;数字的机器表示&quot;&gt;&lt;a href=&quot;#数字的机器表示&quot; class=&quot;headerlink&quot; title=&quot;数字的机器表示&quot;&gt;&lt;/a&gt;数字的机器表示&lt;/h1&gt;&lt;p&gt;数字的机器表示和 实际的整数和实数是不同的，它们是对真值的有限近似值。&lt;/p&gt;
-&lt;h1 id=&quot;汇编语言&quot;&gt;&lt;a href=&quot;#汇编语言&quot; class=&quot;headerlink&quot; title=&quot;汇编语言&quot;&gt;&lt;/a&gt;汇编语言&lt;/h1&gt;&lt;p&gt;C编译器和Fortran编译器 产生的 汇编语言是一样的。&lt;/p&gt;
-&lt;h1 id=&quot;编译系统&quot;&gt;&lt;a href=&quot;#编译系统&quot; class=&quot;headerlink&quot; title=&quot;编译系统&quot;&gt;&lt;/a&gt;编译系统&lt;/h1&gt;&lt;p&gt;编译系统将 源文件 -&amp;gt; 可执行文件&lt;/p&gt;
-&lt;h1 id=&quot;进程&quot;&gt;&lt;a href=&quot;#进程&quot; class=&quot;headerlink&quot; title=&quot;进程&quot;&gt;&lt;/a&gt;进程&lt;/h1&gt;&lt;p&gt;进程使得 操作系统可以 同时运行多个程序。&lt;/p&gt;
-&lt;h1 id=&quot;文件&quot;&gt;&lt;a href=&quot;#文件&quot; class=&quot;headerlink&quot; title=&quot;文件&quot;&gt;&lt;/a&gt;文件&lt;/h1&gt;&lt;p&gt;文件就是字节序列， 每个I/O设备，键盘，显示器，网络都是文件。&lt;/p&gt;
-&lt;h1 id=&quot;系统之间利用网络通信&quot;&gt;&lt;a href=&quot;#系统之间利用网络通信&quot; class=&quot;headerlink&quot; title=&quot;系统之间利用网络通信&quot;&gt;&lt;/a&gt;系统之间利用网络通信&lt;/h1&gt;&lt;p&gt;通过网络接口，字节从一台电脑传递到了另一他电脑，开启了Internet。从此单机也变得更有用。&lt;/p&gt;
-&lt;h1 id=&quot;故事开始&quot;&gt;&lt;a href=&quot;#故事开始&quot; class=&quot;headerlink&quot; title=&quot;故事开始&quot;&gt;&lt;/a&gt;故事开始&lt;/h1&gt;&lt;p&gt;Hello everybody out there using minix -&lt;/p&gt;
-&lt;p&gt;I’m doing a (free) operating system (just a hobby, won’t be big and professional like gnu) for 386(486) AT clones. This has been brewing since april, and is starting to get ready. I’d like any feedback on things people like/dislike in minix, as my OS resembles it somewhat (same physical layout of the file-system (due to practical reasons) among other things).&lt;/p&gt;
-&lt;p&gt;I’ve currently ported bash(1.08) and gcc(1.40), and things seem to work. This implies that I’ll get something practical within a few months, and I’d like to know what features most people would want. Any suggestions are welcome, but I won’t promise I’ll implement them :-)&lt;/p&gt;
-&lt;p&gt;Linus (torvalds@kruuna.helsinki.fi)&lt;/p&gt;
-&lt;p&gt;PS. Yes - it’s free of any minix code, and it has a multi-threaded fs. It is NOT portable (uses 386 task switching etc), and it probably never will support anything other than AT-harddisks, as that’s all I have :-(.&lt;br&gt;— Linus Torvalds[14]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="计算机系统" scheme="http://www.youletter.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
