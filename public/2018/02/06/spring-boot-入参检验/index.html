@@ -11,9 +11,19 @@ enable_page_level_ads: true
 <p>该异常出现于，你的注解生效了，并且 超越了你规定的范围。</p>
 <h1 id="常用的"><a href="#常用的" class="headerlink" title="常用的"></a>常用的</h1><p>对于 数字 有</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">@DecimalMax(&quot;100&quot;)</div><div class="line">@DecimalMin(&quot;10&quot;)</div><div class="line">Integer price;</div><div class="line"></div><div class="line">@Max(100)</div><div class="line">@Min(10)</div><div class="line">Integer price2;</div></pre></td></tr></table></figure>
+<h1 id="Pattern"><a href="#Pattern" class="headerlink" title="@Pattern"></a>@Pattern</h1><p>通过正则匹配</p>
+<p><a href="https://www.owasp.org/index.php/OWASP_Validation_Regex_Repository" target="_blank" rel="external">常用正则表达式</a></p>
+<h1 id="Digits"><a href="#Digits" class="headerlink" title="@Digits"></a>@Digits</h1><p>@Digits(integer=,fraction=)</p>
+<p>@Digits(integer=3)  限制最多3位。</p>
+<h1 id="Size"><a href="#Size" class="headerlink" title="@Size"></a>@Size</h1><p>可用于 字符串，列表，Map</p>
+<p>//Constraint: Message must be at least 10 characters long, but less than 500<br>@Size(min=10, max=500)</p>
+<h1 id="Past-Future"><a href="#Past-Future" class="headerlink" title="@Past / @Future"></a>@Past / @Future</h1><p>验证时间</p>
+<p>@Past<br>private Date birthDate;</p>
+<p>//Constraint: Schedule visit date must be in the future<br>@Future<br>private String scheduledVisitDate;</p>
+<h1 id="定制错误message"><a href="#定制错误message" class="headerlink" title="定制错误message"></a>定制错误message</h1><p>@Pattern(regexp = “[a-zA-Z0-9 ]”, message=”article.title.error”)<br>private String articleTitle;</p>
 <p>参看 </p>
-<p>注解介绍 <a href="https://www.owasp.org/index.php/Bean_Validation_Cheat_Sheet" target="_blank" rel="external">https://www.owasp.org/index.php/Bean_Validation_Cheat_Sheet</a></p>
-<p>常用正则表达式 <a href="https://www.owasp.org/index.php/OWASP_Validation_Regex_Repository" target="_blank" rel="external">https://www.owasp.org/index.php/OWASP_Validation_Regex_Repository</a></p>
+<p><a href="https://www.owasp.org/index.php/Bean_Validation_Cheat_Sheet" target="_blank" rel="external">注解介绍</a></p>
+<p><a href="https://www.owasp.org/index.php/OWASP_Validation_Regex_Repository" target="_blank" rel="external">常用正则表达式</a></p>
 </div></article></div><div id="disqus_thread"></div></div><div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;"><img src="/images/WechatIMG5.jpeg" width="180px"><p>简单点，讨钱的方式简单点</p><button style="display: inline-block;      width: 80px;      height: 35px;      border-radius: 5px;      color: #fff;      font-weight: 400;      font-style: normal;      font-variant: normal;      font-stretch: normal;      font-size: 18px;      background: #f44336;"><span>赏</span></button></div><div id="ads"></div><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- 底部01--><ins style="display:block" data-ad-client="ca-pub-7674654031652018" data-ad-slot="3127803056" data-ad-format="auto" class="adsbygoogle"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});
 
 </script><div id="SOHUCS"></div><script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script><script type="text/javascript">window.changyan.api.config({
