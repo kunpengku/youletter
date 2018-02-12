@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-02-11T04:16:12.795Z</updated>
+  <updated>2018-02-12T01:49:01.339Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>忘记密码的短信码验证策略</title>
+    <link href="http://www.youletter.cn/2018/02/12/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E7%9A%84%E7%9F%AD%E4%BF%A1%E7%A0%81%E9%AA%8C%E8%AF%81%E7%AD%96%E7%95%A5/"/>
+    <id>http://www.youletter.cn/2018/02/12/忘记密码的短信码验证策略/</id>
+    <published>2018-02-12T01:45:59.000Z</published>
+    <updated>2018-02-12T01:49:01.339Z</updated>
+    
+    <content type="html"><![CDATA[<p>忘记密码，要用短信验证，什么流程。</p><p>step 1 请输入正确的用户名，如果正确转第二步。</p><p>step 2 提示，你预留的手机号是 <strong><em>**</em></strong>0123， 请输入预留的手机号，点击获取 验证码， 并将 验证码填入框内。</p><p>step 3 如果短信验证码正确，出现2个输入框， 输入两次密码，改密码成功。</p><p>step 4 返回登录页面。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;忘记密码，要用短信验证，什么流程。&lt;/p&gt;
+&lt;p&gt;step 1 请输入正确的用户名，如果正确转第二步。&lt;/p&gt;
+&lt;p&gt;step 2 提示，你预留的手机号是 &lt;strong&gt;&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;0123， 请输入预留的手机号，点击获取 验证码， 并将 验证
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mac 下安装MySQL-python</title>
+    <link href="http://www.youletter.cn/2018/02/12/mac-%E4%B8%8B%E5%AE%89%E8%A3%85MySQL-python/"/>
+    <id>http://www.youletter.cn/2018/02/12/mac-下安装MySQL-python/</id>
+    <published>2018-02-12T01:36:20.000Z</published>
+    <updated>2018-02-12T01:39:48.381Z</updated>
+    
+    <content type="html"><![CDATA[<p>step 1 sudo su<br>切到root用户</p><p>step 2 </p><p>pip install MySQL-python</p><p>完成。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;step 1 sudo su&lt;br&gt;切到root用户&lt;/p&gt;
+&lt;p&gt;step 2 &lt;/p&gt;
+&lt;p&gt;pip install MySQL-python&lt;/p&gt;
+&lt;p&gt;完成。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>小学,初中,高中用英语怎么表示</title>
@@ -473,55 +521,6 @@
     
     
       <category term="id3v2" scheme="http://www.youletter.cn/tags/id3v2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vim查看二进制文件内容</title>
-    <link href="http://www.youletter.cn/2017/12/14/vim%E6%9F%A5%E7%9C%8B%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9/"/>
-    <id>http://www.youletter.cn/2017/12/14/vim查看二进制文件内容/</id>
-    <published>2017-12-14T10:51:45.000Z</published>
-    <updated>2017-12-14T10:55:17.533Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.用vi 打开文件 </p><p>乱码状态</p><p>2.使用xxd转换为16进制</p><p>:%!xxd</p><p>3.转换16进制回二进制</p><p>:%!xxd -r</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.zhihu.com/question/22281280" target="_blank" rel="external">Mac下有二进制查看/编辑器吗？</a></p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;1.用vi 打开文件 &lt;/p&gt;
-&lt;p&gt;乱码状态&lt;/p&gt;
-&lt;p&gt;2.使用xxd转换为16进制&lt;/p&gt;
-&lt;p&gt;:%!xxd&lt;/p&gt;
-&lt;p&gt;3.转换16进制回二进制&lt;/p&gt;
-&lt;p&gt;:%!xxd -r&lt;/p&gt;
-&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/22281280&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac下有二进制查看/编辑器吗？&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="vim" scheme="http://www.youletter.cn/tags/vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jump Right In</title>
-    <link href="http://www.youletter.cn/2017/12/12/Jump-Right-In/"/>
-    <id>http://www.youletter.cn/2017/12/12/Jump-Right-In/</id>
-    <published>2017-12-12T10:23:50.000Z</published>
-    <updated>2017-12-13T09:03:37.118Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html#//apple_ref/doc/uid/TP40015214-CH5-SW1" target="_blank" rel="external">Start Developing iOS Apps (Swift)</a></p><p>Developer Mode ,开发模式 ，不需要每次 访问debug 特性 都 输入密码。</p><p>Choose Editor &gt; Canvas, and make sure Show Bounds Rectangles is selected</p><p>因为有些视图是 透明了， 这个设置有助于 了解view的 确切大小。</p><h2 id="Preview-Your-Interface"><a href="#Preview-Your-Interface" class="headerlink" title="Preview Your Interface"></a>Preview Your Interface</h2><h2 id="Adopt-Auto-Layout"><a href="#Adopt-Auto-Layout" class="headerlink" title="Adopt Auto Layout"></a>Adopt Auto Layout</h2><p>//MARK: 是一种 特殊的 注释，  XCode可以利用。</p><h2 id="view-的生命周期"><a href="#view-的生命周期" class="headerlink" title="view 的生命周期"></a><a href="https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/WorkWithViewControllers.html#//apple_ref/doc/uid/TP40015214-CH6-SW1" target="_blank" rel="external">view 的生命周期</a></h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html#//apple_ref/d
-      
-    
-    </summary>
-    
-    
-      <category term="ios" scheme="http://www.youletter.cn/tags/ios/"/>
     
   </entry>
   

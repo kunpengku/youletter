@@ -4,6 +4,36 @@
 
     
   <url>
+    <loc>http://www.youletter.cn/2018/02/12/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E7%9A%84%E7%9F%AD%E4%BF%A1%E7%A0%81%E9%AA%8C%E8%AF%81%E7%AD%96%E7%95%A5/</loc>
+    <lastmod>2018-02-12T01:49:01.339Z</lastmod>
+    <data>
+        <display>
+        <title>忘记密码的短信码验证策略</title>
+        <pubTime>2018-02-12T01:45:59.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/02/12/mac-%E4%B8%8B%E5%AE%89%E8%A3%85MySQL-python/</loc>
+    <lastmod>2018-02-12T01:39:48.381Z</lastmod>
+    <data>
+        <display>
+        <title>mac 下安装MySQL-python</title>
+        <pubTime>2018-02-12T01:36:20.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.youletter.cn/2018/02/11/%E5%B0%8F%E5%AD%A6-%E5%88%9D%E4%B8%AD-%E9%AB%98%E4%B8%AD%E7%94%A8%E8%8B%B1%E8%AF%AD%E6%80%8E%E4%B9%88%E8%A1%A8%E7%A4%BA/</loc>
     <lastmod>2018-02-11T04:16:12.795Z</lastmod>
     <data>
@@ -548,12 +578,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/30/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <loc>http://www.youletter.cn/2017/12/02/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     <lastmod>2017-12-02T12:44:43.000Z</lastmod>
     <data>
         <display>
-        <title>Spring-boot参考（一）</title>
-        <pubTime>2017-11-30T02:10:34.000Z</pubTime>
+        <title>Spring-boot参考（二）</title>
+        <pubTime>2017-12-02T12:40:29.000Z</pubTime>
         
         <tag>spring-boot</tag>
          
@@ -565,12 +595,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/12/02/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <loc>http://www.youletter.cn/2017/11/30/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     <lastmod>2017-12-02T12:44:43.000Z</lastmod>
     <data>
         <display>
-        <title>Spring-boot参考（二）</title>
-        <pubTime>2017-12-02T12:40:29.000Z</pubTime>
+        <title>Spring-boot参考（一）</title>
+        <pubTime>2017-11-30T02:10:34.000Z</pubTime>
         
         <tag>spring-boot</tag>
          
@@ -751,12 +781,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
+    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     <data>
         <display>
-        <title>spring-cloud-netflix之服务发现Eureka Server</title>
-        <pubTime>2017-11-16T14:44:05.000Z</pubTime>
+        <title>spring-cloud-netflix之服务发现Eureka Client</title>
+        <pubTime>2017-11-18T14:38:44.000Z</pubTime>
         
          
            
@@ -766,12 +796,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
+    <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     <data>
         <display>
-        <title>spring-cloud-netflix之服务发现Eureka Client</title>
-        <pubTime>2017-11-18T14:38:44.000Z</pubTime>
+        <title>spring-cloud-netflix之服务发现Eureka Server</title>
+        <pubTime>2017-11-16T14:44:05.000Z</pubTime>
         
          
            
