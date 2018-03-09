@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-02-12T01:49:01.339Z</updated>
+  <updated>2018-03-09T01:45:15.421Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正则表达式</title>
+    <link href="http://www.youletter.cn/2018/03/08/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>http://www.youletter.cn/2018/03/08/正则表达式/</id>
+    <published>2018-03-08T13:32:37.000Z</published>
+    <updated>2018-03-09T01:45:15.421Z</updated>
+    
+    <content type="html"><![CDATA[<p>Java 正则表达式</p><p>至少包含一个中文 <code>String pattern = &quot;.*[\\u4e00-\\u9fa5].*&quot;;</code></p><p>第 19 单元：正则表达式<br><a href="https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html" target="_blank" rel="external">https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html</a></p><p>正则表达式测试页面<br><a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="external">http://www.regexplanet.com/advanced/java/index.html</a></p><p>史上最全的正则表达式-匹配中英文、字母和数字<br><a href="http://blog.csdn.net/qq_28633249/article/details/77686976" target="_blank" rel="external">http://blog.csdn.net/qq_28633249/article/details/77686976</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Java 正则表达式&lt;/p&gt;
+&lt;p&gt;至少包含一个中文 &lt;code&gt;String pattern = &amp;quot;.*[\\u4e00-\\u9fa5].*&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;第 19 单元：正则表达式&lt;br&gt;&lt;a href=&quot;https://www.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java集合</title>
+    <link href="http://www.youletter.cn/2018/03/04/Java%E9%9B%86%E5%90%88/"/>
+    <id>http://www.youletter.cn/2018/03/04/Java集合/</id>
+    <published>2018-03-04T01:41:03.000Z</published>
+    <updated>2018-03-07T07:44:30.478Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Set-to-List"><a href="#Set-to-List" class="headerlink" title="Set to List"></a>Set to List</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Lists.newArrayList(ids)</div></pre></td></tr></table></figure><h1 id="list-To-MAP"><a href="#list-To-MAP" class="headerlink" title="list To MAP"></a>list To MAP</h1><p>其中 key为 Apple的一个属性，value为Apple </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Map&lt;Long, Apple&gt; appleMap = apples</div><div class="line">    .stream()</div><div class="line">    .collect(Collectors.toMap(Apple::getId, dto -&gt; dto))</div><div class="line">    </div><div class="line">    </div><div class="line">```    </div><div class="line"></div><div class="line"># list To MAP </div><div class="line"></div><div class="line">其中key为Apple的一个属性， value为Apple的另一个属性</div></pre></td></tr></table></figure><p>Map<long, string=""> appleMap = apples<br>    .stream()<br>    .collect(Collectors.toMap(Apple::getId, Apple::getName))</long,></p><p>```    </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Set-to-List&quot;&gt;&lt;a href=&quot;#Set-to-List&quot; class=&quot;headerlink&quot; title=&quot;Set to List&quot;&gt;&lt;/a&gt;Set to List&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tabl
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>忘记密码的短信码验证策略</title>
@@ -451,76 +495,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>dalston.sr4是什么意思</title>
-    <link href="http://www.youletter.cn/2017/12/21/dalston-sr4%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/"/>
-    <id>http://www.youletter.cn/2017/12/21/dalston-sr4是什么意思/</id>
-    <published>2017-12-21T12:39:54.000Z</published>
-    <updated>2017-12-21T12:50:21.244Z</updated>
-    
-    <content type="html"><![CDATA[<p>简单说，Dalston就是Spring-cloud的版本名。</p><p>spring-cloud的版本名 都是都是采用 伦敦地铁站的名字，如Angel，Brixton。</p><p>这些版本的名字，是按照字母顺序排列的，所以看见版本的名字，就能知道它的时间顺序。</p><p>现在spring-cloud有这么多版本。</p><ul><li><p>Angel</p></li><li><p>Brixton</p></li><li><p>Camden</p></li><li><p>Dalston</p></li><li><p>Edgware</p></li><li><p>Finchley</p></li></ul><p>当初次发行 Dalston 这个版本时 ，第一个名字是 Dalston.RELEASE。</p><p>但是</p><p>当一个版本的子项目中的版本积累了许多更新，或者某个子项目有一些严重bug必须升级时，这是会推出一个service releases，简称SRX，X是一个数字。</p><p>比如Dalston的第一版是 Dalston.RELEASE, 后来更新就叫Dalston.SR1,再更新就是<br>Dalston.SR2。 目前到了Dalston.SR4。 这个版本被标记为GA的版本，所以应该采用GA的版本。</p><p><a href="http://projects.spring.io/spring-cloud/" target="_blank" rel="external">http://projects.spring.io/spring-cloud/</a><br>官网有一个 各个 版本 所包含的 子项目的 版本的清单。</p><p>所以 dalston.sr4 意思就是 dalston的第4个稳定版本。</p><p>关于Spring-cloud的更多信息， 可以参看另一篇博客 <a href="http://youletter.cn/2017/11/29/spring-cloud-%E7%AE%80%E4%BB%8B/" target="_blank" rel="external">Spring-cloud(一)概览</a></p><p>而关于 GA, M1, RC这些版本的意思，参看另一篇博客。<br><a href="http://youletter.cn/2017/11/28/%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E9%BB%91%E8%AF%9D-%E8%A1%8C%E8%AF%9D/" target="_blank" rel="external">软件版本中的黑话(行话)</a></p><a id="more"></a><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://youletter.cn/2017/11/29/spring-cloud-%E7%AE%80%E4%BB%8B/" target="_blank" rel="external">Spring-cloud(一)概览</a></p><p><a href="http://youletter.cn/2017/11/28/%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E9%BB%91%E8%AF%9D-%E8%A1%8C%E8%AF%9D/" target="_blank" rel="external">软件版本中的黑话(行话)</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;简单说，Dalston就是Spring-cloud的版本名。&lt;/p&gt;
-&lt;p&gt;spring-cloud的版本名 都是都是采用 伦敦地铁站的名字，如Angel，Brixton。&lt;/p&gt;
-&lt;p&gt;这些版本的名字，是按照字母顺序排列的，所以看见版本的名字，就能知道它的时间顺序。&lt;/p&gt;
-&lt;p&gt;现在spring-cloud有这么多版本。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Angel&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Brixton&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Camden&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Dalston&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Edgware&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Finchley&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;当初次发行 Dalston 这个版本时 ，第一个名字是 Dalston.RELEASE。&lt;/p&gt;
-&lt;p&gt;但是&lt;/p&gt;
-&lt;p&gt;当一个版本的子项目中的版本积累了许多更新，或者某个子项目有一些严重bug必须升级时，这是会推出一个service releases，简称SRX，X是一个数字。&lt;/p&gt;
-&lt;p&gt;比如Dalston的第一版是 Dalston.RELEASE, 后来更新就叫Dalston.SR1,再更新就是&lt;br&gt;Dalston.SR2。 目前到了Dalston.SR4。 这个版本被标记为GA的版本，所以应该采用GA的版本。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://projects.spring.io/spring-cloud/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://projects.spring.io/spring-cloud/&lt;/a&gt;&lt;br&gt;官网有一个 各个 版本 所包含的 子项目的 版本的清单。&lt;/p&gt;
-&lt;p&gt;所以 dalston.sr4 意思就是 dalston的第4个稳定版本。&lt;/p&gt;
-&lt;p&gt;关于Spring-cloud的更多信息， 可以参看另一篇博客 &lt;a href=&quot;http://youletter.cn/2017/11/29/spring-cloud-%E7%AE%80%E4%BB%8B/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Spring-cloud(一)概览&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;而关于 GA, M1, RC这些版本的意思，参看另一篇博客。&lt;br&gt;&lt;a href=&quot;http://youletter.cn/2017/11/28/%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E9%BB%91%E8%AF%9D-%E8%A1%8C%E8%AF%9D/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;软件版本中的黑话(行话)&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="spring-cloud" scheme="http://www.youletter.cn/tags/spring-cloud/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ID3v2中文文档(版本2.4.0)</title>
-    <link href="http://www.youletter.cn/2017/12/15/ID3v2%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3-%E7%89%88%E6%9C%AC2-4-0/"/>
-    <id>http://www.youletter.cn/2017/12/15/ID3v2中文文档-版本2-4-0/</id>
-    <published>2017-12-15T02:25:28.000Z</published>
-    <updated>2017-12-21T15:41:06.482Z</updated>
-    
-    <content type="html"><![CDATA[<p>2000.11.01</p><p>M. Nilsson</p><h2 id="文档状态"><a href="#文档状态" class="headerlink" title="文档状态"></a>文档状态</h2><p>本文是一个非正式的标准，用来替代ID3v2.3.0 标准[ID3v2]。正式的标准将用另一个版本号，即使与本文完全一样。本文的内容可能会为了 更加清晰的表述而进行修改 ，但一定不会进行功能上的修改或添加。</p><p>本文可以不受限制的发行。</p><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>本文描述了ID3v2.4.0的主要框架。这是ID3v2.3.0的修订版。ID3v2提供了一个灵活的方式来存储音频的元信息，在音频文件内。存储的信息可能是技术参数，如均衡器设置，也可能是标题，演唱者，版权信息等。</p><p>ID3v2.4.0 尽可能地和ID3v2.3.0接近，这样的目的是 你的那些已经实现了ID3v2.3.0的程序， 在向ID3v2.4.0修改的时候，也尽可能的容易一些。</p><h2 id="1-目录"><a href="#1-目录" class="headerlink" title="1 目录"></a>1 目录</h2><ul><li>文档状态</li><li>摘要</li><li><ol><li>目录</li></ol></li><li><ol><li>文档约定</li></ol></li><li><p>3 . ID3v2 综述</p><ul><li>3.1 ID3v2头部</li><li>3.2 ID3v2 扩展头部</li><li>3.3 填充部分</li><li>3.4 ID3v2 footer</li></ul></li><li><p>4 . ID3v2 frames 概述</p><ul><li>4.1 Frame 头部</li><li>4.1.1 Frame 状态标志</li><li>4.1.2 Frame 格式标志</li></ul></li><li>5 Tag location</li><li>6 非同步编码<ul><li>6.1 The unsynchronisation scheme</li><li>6.2 Synchsafe integers</li></ul></li><li>7 版权</li><li>8 引用</li><li>9 作者地址</li></ul><h1 id="2-约定"><a href="#2-约定" class="headerlink" title="2 约定"></a>2 约定</h1><p>在本文例子中，在双引号(“”)内的文本表示一个文本字符串，与它在tag中出现的一样。 以$开头的数字是十六进制的，以%开头的是二进制。$xx用来表示一个数值未定的字节(byte)。%x用来表示一位数值未知的比特(bit)。一个字节的最高有效位(MSB)是第7位，最低有效位(LSB)是第0位。<br>      标签(tag)表示整个ID3标签信息。帧(frame)表示标签(tag)内的一段信息。标签(tag)是由标准头(header)，帧(frame)和可选的填充数据(padding)组成的。域(field)指的是一段信息内的一小段数据，一个数值，或者一个字符串等。数字字符串表示一串只由“0123456789”组成的字符串。</p><h1 id="3-ID3v2概述"><a href="#3-ID3v2概述" class="headerlink" title="3 ID3v2概述"></a>3 ID3v2概述</h1><p>ID3v2是一个通用的标签格式，用于音频上，使得在 音频文件内 存储音频的元信息成为可能。<br>ID3标签主要目标是 用MPEG-1/2 layer I, MPEG-1/2 layer II, MPEG-1/2 layer III编码的文件，但也可以用于其他类型编码的音频文件或者 作为表示音频元信息的独立的格式。</p><p>ID3v2的设计方向是 灵活性和扩展性。可以应付未来出现的新的元信息。为了实现这样的特性，ID3v2 就像一个容器，其内包含被称作 “帧” 的一些信息块，而且这些帧的格式 不需要被 处理它的软件知道。 因为 在每个帧的开头部分，是一个独立的预定义的 标识符，一个大小标识符，这些信息 可以使得 处理软件能够 跳过 不理解的帧和flag字段。 flags字段描述了编码的细节信息，以及是否该帧应该在 tag中保留，是否该帧 可能软件无法识别， 是否文件已经被修改了。</p><p>ID3v2的位顺序是最高有效位(MSB)。例如，如果要写入$12345678, 则要写$12 34 45 78<br>这种字节序也叫 大端字节序，或 网络字节序。</p><h2 id="标签结构"><a href="#标签结构" class="headerlink" title="标签结构"></a>标签结构</h2><pre><code>+-----------------------------+|      Header (10 bytes)      |+-----------------------------+|       Extended Header       || (variable length, OPTIONAL) |+-----------------------------+|   Frames (variable length)  |+-----------------------------+|           Padding           || (variable length, OPTIONAL) |+-----------------------------+| Footer (10 bytes, OPTIONAL) |+-----------------------------+</code></pre><p>通常 padding 和 footer 是互斥的。</p><h2 id="3-1-ID3v2-头部"><a href="#3-1-ID3v2-头部" class="headerlink" title="3.1. ID3v2 头部"></a>3.1. ID3v2 头部</h2><p>整个ID3V2 标签 一般在 音频文件的最开头。</p><p>为了说明这个ID3v2，我正好用vi 打开了一个 简单的mp3文件 ，来配合文档说明 其在实际中的应用。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1 00000000: 4944 3304 0000 0000 0023 5453 5345 0000  ID3......#TSSE..</div><div class="line">2 00000010: 000f 0000 034c 6176 6635 372e 3235 2e31  .....Lavf57.25.1</div><div class="line">3 00000020: 3030 0000 0000 0000 0000 0000 00c3 bfc3  00..............</div><div class="line">4 00000030: bb70 0000 0000 0000 0000 0000 0000 0000  .p..............</div><div class="line">5 00000040: 0000 0000 0000 0000 0000 0000 0000 0000  ................</div></pre></td></tr></table></figure><p>ID3v2标签的第一部分是 音频文件最开头是10字节，即 标签头部。其格式为</p><pre><code>ID3v2/file identifier      &quot;ID3&quot;ID3v2 version              $04 00ID3v2 flags                %abcd0000ID3v2 size             4 * %0xxxxxxx</code></pre><p> 例子中的头部是  4944 3304 0000 0000 0023</p><p> ID3v2的标签头(header)总是以三个字节的”ID3”字符串开头，以此来标识这是ID3v2信息。即 49 44 33。</p><p> 紧接着的两个字节是 版本，即 04 00。 第一个字节是 主版本，第二个字节是修订数字。 因为是 2.4.0，所以第一个字节是 4， 第二个字节是0.<br>版本的意义是 ，所有的修订版都是 向后兼容的。但主版本是 不向后兼容。也就是说 2.4.1 的程序 可以在 2.4.0的协议上正常运行，但是在2.3.0上并不保证 好使。<br>如果支持ID3v2.4.0或者更低版本的程序，遇到了5或者更高版本的 ID3v2tag，应该直接忽略。因为解析不了。主版本号和 副版本号都不能是 <code>$ff</code></p><p>接下来的一个字节是 flags字节， 目前有4个flag在使用。上一版2.3.0 只有3个flag。 相比上一版，多了一个 Footer present的flag。</p><ul><li><p>a - 非同步编码(Unsynchronisation)</p><p>标签头标识(flags)的第7位用来表示当前ID3v2信息是否经过非同步编码。当这位为1时，表示ID3v2信息经过非同步编码。</p></li><li><p>b - 扩展标签头(Extended header)</p><p>标签头标识(flags)的第6位用来表示标签头数据后面是否有扩展标签头数据。扩展标签头请参照第三章第二节。 这一位 为1 表示 有扩展标签头</p></li><li><p>c - 测试指示位(Experimemtalindicator)</p><p>标签头标识(flags)的第5位用来表示当前是否为测试版。如果本tag处于测试阶段，请将此位置1。</p></li></ul><ul><li><p>d - Footer 标志 （新增）</p><p>标签头标识(flags)的第4位用来表示tag中是否有 footer在标签的最后。。如果本tag含有footer，请将此位置1。</p></li></ul><p>例子中 flags 为 00 ，表示 不是非同步编码， 没有扩展头，不是测试tag，没有footer。</p><p>其他位必须是0，如果那些未定义的flags上也有值，这个tag可能 无法解析。</p><p>头部的最后4个字节中存储 整个tag的长度。每个字节 有7位可以使用。一共有28位的有效位数（意味着tag最多可以有256M这么大）<br>  这个tag size 是 除了tag header之外的 其余部分的长度。<br>  也就是说 ，如果有 footer时， tag size 是 （整个tag - 20） 字节。<br>  没有footer时，tag size是 （整个tag - 10） 字节。</p><p>本例子中 tag size 是 0000 0023 ，转换成10进制就是 35。 说明后面还有35个字节属于 ID3v2 tag。</p><p>ID3v2 tag可以用如下的 模式来 检测。</p><p>  <code>$49 44 33 yy yy xx zz zz zz zz</code></p><p>其中 yy 小于 $FF, xx 是 ‘flags’ byte ， zz 小于 $80.</p><p>如在Python中有一个模块 struct ，可以直接 取出头部 各部分的信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">name = &quot;a.mp3&quot;; #要读取的文件</div><div class="line">fp = open(name,&apos;rb&apos;);</div><div class="line">head = fp.read(10)</div><div class="line">id3,ver,revision,flag,length  = struct.unpack(&quot;!3sBBBI&quot;,head);</div></pre></td></tr></table></figure><h2 id="3-2-扩展的头部-header"><a href="#3-2-扩展的头部-header" class="headerlink" title="3.2. 扩展的头部 header"></a>3.2. 扩展的头部 header</h2><p>   The extended header contains information that can provide further<br>   insight in the structure of the tag, but is not vital to the correct<br>   parsing of the tag information; hence the extended header is<br>   optional.</p><pre><code>Extended header size   4 * %0xxxxxxxNumber of flag bytes       $01Extended Flags             $xx</code></pre><p>   Where the ‘Extended header size’ is the size of the whole extended<br>   header, stored as a 32 bit synchsafe integer. An extended header can<br>   thus never have a size of fewer than six bytes.</p><p>   The extended flags field, with its size described by ‘number of flag<br>   bytes’, is defined as:</p><pre><code>%0bcd0000</code></pre><p>   Each flag that is set in the extended header has data attached, which<br>   comes in the order in which the flags are encountered (i.e. the data<br>   for flag ‘b’ comes before the data for flag ‘c’). Unset flags cannot<br>   have any attached data. All unknown flags MUST be unset and their<br>   corresponding data removed when a tag is modified.</p><p>   Every set flag’s data starts with a length byte, which contains a<br>   value between 0 and 128 ($00 - $7f), followed by data that has the<br>   field length indicated by the length byte. If a flag has no attached<br>   data, the value $00 is used as length byte.</p><p>   b - Tag is an update</p><pre><code>If this flag is set, the present tag is an update of a tag foundearlier in the present file or stream. If frames defined as uniqueare found in the present tag, they are to override anycorresponding ones found in the earlier tag. This flag has nocorresponding data.    Flag data length      $00</code></pre><p>   c - CRC data present</p><pre><code>If this flag is set, a CRC-32 [ISO-3309] data is included in theextended header. The CRC is calculated on all the data between theheader and footer as indicated by the header&apos;s tag length field,minus the extended header. Note that this includes the padding (ifthere is any), but excludes the footer. The CRC-32 is stored as an35 bit synchsafe integer, leaving the upper four bits alwayszeroed.   Flag data length       $05   Total frame CRC    5 * %0xxxxxxx</code></pre><p>   d - Tag restrictions</p><pre><code>For some applications it might be desired to restrict a tag in moreways than imposed by the ID3v2 specification. Note that thepresence of these restrictions does not affect how the tag isdecoded, merely how it was restricted before encoding. If this flagis set the tag is restricted as follows:   Flag data length       $01   Restrictions           %ppqrrsttp - Tag size restrictions  00   No more than 128 frames and 1 MB total tag size.  01   No more than 64 frames and 128 KB total tag size.  10   No more than 32 frames and 40 KB total tag size.  11   No more than 32 frames and 4 KB total tag size.q - Text encoding restrictions  0    No restrictions  1    Strings are only encoded with ISO-8859-1 [ISO-8859-1] or       UTF-8 [UTF-8].r - Text fields size restrictions  00   No restrictions  01   No string is longer than 1024 characters.  10   No string is longer than 128 characters.  11   No string is longer than 30 characters.  Note that nothing is said about how many bytes is used to  represent those characters, since it is encoding dependent. If a  text frame consists of more than one string, the sum of the  strungs is restricted as stated.s - Image encoding restrictions  0   No restrictions  1   Images are encoded only with PNG [PNG] or JPEG [JFIF].t - Image size restrictions  00  No restrictions  01  All images are 256x256 pixels or smaller.  10  All images are 64x64 pixels or smaller.  11  All images are exactly 64x64 pixels, unless required      otherwise.</code></pre><h2 id="3-3-Padding"><a href="#3-3-Padding" class="headerlink" title="3.3.   Padding"></a>3.3.   Padding</h2><p>在最后一个帧后面 增加 填充是可选的， 填充必须全部是 $00.<br>不可以在 头部和 帧之间有填充。填充只能出现在尾部。 同时 有footer时，不能有 填充。<br>填充有时可以用来 标识最后一个帧的结束。</p><h2 id="3-4-ID3v2-footer"><a href="#3-4-ID3v2-footer" class="headerlink" title="3.4.   ID3v2 footer"></a>3.4.   ID3v2 footer</h2><p>为了从文件尾部快速定位ID3V2标签，设计了ID3v2 footer。如果整个ID3V2标签在 整个音频文件的 最后，那么这个ID3v2 footer 就是必须包含的。 ID3v2 footer的内容 和 头部是一样的，只是identifier 不同。 格式如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ID3v2 identifier           &quot;3DI&quot;</div><div class="line">ID3v2 version              $04 00</div><div class="line">ID3v2 flags                %abcd0000</div><div class="line">ID3v2 size             4 * %0xxxxxxx</div></pre></td></tr></table></figure><h2 id="4-ID3v2-帧-概述"><a href="#4-ID3v2-帧-概述" class="headerlink" title="4.   ID3v2 帧 概述"></a>4.   ID3v2 帧 概述</h2><p>帧是 主要的 信息承载的地方。所有的帧的组成是由一个 帧头部和 一个或多个域组成。这些域中就是真正的携带的信息。帧头部也是10字节，结构如下。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Frame ID      $xx xx xx xx  (four characters)</div><div class="line">Size      4 * %0xxxxxxx</div><div class="line">Flags         $xx xx</div></pre></td></tr></table></figure><p>帧ID是由大些字符和数字组成。以X， Y， Z 开头的帧表示实验性的帧。你要注意，有可能别人用的帧ID 和你的 帧ID一样。除此以外的帧ID 被保留了，或已经被使用了。</p><p>帧ID后面跟的4个字节，表示这一帧数据的大小。这个大小不包含帧头部，即 等于 (该帧总长度 - 10 字节)， 用一个同步安全的整数存储。</p><p>头部的最后两个字节是 flags开关，在4.1节详细介绍。</p><p>未完待续 - - </p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://id3.org/id3v2.4.0-structure" target="_blank" rel="external">ID3 tag version 2.4.0 - Main Structure</a></p><p><a href="https://baike.baidu.com/item/MSB/7147777?fr=aladdin" target="_blank" rel="external">MSB</a></p><p>id3 解析程序</p><p><a href="https://nedbatchelder.com/code/modules/id3reader.html" target="_blank" rel="external">id3reader</a></p><p><a href="https://www.blog.pythonlibrary.org/2010/04/22/parsing-id3-tags-from-mp3s-using-python/" target="_blank" rel="external">Parsing ID3 Tags from MP3s using Python</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;2000.11.01&lt;/p&gt;
-&lt;p&gt;M. Nilsson&lt;/p&gt;
-&lt;h2 id=&quot;文档状态&quot;&gt;&lt;a href=&quot;#文档状态&quot; class=&quot;headerlink&quot; title=&quot;文档状态&quot;&gt;&lt;/a&gt;文档状态&lt;/h2&gt;&lt;p&gt;本文是一个非正式的标准，用来替代ID3v2.3.0 
-      
-    
-    </summary>
-    
-    
-      <category term="id3v2" scheme="http://www.youletter.cn/tags/id3v2/"/>
     
   </entry>
   
