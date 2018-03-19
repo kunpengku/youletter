@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-03-09T01:45:15.421Z</updated>
+  <updated>2018-03-10T08:03:11.842Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -17,21 +17,65 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SQL effective</title>
+    <link href="http://www.youletter.cn/2018/03/10/SQL-effective/"/>
+    <id>http://www.youletter.cn/2018/03/10/SQL-effective/</id>
+    <published>2018-03-10T07:20:53.000Z</published>
+    <updated>2018-03-10T08:03:11.842Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Data-Model-Design"><a href="#Data-Model-Design" class="headerlink" title="Data Model Design"></a>Data Model Design</h1><p>Item 1 : Verify That all tables have a primary key.</p><p>AUTO_INCREMENT 自增字段</p><p>referential integrity (RI) </p><p>主键尽可能简单，不需要被更新。</p><p>integrity 完整性</p><p>Item 2 : Eliminate Redundant Storage of Data items</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Data-Model-Design&quot;&gt;&lt;a href=&quot;#Data-Model-Design&quot; class=&quot;headerlink&quot; title=&quot;Data Model Design&quot;&gt;&lt;/a&gt;Data Model Design&lt;/h1&gt;&lt;p&gt;Item 1 : V
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SQL cook</title>
+    <link href="http://www.youletter.cn/2018/03/09/SQL-cook/"/>
+    <id>http://www.youletter.cn/2018/03/09/SQL-cook/</id>
+    <published>2018-03-09T02:47:20.000Z</published>
+    <updated>2018-03-09T05:53:30.524Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="为列取有意义的名字-AS"><a href="#为列取有意义的名字-AS" class="headerlink" title="为列取有意义的名字 AS"></a>为列取有意义的名字 AS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">select cnt as count from emp;</div><div class="line">select cnt count from emp;</div></pre></td></tr></table></figure><p>有些数据库不需要as ，如MySQL，但 有as也不错。</p><h2 id="在where子句中使用别名"><a href="#在where子句中使用别名" class="headerlink" title="在where子句中使用别名"></a>在where子句中使用别名</h2><p><code>select cnt as count from emp where count = 2;</code><br>上面这个SQL会失败 ，报找不到count列</p><p>解决方案，将查询作为内联视图就可以使用 其中的别名了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">select * from (</div><div class="line">select cnt as count from emp</div><div class="line">) x</div><div class="line">where count = 10004</div></pre></td></tr></table></figure></p><p>因为 WHERE子句是在 select 之前处理的， 所以在处理 where子句之前， count并不存在 。要在where处理完后，count才能生效。 然后，from 子句是在  where 之前处理的。把原查询放到  from 子句中， 在最外层的 where子句之前  。 这样最外层的where子句就能 看到 count 了。 </p><p>本例将 内联视图 命名为 x ，并不是所有数据库都需要。 MySQL 需要。</p><h2 id="在select语句中使用条件逻辑"><a href="#在select语句中使用条件逻辑" class="headerlink" title="在select语句中使用条件逻辑"></a>在select语句中使用条件逻辑</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">select ename ,</div><div class="line">case </div><div class="line">where sal &lt; 2000 then &apos;under&apos;</div><div class="line">where sal &gt; 4000 then &apos;over&apos;</div><div class="line">else &apos;ok&apos;</div><div class="line">end as status</div><div class="line">from emp</div></pre></td></tr></table></figure><h2 id="限制返回的行"><a href="#限制返回的行" class="headerlink" title="限制返回的行"></a>限制返回的行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select  * from emp limit 5</div></pre></td></tr></table></figure><h2 id="查找空值"><a href="#查找空值" class="headerlink" title="查找空值"></a>查找空值</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select * from emp where comm is null;</div><div class="line"></div><div class="line">select * from emp where comm is not null;</div></pre></td></tr></table></figure><p>null 不等于 任何值， 包括自身， 所以不能用 = 或者 != 来比较 。只能用 is null 或者 is not null 来判断。</p><h2 id="按模式搜索"><a href="#按模式搜索" class="headerlink" title="按模式搜索  %"></a>按模式搜索  %</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select * from emp where depto like &quot;%er%%&quot;</div></pre></td></tr></table></figure><p>% 可以匹配任何字符序列。 上面这个SQL表示 包含er的字符串。</p><h2 id="已指定次序返回查询结果-order-by"><a href="#已指定次序返回查询结果-order-by" class="headerlink" title="已指定次序返回查询结果 order by"></a>已指定次序返回查询结果 order by</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select ename from emp where depto = 10 order by sal;</div><div class="line"></div><div class="line">select ename from emp where depto = 10 order by sal desc;</div></pre></td></tr></table></figure><p>order by 默认以升序排列 asc 。  指定 desc 降序排列   </p><p>按照多个字段排序时 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;为列取有意义的名字-AS&quot;&gt;&lt;a href=&quot;#为列取有意义的名字-AS&quot; class=&quot;headerlink&quot; title=&quot;为列取有意义的名字 AS&quot;&gt;&lt;/a&gt;为列取有意义的名字 AS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>正则表达式</title>
     <link href="http://www.youletter.cn/2018/03/08/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     <id>http://www.youletter.cn/2018/03/08/正则表达式/</id>
     <published>2018-03-08T13:32:37.000Z</published>
-    <updated>2018-03-09T01:45:15.421Z</updated>
+    <updated>2018-03-19T02:38:58.671Z</updated>
     
-    <content type="html"><![CDATA[<p>Java 正则表达式</p><p>至少包含一个中文 <code>String pattern = &quot;.*[\\u4e00-\\u9fa5].*&quot;;</code></p><p>第 19 单元：正则表达式<br><a href="https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html" target="_blank" rel="external">https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html</a></p><p>正则表达式测试页面<br><a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="external">http://www.regexplanet.com/advanced/java/index.html</a></p><p>史上最全的正则表达式-匹配中英文、字母和数字<br><a href="http://blog.csdn.net/qq_28633249/article/details/77686976" target="_blank" rel="external">http://blog.csdn.net/qq_28633249/article/details/77686976</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Java 正则表达式</p><p>至少包含一个中文</p><p><code>String pattern = &quot;.*[\\u4e00-\\u9fa5].*&quot;;</code></p><p>邮箱匹配</p><p><code>String regexp = &quot;^[_\\.0-9a-zA-Z+-]+@([0-9a-zA-Z]+[0-9a-zA-Z-]*\\.)+[a-zA-Z]{2,4}$&quot;</code></p><p>国外手机号匹配 </p><p><code>regexp = &quot;^\\s*|\\+(?:[0-9] ?){6,14}[0-9]$&quot;</code></p><p>第 19 单元：正则表达式<br><a href="https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html" target="_blank" rel="external">https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html</a></p><p>正则表达式测试页面<br><a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="external">http://www.regexplanet.com/advanced/java/index.html</a></p><p>史上最全的正则表达式-匹配中英文、字母和数字<br><a href="http://blog.csdn.net/qq_28633249/article/details/77686976" target="_blank" rel="external">http://blog.csdn.net/qq_28633249/article/details/77686976</a></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;Java 正则表达式&lt;/p&gt;
-&lt;p&gt;至少包含一个中文 &lt;code&gt;String pattern = &amp;quot;.*[\\u4e00-\\u9fa5].*&amp;quot;;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;第 19 单元：正则表达式&lt;br&gt;&lt;a href=&quot;https://www.
+&lt;p&gt;至少包含一个中文&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;String pattern = &amp;quot;.*[\\u4e00-\\u9fa5].*&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;邮箱匹配&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;String regexp
       
     
     </summary>
@@ -449,48 +493,6 @@
 &lt;p&gt;远方是它该去的地方&lt;/p&gt;
 &lt;p&gt;不是这里&lt;/p&gt;
 
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>spring security ApplicationListener</title>
-    <link href="http://www.youletter.cn/2017/12/27/spring-security-ApplicationListener/"/>
-    <id>http://www.youletter.cn/2017/12/27/spring-security-ApplicationListener/</id>
-    <published>2017-12-27T02:39:39.000Z</published>
-    <updated>2017-12-27T02:41:12.487Z</updated>
-    
-    <content type="html"><![CDATA[<p>在 登录成功后，做一些事情。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">@Component</div><div class="line">public class LoginListener implements ApplicationListener&lt;AuthenticationSuccessEvent&gt; &#123;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onApplicationEvent(AuthenticationSuccessEvent event)</div><div class="line">    &#123;</div><div class="line">        UserDetails userDetails = (UserDetails) event.getAuthentication().getPrincipal();</div><div class="line">        </div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在 登录成功后，做一些事情。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;@Component&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;public class LoginListener implements ApplicationListener&amp;lt;AuthenticationSuccessEvent&amp;gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    @Override&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    public void onApplicationEvent(AuthenticationSuccessEvent event)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        UserDetails userDetails = (UserDetails) event.getAuthentication().getPrincipal();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="spring security" scheme="http://www.youletter.cn/tags/spring-security/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>maven如何打包上传snapshot到nexus (未完)</title>
-    <link href="http://www.youletter.cn/2017/12/22/maven%E5%A6%82%E4%BD%95%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0snapshot%E5%88%B0nexus/"/>
-    <id>http://www.youletter.cn/2017/12/22/maven如何打包上传snapshot到nexus/</id>
-    <published>2017-12-22T08:38:31.000Z</published>
-    <updated>2017-12-22T08:39:26.298Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://www.baeldung.com/maven-deploy-nexus" target="_blank" rel="external">Maven Deploy to Nexus</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.baeldung.com/maven-deploy-nexus&quot; target=&quot;_blank&quot; r
       
     
     </summary>
