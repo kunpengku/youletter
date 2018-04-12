@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-03-10T08:03:11.842Z</updated>
+  <updated>2018-04-11T07:25:08.908Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,142 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>apache benchmarking tool </title>
+    <link href="http://www.youletter.cn/2018/04/11/apache-benchmarking-tool/"/>
+    <id>http://www.youletter.cn/2018/04/11/apache-benchmarking-tool/</id>
+    <published>2018-04-11T07:24:31.000Z</published>
+    <updated>2018-04-11T07:25:08.908Z</updated>
+    
+    <content type="html"><![CDATA[<p>ab -n2000 -c40 -H “Authorization:Bearer 4702ccaa-8250-43e1-b70b-b4ea5904b9d4” youletter.cn/api/me</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ab -n2000 -c40 -H “Authorization:Bearer 4702ccaa-8250-43e1-b70b-b4ea5904b9d4” youletter.cn/api/me&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>sentences</title>
+    <link href="http://www.youletter.cn/2018/04/03/sentences/"/>
+    <id>http://www.youletter.cn/2018/04/03/sentences/</id>
+    <published>2018-04-03T09:48:29.000Z</published>
+    <updated>2018-04-03T10:35:10.517Z</updated>
+    
+    <content type="html"><![CDATA[<p>The straight line belongs to men, the curved one to God. – Antoni Gaudi.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;The straight line belongs to men, the curved one to God. – Antoni Gaudi.&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Docker 学习</title>
+    <link href="http://www.youletter.cn/2018/03/26/Docker-%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://www.youletter.cn/2018/03/26/Docker-学习/</id>
+    <published>2018-03-26T15:55:54.000Z</published>
+    <updated>2018-03-27T07:01:54.477Z</updated>
+    
+    <content type="html"><![CDATA[<p>Docker 守护进程会 监听 /var/run/docker.sock 这个socket， 来获取来自 客户端的 Docker请求。</p><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p>docker info  返回docker 基本信息 </p><p>docker run -i -t ubuntu /bin/bash</p><p>-i 打开 STDIN</p><p>-t 创建一个 伪tty ，提供交互式 SHELL。</p><p>重新启动一起 exit的容器<br>docker restart 82e856f8f48b</p><p>查看所有容器列表<br>docker ps -a<br>只显示当前运行的容器<br>docker ps </p><p>容器命名。 –name<br>docker run -it –name fupeng_ubuntu -d ubuntu /bin/bash</p><p>创建tty ，接入容器<br>docker exec -it fupeng_ubuntu bash</p><p>删除容器<br>docker rm</p><p>容器也是一个 进程。</p><p>镜像run起来，就是容器。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Docker 守护进程会 监听 /var/run/docker.sock 这个socket， 来获取来自 客户端的 Docker请求。&lt;/p&gt;
+&lt;h3 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>create redis cluster</title>
+    <link href="http://www.youletter.cn/2018/03/26/create-redis-cluster/"/>
+    <id>http://www.youletter.cn/2018/03/26/create-redis-cluster/</id>
+    <published>2018-03-26T03:43:51.000Z</published>
+    <updated>2018-03-27T07:17:38.751Z</updated>
+    
+    <content type="html"><![CDATA[<p>配置目录创建</p><p>mac: cd /usr/local/etc , mkdir redis, cd redis</p><p>other linux: cd /etc/redis</p><p>集群目录创建</p><p>mkdir cluster  为 redis-cluster 创建新目录   </p><p>cd cluster &amp;&amp; mkdir 7000 7001 7002</p><p>将redis的配置文件 redis.conf 复制至 7000-7002目录下</p><p>修改 redis.conf （以 7000/redis.conf 为例）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">port 7000</div><div class="line">cluster-enabled yes</div><div class="line">cluster-config-file nodes-7000.conf</div><div class="line">cluster-node-timeout 5000</div><div class="line">appendonly yes</div></pre></td></tr></table></figure><p>启动服务<br>redis-server 7000/redis.conf</p><p>redis-server 7001/redis.conf</p><p>redis-server 7002/redis.conf</p><p>节点握手</p><p>redis-cli -c -p 7000</p><p>cluster meet 127.0.0.1 7001</p><p>cluster meet 127.0.0.1 7002</p><p>分配槽</p><p>redis-cli -h 127.0.0.1 -p 7000 cluster addslots {0..5461}</p><p>redis-cli -h 127.0.0.1 -p 7001 cluster addslots {5462..10922}</p><p>redis-cli -h 127.0.0.1 -p 7002 cluster addslots {10923..16383}</p><p>检查</p><p>redis-cli -c -p 7000</p><p>cluster nodes , 是否能看到3个master，且已分配好槽</p><p>set test test，是否能看到写值redirected</p><h3 id="redis-trib创建-cluster（注：需要安装-ruby）"><a href="#redis-trib创建-cluster（注：需要安装-ruby）" class="headerlink" title="redis-trib创建 cluster（注：需要安装 ruby）"></a>redis-trib创建 cluster（注：需要安装 ruby）</h3><p>gem install redis </p><p>wget <a href="http://download.redis.io/redis-stable/src/redis-trib.rb" target="_blank" rel="external">http://download.redis.io/redis-stable/src/redis-trib.rb</a> </p><p>ruby redis-trib.rb create –replicas 1 127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005</p><h1 id="Docker-搭建redis-Cluster"><a href="#Docker-搭建redis-Cluster" class="headerlink" title="Docker 搭建redis Cluster"></a>Docker 搭建redis Cluster</h1><p>docker pull grokzen/redis-cluster</p><p>【linux】docker run -d –net=host –name rcluster grokzen/redis-cluster:latest</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;配置目录创建&lt;/p&gt;
+&lt;p&gt;mac: cd /usr/local/etc , mkdir redis, cd redis&lt;/p&gt;
+&lt;p&gt;other linux: cd /etc/redis&lt;/p&gt;
+&lt;p&gt;集群目录创建&lt;/p&gt;
+&lt;p&gt;mkdir cluster  为 redi
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>密码策略要求</title>
+    <link href="http://www.youletter.cn/2018/03/24/%E5%AF%86%E7%A0%81%E7%AD%96%E7%95%A5%E8%A6%81%E6%B1%82/"/>
+    <id>http://www.youletter.cn/2018/03/24/密码策略要求/</id>
+    <published>2018-03-24T13:19:37.000Z</published>
+    <updated>2018-03-24T13:21:42.345Z</updated>
+    
+    <content type="html"><![CDATA[<p>密码策略要求：<br>Password Policy Requirements:</p><p>1．        至少有8个字符长度；<br>At least 8 characters in length;</p><p>2．        至少包含以下四类字符中的三类字符：<br>Contains at least three of the following four types of characters:</p><p>a.    英文大写字母(A 到 Z)；<br>Capital letters (A to Z);</p><p>b.    英文小写字母(a 到 z)；<br>Lowercase letters (a to z);</p><p>c.    10 个基本数字(0 到 9)；<br>          Basic numbers (0 to 9);</p><p>d．非字母字符(例如 @、!、$、#、%等)。<br>Non-alphabetic characters (e.g. @, !, $, #, %, etc.)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;密码策略要求：&lt;br&gt;Password Policy Requirements:&lt;/p&gt;
+&lt;p&gt;1．        至少有8个字符长度；&lt;br&gt;At least 8 characters in length;&lt;/p&gt;
+&lt;p&gt;2．        至少包含以下四类字符中的三类字
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>english words pronounce</title>
+    <link href="http://www.youletter.cn/2018/03/23/english-words-pronounce/"/>
+    <id>http://www.youletter.cn/2018/03/23/english-words-pronounce/</id>
+    <published>2018-03-23T02:45:56.000Z</published>
+    <updated>2018-03-23T02:48:21.742Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=GoHV4W5vxCo" target="_blank" rel="external">https://www.youtube.com/watch?v=GoHV4W5vxCo</a></p><p>1000 words<br><a href="https://www.youtube.com/watch?v=DP5gAh5kA-A" target="_blank" rel="external">https://www.youtube.com/watch?v=DP5gAh5kA-A</a></p><p>All English Lessons — build your vocabulary<br><a href="https://www.youtube.com/channel/UC_HytfXJ43beiwZ5rhi0PwA/videos" target="_blank" rel="external">https://www.youtube.com/channel/UC_HytfXJ43beiwZ5rhi0PwA/videos</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=GoHV4W5vxCo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.youtube.com/watch?v=GoHV4W5vxCo&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>SQL effective</title>
@@ -63,9 +199,9 @@
     <link href="http://www.youletter.cn/2018/03/08/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     <id>http://www.youletter.cn/2018/03/08/正则表达式/</id>
     <published>2018-03-08T13:32:37.000Z</published>
-    <updated>2018-03-19T02:38:58.671Z</updated>
+    <updated>2018-03-19T11:08:57.579Z</updated>
     
-    <content type="html"><![CDATA[<p>Java 正则表达式</p><p>至少包含一个中文</p><p><code>String pattern = &quot;.*[\\u4e00-\\u9fa5].*&quot;;</code></p><p>邮箱匹配</p><p><code>String regexp = &quot;^[_\\.0-9a-zA-Z+-]+@([0-9a-zA-Z]+[0-9a-zA-Z-]*\\.)+[a-zA-Z]{2,4}$&quot;</code></p><p>国外手机号匹配 </p><p><code>regexp = &quot;^\\s*|\\+(?:[0-9] ?){6,14}[0-9]$&quot;</code></p><p>第 19 单元：正则表达式<br><a href="https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html" target="_blank" rel="external">https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html</a></p><p>正则表达式测试页面<br><a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="external">http://www.regexplanet.com/advanced/java/index.html</a></p><p>史上最全的正则表达式-匹配中英文、字母和数字<br><a href="http://blog.csdn.net/qq_28633249/article/details/77686976" target="_blank" rel="external">http://blog.csdn.net/qq_28633249/article/details/77686976</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Java 正则表达式</p><p>至少包含一个中文</p><p><code>String pattern = &quot;.*[\\u4e00-\\u9fa5].*&quot;;</code></p><p>邮箱匹配</p><p><code>String regexp = &quot;^[_\\.0-9a-zA-Z+-]+@([0-9a-zA-Z]+[0-9a-zA-Z-]*\\.)+[a-zA-Z]{2,4}$&quot;</code></p><p>国外手机号匹配 </p><p><code>regexp = &quot;^\\s*|\\+(?:[0-9] ?){6,14}[0-9]$&quot;</code></p><p>匹配一个版本号 1.2.3<br><code>regexp = &quot;^[1-9]\\d?(\\.(0|[1-9]\\d?)){2}$&quot;</code></p><p>第 19 单元：正则表达式<br><a href="https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html" target="_blank" rel="external">https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html</a></p><p>正则表达式测试页面<br><a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="external">http://www.regexplanet.com/advanced/java/index.html</a></p><p>史上最全的正则表达式-匹配中英文、字母和数字<br><a href="http://blog.csdn.net/qq_28633249/article/details/77686976" target="_blank" rel="external">http://blog.csdn.net/qq_28633249/article/details/77686976</a></p>]]></content>
     
     <summary type="html">
     
@@ -325,173 +461,6 @@
         &lt;p&gt;修改mvn 项目的 版本&lt;/p&gt;
 &lt;p&gt;mvn versions:set -DnewVersion=1.0.X-SNAPSHOT versions:commit &lt;/p&gt;
 &lt;p&gt;查看 项目的 依赖&lt;br&gt;mvn dependency:tree&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2018.01</title>
-    <link href="http://www.youletter.cn/2018/01/08/2018-01/"/>
-    <id>http://www.youletter.cn/2018/01/08/2018-01/</id>
-    <published>2018-01-08T15:17:18.000Z</published>
-    <updated>2018-01-16T15:00:35.021Z</updated>
-    
-    <content type="html"><![CDATA[<p>1月8日</p><p>青山遮不住</p><p>毕竟东流去</p><p>江晚正愁余</p><p>山深闻鹧鸪</p><p>1月14日</p><p>北京是什么地方，北京是舞台。表演结束后，还得回家。</p><p>1月16日</p><p>我为你唱最后的古谣 </p><p>红雨瓢泼泛起了回忆怎么潜</p><p>你美目如当年</p><p>流转我心间</p><p>渡口边最后一面洒下了句点</p><p>与你若只如初见</p><p>何须感伤离别</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1月8日&lt;/p&gt;
-&lt;p&gt;青山遮不住&lt;/p&gt;
-&lt;p&gt;毕竟东流去&lt;/p&gt;
-&lt;p&gt;江晚正愁余&lt;/p&gt;
-&lt;p&gt;山深闻鹧鸪&lt;/p&gt;
-&lt;p&gt;1月14日&lt;/p&gt;
-&lt;p&gt;北京是什么地方，北京是舞台。表演结束后，还得回家。&lt;/p&gt;
-&lt;p&gt;1月16日&lt;/p&gt;
-&lt;p&gt;我为你唱最后的古谣 &lt;/p&gt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>日光山雪</title>
-    <link href="http://www.youletter.cn/2018/01/08/%E6%97%A5%E5%85%89%E5%B1%B1%E9%9B%AA/"/>
-    <id>http://www.youletter.cn/2018/01/08/日光山雪/</id>
-    <published>2018-01-08T08:41:59.000Z</published>
-    <updated>2018-01-08T08:55:09.601Z</updated>
-    
-    <content type="html"><![CDATA[<p>巍巍大山，是没有规则的形状，扭转的山间，沟壑，小块的坡地。</p><p>这山不满足任何的对称性，它所有的地方都是独一无二的，绝无重复。</p><p>山是由陡坡和缓坡拼成的，陡坡上没有办法生长树木，在缓坡上，站立着一些耐寒的树木。</p><p>冬日里，这些树木看上去都是棕黑色的。</p><p>在不被树木遮盖的地方，是一层白雪。</p><p>下午时分，阳光从西边照过来，山体覆盖上一层温暖的颜色，但由于山和树木的遮挡，阳光则是无规则的散落在各处。</p><p>树木是挺拔向上的，山是岿然不动的，白雪静静的盖着，日光穿梭其间。</p><p>这山美妙了。</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;巍巍大山，是没有规则的形状，扭转的山间，沟壑，小块的坡地。&lt;/p&gt;
-&lt;p&gt;这山不满足任何的对称性，它所有的地方都是独一无二的，绝无重复。&lt;/p&gt;
-&lt;p&gt;山是由陡坡和缓坡拼成的，陡坡上没有办法生长树木，在缓坡上，站立着一些耐寒的树木。&lt;/p&gt;
-&lt;p&gt;冬日里，这些树木看上去都是棕黑色的。&lt;/p&gt;
-&lt;p&gt;在不被树木遮盖的地方，是一层白雪。&lt;/p&gt;
-&lt;p&gt;下午时分，阳光从西边照过来，山体覆盖上一层温暖的颜色，但由于山和树木的遮挡，阳光则是无规则的散落在各处。&lt;/p&gt;
-&lt;p&gt;树木是挺拔向上的，山是岿然不动的，白雪静静的盖着，日光穿梭其间。&lt;/p&gt;
-&lt;p&gt;这山美妙了。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="见闻记录" scheme="http://www.youletter.cn/tags/%E8%A7%81%E9%97%BB%E8%AE%B0%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>maven实战阅读</title>
-    <link href="http://www.youletter.cn/2018/01/08/maven%E5%AE%9E%E6%88%98%E9%98%85%E8%AF%BB/"/>
-    <id>http://www.youletter.cn/2018/01/08/maven实战阅读/</id>
-    <published>2018-01-07T22:58:15.000Z</published>
-    <updated>2018-01-10T12:51:31.055Z</updated>
-    
-    <content type="html"><![CDATA[<p>Maven 抽象了 一个完整的 构建 生命周期模型。</p><p>Maven 标准化构建过程</p><p>Maven 是一个依赖管理工具 和 项目信息管理工具</p><p>Maven通过一个坐标系统，精确的定位每一个构建(artifact)</p><p>Maven 还为全世界的Java开发者提供了一个 免费的中央仓库<br>(国内，也可以使用阿里云提供的中央仓库，速度快些)</p><p>Make 也许是最早的构建工具，创立于1977年。 可以使用有所的系统命令，但和系统绑定太深了，很难跨平台。</p><p>Ant = Another Neat Tool ，Ant可以看做Java版的Make。 使用XML定义构建脚本。跨平台。 Ant没有依赖管理，可以借助Lvy管理依赖</p><p>只有两类计算机语言，一类语言天天被人骂，还有一类没人用。</p><p>Maven 3.5</p><p>~/.m2/repository 是默认的 本地仓库</p><p>Maven 命令 实际上 执行的是 Java命令。 Maven使用Java编写的。</p><p>所以 设置环境变量 MAVEN_OPTS   ，会在执行mvn命令时 使用到相应的设置。<br>如 -Xms=1G</p><p>~/.m2/settings.xml 是 用户范围的配置</p><p>安装目录/conf/settings.xml 是 整个机器上的 系统级设置。</p><p>不要使用IDE 自带的Maven ，而是 指定 外部的 ，命令行的Maven （最佳实践）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Maven 抽象了 一个完整的 构建 生命周期模型。&lt;/p&gt;
-&lt;p&gt;Maven 标准化构建过程&lt;/p&gt;
-&lt;p&gt;Maven 是一个依赖管理工具 和 项目信息管理工具&lt;/p&gt;
-&lt;p&gt;Maven通过一个坐标系统，精确的定位每一个构建(artifact)&lt;/p&gt;
-&lt;p&gt;Maven 
-      
-    
-    </summary>
-    
-    
-      <category term="maven" scheme="http://www.youletter.cn/tags/maven/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大雪纷纷</title>
-    <link href="http://www.youletter.cn/2018/01/03/%E5%A4%A7%E9%9B%AA%E7%BA%B7%E7%BA%B7/"/>
-    <id>http://www.youletter.cn/2018/01/03/大雪纷纷/</id>
-    <published>2018-01-03T14:29:09.000Z</published>
-    <updated>2018-01-03T14:35:01.879Z</updated>
-    
-    <content type="html"><![CDATA[<p>那一年，大雪纷纷，</p><p>下午最后一节下课后，大家都跑到院子里打雪仗。</p><p>我搓了一个雪球，看见你搓了一个更大的雪球。但是并没有浪费的扔出去。</p><p>我感觉到，那是给我准备的。</p><p>今天，还是在这个地方，还是一样的雪。</p><p>我也没有搓雪球。</p><p>你也没有看到雪。</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;那一年，大雪纷纷，&lt;/p&gt;
-&lt;p&gt;下午最后一节下课后，大家都跑到院子里打雪仗。&lt;/p&gt;
-&lt;p&gt;我搓了一个雪球，看见你搓了一个更大的雪球。但是并没有浪费的扔出去。&lt;/p&gt;
-&lt;p&gt;我感觉到，那是给我准备的。&lt;/p&gt;
-&lt;p&gt;今天，还是在这个地方，还是一样的雪。&lt;/p&gt;
-&lt;p&gt;我也没有搓雪球。&lt;/p&gt;
-&lt;p&gt;你也没有看到雪。&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>mybatis 动态SQL</title>
-    <link href="http://www.youletter.cn/2017/12/30/mybatis-%E5%8A%A8%E6%80%81SQL/"/>
-    <id>http://www.youletter.cn/2017/12/30/mybatis-动态SQL/</id>
-    <published>2017-12-30T12:31:00.000Z</published>
-    <updated>2017-12-31T05:26:09.299Z</updated>
-    
-    <content type="html"><![CDATA[<p>Mybatis的强大特性之一就是动态SQL。根据不同的条件拼装SQL是一件痛苦的事情，需要确保正确的空格，还有，要忽略掉列表最后的逗号，动态SQL可以彻底解决这种痛苦</p><p>之前的版本需要 理解很多的 元素，但是Mybatis3 很大的缩减了元素的数量，只有不到之前的一般。它们是：</p><ul><li>if</li><li>choose (when, otherwise)</li><li>trim (where, set)</li><li>foreach</li></ul><h1 id="if"><a href="#if" class="headerlink" title="if"></a>if</h1><p>动态SQL常做的一件事就是根据不同的条件，动态的修改where子句。例如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;findActiveBlogWithTitleLike&quot;</div><div class="line">     resultType=&quot;Blog&quot;&gt;</div><div class="line">  SELECT * FROM BLOG</div><div class="line">  WHERE state = &apos;ACTIVE&apos;</div><div class="line">  &lt;if test=&quot;title != null&quot;&gt;</div><div class="line">    AND title like #&#123;title&#125;</div><div class="line">  &lt;/if&gt;</div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure><p>另一个例子， 这个例子里，用了两个 if 子句</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;findActiveBlogLike&quot;</div><div class="line">     resultType=&quot;Blog&quot;&gt;</div><div class="line">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’</div><div class="line">  &lt;if test=&quot;title != null&quot;&gt;</div><div class="line">    AND title like #&#123;title&#125;</div><div class="line">  &lt;/if&gt;</div><div class="line">  &lt;if test=&quot;author != null and author.name != null&quot;&gt;</div><div class="line">    AND author_name like #&#123;author.name&#125;</div><div class="line">  &lt;/if&gt;</div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure><h1 id="choose-when-otherwise"><a href="#choose-when-otherwise" class="headerlink" title="choose, when, otherwise"></a>choose, when, otherwise</h1><p>如果不想应用所有的条件，而是根据某个条件，选择其中一个， 这有点像Java中的switch语句，动态SQL 提供了 choose, when, otherwise 来处理这种情况， 用例如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;findActiveBlogLike&quot;</div><div class="line">     resultType=&quot;Blog&quot;&gt;</div><div class="line">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’</div><div class="line">  &lt;choose&gt;</div><div class="line">    &lt;when test=&quot;title != null&quot;&gt;</div><div class="line">      AND title like #&#123;title&#125;</div><div class="line">    &lt;/when&gt;</div><div class="line">    &lt;when test=&quot;author != null and author.name != null&quot;&gt;</div><div class="line">      AND author_name like #&#123;author.name&#125;</div><div class="line">    &lt;/when&gt;</div><div class="line">    &lt;otherwise&gt;</div><div class="line">      AND featured = 1</div><div class="line">    &lt;/otherwise&gt;</div><div class="line">  &lt;/choose&gt;</div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure><a id="more"></a><h1 id="trim-where-set"><a href="#trim-where-set" class="headerlink" title="trim, where, set"></a>trim, where, set</h1><p>这次，我们将 ACTIVE = 1 也设置为 可选条件看看会发生什么</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;findActiveBlogLike&quot;</div><div class="line">     resultType=&quot;Blog&quot;&gt;</div><div class="line">  SELECT * FROM BLOG</div><div class="line">  WHERE</div><div class="line">  &lt;if test=&quot;state != null&quot;&gt;</div><div class="line">    state = #&#123;state&#125;</div><div class="line">  &lt;/if&gt;</div><div class="line">  &lt;if test=&quot;title != null&quot;&gt;</div><div class="line">    AND title like #&#123;title&#125;</div><div class="line">  &lt;/if&gt;</div><div class="line">  &lt;if test=&quot;author != null and author.name != null&quot;&gt;</div><div class="line">    AND author_name like #&#123;author.name&#125;</div><div class="line">  &lt;/if&gt;</div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure><p>当没有一个条件满足时，SQL语句变成了这样。 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">SELECT * FROM BLOG</div><div class="line">WHERE</div></pre></td></tr></table></figure><p>这样的SQL语句已经是非法的了，执行就会报错，怎么办呢。<br>如果只有第二个条件 满足 ，生成的SQL会变成下面的有样子，也是语法错误的SQL</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">SELECT * FROM BLOG</div><div class="line">WHERE</div><div class="line">AND title like ‘someTitle’</div></pre></td></tr></table></figure><p>Mybatis有一个简单的处理，在90%的情况下都会管用，就是用一个where子句 ，示例如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;findActiveBlogLike&quot;</div><div class="line">     resultType=&quot;Blog&quot;&gt;</div><div class="line">  SELECT * FROM BLOG </div><div class="line">  &lt;where&gt; </div><div class="line">    &lt;if test=&quot;state != null&quot;&gt;</div><div class="line">         state = #&#123;state&#125;</div><div class="line">    &lt;/if&gt; </div><div class="line">    &lt;if test=&quot;title != null&quot;&gt;</div><div class="line">        AND title like #&#123;title&#125;</div><div class="line">    &lt;/if&gt;</div><div class="line">    &lt;if test=&quot;author != null and author.name != null&quot;&gt;</div><div class="line">        AND author_name like #&#123;author.name&#125;</div><div class="line">    &lt;/if&gt;</div><div class="line">  &lt;/where&gt;</div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure><p>where元素，只有在if条件有值得情况下才去添加”WHERE”子句，若最后的内容是”AND”或”OR”开头的，where 元素也知道如何将他们去除。</p><p>如果where元素不能满足你的需求，可以自定义trim元素， 举个栗子，用trim元素写一个等价的where元素 就是下面这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;trim prefix=&quot;WHERE&quot; prefixOverrides=&quot;AND |OR &quot;&gt;</div><div class="line">  ...</div><div class="line">&lt;/trim&gt;</div></pre></td></tr></table></figure><p>prefixOverrides 属性会忽略通过管道分隔的文本序列（注意此例中的空格也是必要的，注意AND后的空格 和 OR后的空格）。它带来的结果就是所有在 prefixOverrides 属性中指定的内容将被移除，并且插入 prefix 属性中指定的内容。 trim 就是 去除两端的东西。</p><h1 id="动态更新元素-set"><a href="#动态更新元素-set" class="headerlink" title="动态更新元素 set"></a>动态更新元素 set</h1><p>示例如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;update id=&quot;updateAuthorIfNecessary&quot;&gt;</div><div class="line">  update Author</div><div class="line">    &lt;set&gt;</div><div class="line">      &lt;if test=&quot;username != null&quot;&gt;username=#&#123;username&#125;,&lt;/if&gt;</div><div class="line">      &lt;if test=&quot;password != null&quot;&gt;password=#&#123;password&#125;,&lt;/if&gt;</div><div class="line">      &lt;if test=&quot;email != null&quot;&gt;email=#&#123;email&#125;,&lt;/if&gt;</div><div class="line">      &lt;if test=&quot;bio != null&quot;&gt;bio=#&#123;bio&#125;&lt;/if&gt;</div><div class="line">    &lt;/set&gt;</div><div class="line">  where id=#&#123;id&#125;</div><div class="line">&lt;/update&gt;</div></pre></td></tr></table></figure><p>这里，set 元素会动态前置 SET 关键字，同时也会消除无关的逗号， 等价的 trim 元素是这样的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;trim prefix=&quot;SET&quot; suffixOverrides=&quot;,&quot;&gt;</div><div class="line">  ...</div><div class="line">&lt;/trim&gt;</div></pre></td></tr></table></figure><p>注意这里我们忽略的是后缀中的值，而又一次附加了前缀中的值。</p><h1 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h1><p>动态SQL的另一个必要能力，就是去 循环一个 集合， 通常用在 IN 子句中，例如：</p><p>使用ArrayList的例子</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;selectPostIn&quot; resultType=&quot;domain.blog.Post&quot;&gt;</div><div class="line">  SELECT *</div><div class="line">  FROM POST P</div><div class="line">  WHERE ID in</div><div class="line">  &lt;foreach item=&quot;item&quot; index=&quot;index&quot; collection=&quot;list&quot;</div><div class="line">      open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;</div><div class="line">        #&#123;item&#125;</div><div class="line">  &lt;/foreach&gt;</div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure><p>使用HashMap的例子, 老实说，这种传入 Map的 例子比较奇怪， 传入Map的 肯定可以在 瓦面 转换成一个 List 再传进来。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;select id=&quot;selectPostIn&quot; resultType=&quot;SomeDomain&quot;&gt;</div><div class="line">    SELECT *</div><div class="line">    FROM school</div><div class="line">    WHERE ID in</div><div class="line">    &lt;foreach item=&quot;item&quot; index=&quot;index&quot; collection=&quot;ids.keys&quot;</div><div class="line">             open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;</div><div class="line">        #&#123;item&#125;</div><div class="line">    &lt;/foreach&gt;</div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure><p>注意，你可以将任何可迭代对象（如列表、集合等）和任何的字典或者数组对象传递给foreach作为集合参数。当使用可迭代对象或者数组时，index是当前迭代的次数，item的值是本次迭代获取的元素。当使用字典（或者Map.Entry对象的集合）时，index是键，item是值。</p><h1 id="和-的区别"><a href="#和-的区别" class="headerlink" title="${} 和 #{}的区别"></a>${} 和 #{}的区别</h1><p><code>${}</code> 就是 字符串替换 ，容易发生 SQL注入。</p><p><code>#{}</code> 会先生成 预编译SQL， 再替换成某个值，安全性更好。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://www.mybatis.org/mybatis-3/zh/dynamic-sql.html" target="_blank" rel="external">动态SQL</a></p><p><a href="http://www.mybatis.org/mybatis-3/dynamic-sql.html" target="_blank" rel="external">Dynamic SQL</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Mybatis的强大特性之一就是动态SQL。根据不同的条件拼装SQL是一件痛苦的事情，需要确保正确的空格，还有，要忽略掉列表最后的逗号，动态SQL可以彻底解决这种痛苦&lt;/p&gt;
-&lt;p&gt;之前的版本需要 理解很多的 元素，但是Mybatis3 很大的缩减了元素的数量，只有不到之前的一般。它们是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;if&lt;/li&gt;
-&lt;li&gt;choose (when, otherwise)&lt;/li&gt;
-&lt;li&gt;trim (where, set)&lt;/li&gt;
-&lt;li&gt;foreach&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;if&quot;&gt;&lt;a href=&quot;#if&quot; class=&quot;headerlink&quot; title=&quot;if&quot;&gt;&lt;/a&gt;if&lt;/h1&gt;&lt;p&gt;动态SQL常做的一件事就是根据不同的条件，动态的修改where子句。例如&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;select id=&amp;quot;findActiveBlogWithTitleLike&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;     resultType=&amp;quot;Blog&amp;quot;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  SELECT * FROM BLOG&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  WHERE state = &amp;apos;ACTIVE&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;lt;if test=&amp;quot;title != null&amp;quot;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    AND title like #&amp;#123;title&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;lt;/if&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;/select&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;另一个例子， 这个例子里，用了两个 if 子句&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;select id=&amp;quot;findActiveBlogLike&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;     resultType=&amp;quot;Blog&amp;quot;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  SELECT * FROM BLOG WHERE state = ‘ACTIVE’&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;lt;if test=&amp;quot;title != null&amp;quot;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    AND title like #&amp;#123;title&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;lt;/if&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;lt;if test=&amp;quot;author != null and author.name != null&amp;quot;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    AND author_name like #&amp;#123;author.name&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;lt;/if&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;/select&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&quot;choose-when-otherwise&quot;&gt;&lt;a href=&quot;#choose-when-otherwise&quot; class=&quot;headerlink&quot; title=&quot;choose, when, otherwise&quot;&gt;&lt;/a&gt;choose, when, otherwise&lt;/h1&gt;&lt;p&gt;如果不想应用所有的条件，而是根据某个条件，选择其中一个， 这有点像Java中的switch语句，动态SQL 提供了 choose, when, otherwise 来处理这种情况， 用例如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;select id=&amp;quot;findActiveBlogLike&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;     resultType=&amp;quot;Blog&amp;quot;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  SELECT * FROM BLOG WHERE state = ‘ACTIVE’&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;lt;choose&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;when test=&amp;quot;title != null&amp;quot;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      AND title like #&amp;#123;title&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;/when&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;when test=&amp;quot;author != null and author.name != null&amp;quot;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      AND author_name like #&amp;#123;author.name&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;/when&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;otherwise&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      AND featured = 1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;/otherwise&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;lt;/choose&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;/select&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="mybatis" scheme="http://www.youletter.cn/tags/mybatis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>流淌</title>
-    <link href="http://www.youletter.cn/2017/12/30/%E6%B5%81%E6%B7%8C/"/>
-    <id>http://www.youletter.cn/2017/12/30/流淌/</id>
-    <published>2017-12-30T06:21:23.000Z</published>
-    <updated>2017-12-30T06:25:12.164Z</updated>
-    
-    <content type="html"><![CDATA[<p>河，静静的流淌</p><p>流向远方</p><p>足球，静静的飞去</p><p>飞向远方</p><p>远方是它该去的地方</p><p>不是这里</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;河，静静的流淌&lt;/p&gt;
-&lt;p&gt;流向远方&lt;/p&gt;
-&lt;p&gt;足球，静静的飞去&lt;/p&gt;
-&lt;p&gt;飞向远方&lt;/p&gt;
-&lt;p&gt;远方是它该去的地方&lt;/p&gt;
-&lt;p&gt;不是这里&lt;/p&gt;
 
       
     
