@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-04-11T07:25:08.908Z</updated>
+  <updated>2018-04-25T07:36:56.433Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,167 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>parallel 命令</title>
+    <link href="http://www.youletter.cn/2018/04/25/parallel-%E5%91%BD%E4%BB%A4/"/>
+    <id>http://www.youletter.cn/2018/04/25/parallel-命令/</id>
+    <published>2018-04-25T07:36:38.000Z</published>
+    <updated>2018-04-25T07:36:56.433Z</updated>
+    
+    <content type="html"><![CDATA[<p>parallel –gnu wget –content-disposition  &lt; u2.txt</p><p>parallel –gnu tar xzf  &lt; log.txtu</p><p>parallel –gnu gunzip   &lt; file</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;parallel –gnu wget –content-disposition  &amp;lt; u2.txt&lt;/p&gt;
+&lt;p&gt;parallel –gnu tar xzf  &amp;lt; log.txtu&lt;/p&gt;
+&lt;p&gt;parallel –gnu gunzip   &amp;lt; file&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>spring boot aop 使用</title>
+    <link href="http://www.youletter.cn/2018/04/17/spring-boot-aop-%E4%BD%BF%E7%94%A8/"/>
+    <id>http://www.youletter.cn/2018/04/17/spring-boot-aop-使用/</id>
+    <published>2018-04-17T11:25:12.000Z</published>
+    <updated>2018-04-17T11:25:31.709Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用Spring Boot的AOP处理自定义注解<br><a href="https://crane-yuan.github.io/2018/01/11/spring-boot-aop-custom-annotation/" target="_blank" rel="noopener">https://crane-yuan.github.io/2018/01/11/spring-boot-aop-custom-annotation/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用Spring Boot的AOP处理自定义注解&lt;br&gt;&lt;a href=&quot;https://crane-yuan.github.io/2018/01/11/spring-boot-aop-custom-annotation/&quot; target=&quot;_blank&quot; rel=&quot;noo
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>wh-question</title>
+    <link href="http://www.youletter.cn/2018/04/14/wh-question/"/>
+    <id>http://www.youletter.cn/2018/04/14/wh-question/</id>
+    <published>2018-04-14T07:21:08.000Z</published>
+    <updated>2018-04-14T09:57:16.876Z</updated>
+    
+    <content type="html"><![CDATA[<p>wh-question 指的是 what, when, where, who, whom, which, whose, why and how 这些词开头的句子，用来询问信息 ，他们的回答不可以是 yes 或者 no。</p><h1 id="如何形成-wh-questions"><a href="#如何形成-wh-questions" class="headerlink" title="如何形成 wh-questions"></a>如何形成 wh-questions</h1><ul><li>With an auxiliary verb</li></ul><p>wh- + an auxiliary verb (be, do or have) + subject + main verb  </p><p>wh- + a modal verb + subject + main verb</p><ul><li>Without an auxiliary verb</li></ul><p>当what, who, which or whose是主语，或主语的一部分时，不需要助动词。</p><p>What fell off the wall? </p><p>Which horse won?</p><p>Who bought this? </p><p>Whose phone rang?</p><p># </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;wh-question 指的是 what, when, where, who, whom, which, whose, why and how 这些词开头的句子，用来询问信息 ，他们的回答不可以是 yes 或者 no。&lt;/p&gt;
+&lt;h1 id=&quot;如何形成-wh-questio
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>what drives everything going</title>
+    <link href="http://www.youletter.cn/2018/04/14/what-drives-everything-going/"/>
+    <id>http://www.youletter.cn/2018/04/14/what-drives-everything-going/</id>
+    <published>2018-04-14T07:18:56.000Z</published>
+    <updated>2018-04-14T07:19:52.934Z</updated>
+    
+    <content type="html"><![CDATA[<p>what drives everything going</p><p>Electricity</p><p>what drives electircity going?</p><p>Time.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;what drives everything going&lt;/p&gt;
+&lt;p&gt;Electricity&lt;/p&gt;
+&lt;p&gt;what drives electircity going?&lt;/p&gt;
+&lt;p&gt;Time.&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Verb phrases</title>
+    <link href="http://www.youletter.cn/2018/04/14/Verb-phrases/"/>
+    <id>http://www.youletter.cn/2018/04/14/Verb-phrases/</id>
+    <published>2018-04-14T05:49:49.000Z</published>
+    <updated>2018-04-14T07:14:40.210Z</updated>
+    
+    <content type="html"><![CDATA[<p>Verb phrases = [modal verb] + [auxiliary verb] + main verb</p><pre><code>| 1 | 2 | 3 | 4 | 5 </code></pre><p>—     |—|—|—|—|—-<br>subject |modal verb|perfect have | continuous be| passive be| main verb<br>        |followed by base form | followed by -ed form | followed by -ing form | followed by -ed form<br>    Prices | | | | | up<br>    He | will | | | | understand<br>    The builders |  | had | | | arrived<br>    The show | |  | is | | starting<br>    Four people | | | | were | arrested<br>    Seats | can’t | | | be | reserved</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Verb phrases = [modal verb] + [auxiliary verb] + main verb&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;| 1 | 2 | 3 | 4 | 5 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;—     |—|—|—|—|—-&lt;br&gt;subje
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>determiner</title>
+    <link href="http://www.youletter.cn/2018/04/12/determiner/"/>
+    <id>http://www.youletter.cn/2018/04/12/determiner/</id>
+    <published>2018-04-12T10:11:57.000Z</published>
+    <updated>2018-04-12T10:15:21.085Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="A-an-and-the"><a href="#A-an-and-the" class="headerlink" title="A/an and the"></a>A/an and the</h2><p>A/an 表示说话的参与者不知道的东西。</p><p>The before a noun shows that what is referred to is already known to the speaker, listener, writer and/or reader (it is the definite article):</p><p>The before a noun shows that what is referred to is already known to the speaker, listener, writer and/or reader (it is the definite article):</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;A-an-and-the&quot;&gt;&lt;a href=&quot;#A-an-and-the&quot; class=&quot;headerlink&quot; title=&quot;A/an and the&quot;&gt;&lt;/a&gt;A/an and the&lt;/h2&gt;&lt;p&gt;A/an 表示说话的参与者不知道的东西。&lt;/p&gt;
+&lt;p&gt;Th
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>nouns 名词</title>
+    <link href="http://www.youletter.cn/2018/04/12/nouns-%E5%90%8D%E8%AF%8D/"/>
+    <id>http://www.youletter.cn/2018/04/12/nouns-名词/</id>
+    <published>2018-04-12T03:01:59.000Z</published>
+    <updated>2018-04-12T03:27:22.745Z</updated>
+    
+    <content type="html"><![CDATA[<p>名词来指示一个人，动物，或东西。</p><p>指人 boy , girl<br>指动物和东西 cat, book ,tree</p><p>Proper nouns 专有名词，首字母大写。</p><p>Concrete nouns 具体名词， table</p><p>Abstract nouns 抽象名词 ， love， feelings</p><p>识别名词并不容易通过他们的形式看出来。但还是有一些后缀，很大可能就是名词。</p><p><a href="https://dictionary.cambridge.org/zht/%E8%AA%9E%E6%B3%95/%E8%8B%B1%E5%BC%8F%E8%AA%9E%E6%B3%95/about-nouns/nouns" target="_blank" rel="noopener">https://dictionary.cambridge.org/zht/%E8%AA%9E%E6%B3%95/%E8%8B%B1%E5%BC%8F%E8%AA%9E%E6%B3%95/about-nouns/nouns</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;名词来指示一个人，动物，或东西。&lt;/p&gt;
+&lt;p&gt;指人 boy , girl&lt;br&gt;指动物和东西 cat, book ,tree&lt;/p&gt;
+&lt;p&gt;Proper nouns 专有名词，首字母大写。&lt;/p&gt;
+&lt;p&gt;Concrete nouns 具体名词， table&lt;/p&gt;
+&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>apache benchmarking tool </title>
@@ -89,7 +250,7 @@
     <published>2018-03-26T03:43:51.000Z</published>
     <updated>2018-03-27T07:17:38.751Z</updated>
     
-    <content type="html"><![CDATA[<p>配置目录创建</p><p>mac: cd /usr/local/etc , mkdir redis, cd redis</p><p>other linux: cd /etc/redis</p><p>集群目录创建</p><p>mkdir cluster  为 redis-cluster 创建新目录   </p><p>cd cluster &amp;&amp; mkdir 7000 7001 7002</p><p>将redis的配置文件 redis.conf 复制至 7000-7002目录下</p><p>修改 redis.conf （以 7000/redis.conf 为例）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">port 7000</div><div class="line">cluster-enabled yes</div><div class="line">cluster-config-file nodes-7000.conf</div><div class="line">cluster-node-timeout 5000</div><div class="line">appendonly yes</div></pre></td></tr></table></figure><p>启动服务<br>redis-server 7000/redis.conf</p><p>redis-server 7001/redis.conf</p><p>redis-server 7002/redis.conf</p><p>节点握手</p><p>redis-cli -c -p 7000</p><p>cluster meet 127.0.0.1 7001</p><p>cluster meet 127.0.0.1 7002</p><p>分配槽</p><p>redis-cli -h 127.0.0.1 -p 7000 cluster addslots {0..5461}</p><p>redis-cli -h 127.0.0.1 -p 7001 cluster addslots {5462..10922}</p><p>redis-cli -h 127.0.0.1 -p 7002 cluster addslots {10923..16383}</p><p>检查</p><p>redis-cli -c -p 7000</p><p>cluster nodes , 是否能看到3个master，且已分配好槽</p><p>set test test，是否能看到写值redirected</p><h3 id="redis-trib创建-cluster（注：需要安装-ruby）"><a href="#redis-trib创建-cluster（注：需要安装-ruby）" class="headerlink" title="redis-trib创建 cluster（注：需要安装 ruby）"></a>redis-trib创建 cluster（注：需要安装 ruby）</h3><p>gem install redis </p><p>wget <a href="http://download.redis.io/redis-stable/src/redis-trib.rb" target="_blank" rel="external">http://download.redis.io/redis-stable/src/redis-trib.rb</a> </p><p>ruby redis-trib.rb create –replicas 1 127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005</p><h1 id="Docker-搭建redis-Cluster"><a href="#Docker-搭建redis-Cluster" class="headerlink" title="Docker 搭建redis Cluster"></a>Docker 搭建redis Cluster</h1><p>docker pull grokzen/redis-cluster</p><p>【linux】docker run -d –net=host –name rcluster grokzen/redis-cluster:latest</p>]]></content>
+    <content type="html"><![CDATA[<p>配置目录创建</p><p>mac: cd /usr/local/etc , mkdir redis, cd redis</p><p>other linux: cd /etc/redis</p><p>集群目录创建</p><p>mkdir cluster  为 redis-cluster 创建新目录   </p><p>cd cluster &amp;&amp; mkdir 7000 7001 7002</p><p>将redis的配置文件 redis.conf 复制至 7000-7002目录下</p><p>修改 redis.conf （以 7000/redis.conf 为例）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">port 7000</span><br><span class="line">cluster-enabled yes</span><br><span class="line">cluster-config-file nodes-7000.conf</span><br><span class="line">cluster-node-timeout 5000</span><br><span class="line">appendonly yes</span><br></pre></td></tr></table></figure><p>启动服务<br>redis-server 7000/redis.conf</p><p>redis-server 7001/redis.conf</p><p>redis-server 7002/redis.conf</p><p>节点握手</p><p>redis-cli -c -p 7000</p><p>cluster meet 127.0.0.1 7001</p><p>cluster meet 127.0.0.1 7002</p><p>分配槽</p><p>redis-cli -h 127.0.0.1 -p 7000 cluster addslots {0..5461}</p><p>redis-cli -h 127.0.0.1 -p 7001 cluster addslots {5462..10922}</p><p>redis-cli -h 127.0.0.1 -p 7002 cluster addslots {10923..16383}</p><p>检查</p><p>redis-cli -c -p 7000</p><p>cluster nodes , 是否能看到3个master，且已分配好槽</p><p>set test test，是否能看到写值redirected</p><h3 id="redis-trib创建-cluster（注：需要安装-ruby）"><a href="#redis-trib创建-cluster（注：需要安装-ruby）" class="headerlink" title="redis-trib创建 cluster（注：需要安装 ruby）"></a>redis-trib创建 cluster（注：需要安装 ruby）</h3><p>gem install redis </p><p>wget <a href="http://download.redis.io/redis-stable/src/redis-trib.rb" target="_blank" rel="noopener">http://download.redis.io/redis-stable/src/redis-trib.rb</a> </p><p>ruby redis-trib.rb create –replicas 1 127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005</p><h1 id="Docker-搭建redis-Cluster"><a href="#Docker-搭建redis-Cluster" class="headerlink" title="Docker 搭建redis Cluster"></a>Docker 搭建redis Cluster</h1><p>docker pull grokzen/redis-cluster</p><p>【linux】docker run -d –net=host –name rcluster grokzen/redis-cluster:latest</p>]]></content>
     
     <summary type="html">
     
@@ -137,13 +298,13 @@
     <published>2018-03-23T02:45:56.000Z</published>
     <updated>2018-03-23T02:48:21.742Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=GoHV4W5vxCo" target="_blank" rel="external">https://www.youtube.com/watch?v=GoHV4W5vxCo</a></p><p>1000 words<br><a href="https://www.youtube.com/watch?v=DP5gAh5kA-A" target="_blank" rel="external">https://www.youtube.com/watch?v=DP5gAh5kA-A</a></p><p>All English Lessons — build your vocabulary<br><a href="https://www.youtube.com/channel/UC_HytfXJ43beiwZ5rhi0PwA/videos" target="_blank" rel="external">https://www.youtube.com/channel/UC_HytfXJ43beiwZ5rhi0PwA/videos</a></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=GoHV4W5vxCo" target="_blank" rel="noopener">https://www.youtube.com/watch?v=GoHV4W5vxCo</a></p><p>1000 words<br><a href="https://www.youtube.com/watch?v=DP5gAh5kA-A" target="_blank" rel="noopener">https://www.youtube.com/watch?v=DP5gAh5kA-A</a></p><p>All English Lessons — build your vocabulary<br><a href="https://www.youtube.com/channel/UC_HytfXJ43beiwZ5rhi0PwA/videos" target="_blank" rel="noopener">https://www.youtube.com/channel/UC_HytfXJ43beiwZ5rhi0PwA/videos</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=GoHV4W5vxCo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.youtube.com/watch?v=GoHV4W5vxCo&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=GoHV4W5vxCo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=GoHV4W5vxCo&lt;/a&gt;&lt;/p&gt;
 
       
     
@@ -180,7 +341,7 @@
     <published>2018-03-09T02:47:20.000Z</published>
     <updated>2018-03-09T05:53:30.524Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="为列取有意义的名字-AS"><a href="#为列取有意义的名字-AS" class="headerlink" title="为列取有意义的名字 AS"></a>为列取有意义的名字 AS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">select cnt as count from emp;</div><div class="line">select cnt count from emp;</div></pre></td></tr></table></figure><p>有些数据库不需要as ，如MySQL，但 有as也不错。</p><h2 id="在where子句中使用别名"><a href="#在where子句中使用别名" class="headerlink" title="在where子句中使用别名"></a>在where子句中使用别名</h2><p><code>select cnt as count from emp where count = 2;</code><br>上面这个SQL会失败 ，报找不到count列</p><p>解决方案，将查询作为内联视图就可以使用 其中的别名了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">select * from (</div><div class="line">select cnt as count from emp</div><div class="line">) x</div><div class="line">where count = 10004</div></pre></td></tr></table></figure></p><p>因为 WHERE子句是在 select 之前处理的， 所以在处理 where子句之前， count并不存在 。要在where处理完后，count才能生效。 然后，from 子句是在  where 之前处理的。把原查询放到  from 子句中， 在最外层的 where子句之前  。 这样最外层的where子句就能 看到 count 了。 </p><p>本例将 内联视图 命名为 x ，并不是所有数据库都需要。 MySQL 需要。</p><h2 id="在select语句中使用条件逻辑"><a href="#在select语句中使用条件逻辑" class="headerlink" title="在select语句中使用条件逻辑"></a>在select语句中使用条件逻辑</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">select ename ,</div><div class="line">case </div><div class="line">where sal &lt; 2000 then &apos;under&apos;</div><div class="line">where sal &gt; 4000 then &apos;over&apos;</div><div class="line">else &apos;ok&apos;</div><div class="line">end as status</div><div class="line">from emp</div></pre></td></tr></table></figure><h2 id="限制返回的行"><a href="#限制返回的行" class="headerlink" title="限制返回的行"></a>限制返回的行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select  * from emp limit 5</div></pre></td></tr></table></figure><h2 id="查找空值"><a href="#查找空值" class="headerlink" title="查找空值"></a>查找空值</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select * from emp where comm is null;</div><div class="line"></div><div class="line">select * from emp where comm is not null;</div></pre></td></tr></table></figure><p>null 不等于 任何值， 包括自身， 所以不能用 = 或者 != 来比较 。只能用 is null 或者 is not null 来判断。</p><h2 id="按模式搜索"><a href="#按模式搜索" class="headerlink" title="按模式搜索  %"></a>按模式搜索  %</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">select * from emp where depto like &quot;%er%%&quot;</div></pre></td></tr></table></figure><p>% 可以匹配任何字符序列。 上面这个SQL表示 包含er的字符串。</p><h2 id="已指定次序返回查询结果-order-by"><a href="#已指定次序返回查询结果-order-by" class="headerlink" title="已指定次序返回查询结果 order by"></a>已指定次序返回查询结果 order by</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">select ename from emp where depto = 10 order by sal;</div><div class="line"></div><div class="line">select ename from emp where depto = 10 order by sal desc;</div></pre></td></tr></table></figure><p>order by 默认以升序排列 asc 。  指定 desc 降序排列   </p><p>按照多个字段排序时 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="为列取有意义的名字-AS"><a href="#为列取有意义的名字-AS" class="headerlink" title="为列取有意义的名字 AS"></a>为列取有意义的名字 AS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select cnt as count from emp;</span><br><span class="line">select cnt count from emp;</span><br></pre></td></tr></table></figure><p>有些数据库不需要as ，如MySQL，但 有as也不错。</p><h2 id="在where子句中使用别名"><a href="#在where子句中使用别名" class="headerlink" title="在where子句中使用别名"></a>在where子句中使用别名</h2><p><code>select cnt as count from emp where count = 2;</code><br>上面这个SQL会失败 ，报找不到count列</p><p>解决方案，将查询作为内联视图就可以使用 其中的别名了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select * from (</span><br><span class="line">select cnt as count from emp</span><br><span class="line">) x</span><br><span class="line">where count = 10004</span><br></pre></td></tr></table></figure></p><p>因为 WHERE子句是在 select 之前处理的， 所以在处理 where子句之前， count并不存在 。要在where处理完后，count才能生效。 然后，from 子句是在  where 之前处理的。把原查询放到  from 子句中， 在最外层的 where子句之前  。 这样最外层的where子句就能 看到 count 了。 </p><p>本例将 内联视图 命名为 x ，并不是所有数据库都需要。 MySQL 需要。</p><h2 id="在select语句中使用条件逻辑"><a href="#在select语句中使用条件逻辑" class="headerlink" title="在select语句中使用条件逻辑"></a>在select语句中使用条件逻辑</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select ename ,</span><br><span class="line">case </span><br><span class="line">where sal &lt; 2000 then &apos;under&apos;</span><br><span class="line">where sal &gt; 4000 then &apos;over&apos;</span><br><span class="line">else &apos;ok&apos;</span><br><span class="line">end as status</span><br><span class="line">from emp</span><br></pre></td></tr></table></figure><h2 id="限制返回的行"><a href="#限制返回的行" class="headerlink" title="限制返回的行"></a>限制返回的行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select  * from emp limit 5</span><br></pre></td></tr></table></figure><h2 id="查找空值"><a href="#查找空值" class="headerlink" title="查找空值"></a>查找空值</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select * from emp where comm is null;</span><br><span class="line"></span><br><span class="line">select * from emp where comm is not null;</span><br></pre></td></tr></table></figure><p>null 不等于 任何值， 包括自身， 所以不能用 = 或者 != 来比较 。只能用 is null 或者 is not null 来判断。</p><h2 id="按模式搜索"><a href="#按模式搜索" class="headerlink" title="按模式搜索  %"></a>按模式搜索  %</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from emp where depto like &quot;%er%%&quot;</span><br></pre></td></tr></table></figure><p>% 可以匹配任何字符序列。 上面这个SQL表示 包含er的字符串。</p><h2 id="已指定次序返回查询结果-order-by"><a href="#已指定次序返回查询结果-order-by" class="headerlink" title="已指定次序返回查询结果 order by"></a>已指定次序返回查询结果 order by</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ename from emp where depto = 10 order by sal;</span><br><span class="line"></span><br><span class="line">select ename from emp where depto = 10 order by sal desc;</span><br></pre></td></tr></table></figure><p>order by 默认以升序排列 asc 。  指定 desc 降序排列   </p><p>按照多个字段排序时 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -201,7 +362,7 @@
     <published>2018-03-08T13:32:37.000Z</published>
     <updated>2018-03-19T11:08:57.579Z</updated>
     
-    <content type="html"><![CDATA[<p>Java 正则表达式</p><p>至少包含一个中文</p><p><code>String pattern = &quot;.*[\\u4e00-\\u9fa5].*&quot;;</code></p><p>邮箱匹配</p><p><code>String regexp = &quot;^[_\\.0-9a-zA-Z+-]+@([0-9a-zA-Z]+[0-9a-zA-Z-]*\\.)+[a-zA-Z]{2,4}$&quot;</code></p><p>国外手机号匹配 </p><p><code>regexp = &quot;^\\s*|\\+(?:[0-9] ?){6,14}[0-9]$&quot;</code></p><p>匹配一个版本号 1.2.3<br><code>regexp = &quot;^[1-9]\\d?(\\.(0|[1-9]\\d?)){2}$&quot;</code></p><p>第 19 单元：正则表达式<br><a href="https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html" target="_blank" rel="external">https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html</a></p><p>正则表达式测试页面<br><a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="external">http://www.regexplanet.com/advanced/java/index.html</a></p><p>史上最全的正则表达式-匹配中英文、字母和数字<br><a href="http://blog.csdn.net/qq_28633249/article/details/77686976" target="_blank" rel="external">http://blog.csdn.net/qq_28633249/article/details/77686976</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Java 正则表达式</p><p>至少包含一个中文</p><p><code>String pattern = &quot;.*[\\u4e00-\\u9fa5].*&quot;;</code></p><p>邮箱匹配</p><p><code>String regexp = &quot;^[_\\.0-9a-zA-Z+-]+@([0-9a-zA-Z]+[0-9a-zA-Z-]*\\.)+[a-zA-Z]{2,4}$&quot;</code></p><p>国外手机号匹配 </p><p><code>regexp = &quot;^\\s*|\\+(?:[0-9] ?){6,14}[0-9]$&quot;</code></p><p>匹配一个版本号 1.2.3<br><code>regexp = &quot;^[1-9]\\d?(\\.(0|[1-9]\\d?)){2}$&quot;</code></p><p>第 19 单元：正则表达式<br><a href="https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html" target="_blank" rel="noopener">https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html</a></p><p>正则表达式测试页面<br><a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="noopener">http://www.regexplanet.com/advanced/java/index.html</a></p><p>史上最全的正则表达式-匹配中英文、字母和数字<br><a href="http://blog.csdn.net/qq_28633249/article/details/77686976" target="_blank" rel="noopener">http://blog.csdn.net/qq_28633249/article/details/77686976</a></p>]]></content>
     
     <summary type="html">
     
@@ -226,7 +387,7 @@
     <published>2018-03-04T01:41:03.000Z</published>
     <updated>2018-03-07T07:44:30.478Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Set-to-List"><a href="#Set-to-List" class="headerlink" title="Set to List"></a>Set to List</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Lists.newArrayList(ids)</div></pre></td></tr></table></figure><h1 id="list-To-MAP"><a href="#list-To-MAP" class="headerlink" title="list To MAP"></a>list To MAP</h1><p>其中 key为 Apple的一个属性，value为Apple </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Map&lt;Long, Apple&gt; appleMap = apples</div><div class="line">    .stream()</div><div class="line">    .collect(Collectors.toMap(Apple::getId, dto -&gt; dto))</div><div class="line">    </div><div class="line">    </div><div class="line">```    </div><div class="line"></div><div class="line"># list To MAP </div><div class="line"></div><div class="line">其中key为Apple的一个属性， value为Apple的另一个属性</div></pre></td></tr></table></figure><p>Map<long, string=""> appleMap = apples<br>    .stream()<br>    .collect(Collectors.toMap(Apple::getId, Apple::getName))</long,></p><p>```    </p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Set-to-List"><a href="#Set-to-List" class="headerlink" title="Set to List"></a>Set to List</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Lists.newArrayList(ids)</span><br></pre></td></tr></table></figure><h1 id="list-To-MAP"><a href="#list-To-MAP" class="headerlink" title="list To MAP"></a>list To MAP</h1><p>其中 key为 Apple的一个属性，value为Apple </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;Long, Apple&gt; appleMap = apples</span><br><span class="line">    .stream()</span><br><span class="line">    .collect(Collectors.toMap(Apple::getId, dto -&gt; dto))</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">```    </span><br><span class="line"></span><br><span class="line"># list To MAP </span><br><span class="line"></span><br><span class="line">其中key为Apple的一个属性， value为Apple的另一个属性</span><br></pre></td></tr></table></figure><p>Map&lt;Long, String&gt; appleMap = apples<br>    .stream()<br>    .collect(Collectors.toMap(Apple::getId, Apple::getName))</p><p><code>`</code>    </p>]]></content>
     
     <summary type="html">
     
@@ -295,7 +456,7 @@
     <published>2018-02-11T03:45:57.000Z</published>
     <updated>2018-02-11T04:16:12.795Z</updated>
     
-    <content type="html"><![CDATA[<p>18岁之前的童年时期，一般是这么上学的。</p><p>1， 幼儿园 （3-6岁）<br>有的幼儿园是3年，也有4年的幼儿园。 叫法有 preschool, nursery school, or kindergarten。 国内基本使用的是kindergarten的叫法，美国多用preschool。</p><p>2，在后面的12年里， 一般有2阶段 和 3阶段不同的教育系统。<br>两阶段的就是 分别对应 Primary school 和     Secondary school。<br>三阶段的分为 Elementary school， Middle school，High school。</p><p>国内使用二合一的版本。 即有两阶段 小学 和 中学， 然后又有3阶段， 小学，初中，高中。 (厉害了。)</p><p>所以 7-12岁 上6年小学 应该叫 Elementary school 这是美国叫法， 英国的小学叫法是 Primary school。 这两种叫法基本都可以。因为每个国家的学年设置都不同。所以没有完全匹配的叫法。</p><p>13-18 ，这6年在中国 分为 初中 和 高中。 这两者都属于中学，中学为 Secondary school。 然后中学一分为二， 13-15 为 初中， 16-18为高中。 所以</p><p>初中 是 junior secondary（Lower secondary） </p><p>高中 时 senior secondary （Higher secondary）。</p><h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><p><a href="https://en.wikipedia.org/wiki/Educational_stage" target="_blank" rel="external">https://en.wikipedia.org/wiki/Educational_stage</a></p><p><a href="https://en.wikipedia.org/wiki/K%E2%80%9312" target="_blank" rel="external">https://en.wikipedia.org/wiki/K%E2%80%9312</a></p>]]></content>
+    <content type="html"><![CDATA[<p>18岁之前的童年时期，一般是这么上学的。</p><p>1， 幼儿园 （3-6岁）<br>有的幼儿园是3年，也有4年的幼儿园。 叫法有 preschool, nursery school, or kindergarten。 国内基本使用的是kindergarten的叫法，美国多用preschool。</p><p>2，在后面的12年里， 一般有2阶段 和 3阶段不同的教育系统。<br>两阶段的就是 分别对应 Primary school 和     Secondary school。<br>三阶段的分为 Elementary school， Middle school，High school。</p><p>国内使用二合一的版本。 即有两阶段 小学 和 中学， 然后又有3阶段， 小学，初中，高中。 (厉害了。)</p><p>所以 7-12岁 上6年小学 应该叫 Elementary school 这是美国叫法， 英国的小学叫法是 Primary school。 这两种叫法基本都可以。因为每个国家的学年设置都不同。所以没有完全匹配的叫法。</p><p>13-18 ，这6年在中国 分为 初中 和 高中。 这两者都属于中学，中学为 Secondary school。 然后中学一分为二， 13-15 为 初中， 16-18为高中。 所以</p><p>初中 是 junior secondary（Lower secondary） </p><p>高中 时 senior secondary （Higher secondary）。</p><h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><p><a href="https://en.wikipedia.org/wiki/Educational_stage" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Educational_stage</a></p><p><a href="https://en.wikipedia.org/wiki/K%E2%80%9312" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/K%E2%80%9312</a></p>]]></content>
     
     <summary type="html">
     
@@ -309,163 +470,6 @@
     
     
       <category term="schooling" scheme="http://www.youletter.cn/tags/schooling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>spring boot 入参检验</title>
-    <link href="http://www.youletter.cn/2018/02/06/spring-boot-%E5%85%A5%E5%8F%82%E6%A3%80%E9%AA%8C/"/>
-    <id>http://www.youletter.cn/2018/02/06/spring-boot-入参检验/</id>
-    <published>2018-02-06T05:41:06.000Z</published>
-    <updated>2018-02-07T01:51:41.433Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="对于POST一个JSON对象的情况"><a href="#对于POST一个JSON对象的情况" class="headerlink" title="对于POST一个JSON对象的情况"></a>对于POST一个JSON对象的情况</h1><p>需要在参数列表中增加 @Valid 标记</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@RequestMapping(value = &quot;/book&quot;, method = RequestMethod.POST)</div><div class="line">public String recieve(@RequestBody @Valid Book book) &#123;</div><div class="line">    System.out.println(book);</div><div class="line"></div><div class="line">    return book.toString();</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>可用的注解有很多 ,参见 <a href="https://docs.oracle.com/javaee/7/api/javax/validation/constraints/package-summary.html" target="_blank" rel="external">javax.validation.constraints</a></p><p>对于验证不通过的 抛出的异常有</p><p>1 org.springframework.http.converter.HttpMessageNotReadableException</p><p>该异常出现于，类型错误 ，比如 把一个 “a” 复制给 一个 Long .</p><p>2 org.springframework.web.bind.MethodArgumentNotValidException</p><p>该异常出现于，你的注解生效了，并且 超越了你规定的范围。</p><h1 id="常用的"><a href="#常用的" class="headerlink" title="常用的"></a>常用的</h1><p>对于 数字 有</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">@DecimalMax(&quot;100&quot;)</div><div class="line">@DecimalMin(&quot;10&quot;)</div><div class="line">Integer price;</div><div class="line"></div><div class="line">@Max(100)</div><div class="line">@Min(10)</div><div class="line">Integer price2;</div></pre></td></tr></table></figure><h1 id="Pattern"><a href="#Pattern" class="headerlink" title="@Pattern"></a>@Pattern</h1><p>通过正则匹配</p><p><a href="https://www.owasp.org/index.php/OWASP_Validation_Regex_Repository" target="_blank" rel="external">常用正则表达式</a></p><h1 id="Digits"><a href="#Digits" class="headerlink" title="@Digits"></a>@Digits</h1><p>@Digits(integer=,fraction=)</p><p>@Digits(integer=3)  限制最多3位。</p><h1 id="Size"><a href="#Size" class="headerlink" title="@Size"></a>@Size</h1><p>可用于 字符串，列表，Map</p><p>//Constraint: Message must be at least 10 characters long, but less than 500<br>@Size(min=10, max=500)</p><h1 id="Past-Future"><a href="#Past-Future" class="headerlink" title="@Past / @Future"></a>@Past / @Future</h1><p>验证时间</p><p>@Past<br>private Date birthDate;</p><p>//Constraint: Schedule visit date must be in the future<br>@Future<br>private String scheduledVisitDate;</p><h1 id="定制错误message"><a href="#定制错误message" class="headerlink" title="定制错误message"></a>定制错误message</h1><p>@Pattern(regexp = “[a-zA-Z0-9 ]”, message=”article.title.error”)<br>private String articleTitle;</p><p>参看 </p><p><a href="https://www.owasp.org/index.php/Bean_Validation_Cheat_Sheet" target="_blank" rel="external">注解介绍</a></p><p><a href="https://www.owasp.org/index.php/OWASP_Validation_Regex_Repository" target="_blank" rel="external">常用正则表达式</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;对于POST一个JSON对象的情况&quot;&gt;&lt;a href=&quot;#对于POST一个JSON对象的情况&quot; class=&quot;headerlink&quot; title=&quot;对于POST一个JSON对象的情况&quot;&gt;&lt;/a&gt;对于POST一个JSON对象的情况&lt;/h1&gt;&lt;p&gt;需要在参数列表中增加
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>spring boot 接收参数的几种姿势</title>
-    <link href="http://www.youletter.cn/2018/02/04/spring-boot-%E6%8E%A5%E6%94%B6%E5%8F%82%E6%95%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E5%A7%BF%E5%8A%BF/"/>
-    <id>http://www.youletter.cn/2018/02/04/spring-boot-接收参数的几种姿势/</id>
-    <published>2018-02-04T03:12:29.000Z</published>
-    <updated>2018-02-04T06:01:56.294Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="RequestBody"><a href="#RequestBody" class="headerlink" title="@RequestBody"></a>@RequestBody</h1><p>适用场景：请求方传入一个JSON串，将这个json反序列化成一个对象，赋值给一个变量。<br>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@RequestMapping(value = &quot;/friend&quot;, method = RequestMethod.POST)</div><div class="line">public String create(@RequestBody Friend friend) &#123;</div><div class="line">    System.out.println(friend);</div><div class="line"></div><div class="line">    return &quot;ok&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">public class Friend &#123;</div><div class="line">    String name;</div><div class="line">    String stage;</div><div class="line">    String location;</div><div class="line"></div><div class="line">    public String getName() &#123;</div><div class="line">        return name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setName(String name) &#123;</div><div class="line">        this.name = name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public String getStage() &#123;</div><div class="line">        return stage;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setStage(String stage) &#123;</div><div class="line">        this.stage = stage;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public String getLocation() &#123;</div><div class="line">        return location;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setLocation(String location) &#123;</div><div class="line">        this.location = location;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public String toString() &#123;</div><div class="line">        return &quot;Friend&#123;&quot; + &quot;name=&apos;&quot; + name + &apos;\&apos;&apos; + &quot;, stage=&apos;&quot; + stage + &apos;\&apos;&apos; + &quot;, location=&apos;&quot; + location + &apos;\&apos;&apos; + &apos;&#125;&apos;;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>注意：该类Friend应该是一个POJO, 写好setter/getter方法。</p><p>其中 序列化和反序列化的工作由 HttpMessageConverter 来完成。默认的HttpMessageConverter使用的是jackson的序列化方法，如果需要修改成别的，参考另一篇博文<br><a href="http://youletter.cn/2017/12/06/spring-boot%E4%B8%AD%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E7%9A%84HttpMessageConverter%E4%B8%BAGsonHttpMessageConverter/" target="_blank" rel="external">spring-boot中修改默认的HttpMessageConverter为GsonHttpMessageConverter</a></p><p>参考：<br><a href="https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-requestbody" target="_blank" rel="external">Mapping the request body with the @RequestBody annotation</a></p><h1 id="PathVariable"><a href="#PathVariable" class="headerlink" title="@PathVariable"></a>@PathVariable</h1><p>如果需要将path中的值，赋给变量。</p><p>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@GetMapping(&quot;/friend/&#123;friendId&#125;&quot;)</div><div class="line">public String findOwner(@PathVariable String friendId) &#123;</div><div class="line">    System.out.println(friendId);</div><div class="line">    return &quot;displayOwner&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>{friendId} 这个位置的 值就会 赋给 friendId这个变量。</p><p>注意： 如果URI template中的变量和参数的变量一致，可以忽略@PathVariable中的参数。 如果不一致，需要显示指出，如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@GetMapping(&quot;/friend/&#123;friendId&#125;&quot;)</div><div class="line">public String findOwner(@PathVariable(&quot;friendId&quot;) String notfriendId) &#123;</div><div class="line">    System.out.println(notfriendId);</div><div class="line">    return &quot;displayOwner&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>参考 <a href="https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-requestmapping-uri-templates" target="_blank" rel="external">URI Template Patterns</a></p><h1 id="RequestParam"><a href="#RequestParam" class="headerlink" title="@RequestParam"></a>@RequestParam</h1><p>绑定参数， 默认是必选的。如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@GetMapping(&quot;/friend/me&quot;)</div><div class="line">public String findOwner(@RequestParam(&quot;location&quot;) String location,</div><div class="line">                        @RequestParam(&quot;stage&quot;) String stage) &#123;</div><div class="line">    System.out.println(location);</div><div class="line">    System.out.println(stage);</div><div class="line">    return &quot;displayOwner&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>如果某个参数不是必选，需设置required属性。<br><code>@RequestParam(name=&quot;id&quot;, required=false)</code></p><p>参考 <a href="https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-requestparam" target="_blank" rel="external">Binding request parameters to method parameters with @RequestParam</a></p><h1 id="RequestHeader"><a href="#RequestHeader" class="headerlink" title="@RequestHeader"></a>@RequestHeader</h1><p>映射header属性</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@GetMapping(&quot;/friend/me2&quot;)</div><div class="line">public void displayHeaderInfo(@RequestHeader(&quot;Authorization&quot;) String authorization,</div><div class="line">                              @RequestHeader(&quot;Keep-Alive&quot;) long keepAlive) &#123;</div><div class="line"></div><div class="line">    System.out.println(authorization);</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure><p>参考 <a href="https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-requestheader" target="_blank" rel="external">Mapping request header attributes with the @RequestHeader annotation</a></p><h1 id="测试使用的工程上传至github"><a href="#测试使用的工程上传至github" class="headerlink" title="测试使用的工程上传至github"></a>测试使用的工程上传至github</h1><p><a href="https://github.com/kunpengku/spring-boot-request-kind" target="_blank" rel="external">spring-boot-request-kind</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;RequestBody&quot;&gt;&lt;a href=&quot;#RequestBody&quot; class=&quot;headerlink&quot; title=&quot;@RequestBody&quot;&gt;&lt;/a&gt;@RequestBody&lt;/h1&gt;&lt;p&gt;适用场景：请求方传入一个JSON串，将这个json反序列化成一个
-      
-    
-    </summary>
-    
-    
-      <category term="spring-boot" scheme="http://www.youletter.cn/tags/spring-boot/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>elasticesarch 旧版本下载地址</title>
-    <link href="http://www.youletter.cn/2018/01/22/elasticesarch-%E6%97%A7%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
-    <id>http://www.youletter.cn/2018/01/22/elasticesarch-旧版本下载地址/</id>
-    <published>2018-01-22T05:29:09.000Z</published>
-    <updated>2018-01-22T05:29:30.738Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.elastic.co/downloads/past-releases" target="_blank" rel="external">https://www.elastic.co/downloads/past-releases</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://www.elastic.co/downloads/past-releases&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.elastic.co/downloads/past-releases&lt;/a
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>spring boot elasticsearch</title>
-    <link href="http://www.youletter.cn/2018/01/19/spring-boot-elasticsearch/"/>
-    <id>http://www.youletter.cn/2018/01/19/spring-boot-elasticsearch/</id>
-    <published>2018-01-19T03:56:05.000Z</published>
-    <updated>2018-01-19T03:57:03.295Z</updated>
-    
-    <content type="html"><![CDATA[<p>为了方便调试， 最好把DSL打印出来。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">String s = requestBuilder.toString();</div><div class="line">System.out.println(s);</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;为了方便调试， 最好把DSL打印出来。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>notions and expression of notions</title>
-    <link href="http://www.youletter.cn/2018/01/11/notions-and-expression-of-notions/"/>
-    <id>http://www.youletter.cn/2018/01/11/notions-and-expression-of-notions/</id>
-    <published>2018-01-11T09:38:25.000Z</published>
-    <updated>2018-01-17T15:54:51.206Z</updated>
-    
-    <content type="html"><![CDATA[<p>It rains      天下雨了</p><p>Does it rain？  下雨了吗？</p><p>Is it raining?  正在下雨吗？</p><p>It is going to rain   要下雨了</p><p>Has it rained?      下过了雨吗？</p><p>Dit it rain (yesterday)?  (昨天)下雨的吗？</p><p>He strikes me    他打我<br>I strikes him    我打他</p><p>中文用词序 表达 ，英文用  I -&gt; me ， He -&gt; him 来表达宾语。</p><p>宾语意念 。</p><p>中文有一种 用 把 字介绍宾语的语法工具</p><p>push open the door   把门推开</p><p>kill the man         把人打死</p><p>rob his money        把钱抢走</p><p>more than sixty     六十多</p><p>less hot  不怎么热</p><p>not so very hot  不十分热</p><p>rather hot 颇有点热</p><p>just hot enough 热的正好</p><p>too hot  太热</p><p>hot enough to burn your fingers  热的烫手</p><p>as hot as a furnace 热的如火炉一般</p><p>so hot that you can hardly breathe 热的透不过起来</p><p>eighty percent 八成</p><p>fifteen percent discount 八五折</p><p>the whiteness of the white horse 白马之白</p><p>the rich  富人</p><p>the poor  穷人</p><p>He is afraid 他怕</p><p>英文里有 事实fact 和 想象fancy 的区别</p><p>I think so  事实</p><p>I should think so   想象</p><p>It is all right 事实</p><p>It should be all right 想象</p><p>He becomes tired  他累了</p><h1 id="八大词类"><a href="#八大词类" class="headerlink" title="八大词类"></a>八大词类</h1><p>名词 Nouns</p><p>代名词 pronoun</p><p>动词 verb</p><p>形容词 adjective</p><p>副词 adverbs</p><p>介词  preposition</p><p>连词 conjunction</p><p>叹词 exclamation</p><p>介词后面必定有一个名词 ，构成 介词短语。 介词短语 不是 当做 形容词用，便是当做副词作用。</p><p>同一个词，在不同句子中的 职务不同</p><p>He sleeps 动词</p><p>He talks in his sleep 名词</p><p>He walked before 副词</p><p>He walked before me 介词</p><p>He had walked a mile before he came to the house 连词</p><p>At the back of the house 。 名词back</p><p>back parlour  back pay 欠薪  形容词</p><p>Stand back 副词</p><p>To back up a friend 做朋友的后盾 动词</p><p>I brought a new hat which you saw this morning  。代词和连词 which</p><p>green sky  青天</p><p>natural gift 天资</p><p>heavenly palace 天堂</p><p>natural calamity 天灾</p><p>everyday 天天</p><p>to explain one’s mind 自白其志</p><p>to meet a loss without compensation 白受损失</p><p>在英文里，词形随着作用的变化而变化</p><p>admire 动词 - admiration 名词 - admirable , admiring 形 - admirably ，admiringly 副词</p><h1 id="作用的意味"><a href="#作用的意味" class="headerlink" title="作用的意味"></a>作用的意味</h1><h1 id="事物的意味，-凡是具体的东西"><a href="#事物的意味，-凡是具体的东西" class="headerlink" title="事物的意味， 凡是具体的东西"></a>事物的意味， 凡是具体的东西</h1><p>动作名词</p><p>I love books.      I love reading.</p><p>Have you learnt this?  Have you learnt swimming?</p><p>The geography lesson is difficult. Breathing under water is difficult.</p><p>A pocket-knife is useful.     Letter-writing is useful.</p><p>He stopped the car.       She stopped singing.</p><p>I teach grammar.         You teach dancing.</p><p>The boy slept during the class.    He slept also during the meeting.</p><p>Then he slept before seven o’clock.  Then he slept before going to bed.</p><p>He is like his father in his laziness. This is like playing with fire.   like是介词。</p><p>He learn to punctuate.  He learn punctuation. </p><p>We compose sentences.    We learn composition.</p><p>He is promoted.   We heard about of his promotion.</p><p>You were examined.  You pass the examination. </p><p>This is esay to prepare. This requires no preparation.</p><p>You must not be afraid to repeat the sentences.  Repetition is good to you , but don’t repeat mistakes. </p><p>品性和情况的名词</p><p>He is poor, but he enjoys his poverty.      poverty 就是名词。</p><p>Lovers are blind, but never mind the blindess of the lovers. so long as love lasts.  bliend = adj.     blindness = n.</p><p>He is a good man .but his goodness can not help him to pay  debts.</p><p>Goodness is such a virable term.  According to the servant. </p><h1 id="动作和品性的意味"><a href="#动作和品性的意味" class="headerlink" title="动作和品性的意味"></a>动作和品性的意味</h1><h1 id="情状和方面的意味"><a href="#情状和方面的意味" class="headerlink" title="情状和方面的意味"></a>情状和方面的意味</h1><p>You want to be independent- how , Financially or spiritually</p><p>In what respect are men and women unequal? Physically, mentally, socially, legally, or economically? Are the equal in brains, in looks ,in courage, in patience ,in jealousy, in interest, in babies.</p><p>The Chinese are superior to the English in patience, and the English are superior to the Chinese in political organization.</p><p>There is physical courage, and there is moral courage.</p><p>A man who dare not say what he belives is a moral coward.</p><p>E officials are great men to their families, but criminals to the nation.</p><h1 id="介词力量的意味"><a href="#介词力量的意味" class="headerlink" title="介词力量的意味"></a>介词力量的意味</h1><p>Go with him. He comes for his hat.</p><p>介词后面跟名词</p><h1 id="作用的转变"><a href="#作用的转变" class="headerlink" title="作用的转变"></a>作用的转变</h1><p>名词当形容词，而词形不用变化</p><p>stone wall.</p><p>名词变 形容词 </p><p>gold  golden</p><p>wood   wooden</p><p>earth earthen</p><h1 id="名词当动词用"><a href="#名词当动词用" class="headerlink" title="名词当动词用"></a>名词当动词用</h1><p>Hand the money to me</p><p>they stoned him to death</p><p>The gun was fired.</p><h1 id="动词当名词"><a href="#动词当名词" class="headerlink" title="动词当名词"></a>动词当名词</h1><p>Fishing is pleasant to lovers even when there is no fish</p><p>It’s difficult to remember the last lie that you told</p><p>There is nothing finer than to chat with you old friend around a fire</p><p>To call oneself a revolutionist is one thing, to be is another thing.</p><h1 id="动词当形容词"><a href="#动词当形容词" class="headerlink" title="动词当形容词"></a>动词当形容词</h1><p>分词<br>一种是 现在分词 present participle<br>一种是 过去分词 past participle</p><p>temporarily occupied areas</p><p>rapidly rising reputation</p><p>his broken health</p><p>flying carpet</p><p>determined look</p><p>over-protected</p><p>howling monkey</p><p>ill-smelling thing</p><p>well-written essays</p><p>mimic  mimicking</p><p>picnic   picnicking</p><h1 id="动词变形容词"><a href="#动词变形容词" class="headerlink" title="动词变形容词"></a>动词变形容词</h1><h1 id="形容词变名词"><a href="#形容词变名词" class="headerlink" title="形容词变名词"></a>形容词变名词</h1><p>I have no fear of his power.</p><p>I was impressed by her kindness.</p><p>strong - strength</p><p>broad - breadth</p><p>wide - width</p><p>cleanly - cleanliness</p><p>kind - kindness</p><p>cold - coldness</p><p>faithful - faithfulness</p><p>sorry - sorrow</p><p>hungry - hunger</p><p>proud - pride</p><p>savage - savagery</p><p>diligent - diligence</p><h1 id="the-poor-and-the-rich"><a href="#the-poor-and-the-rich" class="headerlink" title="the poor and the rich"></a>the poor and the rich</h1><p>the righteous and the wicked</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;It rains      天下雨了&lt;/p&gt;
-&lt;p&gt;Does it rain？  下雨了吗？&lt;/p&gt;
-&lt;p&gt;Is it raining?  正在下雨吗？&lt;/p&gt;
-&lt;p&gt;It is going to rain   要下雨了&lt;/p&gt;
-&lt;p&gt;Has it rained?     
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>开明英文文法-前言</title>
-    <link href="http://www.youletter.cn/2018/01/11/%E5%BC%80%E6%98%8E%E8%8B%B1%E6%96%87%E6%96%87%E6%B3%95-%E5%89%8D%E8%A8%80/"/>
-    <id>http://www.youletter.cn/2018/01/11/开明英文文法-前言/</id>
-    <published>2018-01-10T23:46:36.000Z</published>
-    <updated>2018-01-11T07:46:56.432Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="作者序"><a href="#作者序" class="headerlink" title="作者序"></a>作者序</h1><h2 id="表达方法的科学"><a href="#表达方法的科学" class="headerlink" title="表达方法的科学"></a>表达方法的科学</h2><p>开明英文文法代表一种应用实践，关于把英文语法教给中国学生的新的语法理论。它把一切语法的形式和结构只是当做表达意念的工具，而把语法当成表达的科学。它不是从外表的形式讲解到内部的含义，而是从内在的含义讲到外表的形式，即从意念讲到意念的表达法。因此，它讨论的不是词型和语法形式的定义和分析，而是深入到说话者的心理，去追问说话者在语言被后试图表达的意念是什么，以及通过哪种语法工具来表达出来的。所以语法讨论意念，以及意念的表达方式。所有的语法变化和结构都和这个问题相关，并附属于它们。这种革新的语法见解，创始于Benedetto Croce的理想，而通过OttoJespersen 和 Ferdinand 的划时代的著作，把它发扬光大起来。</p><h2 id="中文和英文的比较"><a href="#中文和英文的比较" class="headerlink" title="中文和英文的比较"></a>中文和英文的比较</h2><p>在某种程度以内，开明英文文法也包含中文英文两种语言的新的比较文法。说的范围更小一点，是中英文意念范畴和不同的表达意念的工具的比较。可是书中所举个点，其性质完全是实用性的而非理论性的，旨在帮助中国学生克服心理上的困难。很多普通的语法错误很容易用这种方法矫正，而且也没有别的办法。凡在中英文意念上有区别的地方，明显的做法是训练中国学生学的这种新的思考方式。但在多少情况下，中英文有许多意念共同的地方，如何阐明这两种语言表达方法的不同是最有意思的地方。英文语法实在是教英文的思考和表达的方式。学生应该时刻问自己，如果自己有一个想法，如何用英文表达出来。</p><h2 id="错误之由来"><a href="#错误之由来" class="headerlink" title="错误之由来"></a>错误之由来</h2><p>意念和表达的区别，仅仅是逻辑的，而非实际的。没有一种思想无法表现，也没有一种表现不遵循思想的路径。我们说话时在运用思想，许多女士讲话是为了寻找她们思考什么。思想法和表达法是打成一片，不可分离的。因此，所以没有一种语法是只讲表达法而同时不去讲如何思想法的。语法错误的造成，是因为思想的方式和表达的习惯是错的。错误有两种，一是由于外国人的思想方式，这是学习</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;作者序&quot;&gt;&lt;a href=&quot;#作者序&quot; class=&quot;headerlink&quot; title=&quot;作者序&quot;&gt;&lt;/a&gt;作者序&lt;/h1&gt;&lt;h2 id=&quot;表达方法的科学&quot;&gt;&lt;a href=&quot;#表达方法的科学&quot; class=&quot;headerlink&quot; title=&quot;表达方法的科学
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>maven 实用命令</title>
-    <link href="http://www.youletter.cn/2018/01/10/maven-%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://www.youletter.cn/2018/01/10/maven-实用命令/</id>
-    <published>2018-01-10T06:37:27.000Z</published>
-    <updated>2018-02-06T12:41:17.358Z</updated>
-    
-    <content type="html"><![CDATA[<p>修改mvn 项目的 版本</p><p>mvn versions:set -DnewVersion=1.0.X-SNAPSHOT versions:commit </p><p>查看 项目的 依赖<br>mvn dependency:tree</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;修改mvn 项目的 版本&lt;/p&gt;
-&lt;p&gt;mvn versions:set -DnewVersion=1.0.X-SNAPSHOT versions:commit &lt;/p&gt;
-&lt;p&gt;查看 项目的 依赖&lt;br&gt;mvn dependency:tree&lt;/p&gt;
-
-      
-    
-    </summary>
-    
     
   </entry>
   

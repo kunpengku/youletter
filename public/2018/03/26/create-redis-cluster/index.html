@@ -22,7 +22,7 @@ s.parentNode.insertBefore(bp, s);
 <p>cd cluster &amp;&amp; mkdir 7000 7001 7002</p>
 <p>将redis的配置文件 redis.conf 复制至 7000-7002目录下</p>
 <p>修改 redis.conf （以 7000/redis.conf 为例）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">port 7000</div><div class="line">cluster-enabled yes</div><div class="line">cluster-config-file nodes-7000.conf</div><div class="line">cluster-node-timeout 5000</div><div class="line">appendonly yes</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">port 7000</span><br><span class="line">cluster-enabled yes</span><br><span class="line">cluster-config-file nodes-7000.conf</span><br><span class="line">cluster-node-timeout 5000</span><br><span class="line">appendonly yes</span><br></pre></td></tr></table></figure>
 <p>启动服务<br>redis-server 7000/redis.conf</p>
 <p>redis-server 7001/redis.conf</p>
 <p>redis-server 7002/redis.conf</p>
@@ -39,7 +39,7 @@ s.parentNode.insertBefore(bp, s);
 <p>cluster nodes , 是否能看到3个master，且已分配好槽</p>
 <p>set test test，是否能看到写值redirected</p>
 <h3 id="redis-trib创建-cluster（注：需要安装-ruby）"><a href="#redis-trib创建-cluster（注：需要安装-ruby）" class="headerlink" title="redis-trib创建 cluster（注：需要安装 ruby）"></a>redis-trib创建 cluster（注：需要安装 ruby）</h3><p>gem install redis </p>
-<p>wget <a href="http://download.redis.io/redis-stable/src/redis-trib.rb" target="_blank" rel="external">http://download.redis.io/redis-stable/src/redis-trib.rb</a> </p>
+<p>wget <a href="http://download.redis.io/redis-stable/src/redis-trib.rb" target="_blank" rel="noopener">http://download.redis.io/redis-stable/src/redis-trib.rb</a> </p>
 <p>ruby redis-trib.rb create –replicas 1 127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005</p>
 <h1 id="Docker-搭建redis-Cluster"><a href="#Docker-搭建redis-Cluster" class="headerlink" title="Docker 搭建redis Cluster"></a>Docker 搭建redis Cluster</h1><p>docker pull grokzen/redis-cluster</p>
 <p>【linux】docker run -d –net=host –name rcluster grokzen/redis-cluster:latest</p>
