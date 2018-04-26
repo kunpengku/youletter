@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-04-25T07:36:56.433Z</updated>
+  <updated>2018-04-26T10:10:12.787Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql导出表结构</title>
+    <link href="http://www.youletter.cn/2018/04/26/Mysql%E5%AF%BC%E5%87%BA%E8%A1%A8%E7%BB%93%E6%9E%84/"/>
+    <id>http://www.youletter.cn/2018/04/26/Mysql导出表结构/</id>
+    <published>2018-04-26T10:05:58.000Z</published>
+    <updated>2018-04-26T10:10:12.787Z</updated>
+    
+    <content type="html"><![CDATA[<p>-d 参数，告诉mysqldump 不要去导出数据。</p><p>mysqldump -d -h localhost -u root -pmypassword databasename &gt; dumpfile.sql</p><p>如果不加参数 -d  那么 会把 建表语句  和  数据一起导出。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;-d 参数，告诉mysqldump 不要去导出数据。&lt;/p&gt;
+&lt;p&gt;mysqldump -d -h localhost -u root -pmypassword databasename &amp;gt; dumpfile.sql&lt;/p&gt;
+&lt;p&gt;如果不加参数 -d  那么 会把 建
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>parallel 命令</title>
@@ -446,30 +469,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>小学,初中,高中用英语怎么表示</title>
-    <link href="http://www.youletter.cn/2018/02/11/%E5%B0%8F%E5%AD%A6-%E5%88%9D%E4%B8%AD-%E9%AB%98%E4%B8%AD%E7%94%A8%E8%8B%B1%E8%AF%AD%E6%80%8E%E4%B9%88%E8%A1%A8%E7%A4%BA/"/>
-    <id>http://www.youletter.cn/2018/02/11/小学-初中-高中用英语怎么表示/</id>
-    <published>2018-02-11T03:45:57.000Z</published>
-    <updated>2018-02-11T04:16:12.795Z</updated>
-    
-    <content type="html"><![CDATA[<p>18岁之前的童年时期，一般是这么上学的。</p><p>1， 幼儿园 （3-6岁）<br>有的幼儿园是3年，也有4年的幼儿园。 叫法有 preschool, nursery school, or kindergarten。 国内基本使用的是kindergarten的叫法，美国多用preschool。</p><p>2，在后面的12年里， 一般有2阶段 和 3阶段不同的教育系统。<br>两阶段的就是 分别对应 Primary school 和     Secondary school。<br>三阶段的分为 Elementary school， Middle school，High school。</p><p>国内使用二合一的版本。 即有两阶段 小学 和 中学， 然后又有3阶段， 小学，初中，高中。 (厉害了。)</p><p>所以 7-12岁 上6年小学 应该叫 Elementary school 这是美国叫法， 英国的小学叫法是 Primary school。 这两种叫法基本都可以。因为每个国家的学年设置都不同。所以没有完全匹配的叫法。</p><p>13-18 ，这6年在中国 分为 初中 和 高中。 这两者都属于中学，中学为 Secondary school。 然后中学一分为二， 13-15 为 初中， 16-18为高中。 所以</p><p>初中 是 junior secondary（Lower secondary） </p><p>高中 时 senior secondary （Higher secondary）。</p><h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><p><a href="https://en.wikipedia.org/wiki/Educational_stage" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Educational_stage</a></p><p><a href="https://en.wikipedia.org/wiki/K%E2%80%9312" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/K%E2%80%9312</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;18岁之前的童年时期，一般是这么上学的。&lt;/p&gt;
-&lt;p&gt;1， 幼儿园 （3-6岁）&lt;br&gt;有的幼儿园是3年，也有4年的幼儿园。 叫法有 preschool, nursery school, or kindergarten。 国内基本使用的是kindergarten的叫法，美
-      
-    
-    </summary>
-    
-    
-      <category term="schooling" scheme="http://www.youletter.cn/tags/schooling/"/>
     
   </entry>
   
