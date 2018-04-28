@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-04-26T10:10:12.787Z</updated>
+  <updated>2018-04-28T02:51:50.534Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spring boot reference</title>
+    <link href="http://www.youletter.cn/2018/04/28/spring-boot-reference/"/>
+    <id>http://www.youletter.cn/2018/04/28/spring-boot-reference/</id>
+    <published>2018-04-28T02:51:21.000Z</published>
+    <updated>2018-04-28T02:51:50.534Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.5.8 </p><p><a href="https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/" target="_blank" rel="noopener">https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.5.8 &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https:
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Mysql导出表结构</title>
@@ -440,31 +462,6 @@
         &lt;p&gt;忘记密码，要用短信验证，什么流程。&lt;/p&gt;
 &lt;p&gt;step 1 请输入正确的用户名，如果正确转第二步。&lt;/p&gt;
 &lt;p&gt;step 2 提示，你预留的手机号是 &lt;strong&gt;&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;0123， 请输入预留的手机号，点击获取 验证码， 并将 验证
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>mac 下安装MySQL-python</title>
-    <link href="http://www.youletter.cn/2018/02/12/mac-%E4%B8%8B%E5%AE%89%E8%A3%85MySQL-python/"/>
-    <id>http://www.youletter.cn/2018/02/12/mac-下安装MySQL-python/</id>
-    <published>2018-02-12T01:36:20.000Z</published>
-    <updated>2018-02-12T01:39:48.381Z</updated>
-    
-    <content type="html"><![CDATA[<p>step 1 sudo su<br>切到root用户</p><p>step 2 </p><p>pip install MySQL-python</p><p>完成。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;step 1 sudo su&lt;br&gt;切到root用户&lt;/p&gt;
-&lt;p&gt;step 2 &lt;/p&gt;
-&lt;p&gt;pip install MySQL-python&lt;/p&gt;
-&lt;p&gt;完成。&lt;/p&gt;
-
       
     
     </summary>
