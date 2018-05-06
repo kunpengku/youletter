@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-04-28T02:51:50.534Z</updated>
+  <updated>2018-05-06T21:42:49.741Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx 转发js 跨域请求</title>
+    <link href="http://www.youletter.cn/2018/05/07/nginx-%E8%BD%AC%E5%8F%91js-%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/"/>
+    <id>http://www.youletter.cn/2018/05/07/nginx-转发js-跨域请求/</id>
+    <published>2018-05-06T21:42:03.000Z</published>
+    <updated>2018-05-06T21:42:49.741Z</updated>
+    
+    <content type="html"><![CDATA[<p>nginx.conf 配置 增加转发功能</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">location ^~ /pasterest/ &#123;</span><br><span class="line">    proxy_pass  http://127.0.0.1:52001/;</span><br><span class="line">    proxy_set_header  Host  $host;</span><br><span class="line">    access_log  /var/tmp/nginx/logs/paste-access.log ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;nginx.conf 配置 增加转发功能&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript</title>
+    <link href="http://www.youletter.cn/2018/05/05/JavaScript/"/>
+    <id>http://www.youletter.cn/2018/05/05/JavaScript/</id>
+    <published>2018-05-05T01:57:30.000Z</published>
+    <updated>2018-05-05T08:20:24.798Z</updated>
+    
+    <content type="html"><![CDATA[<p>一般来说，完整的JavaScript包括以下几个部分：</p><p>ECMAScript，描述了该语言的语法和基本对象<br>文档对象模型（DOM），描述处理网页内容的方法和接口  Document Object Model<br>浏览器对象模型（BOM），描述与浏览器进行交互的方法和接口 Browser Object Model </p><p>基本语法</p><p>每个语句以;结束 ，但是负责执行JavaScript代码的引擎会自动在每个语句的结尾补上; 。所以你可以选择不写 ;。</p><p>注释</p><p>以//开头直到行末的字符被视为行注释</p><p>另一种块注释是用/<em>…</em>/把多行字符包裹起来，把一大“块”视为一个注释：</p><p>JavaScript严格区分大小写</p><p>数据类型</p><p>JavaScript不区分整数和浮点数，统一用Number表示</p><p>字符串<br>字符串是以单引号’或双引号”括起来的任意文本，比如’abc’，”xyz”等等</p><p>布尔值<br>布尔值和布尔代数的表示完全一致，一个布尔值只有true、false</p><p>&amp;&amp;  与</p><p>||  或</p><p>！  非</p><p>JS的语法就像C语言。</p><p>JavaScript在设计时，有两种比较运算符：</p><p>第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；</p><p>第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。</p><p>不要使用==比较，始终坚持使用===比较。</p><p>另一个例外是NaN这个特殊的Number与所有其他值都不相等，包括它自己：</p><p>NaN === NaN; // false</p><p>唯一能判断NaN的方法是通过isNaN()函数：</p><p>isNaN(NaN); // true</p><p>null和undefined</p><p>数组</p><p>[1, 2, 3.14, ‘Hello’, null, true];<br>JavaScript的数组可以包括任意数据类型。  而且数组中的类型不必 相同。</p><p>另一种创建数组的方法是通过Array()函数实现：</p><p>new Array(1, 2, 3); // 创建了数组[1, 2, 3]</p><p>对象<br>JavaScript的对象是一组由键-值组成的无序集合，例如：</p><p>var person = {<br>    name: ‘Bob’,<br>    age: 20,<br>    tags: [‘js’, ‘web’, ‘mobile’],<br>    city: ‘Beijing’,<br>    hasCar: true,<br>    zipcode: null<br>};</p><p>JavaScript对象的键都是字符串类型，值可以是任意数据类型</p><p>要获取一个对象的属性，我们用对象变量.属性名的方式：</p><p>person.name; // ‘Bob’<br>person.zipcode; // null</p><p>变量在JavaScript中就是用一个变量名表示，变量名是大小写英文、数字、$和_的组合，且不能用数字开头。变量名也不能是JavaScript的关键字，如if、while等。申明一个变量用var语句，比如：</p><p>var a; // 申明了变量a，此时a的值为undefined<br>var $b = 1; // 申明了变量$b，同时给$b赋值，此时$b的值为1<br>var s_007 = ‘007’; // s_007是一个字符串<br>var Answer = true; // Answer是一个布尔值true<br>var t = null; // t的值是null</p><p>如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：</p><p>strict模式</p><p>字符串</p><p>多行字符串</p><p>ES6标准新增了一种多行字符串的表示方法，用反引号 <code>...</code> 表示：</p><p><code>这是一个多行字符串</code>;</p><p>模板字符串</p><p>name = ‘fupeng’</p><p>age=’12a’</p><p>console.log(<code>你好, ${name}, 你今年${age}岁了!</code>);</p><p>请注意，如果通过索引赋值时，索引超过了范围，同样会引起Array大小的变化：</p><p>var arr = [1, 2, 3];<br>arr[5] = ‘x’;<br>arr; // arr变为[1, 2, 3, undefined, undefined, ‘x’]</p><p>push和pop<br>push()向Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉：</p><p>var arr = [1, 2];<br>arr.push(‘A’, ‘B’); // 返回Array新的长度: 4<br>arr; // [1, 2, ‘A’, ‘B’]<br>arr.pop(); // pop()返回’B’<br>arr; // [1, 2, ‘A’]<br>arr.pop(); arr.pop(); arr.pop(); // 连续pop 3次<br>arr; // []<br>arr.pop(); // 空数组继续pop不会报错，而是返回undefined<br>arr; // []</p><p>unshift和shift<br>如果要往Array的头部添加若干元素，使用unshift()方法，shift()方法则把Array的第一个元素删掉：</p><p>var arr = [1, 2];<br>arr.unshift(‘A’, ‘B’); // 返回Array新的长度: 4<br>arr; // [‘A’, ‘B’, 1, 2]<br>arr.shift(); // ‘A’<br>arr; // [‘B’, 1, 2]<br>arr.shift(); arr.shift(); arr.shift(); // 连续shift 3次<br>arr; // []<br>arr.shift(); // 空数组继续shift不会报错，而是返回undefined<br>arr; // []</p><p>concat<br>concat()方法把当前的Array和另一个Array连接起来，并返回一个新的Array：</p><p>var arr = [‘A’, ‘B’, ‘C’];<br>var added = arr.concat([1, 2, 3]);<br>added; // [‘A’, ‘B’, ‘C’, 1, 2, 3]<br>arr; // [‘A’, ‘B’, ‘C’]</p><p>join<br>join()方法是一个非常实用的方法，它把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串：</p><p>var arr = [‘A’, ‘B’, ‘C’, 1, 2, 3];<br>arr.join(‘-‘); // ‘A-B-C-1-2-3’</p><p>对象</p><p>JavaScript用一个{…}表示一个对象，键值对以xxx: xxx形式申明，用,隔开。</p><p>var xiaoming = {<br>    name: ‘小明’,<br>    birth: 1990,<br>    school: ‘No.1 Middle School’,<br>    height: 1.70,<br>    weight: 65,<br>    score: null<br>};</p><p>但这要求属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用’’括起来：</p><p>var xiaohong = {<br>    name: ‘小红’,<br>    ‘middle-school’: ‘No.1 Middle School’<br>};</p><p>我们在编写JavaScript代码的时候，属性名尽量使用标准的变量名，这样就可以直接通过object.prop的形式访问一个属性了。</p><p>实际上JavaScript对象的所有属性都是字符串，不过属性对应的值可以是任意数据类型。</p><p>由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性：</p><p>var xiaoming = {<br>    name: ‘小明’<br>};<br>xiaoming.age; // undefined<br>xiaoming.age = 18; // 新增一个age属性<br>xiaoming.age; // 18<br>delete xiaoming.age; // 删除age属性<br>xiaoming.age; // undefined<br>delete xiaoming[‘name’]; // 删除name属性<br>xiaoming.name; // undefined<br>delete xiaoming.school; // 删除一个不存在的school属性也不会报错</p><p>如果我们要检测xiaoming是否拥有某一属性，可以用in操作符：</p><p>var xiaoming = {<br>    name: ‘小明’,<br>    birth: 1990,<br>    school: ‘No.1 Middle School’,<br>    height: 1.70,<br>    weight: 65,<br>    score: null<br>};<br>‘name’ in xiaoming; // true<br>‘grade’ in xiaoming; // false</p><p>要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法：</p><p>var xiaoming = {<br>    name: ‘小明’<br>};<br>xiaoming.hasOwnProperty(‘name’); // true<br>xiaoming.hasOwnProperty(‘toString’); // false</p><p>条件判断</p><p>var age = 20;<br>if (age &gt;= 18) { // 如果age &gt;= 18为true，则执行if语句块<br>    alert(‘adult’);<br>} else { // 否则执行else语句块<br>    alert(‘teenager’);<br>}</p><p>循环</p><p>var x = 0;<br>var i;<br>for (i=1; i&lt;=10000; i++) {<br>    x = x + i;<br>}<br>x;</p><p>for循环最常用的地方是利用索引来遍历数组：</p><p>var arr = [‘Apple’, ‘Google’, ‘Microsoft’];<br>var i, x;<br>for (i=0; i&lt;arr.length; i++) {<br>    x = arr[i];<br>    console.log(x);<br>}</p><p>var a = [‘A’, ‘B’, ‘C’];<br>for (var i in a) {<br>    console.log(i); // ‘0’, ‘1’, ‘2’<br>    console.log(a[i]); // ‘A’, ‘B’, ‘C’<br>}</p><p>while<br>for循环在已知循环的初始和结束条件时非常有用。而上述忽略了条件的for循环容易让人看不清循环的逻辑，此时用while循环更佳。</p><p>while循环只有一个判断条件，条件满足，就不断循环，条件不满足时则退出循环。比如我们要计算100以内所有奇数之和，可以用while循环实现：</p><p>var x = 0;<br>var n = 99;<br>while (n &gt; 0) {<br>    x = x + n;<br>    n = n - 2;<br>}<br>x; // 2500</p><p>Map<br>Map是一组键值对的结构，具有极快的查找速度。</p><p>初始化Map需要一个二维数组，或者直接初始化一个空Map。</p><p>var m = new Map([[‘Michael’, 95], [‘Bob’, 75], [‘Tracy’, 85]]);<br>m.get(‘Michael’); // 95</p><p>var m = new Map(); // 空Map<br>m.set(‘Adam’, 67); // 添加新的key-value<br>m.set(‘Bob’, 59);<br>m.has(‘Adam’); // 是否存在key ‘Adam’: true<br>m.get(‘Adam’); // 67<br>m.delete(‘Adam’); // 删除key ‘Adam’<br>m.get(‘Adam’); // undefined</p><p>Set<br>Set和Map类似，也是一组key的集合，但不存储value。</p><p>小结<br>Map和Set是ES6标准新增的数据类型，</p><p>定义函数</p><p>function abs(x) {<br>    if (x &gt;= 0) {<br>        return x;<br>    } else {<br>        return -x;<br>    }<br>}</p><p>由于JavaScript的函数也是一个对象，上述定义的abs()函数实际上是一个函数对象，而函数名abs可以视为指向该函数的变量。</p><p>因此，第二种定义函数的方式如下：</p><p>var abs = function (x) {<br>    if (x &gt;= 0) {<br>        return x;<br>    } else {<br>        return -x;<br>    }<br>};</p><p>由于JavaScript允许传入任意个参数而不影响调用，因此传入的参数比定义的参数多也没有问题，虽然函数内部并不需要这些参数：</p><p>abs(10, ‘blablabla’); // 返回10<br>abs(-9, ‘haha’, ‘hehe’, null); //</p><p>arguments<br>JavaScript还有一个免费赠送的关键字arguments，它只在函数内部起作用，并且永远指向当前函数的调用者传入的所有参数。arguments类似Array但它不是一个Array</p><p>function foo(x) {<br>    console.log(‘x = ‘ + x); // 10<br>    for (var i=0; i&lt;arguments.length; i++) {<br>        console.log(‘arg ‘ + i + ‘ = ‘ + arguments[i]); // 10, 20, 30<br>    }<br>}<br>foo(10, 20, 30);</p><p>在JavaScript中，用var申明的变量实际上是有作用域的。</p><p>如果一个变量在函数体内部申明，则该变量的作用域为整个函数体，在函数体外不可引用该变量：</p><p>由于JavaScript的函数可以嵌套，此时，内部函数可以访问外部函数定义的变量，反过来则不行：</p><p>‘use strict’;</p><p>function foo() {<br>    var x = 1;<br>    function bar() {<br>        var y = x + 1; // bar可以访问foo的变量x!<br>    }<br>    var z = y + 1; // ReferenceError! foo不可以访问bar的变量y!<br>}</p><p>这说明JavaScript的函数在查找变量时从自身函数定义开始，从“内”向“外”查找。如果内部函数定义了与外部函数重名的变量，则内部函数的变量将“屏蔽”外部函数的变量。</p><p>变量提升</p><p>这正是因为JavaScript引擎自动提升了变量y的声明，但不会提升变量y的赋值。</p><p>全局作用域<br>不在任何函数内定义的变量就具有全局作用域。实际上，JavaScript默认有一个全局对象window，全局作用域的变量实际上被绑定到window的一个属性：</p><p>‘use strict’;</p><p>var course = ‘Learn JavaScript’;<br>alert(course); // ‘Learn JavaScript’<br>alert(window.course); // ‘Learn JavaScript’</p><p>这说明JavaScript实际上只有一个全局作用域。</p><p>名字空间<br>全局变量会绑定到window上，不同的JavaScript文件如果使用了相同的全局变量，或者定义了相同名字的顶层函数，都会造成命名冲突，并且很难被发现。</p><p>减少冲突的一个方法是把自己的所有变量和函数全部绑定到一个全局变量中。例如：</p><p>// 唯一的全局变量MYAPP:<br>var MYAPP = {};</p><p>// 其他变量:<br>MYAPP.name = ‘myapp’;<br>MYAPP.version = 1.0;</p><p>// 其他函数:<br>MYAPP.foo = function () {<br>    return ‘foo’;<br>};</p><p>为了解决块级作用域，ES6引入了新的关键字let，用let替代var可以申明一个块级作用域的变量：</p><p>‘use strict’;</p><p>function foo() {<br>    var sum = 0;<br>    for (let i=0; i&lt;100; i++) {<br>        sum += i;<br>    }<br>    // SyntaxError:<br>    i += 1;<br>}</p><p>ES6标准引入了新的关键字const来定义常量，const与let都具有块级作用域：</p><p>‘use strict’;</p><p>const PI = 3.14;<br>PI = 3; // 某些浏览器不报错，但是无效果！<br>PI; // 3.14</p><p>解构赋值  很奇怪</p><p>要保证this指向正确，必须用obj.xxx()的形式调用！</p><p>apply<br>虽然在一个独立的函数调用中，根据是否是strict模式，this指向undefined或window，不过，我们还是可以控制this的指向的！</p><p>要指定函数的this指向哪个对象，可以用函数本身的apply方法，它接收两个参数，第一个参数就是需要绑定的this变量，第二个参数是Array，表示函数本身的参数。</p><p>装饰器<br>利用apply()，我们还可以动态改变函数的行为。</p><p>高阶函数英文叫Higher-order function。</p><p>编写高阶函数，就是让函数的参数能够接收别的函数。</p><p>利用filter，可以巧妙地去除Array的重复元素：<br>r = arr.filter(function (element, index, self) {<br>    return self.indexOf(element) === index;<br>});</p><p>要按数字大小排序，我们可以这么写</p><p>arr.sort(function (x, y) {<br>    if (x &lt; y) {<br>        return -1;<br>    }<br>    if (x &gt; y) {<br>        return 1;<br>    }<br>    return 0;<br>});<br>console.log(arr); // [1, 2, 10, 20]</p><p>闭包Closure</p><p>我们在函数lazy_sum中又定义了函数sum，并且，内部函数sum可以引用外部函数lazy_sum的参数和局部变量，当lazy_sum返回函数sum时，相关参数和变量都保存在返回的函数中，这种称为“闭包（Closure）”的程序结构拥有极大的威力。</p><p>function lazy_sum(arr) {<br>    var sum = function () {<br>        return arr.reduce(function (x, y) {<br>            return x + y;<br>        });<br>    }<br>    return sum;<br>}</p><p>var f = lazy_sum([1, 2, 3, 4, 5]); // function sum()</p><p>f()</p><p>返回闭包时牢记的一点就是：返回函数不要引用任何循环变量，或者后续会发生变化的变量。</p><p>通常，一个立即执行的匿名函数可以把函数体拆开，一般这么写：</p><p>(function (x) {<br>    return x * x;<br>})(3);</p><p>换句话说，闭包就是携带状态的函数，并且它的状态可以完全对外隐藏起来。</p><p>箭头函数</p><p>‘use strict’;<br>function* next_id() {</p><p>   var c = 0;</p><pre><code>while (true) {    c++;    yield c;}</code></pre><p>}</p><p>生成器就是一个 会暂停的函数 。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一般来说，完整的JavaScript包括以下几个部分：&lt;/p&gt;
+&lt;p&gt;ECMAScript，描述了该语言的语法和基本对象&lt;br&gt;文档对象模型（DOM），描述处理网页内容的方法和接口  Document Object Model&lt;br&gt;浏览器对象模型（BOM），描述与浏览器进
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>npm 脚本</title>
+    <link href="http://www.youletter.cn/2018/05/05/npm-%E8%84%9A%E6%9C%AC/"/>
+    <id>http://www.youletter.cn/2018/05/05/npm-脚本/</id>
+    <published>2018-05-04T23:41:52.000Z</published>
+    <updated>2018-05-04T23:52:24.899Z</updated>
+    
+    <content type="html"><![CDATA[<p>npm 允许在package.json文件里面，使用scripts字段定义脚本命令。</p><p>{<br>  // …<br>  “scripts”: {<br>    “build”: “node build.js”<br>  }<br>}</p><p>$ npm run build</p><h1 id="等同于执行"><a href="#等同于执行" class="headerlink" title="等同于执行"></a>等同于执行</h1><p>$ node build.js</p><p>查看当前项目的所有 npm 脚本命令，可以使用不带任何参数的npm run命令。</p><p>npm run</p><h2 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h2><p>npm 就是JavaScript 届的maven。包管理工具。 node package magener</p><p>参考</p><p><a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;npm 允许在package.json文件里面，使用scripts字段定义脚本命令。&lt;/p&gt;
+&lt;p&gt;{&lt;br&gt;  // …&lt;br&gt;  “scripts”: {&lt;br&gt;    “build”: “node build.js”&lt;br&gt;  }&lt;br&gt;}&lt;/p&gt;
+&lt;p&gt;$ npm 
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>spring boot reference</title>
@@ -393,75 +460,6 @@
       
       
         &lt;h2 id=&quot;为列取有意义的名字-AS&quot;&gt;&lt;a href=&quot;#为列取有意义的名字-AS&quot; class=&quot;headerlink&quot; title=&quot;为列取有意义的名字 AS&quot;&gt;&lt;/a&gt;为列取有意义的名字 AS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>正则表达式</title>
-    <link href="http://www.youletter.cn/2018/03/08/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    <id>http://www.youletter.cn/2018/03/08/正则表达式/</id>
-    <published>2018-03-08T13:32:37.000Z</published>
-    <updated>2018-03-19T11:08:57.579Z</updated>
-    
-    <content type="html"><![CDATA[<p>Java 正则表达式</p><p>至少包含一个中文</p><p><code>String pattern = &quot;.*[\\u4e00-\\u9fa5].*&quot;;</code></p><p>邮箱匹配</p><p><code>String regexp = &quot;^[_\\.0-9a-zA-Z+-]+@([0-9a-zA-Z]+[0-9a-zA-Z-]*\\.)+[a-zA-Z]{2,4}$&quot;</code></p><p>国外手机号匹配 </p><p><code>regexp = &quot;^\\s*|\\+(?:[0-9] ?){6,14}[0-9]$&quot;</code></p><p>匹配一个版本号 1.2.3<br><code>regexp = &quot;^[1-9]\\d?(\\.(0|[1-9]\\d?)){2}$&quot;</code></p><p>第 19 单元：正则表达式<br><a href="https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html" target="_blank" rel="noopener">https://www.ibm.com/developerworks/cn/java/j-perry-regular-expressions/index.html</a></p><p>正则表达式测试页面<br><a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="noopener">http://www.regexplanet.com/advanced/java/index.html</a></p><p>史上最全的正则表达式-匹配中英文、字母和数字<br><a href="http://blog.csdn.net/qq_28633249/article/details/77686976" target="_blank" rel="noopener">http://blog.csdn.net/qq_28633249/article/details/77686976</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Java 正则表达式&lt;/p&gt;
-&lt;p&gt;至少包含一个中文&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;String pattern = &amp;quot;.*[\\u4e00-\\u9fa5].*&amp;quot;;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;邮箱匹配&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;String regexp
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java集合</title>
-    <link href="http://www.youletter.cn/2018/03/04/Java%E9%9B%86%E5%90%88/"/>
-    <id>http://www.youletter.cn/2018/03/04/Java集合/</id>
-    <published>2018-03-04T01:41:03.000Z</published>
-    <updated>2018-03-07T07:44:30.478Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Set-to-List"><a href="#Set-to-List" class="headerlink" title="Set to List"></a>Set to List</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Lists.newArrayList(ids)</span><br></pre></td></tr></table></figure><h1 id="list-To-MAP"><a href="#list-To-MAP" class="headerlink" title="list To MAP"></a>list To MAP</h1><p>其中 key为 Apple的一个属性，value为Apple </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;Long, Apple&gt; appleMap = apples</span><br><span class="line">    .stream()</span><br><span class="line">    .collect(Collectors.toMap(Apple::getId, dto -&gt; dto))</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">```    </span><br><span class="line"></span><br><span class="line"># list To MAP </span><br><span class="line"></span><br><span class="line">其中key为Apple的一个属性， value为Apple的另一个属性</span><br></pre></td></tr></table></figure><p>Map&lt;Long, String&gt; appleMap = apples<br>    .stream()<br>    .collect(Collectors.toMap(Apple::getId, Apple::getName))</p><p><code>`</code>    </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Set-to-List&quot;&gt;&lt;a href=&quot;#Set-to-List&quot; class=&quot;headerlink&quot; title=&quot;Set to List&quot;&gt;&lt;/a&gt;Set to List&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tabl
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>忘记密码的短信码验证策略</title>
-    <link href="http://www.youletter.cn/2018/02/12/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E7%9A%84%E7%9F%AD%E4%BF%A1%E7%A0%81%E9%AA%8C%E8%AF%81%E7%AD%96%E7%95%A5/"/>
-    <id>http://www.youletter.cn/2018/02/12/忘记密码的短信码验证策略/</id>
-    <published>2018-02-12T01:45:59.000Z</published>
-    <updated>2018-02-12T01:49:01.339Z</updated>
-    
-    <content type="html"><![CDATA[<p>忘记密码，要用短信验证，什么流程。</p><p>step 1 请输入正确的用户名，如果正确转第二步。</p><p>step 2 提示，你预留的手机号是 <strong><em>**</em></strong>0123， 请输入预留的手机号，点击获取 验证码， 并将 验证码填入框内。</p><p>step 3 如果短信验证码正确，出现2个输入框， 输入两次密码，改密码成功。</p><p>step 4 返回登录页面。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;忘记密码，要用短信验证，什么流程。&lt;/p&gt;
-&lt;p&gt;step 1 请输入正确的用户名，如果正确转第二步。&lt;/p&gt;
-&lt;p&gt;step 2 提示，你预留的手机号是 &lt;strong&gt;&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;0123， 请输入预留的手机号，点击获取 验证码， 并将 验证
       
     
     </summary>
