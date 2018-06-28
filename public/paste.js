@@ -3,7 +3,6 @@
 
 function upload(){
 
-
 	console.log('in upload')
 
 	var content = $("#content").val();
@@ -21,8 +20,7 @@ function upload(){
     ajaxLog('失败: ' + xhr.status + ', 原因: ' + status);
 	}).always(function () {
     ajaxLog('请求完成: 无论成功或失败都会调用');
-});
-
+	});
 
 }
 

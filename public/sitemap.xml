@@ -2,16 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.youletter.cn/2018/05/07/nginx-%E8%BD%AC%E5%8F%91js-%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</loc>
+    <loc>http://www.youletter.cn/2018/06/22/best-practice-considered-harmfull/</loc>
     
-    <lastmod>2018-05-06T21:42:49.741Z</lastmod>
+    <lastmod>2018-06-28T10:12:44.801Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2018/06/27/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    
+    <lastmod>2018-06-27T06:30:37.150Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2018/06/13/%E6%95%85%E4%BA%8B%E4%BB%8EHTTP-request%E5%BC%80%E5%A7%8B/</loc>
+    
+    <lastmod>2018-06-13T07:40:16.619Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2018/06/06/js-encodeURI/</loc>
+    
+    <lastmod>2018-06-06T07:28:42.271Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2018/05/25/java-%E5%AF%86%E7%A0%81%E6%A0%A1%E9%AA%8C/</loc>
+    
+    <lastmod>2018-05-25T09:47:39.434Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2018/05/24/ab-%E5%8E%8B%E6%B5%8B%E6%80%A7%E8%83%BD/</loc>
+    
+    <lastmod>2018-05-24T10:11:00.495Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2018/05/18/Chapter1-Banjamin-Button-is-born/</loc>
+    
+    <lastmod>2018-05-20T09:30:06.685Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2018/05/08/sprint-boot-restTemplate-usage/</loc>
+    
+    <lastmod>2018-05-09T07:39:20.750Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.youletter.cn/2018/05/05/JavaScript/</loc>
     
-    <lastmod>2018-05-05T08:20:24.798Z</lastmod>
+    <lastmod>2018-05-07T07:58:51.874Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.youletter.cn/2018/05/07/nginx-%E8%BD%AC%E5%8F%91js-%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</loc>
+    
+    <lastmod>2018-05-06T21:42:49.741Z</lastmod>
     
   </url>
   
@@ -408,14 +464,14 @@
   </url>
   
   <url>
-    <loc>http://www.youletter.cn/2017/12/02/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <loc>http://www.youletter.cn/2017/11/30/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     
     <lastmod>2017-12-02T12:44:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.youletter.cn/2017/11/30/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <loc>http://www.youletter.cn/2017/12/02/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     
     <lastmod>2017-12-02T12:44:43.000Z</lastmod>
     
@@ -485,14 +541,14 @@
   </url>
   
   <url>
-    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
+    <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
     
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
+    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
     
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     

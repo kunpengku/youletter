@@ -4,12 +4,117 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2018/05/07/nginx-%E8%BD%AC%E5%8F%91js-%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</loc>
-    <lastmod>2018-05-06T21:42:49.741Z</lastmod>
+    <loc>http://www.youletter.cn/2018/06/22/best-practice-considered-harmfull/</loc>
+    <lastmod>2018-06-28T10:12:44.801Z</lastmod>
     <data>
         <display>
-        <title>nginx 转发js 跨域请求</title>
-        <pubTime>2018-05-06T21:42:03.000Z</pubTime>
+        <title>最佳实践-有毒</title>
+        <pubTime>2018-06-22T02:36:49.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/06/27/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2018-06-27T06:30:37.150Z</lastmod>
+    <data>
+        <display>
+        <title>小程序</title>
+        <pubTime>2018-06-27T06:30:08.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/06/13/%E6%95%85%E4%BA%8B%E4%BB%8EHTTP-request%E5%BC%80%E5%A7%8B/</loc>
+    <lastmod>2018-06-13T07:40:16.619Z</lastmod>
+    <data>
+        <display>
+        <title>故事从HTTP request开始</title>
+        <pubTime>2018-06-13T07:33:02.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/06/06/js-encodeURI/</loc>
+    <lastmod>2018-06-06T07:28:42.271Z</lastmod>
+    <data>
+        <display>
+        <title>js encodeURI</title>
+        <pubTime>2018-06-06T07:28:23.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/05/25/java-%E5%AF%86%E7%A0%81%E6%A0%A1%E9%AA%8C/</loc>
+    <lastmod>2018-05-25T09:47:39.434Z</lastmod>
+    <data>
+        <display>
+        <title>java 密码校验</title>
+        <pubTime>2018-05-25T09:47:17.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/05/24/ab-%E5%8E%8B%E6%B5%8B%E6%80%A7%E8%83%BD/</loc>
+    <lastmod>2018-05-24T10:11:00.495Z</lastmod>
+    <data>
+        <display>
+        <title>ab 压测性能</title>
+        <pubTime>2018-05-24T10:09:25.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/05/18/Chapter1-Banjamin-Button-is-born/</loc>
+    <lastmod>2018-05-20T09:30:06.685Z</lastmod>
+    <data>
+        <display>
+        <title>Chapter1 Banjamin Button is born</title>
+        <pubTime>2018-05-18T02:14:26.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/05/08/sprint-boot-restTemplate-usage/</loc>
+    <lastmod>2018-05-09T07:39:20.750Z</lastmod>
+    <data>
+        <display>
+        <title>sprint boot restTemplate usage</title>
+        <pubTime>2018-05-08T10:44:07.000Z</pubTime>
         
          
            
@@ -20,11 +125,26 @@
     
   <url>
     <loc>http://www.youletter.cn/2018/05/05/JavaScript/</loc>
-    <lastmod>2018-05-05T08:20:24.798Z</lastmod>
+    <lastmod>2018-05-07T07:58:51.874Z</lastmod>
     <data>
         <display>
         <title>JavaScript</title>
         <pubTime>2018-05-05T01:57:30.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/05/07/nginx-%E8%BD%AC%E5%8F%91js-%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</loc>
+    <lastmod>2018-05-06T21:42:49.741Z</lastmod>
+    <data>
+        <display>
+        <title>nginx 转发js 跨域请求</title>
+        <pubTime>2018-05-06T21:42:03.000Z</pubTime>
         
          
            
@@ -908,12 +1028,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/12/02/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <loc>http://www.youletter.cn/2017/11/30/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     <lastmod>2017-12-02T12:44:43.000Z</lastmod>
     <data>
         <display>
-        <title>Spring-boot参考（二）</title>
-        <pubTime>2017-12-02T12:40:29.000Z</pubTime>
+        <title>Spring-boot参考（一）</title>
+        <pubTime>2017-11-30T02:10:34.000Z</pubTime>
         
         <tag>spring-boot</tag>
          
@@ -925,12 +1045,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/30/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <loc>http://www.youletter.cn/2017/12/02/Spring-boot%E5%8F%82%E8%80%83%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     <lastmod>2017-12-02T12:44:43.000Z</lastmod>
     <data>
         <display>
-        <title>Spring-boot参考（一）</title>
-        <pubTime>2017-11-30T02:10:34.000Z</pubTime>
+        <title>Spring-boot参考（二）</title>
+        <pubTime>2017-12-02T12:40:29.000Z</pubTime>
         
         <tag>spring-boot</tag>
          
@@ -1111,12 +1231,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
+    <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     <data>
         <display>
-        <title>spring-cloud-netflix之服务发现Eureka Client</title>
-        <pubTime>2017-11-18T14:38:44.000Z</pubTime>
+        <title>spring-cloud-netflix之服务发现Eureka Server</title>
+        <pubTime>2017-11-16T14:44:05.000Z</pubTime>
         
          
            
@@ -1126,12 +1246,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
+    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     <data>
         <display>
-        <title>spring-cloud-netflix之服务发现Eureka Server</title>
-        <pubTime>2017-11-16T14:44:05.000Z</pubTime>
+        <title>spring-cloud-netflix之服务发现Eureka Client</title>
+        <pubTime>2017-11-18T14:38:44.000Z</pubTime>
         
          
            

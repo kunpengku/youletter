@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-05-06T21:42:49.741Z</updated>
+  <updated>2018-06-27T06:30:37.150Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,184 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小程序</title>
+    <link href="http://www.youletter.cn/2018/06/27/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://www.youletter.cn/2018/06/27/小程序/</id>
+    <published>2018-06-27T06:30:08.000Z</published>
+    <updated>2018-06-27T06:30:37.150Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://juejin.im/post/5ac9b72cf265da23906c486a" target="_blank" rel="noopener">手把手教会你小程序登录鉴权</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://juejin.im/post/5ac9b72cf265da23906c486a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;手把手教会你小程序登录鉴权&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>最佳实践-有毒</title>
+    <link href="http://www.youletter.cn/2018/06/22/best-practice-considered-harmfull/"/>
+    <id>http://www.youletter.cn/2018/06/22/best-practice-considered-harmfull/</id>
+    <published>2018-06-22T02:36:49.000Z</published>
+    <updated>2018-06-28T10:12:44.801Z</updated>
+    
+    <content type="html"><![CDATA[<p>我长时间以来对所谓“最佳实践”感到困惑。在我脑海中藏着两个问题：</p><ul><li>谁来决定这就是最佳实践</li><li>谁说这种实践不能做得更佳？</li></ul><p>有个从事石油工业的人跟我说，通常合同中会指定应该使用的“最佳实践”，但实际的实践却很少是指定的那个。而且每个人对于最佳实践都有自己的理解。直到遇到一个突发实践，直到钱都已经花光了，这时他们才来裁决什么是最佳实践。</p><p>就算某个实践在这个时间点上可能最好的做法，但是它能提升多少如何计算呢？声称某个实践是最佳实践，你可能会因此自我限制并潜在地阻止创新。</p><p><a href="http://mobileservices.texterity.com/mitsmr/spring_2018/MobilePagedArticle.action?articleId=1364542&amp;folio=85&amp;lm=1524856788000&amp;linkImageSrc=/mitsmr/spring_2018/data/imgpages/mobile_tn2/0087_murwap.png#articleId1364542" target="_blank" rel="noopener">Why Best Practices Often Fall Short</a></p><p>对于新手，有时人们无法正确的识别出能产生价值的实践行为。很多人看了皮克斯动画公司之后，决定把厕所放在办公室的中间来提高创造力。他们确实这么做了，但是还有很多其他事情发生在皮克斯动画公司。在你的组织中，单单移动厕所的位置可能并不会对创造力产生大的改变。</p><p>还有更糟糕的事。</p><p>他人的最佳实践并不意味着在你的环境中也是最佳的。想想你移动厕所所花费的费用，想想给那些不想移动工位的同事带来的烦恼，还有在此过程中损失的生产效率。</p><p>作者建议说，在有些情况下，最佳时间带来的破坏性比带来的好处还要多。所以一些组织最好还是应避免“最佳实践”，按照自己的情况来进行。</p><p>还有更糟糕的事。</p><p>这些“最佳实践”中有一些风险。包括他们会耗费更多资源，包括不能正确的实行，包括可能会适得其反。还是那句话，最适合别人的未必最适合你。</p><p>事实上, 一些最佳实践 (比如高管股票期权) 可能会导致可怕错误, 引发你最不希望的行为。</p><p>那么, 一个小的公司该怎么办呢？</p><p>作者建议，去复制那些“好的实践”，而不是“最佳实践”。复制一些普遍的，被证明的东西。这样可以避免大的风险和开销。</p><p>对我而言，这意味着应该先把敏捷做好，而不是急着跳到DevOps去。</p><p>作者还建议，你的优势在于自己掌握的核心秘密。多想想自己的优势在哪儿，从中创造出最佳实践，从中提高自己。</p><p>一直以来，我希望团队自己学习领悟, 而不是对他们直接改变。但我也希望当发现别人好的做法时，团队能快速复制的做法。在我看来，最重要的事情是让团队来决定如何做，而不是一定怎样。</p><h3 id="来源"><a href="#来源" class="headerlink" title="来源:"></a>来源:</h3><p><a href="https://www.javacodegeeks.com/2018/06/best-practices-considered-harmfull.html" target="_blank" rel="noopener">https://www.javacodegeeks.com/2018/06/best-practices-considered-harmfull.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我长时间以来对所谓“最佳实践”感到困惑。在我脑海中藏着两个问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;谁来决定这就是最佳实践&lt;/li&gt;
+&lt;li&gt;谁说这种实践不能做得更佳？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有个从事石油工业的人跟我说，通常合同中会指定应该使用的“最佳实践”，但实际的实践却很
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>故事从HTTP request开始</title>
+    <link href="http://www.youletter.cn/2018/06/13/%E6%95%85%E4%BA%8B%E4%BB%8EHTTP-request%E5%BC%80%E5%A7%8B/"/>
+    <id>http://www.youletter.cn/2018/06/13/故事从HTTP-request开始/</id>
+    <published>2018-06-13T07:33:02.000Z</published>
+    <updated>2018-06-13T07:40:16.619Z</updated>
+    
+    <content type="html"><![CDATA[<p>HTTP 1.0</p><p><a href="https://tools.ietf.org/html/rfc1945" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc1945</a></p><p>HTTP 1.1</p><p><a href="https://tools.ietf.org/html/rfc2616" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc2616</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;HTTP 1.0&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://tools.ietf.org/html/rfc1945&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tools.ietf.org/html/rfc1945&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js encodeURI</title>
+    <link href="http://www.youletter.cn/2018/06/06/js-encodeURI/"/>
+    <id>http://www.youletter.cn/2018/06/06/js-encodeURI/</id>
+    <published>2018-06-06T07:28:23.000Z</published>
+    <updated>2018-06-06T07:28:42.271Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI</a></p><p>类型    包含<br>保留字符    ; , / ? : @ &amp; = + $<br>非转义的字符    字母 数字 - _ . ! ~ * ‘ ( )<br>数字符号    #</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>java 密码校验</title>
+    <link href="http://www.youletter.cn/2018/05/25/java-%E5%AF%86%E7%A0%81%E6%A0%A1%E9%AA%8C/"/>
+    <id>http://www.youletter.cn/2018/05/25/java-密码校验/</id>
+    <published>2018-05-25T09:47:17.000Z</published>
+    <updated>2018-05-25T09:47:39.434Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">private static int calculatePasswordStrength(String password) &#123;</span><br><span class="line">       //total score of password</span><br><span class="line">       int iPasswordScore = 0;</span><br><span class="line"></span><br><span class="line">       if (password.length() &lt; 8 || password.length() &gt; 20) &#123;</span><br><span class="line">           return 0;</span><br><span class="line">       &#125; else &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       //if it contains one digit, add 1 to total score</span><br><span class="line">       if (password.matches(&quot;(?=.*[0-9]).*&quot;)) &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       //if it contains one lower case letter, add 1 to total score</span><br><span class="line">       if (password.matches(&quot;(?=.*[a-z]).*&quot;)) &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       //if it contains one upper case letter, add 1 to total score</span><br><span class="line">       if (password.matches(&quot;(?=.*[A-Z]).*&quot;)) &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       //if it contains one special character, add 1 to total score</span><br><span class="line">       if (password.matches(&quot;(?=.*[~!@#$%^&amp;*()_-]).*&quot;)) &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       return iPasswordScore;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ab 压测性能</title>
+    <link href="http://www.youletter.cn/2018/05/24/ab-%E5%8E%8B%E6%B5%8B%E6%80%A7%E8%83%BD/"/>
+    <id>http://www.youletter.cn/2018/05/24/ab-压测性能/</id>
+    <published>2018-05-24T10:09:25.000Z</published>
+    <updated>2018-05-24T10:11:00.495Z</updated>
+    
+    <content type="html"><![CDATA[<p>POST  请求</p><p>ab -n 200 -c 5  -p para_tch  -A user:abcdedfpassword -T application/x-www-form-urlencoded <a href="http://10.1.5.114:80/api/login" target="_blank" rel="noopener">http://10.1.5.114:80/api/login</a></p><p>参数写在para_tch中</p><p>para_tch 的内容<br><a href="mailto:username=one@qq.com" target="_blank" rel="noopener">username=one@qq.com</a>&amp;password=000999&amp;grant_type=password</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;POST  请求&lt;/p&gt;
+&lt;p&gt;ab -n 200 -c 5  -p para_tch  -A user:abcdedfpassword -T application/x-www-form-urlencoded &lt;a href=&quot;http://10.1.5.114:80/a
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Chapter1 Banjamin Button is born</title>
+    <link href="http://www.youletter.cn/2018/05/18/Chapter1-Banjamin-Button-is-born/"/>
+    <id>http://www.youletter.cn/2018/05/18/Chapter1-Banjamin-Button-is-born/</id>
+    <published>2018-05-18T02:14:26.000Z</published>
+    <updated>2018-05-20T09:30:06.685Z</updated>
+    
+    <content type="html"><![CDATA[<p>在1860那么久以前，在家中生孩子是很正常的事情。而现在，据我所知，掌管医学的神规定小孩的第一声哭声应该在医院的混杂着麻醉药的空气中发出。最好还是一家现代化的医院。所以，当年轻的Roger先生和太太，在1860夏季的一天，决定他们的第一个小孩应在医院出生时，他们领先了这种时尚50年的时间。是否这种时空错乱和我将要讲述的这段令人吃惊的历史有关联已经无法知晓了。</p><p>现在我负责讲述都发生了什么，让你自己决定要不要相信。</p><p>Roger Button在战前的Baltimore，无论是社会地位还是财富方面都有着令人羡慕程度。<br>他们和许多家族都有联系。每个南方人都知道，那些家族有权让他们成为众多贵族中的一员，而联邦政府就是由这些贵族中的大部分人组成的。这是他们第一次经历生小孩这种古老的，让人开心的传统，Button先生自然有些紧张。他希望能生一个男孩，这样就可以去位于康涅狄格的耶鲁上学。当前Button先生在那儿可是被叫了四年天才呢</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在1860那么久以前，在家中生孩子是很正常的事情。而现在，据我所知，掌管医学的神规定小孩的第一声哭声应该在医院的混杂着麻醉药的空气中发出。最好还是一家现代化的医院。所以，当年轻的Roger先生和太太，在1860夏季的一天，决定他们的第一个小孩应在医院出生时，他们领先了这种时
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>sprint boot restTemplate usage</title>
+    <link href="http://www.youletter.cn/2018/05/08/sprint-boot-restTemplate-usage/"/>
+    <id>http://www.youletter.cn/2018/05/08/sprint-boot-restTemplate-usage/</id>
+    <published>2018-05-08T10:44:07.000Z</published>
+    <updated>2018-05-09T07:39:20.750Z</updated>
+    
+    <content type="html"><![CDATA[<p>POST form-urlencoded</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">RestTemplate restTemplate = new RestTemplate();</span><br><span class="line">String url = &quot;http://localhost:1450/cls/login&quot;;</span><br><span class="line">HttpHeaders headers = new HttpHeaders();</span><br><span class="line">headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);</span><br><span class="line"></span><br><span class="line">MultiValueMap&lt;String, String&gt; hashMap= new LinkedMultiValueMap&lt;String, String&gt;();</span><br><span class="line">hashMap.add(&quot;username&quot;, &quot;cla10002&quot;);</span><br><span class="line">hashMap.add(&quot;password&quot;, &quot;xxxx&quot;);</span><br><span class="line">hashMap.add(&quot;grant_type&quot;,&quot;password&quot;);</span><br><span class="line">HttpEntity&lt;MultiValueMap&lt;String, String&gt;&gt; request = new HttpEntity&lt;MultiValueMap&lt;String, String&gt;&gt;(hashMap, headers);</span><br><span class="line"></span><br><span class="line">ResponseEntity&lt;String&gt; response = restTemplate.postForEntity( url, request , String.class );</span><br><span class="line"></span><br><span class="line">//获得返回值</span><br><span class="line">String body = response.getBody();</span><br><span class="line">System.out.println(body.toString());</span><br></pre></td></tr></table></figure><p>GET </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">HttpHeaders headers = new HttpHeaders();</span><br><span class="line">headers.set(&quot;Accept&quot;, MediaType.APPLICATION_JSON_VALUE);</span><br><span class="line"></span><br><span class="line">UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url)</span><br><span class="line">.queryParam(&quot;msisdn&quot;, msisdn)</span><br><span class="line">.queryParam(&quot;email&quot;, email)</span><br><span class="line">.queryParam(&quot;clientVersion&quot;, clientVersion)</span><br><span class="line">.queryParam(&quot;clientType&quot;, clientType)</span><br><span class="line">.queryParam(&quot;issuerName&quot;, issuerName)</span><br><span class="line">.queryParam(&quot;applicationName&quot;, applicationName);</span><br><span class="line"></span><br><span class="line">HttpEntity&lt;?&gt; entity = new HttpEntity&lt;&gt;(headers);</span><br><span class="line"></span><br><span class="line">HttpEntity&lt;String&gt; response = restTemplate.exchange(</span><br><span class="line">builder.toUriString(), </span><br><span class="line">HttpMethod.GET, </span><br><span class="line">entity, </span><br><span class="line">String.class);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;POST form-urlencoded&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>nginx 转发js 跨域请求</title>
@@ -43,9 +221,9 @@
     <link href="http://www.youletter.cn/2018/05/05/JavaScript/"/>
     <id>http://www.youletter.cn/2018/05/05/JavaScript/</id>
     <published>2018-05-05T01:57:30.000Z</published>
-    <updated>2018-05-05T08:20:24.798Z</updated>
+    <updated>2018-05-07T07:58:51.874Z</updated>
     
-    <content type="html"><![CDATA[<p>一般来说，完整的JavaScript包括以下几个部分：</p><p>ECMAScript，描述了该语言的语法和基本对象<br>文档对象模型（DOM），描述处理网页内容的方法和接口  Document Object Model<br>浏览器对象模型（BOM），描述与浏览器进行交互的方法和接口 Browser Object Model </p><p>基本语法</p><p>每个语句以;结束 ，但是负责执行JavaScript代码的引擎会自动在每个语句的结尾补上; 。所以你可以选择不写 ;。</p><p>注释</p><p>以//开头直到行末的字符被视为行注释</p><p>另一种块注释是用/<em>…</em>/把多行字符包裹起来，把一大“块”视为一个注释：</p><p>JavaScript严格区分大小写</p><p>数据类型</p><p>JavaScript不区分整数和浮点数，统一用Number表示</p><p>字符串<br>字符串是以单引号’或双引号”括起来的任意文本，比如’abc’，”xyz”等等</p><p>布尔值<br>布尔值和布尔代数的表示完全一致，一个布尔值只有true、false</p><p>&amp;&amp;  与</p><p>||  或</p><p>！  非</p><p>JS的语法就像C语言。</p><p>JavaScript在设计时，有两种比较运算符：</p><p>第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；</p><p>第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。</p><p>不要使用==比较，始终坚持使用===比较。</p><p>另一个例外是NaN这个特殊的Number与所有其他值都不相等，包括它自己：</p><p>NaN === NaN; // false</p><p>唯一能判断NaN的方法是通过isNaN()函数：</p><p>isNaN(NaN); // true</p><p>null和undefined</p><p>数组</p><p>[1, 2, 3.14, ‘Hello’, null, true];<br>JavaScript的数组可以包括任意数据类型。  而且数组中的类型不必 相同。</p><p>另一种创建数组的方法是通过Array()函数实现：</p><p>new Array(1, 2, 3); // 创建了数组[1, 2, 3]</p><p>对象<br>JavaScript的对象是一组由键-值组成的无序集合，例如：</p><p>var person = {<br>    name: ‘Bob’,<br>    age: 20,<br>    tags: [‘js’, ‘web’, ‘mobile’],<br>    city: ‘Beijing’,<br>    hasCar: true,<br>    zipcode: null<br>};</p><p>JavaScript对象的键都是字符串类型，值可以是任意数据类型</p><p>要获取一个对象的属性，我们用对象变量.属性名的方式：</p><p>person.name; // ‘Bob’<br>person.zipcode; // null</p><p>变量在JavaScript中就是用一个变量名表示，变量名是大小写英文、数字、$和_的组合，且不能用数字开头。变量名也不能是JavaScript的关键字，如if、while等。申明一个变量用var语句，比如：</p><p>var a; // 申明了变量a，此时a的值为undefined<br>var $b = 1; // 申明了变量$b，同时给$b赋值，此时$b的值为1<br>var s_007 = ‘007’; // s_007是一个字符串<br>var Answer = true; // Answer是一个布尔值true<br>var t = null; // t的值是null</p><p>如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：</p><p>strict模式</p><p>字符串</p><p>多行字符串</p><p>ES6标准新增了一种多行字符串的表示方法，用反引号 <code>...</code> 表示：</p><p><code>这是一个多行字符串</code>;</p><p>模板字符串</p><p>name = ‘fupeng’</p><p>age=’12a’</p><p>console.log(<code>你好, ${name}, 你今年${age}岁了!</code>);</p><p>请注意，如果通过索引赋值时，索引超过了范围，同样会引起Array大小的变化：</p><p>var arr = [1, 2, 3];<br>arr[5] = ‘x’;<br>arr; // arr变为[1, 2, 3, undefined, undefined, ‘x’]</p><p>push和pop<br>push()向Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉：</p><p>var arr = [1, 2];<br>arr.push(‘A’, ‘B’); // 返回Array新的长度: 4<br>arr; // [1, 2, ‘A’, ‘B’]<br>arr.pop(); // pop()返回’B’<br>arr; // [1, 2, ‘A’]<br>arr.pop(); arr.pop(); arr.pop(); // 连续pop 3次<br>arr; // []<br>arr.pop(); // 空数组继续pop不会报错，而是返回undefined<br>arr; // []</p><p>unshift和shift<br>如果要往Array的头部添加若干元素，使用unshift()方法，shift()方法则把Array的第一个元素删掉：</p><p>var arr = [1, 2];<br>arr.unshift(‘A’, ‘B’); // 返回Array新的长度: 4<br>arr; // [‘A’, ‘B’, 1, 2]<br>arr.shift(); // ‘A’<br>arr; // [‘B’, 1, 2]<br>arr.shift(); arr.shift(); arr.shift(); // 连续shift 3次<br>arr; // []<br>arr.shift(); // 空数组继续shift不会报错，而是返回undefined<br>arr; // []</p><p>concat<br>concat()方法把当前的Array和另一个Array连接起来，并返回一个新的Array：</p><p>var arr = [‘A’, ‘B’, ‘C’];<br>var added = arr.concat([1, 2, 3]);<br>added; // [‘A’, ‘B’, ‘C’, 1, 2, 3]<br>arr; // [‘A’, ‘B’, ‘C’]</p><p>join<br>join()方法是一个非常实用的方法，它把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串：</p><p>var arr = [‘A’, ‘B’, ‘C’, 1, 2, 3];<br>arr.join(‘-‘); // ‘A-B-C-1-2-3’</p><p>对象</p><p>JavaScript用一个{…}表示一个对象，键值对以xxx: xxx形式申明，用,隔开。</p><p>var xiaoming = {<br>    name: ‘小明’,<br>    birth: 1990,<br>    school: ‘No.1 Middle School’,<br>    height: 1.70,<br>    weight: 65,<br>    score: null<br>};</p><p>但这要求属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用’’括起来：</p><p>var xiaohong = {<br>    name: ‘小红’,<br>    ‘middle-school’: ‘No.1 Middle School’<br>};</p><p>我们在编写JavaScript代码的时候，属性名尽量使用标准的变量名，这样就可以直接通过object.prop的形式访问一个属性了。</p><p>实际上JavaScript对象的所有属性都是字符串，不过属性对应的值可以是任意数据类型。</p><p>由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性：</p><p>var xiaoming = {<br>    name: ‘小明’<br>};<br>xiaoming.age; // undefined<br>xiaoming.age = 18; // 新增一个age属性<br>xiaoming.age; // 18<br>delete xiaoming.age; // 删除age属性<br>xiaoming.age; // undefined<br>delete xiaoming[‘name’]; // 删除name属性<br>xiaoming.name; // undefined<br>delete xiaoming.school; // 删除一个不存在的school属性也不会报错</p><p>如果我们要检测xiaoming是否拥有某一属性，可以用in操作符：</p><p>var xiaoming = {<br>    name: ‘小明’,<br>    birth: 1990,<br>    school: ‘No.1 Middle School’,<br>    height: 1.70,<br>    weight: 65,<br>    score: null<br>};<br>‘name’ in xiaoming; // true<br>‘grade’ in xiaoming; // false</p><p>要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法：</p><p>var xiaoming = {<br>    name: ‘小明’<br>};<br>xiaoming.hasOwnProperty(‘name’); // true<br>xiaoming.hasOwnProperty(‘toString’); // false</p><p>条件判断</p><p>var age = 20;<br>if (age &gt;= 18) { // 如果age &gt;= 18为true，则执行if语句块<br>    alert(‘adult’);<br>} else { // 否则执行else语句块<br>    alert(‘teenager’);<br>}</p><p>循环</p><p>var x = 0;<br>var i;<br>for (i=1; i&lt;=10000; i++) {<br>    x = x + i;<br>}<br>x;</p><p>for循环最常用的地方是利用索引来遍历数组：</p><p>var arr = [‘Apple’, ‘Google’, ‘Microsoft’];<br>var i, x;<br>for (i=0; i&lt;arr.length; i++) {<br>    x = arr[i];<br>    console.log(x);<br>}</p><p>var a = [‘A’, ‘B’, ‘C’];<br>for (var i in a) {<br>    console.log(i); // ‘0’, ‘1’, ‘2’<br>    console.log(a[i]); // ‘A’, ‘B’, ‘C’<br>}</p><p>while<br>for循环在已知循环的初始和结束条件时非常有用。而上述忽略了条件的for循环容易让人看不清循环的逻辑，此时用while循环更佳。</p><p>while循环只有一个判断条件，条件满足，就不断循环，条件不满足时则退出循环。比如我们要计算100以内所有奇数之和，可以用while循环实现：</p><p>var x = 0;<br>var n = 99;<br>while (n &gt; 0) {<br>    x = x + n;<br>    n = n - 2;<br>}<br>x; // 2500</p><p>Map<br>Map是一组键值对的结构，具有极快的查找速度。</p><p>初始化Map需要一个二维数组，或者直接初始化一个空Map。</p><p>var m = new Map([[‘Michael’, 95], [‘Bob’, 75], [‘Tracy’, 85]]);<br>m.get(‘Michael’); // 95</p><p>var m = new Map(); // 空Map<br>m.set(‘Adam’, 67); // 添加新的key-value<br>m.set(‘Bob’, 59);<br>m.has(‘Adam’); // 是否存在key ‘Adam’: true<br>m.get(‘Adam’); // 67<br>m.delete(‘Adam’); // 删除key ‘Adam’<br>m.get(‘Adam’); // undefined</p><p>Set<br>Set和Map类似，也是一组key的集合，但不存储value。</p><p>小结<br>Map和Set是ES6标准新增的数据类型，</p><p>定义函数</p><p>function abs(x) {<br>    if (x &gt;= 0) {<br>        return x;<br>    } else {<br>        return -x;<br>    }<br>}</p><p>由于JavaScript的函数也是一个对象，上述定义的abs()函数实际上是一个函数对象，而函数名abs可以视为指向该函数的变量。</p><p>因此，第二种定义函数的方式如下：</p><p>var abs = function (x) {<br>    if (x &gt;= 0) {<br>        return x;<br>    } else {<br>        return -x;<br>    }<br>};</p><p>由于JavaScript允许传入任意个参数而不影响调用，因此传入的参数比定义的参数多也没有问题，虽然函数内部并不需要这些参数：</p><p>abs(10, ‘blablabla’); // 返回10<br>abs(-9, ‘haha’, ‘hehe’, null); //</p><p>arguments<br>JavaScript还有一个免费赠送的关键字arguments，它只在函数内部起作用，并且永远指向当前函数的调用者传入的所有参数。arguments类似Array但它不是一个Array</p><p>function foo(x) {<br>    console.log(‘x = ‘ + x); // 10<br>    for (var i=0; i&lt;arguments.length; i++) {<br>        console.log(‘arg ‘ + i + ‘ = ‘ + arguments[i]); // 10, 20, 30<br>    }<br>}<br>foo(10, 20, 30);</p><p>在JavaScript中，用var申明的变量实际上是有作用域的。</p><p>如果一个变量在函数体内部申明，则该变量的作用域为整个函数体，在函数体外不可引用该变量：</p><p>由于JavaScript的函数可以嵌套，此时，内部函数可以访问外部函数定义的变量，反过来则不行：</p><p>‘use strict’;</p><p>function foo() {<br>    var x = 1;<br>    function bar() {<br>        var y = x + 1; // bar可以访问foo的变量x!<br>    }<br>    var z = y + 1; // ReferenceError! foo不可以访问bar的变量y!<br>}</p><p>这说明JavaScript的函数在查找变量时从自身函数定义开始，从“内”向“外”查找。如果内部函数定义了与外部函数重名的变量，则内部函数的变量将“屏蔽”外部函数的变量。</p><p>变量提升</p><p>这正是因为JavaScript引擎自动提升了变量y的声明，但不会提升变量y的赋值。</p><p>全局作用域<br>不在任何函数内定义的变量就具有全局作用域。实际上，JavaScript默认有一个全局对象window，全局作用域的变量实际上被绑定到window的一个属性：</p><p>‘use strict’;</p><p>var course = ‘Learn JavaScript’;<br>alert(course); // ‘Learn JavaScript’<br>alert(window.course); // ‘Learn JavaScript’</p><p>这说明JavaScript实际上只有一个全局作用域。</p><p>名字空间<br>全局变量会绑定到window上，不同的JavaScript文件如果使用了相同的全局变量，或者定义了相同名字的顶层函数，都会造成命名冲突，并且很难被发现。</p><p>减少冲突的一个方法是把自己的所有变量和函数全部绑定到一个全局变量中。例如：</p><p>// 唯一的全局变量MYAPP:<br>var MYAPP = {};</p><p>// 其他变量:<br>MYAPP.name = ‘myapp’;<br>MYAPP.version = 1.0;</p><p>// 其他函数:<br>MYAPP.foo = function () {<br>    return ‘foo’;<br>};</p><p>为了解决块级作用域，ES6引入了新的关键字let，用let替代var可以申明一个块级作用域的变量：</p><p>‘use strict’;</p><p>function foo() {<br>    var sum = 0;<br>    for (let i=0; i&lt;100; i++) {<br>        sum += i;<br>    }<br>    // SyntaxError:<br>    i += 1;<br>}</p><p>ES6标准引入了新的关键字const来定义常量，const与let都具有块级作用域：</p><p>‘use strict’;</p><p>const PI = 3.14;<br>PI = 3; // 某些浏览器不报错，但是无效果！<br>PI; // 3.14</p><p>解构赋值  很奇怪</p><p>要保证this指向正确，必须用obj.xxx()的形式调用！</p><p>apply<br>虽然在一个独立的函数调用中，根据是否是strict模式，this指向undefined或window，不过，我们还是可以控制this的指向的！</p><p>要指定函数的this指向哪个对象，可以用函数本身的apply方法，它接收两个参数，第一个参数就是需要绑定的this变量，第二个参数是Array，表示函数本身的参数。</p><p>装饰器<br>利用apply()，我们还可以动态改变函数的行为。</p><p>高阶函数英文叫Higher-order function。</p><p>编写高阶函数，就是让函数的参数能够接收别的函数。</p><p>利用filter，可以巧妙地去除Array的重复元素：<br>r = arr.filter(function (element, index, self) {<br>    return self.indexOf(element) === index;<br>});</p><p>要按数字大小排序，我们可以这么写</p><p>arr.sort(function (x, y) {<br>    if (x &lt; y) {<br>        return -1;<br>    }<br>    if (x &gt; y) {<br>        return 1;<br>    }<br>    return 0;<br>});<br>console.log(arr); // [1, 2, 10, 20]</p><p>闭包Closure</p><p>我们在函数lazy_sum中又定义了函数sum，并且，内部函数sum可以引用外部函数lazy_sum的参数和局部变量，当lazy_sum返回函数sum时，相关参数和变量都保存在返回的函数中，这种称为“闭包（Closure）”的程序结构拥有极大的威力。</p><p>function lazy_sum(arr) {<br>    var sum = function () {<br>        return arr.reduce(function (x, y) {<br>            return x + y;<br>        });<br>    }<br>    return sum;<br>}</p><p>var f = lazy_sum([1, 2, 3, 4, 5]); // function sum()</p><p>f()</p><p>返回闭包时牢记的一点就是：返回函数不要引用任何循环变量，或者后续会发生变化的变量。</p><p>通常，一个立即执行的匿名函数可以把函数体拆开，一般这么写：</p><p>(function (x) {<br>    return x * x;<br>})(3);</p><p>换句话说，闭包就是携带状态的函数，并且它的状态可以完全对外隐藏起来。</p><p>箭头函数</p><p>‘use strict’;<br>function* next_id() {</p><p>   var c = 0;</p><pre><code>while (true) {    c++;    yield c;}</code></pre><p>}</p><p>生成器就是一个 会暂停的函数 。</p>]]></content>
+    <content type="html"><![CDATA[<p>一般来说，完整的JavaScript包括以下几个部分：</p><p>ECMAScript，描述了该语言的语法和基本对象<br>文档对象模型（DOM），描述处理网页内容的方法和接口  Document Object Model<br>浏览器对象模型（BOM），描述与浏览器进行交互的方法和接口 Browser Object Model </p><p>基本语法</p><p>每个语句以;结束 ，但是负责执行JavaScript代码的引擎会自动在每个语句的结尾补上; 。所以你可以选择不写 ;。</p><p>注释</p><p>以//开头直到行末的字符被视为行注释</p><p>另一种块注释是用/<em>…</em>/把多行字符包裹起来，把一大“块”视为一个注释：</p><p>JavaScript严格区分大小写</p><p>数据类型</p><p>JavaScript不区分整数和浮点数，统一用Number表示</p><p>字符串<br>字符串是以单引号’或双引号”括起来的任意文本，比如’abc’，”xyz”等等</p><p>布尔值<br>布尔值和布尔代数的表示完全一致，一个布尔值只有true、false</p><p>&amp;&amp;  与</p><p>||  或</p><p>！  非</p><p>JS的语法就像C语言。</p><p>JavaScript在设计时，有两种比较运算符：</p><p>第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；</p><p>第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。</p><p>不要使用==比较，始终坚持使用===比较。</p><p>另一个例外是NaN这个特殊的Number与所有其他值都不相等，包括它自己：</p><p>NaN === NaN; // false</p><p>唯一能判断NaN的方法是通过isNaN()函数：</p><p>isNaN(NaN); // true</p><p>null和undefined</p><p>数组</p><p>[1, 2, 3.14, ‘Hello’, null, true];<br>JavaScript的数组可以包括任意数据类型。  而且数组中的类型不必 相同。</p><p>另一种创建数组的方法是通过Array()函数实现：</p><p>new Array(1, 2, 3); // 创建了数组[1, 2, 3]</p><p>对象<br>JavaScript的对象是一组由键-值组成的无序集合，例如：</p><p>var person = {<br>    name: ‘Bob’,<br>    age: 20,<br>    tags: [‘js’, ‘web’, ‘mobile’],<br>    city: ‘Beijing’,<br>    hasCar: true,<br>    zipcode: null<br>};</p><p>JavaScript对象的键都是字符串类型，值可以是任意数据类型</p><p>要获取一个对象的属性，我们用对象变量.属性名的方式：</p><p>person.name; // ‘Bob’<br>person.zipcode; // null</p><p>变量在JavaScript中就是用一个变量名表示，变量名是大小写英文、数字、$和_的组合，且不能用数字开头。变量名也不能是JavaScript的关键字，如if、while等。申明一个变量用var语句，比如：</p><p>var a; // 申明了变量a，此时a的值为undefined<br>var $b = 1; // 申明了变量$b，同时给$b赋值，此时$b的值为1<br>var s_007 = ‘007’; // s_007是一个字符串<br>var Answer = true; // Answer是一个布尔值true<br>var t = null; // t的值是null</p><p>如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：</p><p>strict模式</p><p>字符串</p><p>多行字符串</p><p>ES6标准新增了一种多行字符串的表示方法，用反引号 <code>...</code> 表示：</p><p><code>这是一个多行字符串</code>;</p><p>模板字符串</p><p>name = ‘fupeng’</p><p>age=’12a’</p><p>console.log(<code>你好, ${name}, 你今年${age}岁了!</code>);</p><p>请注意，如果通过索引赋值时，索引超过了范围，同样会引起Array大小的变化：</p><p>var arr = [1, 2, 3];<br>arr[5] = ‘x’;<br>arr; // arr变为[1, 2, 3, undefined, undefined, ‘x’]</p><p>push和pop<br>push()向Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉：</p><p>var arr = [1, 2];<br>arr.push(‘A’, ‘B’); // 返回Array新的长度: 4<br>arr; // [1, 2, ‘A’, ‘B’]<br>arr.pop(); // pop()返回’B’<br>arr; // [1, 2, ‘A’]<br>arr.pop(); arr.pop(); arr.pop(); // 连续pop 3次<br>arr; // []<br>arr.pop(); // 空数组继续pop不会报错，而是返回undefined<br>arr; // []</p><p>unshift和shift<br>如果要往Array的头部添加若干元素，使用unshift()方法，shift()方法则把Array的第一个元素删掉：</p><p>var arr = [1, 2];<br>arr.unshift(‘A’, ‘B’); // 返回Array新的长度: 4<br>arr; // [‘A’, ‘B’, 1, 2]<br>arr.shift(); // ‘A’<br>arr; // [‘B’, 1, 2]<br>arr.shift(); arr.shift(); arr.shift(); // 连续shift 3次<br>arr; // []<br>arr.shift(); // 空数组继续shift不会报错，而是返回undefined<br>arr; // []</p><p>concat<br>concat()方法把当前的Array和另一个Array连接起来，并返回一个新的Array：</p><p>var arr = [‘A’, ‘B’, ‘C’];<br>var added = arr.concat([1, 2, 3]);<br>added; // [‘A’, ‘B’, ‘C’, 1, 2, 3]<br>arr; // [‘A’, ‘B’, ‘C’]</p><p>join<br>join()方法是一个非常实用的方法，它把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串：</p><p>var arr = [‘A’, ‘B’, ‘C’, 1, 2, 3];<br>arr.join(‘-‘); // ‘A-B-C-1-2-3’</p><p>对象</p><p>JavaScript用一个{…}表示一个对象，键值对以xxx: xxx形式申明，用,隔开。</p><p>var xiaoming = {<br>    name: ‘小明’,<br>    birth: 1990,<br>    school: ‘No.1 Middle School’,<br>    height: 1.70,<br>    weight: 65,<br>    score: null<br>};</p><p>但这要求属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用’’括起来：</p><p>var xiaohong = {<br>    name: ‘小红’,<br>    ‘middle-school’: ‘No.1 Middle School’<br>};</p><p>我们在编写JavaScript代码的时候，属性名尽量使用标准的变量名，这样就可以直接通过object.prop的形式访问一个属性了。</p><p>实际上JavaScript对象的所有属性都是字符串，不过属性对应的值可以是任意数据类型。</p><p>由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性：</p><p>var xiaoming = {<br>    name: ‘小明’<br>};<br>xiaoming.age; // undefined<br>xiaoming.age = 18; // 新增一个age属性<br>xiaoming.age; // 18<br>delete xiaoming.age; // 删除age属性<br>xiaoming.age; // undefined<br>delete xiaoming[‘name’]; // 删除name属性<br>xiaoming.name; // undefined<br>delete xiaoming.school; // 删除一个不存在的school属性也不会报错</p><p>如果我们要检测xiaoming是否拥有某一属性，可以用in操作符：</p><p>var xiaoming = {<br>    name: ‘小明’,<br>    birth: 1990,<br>    school: ‘No.1 Middle School’,<br>    height: 1.70,<br>    weight: 65,<br>    score: null<br>};<br>‘name’ in xiaoming; // true<br>‘grade’ in xiaoming; // false</p><p>要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法：</p><p>var xiaoming = {<br>    name: ‘小明’<br>};<br>xiaoming.hasOwnProperty(‘name’); // true<br>xiaoming.hasOwnProperty(‘toString’); // false</p><p>条件判断</p><p>var age = 20;<br>if (age &gt;= 18) { // 如果age &gt;= 18为true，则执行if语句块<br>    alert(‘adult’);<br>} else { // 否则执行else语句块<br>    alert(‘teenager’);<br>}</p><p>循环</p><p>var x = 0;<br>var i;<br>for (i=1; i&lt;=10000; i++) {<br>    x = x + i;<br>}<br>x;</p><p>for循环最常用的地方是利用索引来遍历数组：</p><p>var arr = [‘Apple’, ‘Google’, ‘Microsoft’];<br>var i, x;<br>for (i=0; i&lt;arr.length; i++) {<br>    x = arr[i];<br>    console.log(x);<br>}</p><p>var a = [‘A’, ‘B’, ‘C’];<br>for (var i in a) {<br>    console.log(i); // ‘0’, ‘1’, ‘2’<br>    console.log(a[i]); // ‘A’, ‘B’, ‘C’<br>}</p><p>while<br>for循环在已知循环的初始和结束条件时非常有用。而上述忽略了条件的for循环容易让人看不清循环的逻辑，此时用while循环更佳。</p><p>while循环只有一个判断条件，条件满足，就不断循环，条件不满足时则退出循环。比如我们要计算100以内所有奇数之和，可以用while循环实现：</p><p>var x = 0;<br>var n = 99;<br>while (n &gt; 0) {<br>    x = x + n;<br>    n = n - 2;<br>}<br>x; // 2500</p><p>Map<br>Map是一组键值对的结构，具有极快的查找速度。</p><p>初始化Map需要一个二维数组，或者直接初始化一个空Map。</p><p>var m = new Map([[‘Michael’, 95], [‘Bob’, 75], [‘Tracy’, 85]]);<br>m.get(‘Michael’); // 95</p><p>var m = new Map(); // 空Map<br>m.set(‘Adam’, 67); // 添加新的key-value<br>m.set(‘Bob’, 59);<br>m.has(‘Adam’); // 是否存在key ‘Adam’: true<br>m.get(‘Adam’); // 67<br>m.delete(‘Adam’); // 删除key ‘Adam’<br>m.get(‘Adam’); // undefined</p><p>Set<br>Set和Map类似，也是一组key的集合，但不存储value。</p><p>小结<br>Map和Set是ES6标准新增的数据类型，</p><p>定义函数</p><p>function abs(x) {<br>    if (x &gt;= 0) {<br>        return x;<br>    } else {<br>        return -x;<br>    }<br>}</p><p>由于JavaScript的函数也是一个对象，上述定义的abs()函数实际上是一个函数对象，而函数名abs可以视为指向该函数的变量。</p><p>因此，第二种定义函数的方式如下：</p><p>var abs = function (x) {<br>    if (x &gt;= 0) {<br>        return x;<br>    } else {<br>        return -x;<br>    }<br>};</p><p>由于JavaScript允许传入任意个参数而不影响调用，因此传入的参数比定义的参数多也没有问题，虽然函数内部并不需要这些参数：</p><p>abs(10, ‘blablabla’); // 返回10<br>abs(-9, ‘haha’, ‘hehe’, null); //</p><p>arguments<br>JavaScript还有一个免费赠送的关键字arguments，它只在函数内部起作用，并且永远指向当前函数的调用者传入的所有参数。arguments类似Array但它不是一个Array</p><p>function foo(x) {<br>    console.log(‘x = ‘ + x); // 10<br>    for (var i=0; i&lt;arguments.length; i++) {<br>        console.log(‘arg ‘ + i + ‘ = ‘ + arguments[i]); // 10, 20, 30<br>    }<br>}<br>foo(10, 20, 30);</p><p>在JavaScript中，用var申明的变量实际上是有作用域的。</p><p>如果一个变量在函数体内部申明，则该变量的作用域为整个函数体，在函数体外不可引用该变量：</p><p>由于JavaScript的函数可以嵌套，此时，内部函数可以访问外部函数定义的变量，反过来则不行：</p><p>‘use strict’;</p><p>function foo() {<br>    var x = 1;<br>    function bar() {<br>        var y = x + 1; // bar可以访问foo的变量x!<br>    }<br>    var z = y + 1; // ReferenceError! foo不可以访问bar的变量y!<br>}</p><p>这说明JavaScript的函数在查找变量时从自身函数定义开始，从“内”向“外”查找。如果内部函数定义了与外部函数重名的变量，则内部函数的变量将“屏蔽”外部函数的变量。</p><p>变量提升</p><p>这正是因为JavaScript引擎自动提升了变量y的声明，但不会提升变量y的赋值。</p><p>全局作用域<br>不在任何函数内定义的变量就具有全局作用域。实际上，JavaScript默认有一个全局对象window，全局作用域的变量实际上被绑定到window的一个属性：</p><p>‘use strict’;</p><p>var course = ‘Learn JavaScript’;<br>alert(course); // ‘Learn JavaScript’<br>alert(window.course); // ‘Learn JavaScript’</p><p>这说明JavaScript实际上只有一个全局作用域。</p><p>名字空间<br>全局变量会绑定到window上，不同的JavaScript文件如果使用了相同的全局变量，或者定义了相同名字的顶层函数，都会造成命名冲突，并且很难被发现。</p><p>减少冲突的一个方法是把自己的所有变量和函数全部绑定到一个全局变量中。例如：</p><p>// 唯一的全局变量MYAPP:<br>var MYAPP = {};</p><p>// 其他变量:<br>MYAPP.name = ‘myapp’;<br>MYAPP.version = 1.0;</p><p>// 其他函数:<br>MYAPP.foo = function () {<br>    return ‘foo’;<br>};</p><p>为了解决块级作用域，ES6引入了新的关键字let，用let替代var可以申明一个块级作用域的变量：</p><p>‘use strict’;</p><p>function foo() {<br>    var sum = 0;<br>    for (let i=0; i&lt;100; i++) {<br>        sum += i;<br>    }<br>    // SyntaxError:<br>    i += 1;<br>}</p><p>ES6标准引入了新的关键字const来定义常量，const与let都具有块级作用域：</p><p>‘use strict’;</p><p>const PI = 3.14;<br>PI = 3; // 某些浏览器不报错，但是无效果！<br>PI; // 3.14</p><p>解构赋值  很奇怪</p><p>要保证this指向正确，必须用obj.xxx()的形式调用！</p><p>apply<br>虽然在一个独立的函数调用中，根据是否是strict模式，this指向undefined或window，不过，我们还是可以控制this的指向的！</p><p>要指定函数的this指向哪个对象，可以用函数本身的apply方法，它接收两个参数，第一个参数就是需要绑定的this变量，第二个参数是Array，表示函数本身的参数。</p><p>装饰器<br>利用apply()，我们还可以动态改变函数的行为。</p><p>高阶函数英文叫Higher-order function。</p><p>编写高阶函数，就是让函数的参数能够接收别的函数。</p><p>利用filter，可以巧妙地去除Array的重复元素：<br>r = arr.filter(function (element, index, self) {<br>    return self.indexOf(element) === index;<br>});</p><p>要按数字大小排序，我们可以这么写</p><p>arr.sort(function (x, y) {<br>    if (x &lt; y) {<br>        return -1;<br>    }<br>    if (x &gt; y) {<br>        return 1;<br>    }<br>    return 0;<br>});<br>console.log(arr); // [1, 2, 10, 20]</p><p>闭包Closure</p><p>我们在函数lazy_sum中又定义了函数sum，并且，内部函数sum可以引用外部函数lazy_sum的参数和局部变量，当lazy_sum返回函数sum时，相关参数和变量都保存在返回的函数中，这种称为“闭包（Closure）”的程序结构拥有极大的威力。</p><p>function lazy_sum(arr) {<br>    var sum = function () {<br>        return arr.reduce(function (x, y) {<br>            return x + y;<br>        });<br>    }<br>    return sum;<br>}</p><p>var f = lazy_sum([1, 2, 3, 4, 5]); // function sum()</p><p>f()</p><p>返回闭包时牢记的一点就是：返回函数不要引用任何循环变量，或者后续会发生变化的变量。</p><p>通常，一个立即执行的匿名函数可以把函数体拆开，一般这么写：</p><p>(function (x) {<br>    return x * x;<br>})(3);</p><p>换句话说，闭包就是携带状态的函数，并且它的状态可以完全对外隐藏起来。</p><p>箭头函数</p><p>‘use strict’;<br>function* next_id() {</p><p>   var c = 0;</p><pre><code>while (true) {    c++;    yield c;}</code></pre><p>}</p><p>生成器就是一个 会暂停的函数 。</p><p>我们用typeof操作符获取对象的类型，它总是返回一个字符串：</p><p>typeof 123; // ‘number’<br>typeof NaN; // ‘number’<br>typeof ‘str’; // ‘string’<br>typeof true; // ‘boolean’<br>typeof undefined; // ‘undefined’<br>typeof Math.abs; // ‘function’<br>typeof null; // ‘object’<br>typeof []; // ‘object’<br>typeof {}; // ‘object’</p><p>number、boolean和string都有包装对象。</p><p>var n = new Number(123); // 123,生成了新的包装类型<br>var b = new Boolean(true); // true,生成了新的包装类型<br>var s = new String(‘str’); // ‘str’,生成了新的包装类型</p><p>如果我们在使用Number、Boolean和String时，没有写new会发生什么情况？</p><p>此时，Number()、Boolean和String()被当做普通函数，把任何类型的数据转换为number、boolean和string类型（注意不是其包装类型）：</p><p>var n = Number(‘123’); // 123，相当于parseInt()或parseFloat()<br>typeof n; // ‘number’</p><p>var b = Boolean(‘true’); // true<br>typeof b; // ‘boolean’</p><p>var b2 = Boolean(‘false’); // true! ‘false’字符串转换结果为true！因为它是非空字符串！<br>var b3 = Boolean(‘’); // false</p><p>var s = String(123.45); // ‘123.45’<br>typeof s; // ‘string’</p><p>不要使用new Number()、new Boolean()、new String()创建包装对象；</p><p>用parseInt()或parseFloat()来转换任意类型到number；</p><p>用String()来转换任意类型到string，或者直接调用某个对象的toString()方法；</p><p>通常不必把任意类型转换为boolean再判断，因为可以直接写if (myVar) {…}；</p><p>typeof操作符可以判断出number、boolean、string、function和undefined；</p><p>判断Array要使用Array.isArray(arr)；</p><p>判断null请使用myVar === null；</p><p>判断某个全局变量是否存在用typeof window.myVar === ‘undefined’；</p><p>函数内部判断某个变量是否存在用typeof myVar === ‘undefined’。</p><p>123.toString(); // SyntaxError<br>遇到这种情况，要特殊处理一下：</p><p>123..toString(); // ‘123’, 注意是两个点！<br>(123).toString(); // ‘123’<br>不要问为什么，这就是JavaScript代码的乐趣！</p><p>Date</p><p>在JavaScript中，Date对象用来表示日期和时间。</p><p>要获取系统当前时间，用：</p><p>var now = new Date();<br>now; // Wed Jun 24 2015 19:49:22 GMT+0800 (CST)<br>now.getFullYear(); // 2015, 年份<br>now.getMonth(); // 5, 月份，注意月份范围是0~11，5表示六月<br>now.getDate(); // 24, 表示24号<br>now.getDay(); // 3, 表示星期三<br>now.getHours(); // 19, 24小时制<br>now.getMinutes(); // 49, 分钟<br>now.getSeconds(); // 22, 秒<br>now.getMilliseconds(); // 875, 毫秒数<br>now.getTime(); // 1435146562875, 以number形式表示的时间戳</p><p>如果要创建一个指定日期和时间的Date对象，可以用：</p><p>var d = new Date(2015, 5, 19, 20, 15, 30, 123);<br>d; // Fri Jun 19 2015 20:15:30 GMT+0800 (CST)</p><p>就是JavaScript的月份范围用整数表示是0~11，0表示一月，1表示二月……，所以要表示6月，我们传入的是5！这绝对是JavaScript的设计者当时脑抽了一下，但是现在要修复已经不可能了。</p><p>如果我们还想要精确控制如何序列化小明，可以给xiaoming定义一个toJSON()的方法，直接返回JSON应该序列化的数据：</p><p>var xiaoming = {<br>    name: ‘小明’,<br>    age: 14,<br>    gender: true,<br>    height: 1.65,<br>    grade: null,<br>    ‘middle-school’: ‘\”W3C\” Middle School’,<br>    skills: [‘JavaScript’, ‘Java’, ‘Python’, ‘Lisp’],<br>    toJSON: function () {<br>        return { // 只输出name和age，并且改变了key：<br>            ‘Name’: this.name,<br>            ‘Age’: this.age<br>        };<br>    }<br>};</p><p>JSON.stringify(xiaoming); // ‘{“Name”:”小明”,”Age”:14}’</p><p>JS 的函数，传入多余数量的参数 ，不报错，而是自动忽略。</p><p>正确的方法是充分利用JavaScript对不存在属性返回undefined的特性，直接用短路运算符||计算：</p><p>location<br>location对象表示当前页面的URL信息。例如，一个完整的URL：</p><p><a href="http://www.example.com:8080/path/index.html?a=1&amp;b=2#TOP" target="_blank" rel="noopener">http://www.example.com:8080/path/index.html?a=1&amp;b=2#TOP</a><br>可以用location.href获取。要获得URL各个部分的值，可以这么写：</p><p>location.protocol; // ‘http’<br>location.host; // ‘<a href="http://www.example.com&#39;" target="_blank" rel="noopener">www.example.com&#39;</a><br>location.port; // ‘8080’<br>location.pathname; // ‘/path/index.html’<br>location.search; // ‘?a=1&amp;b=2’<br>location.hash; // ‘TOP’</p><p>要加载一个新页面，可以调用location.assign()。如果要重新加载当前页面，调用location.reload()方法非常方便。</p><p>document<br>document对象表示当前页面。由于HTML在浏览器中以DOM形式表示为树形结构，document对象就是整个DOM树的根节点。</p><p>document的title属性是从HTML文档中的<title>xxx</title>读取的，但是可以动态改变：</p><p>由于HTML文档被浏览器解析后就是一棵DOM树，要改变HTML的结构，就需要通过JavaScript来操作DOM。</p><p>插入 DOM</p><p>var<br>    list = document.getElementById(‘list’),<br>    haskell = document.createElement(‘p’);<br>haskell.id = ‘haskell’;<br>haskell.innerText = ‘Haskell’;<br>list.appendChild(haskell);</p><p>因为是异步操作，所以我们在JavaScript代码中就不知道什么时候操作结束，因此需要先设置一个回调函数：</p><p>$是著名的jQuery符号</p><p>实际上，jQuery把所有功能全部封装在一个全局变量jQuery中，而$也是一个合法的变量名，它是变量jQuery的别名：</p><p>按ID查找<br>var div = $(‘#abc’);<br>按tag查找<br>var ps = $(‘p’); // 返回所有</p><p>节点<br>ps.length; // 数一数页面有多少个</p><p>节点</p><p>按class查找</p><p>var a = $(‘.red’); // 所有节点包含<code>class=&quot;red&quot;</code>都将返回<br>// 例如:<br>// <div class="red">…</div><br>// </p><p class="green red">…</p><p></p><p>通常很多节点有多个class，我们可以查找同时包含red和green的节点：</p><p>var a = $(‘.red.green’); // 注意没有空格！<br>// 符合条件的节点：<br>// <div class="red green">…</div><br>// <div class="blue green red">…</div></p><p>按属性查找</p><p>var email = $(‘[name=email]’); // 找出&lt;??? name=”email”&gt;<br>var passwordInput = $(‘[type=password]’); // 找出&lt;??? type=”password”&gt;<br>var a = $(‘[items=”A B”]’); // 找出&lt;??? items=”A B”&gt;</p><p>当属性的值包含空格等特殊字符时，需要用双引号括起来。</p><p>组合查找<br>组合查找就是把上述简单选择器组合起来使用。如果我们查找$(‘[name=email]’)，很可能把表单外的<div name="email">也找出来，但我们只希望查找<input>，就可以这么写：</div></p><p>var emailInput = $(‘input[name=email]’); // 不会找出<div name="email"><br>同样的，根据tag和class来组合查找也很常见：</div></p><p>var tr = $(‘tr.red’); // 找出<tr class="red ...">…</tr></p><p>多项选择器<br>多项选择器就是把多个选择器用,组合起来一块选：</p><p>$(‘p,div’); // 把</p><p>和<div>都选出来<br>$(‘p.red,p.green’); // 把<p class="red">和</p><p class="green">都选出来</p></div></p>]]></content>
     
     <summary type="html">
     
@@ -282,184 +460,6 @@
 &lt;p&gt;Proper nouns 专有名词，首字母大写。&lt;/p&gt;
 &lt;p&gt;Concrete nouns 具体名词， table&lt;/p&gt;
 &lt;p&gt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>apache benchmarking tool </title>
-    <link href="http://www.youletter.cn/2018/04/11/apache-benchmarking-tool/"/>
-    <id>http://www.youletter.cn/2018/04/11/apache-benchmarking-tool/</id>
-    <published>2018-04-11T07:24:31.000Z</published>
-    <updated>2018-04-11T07:25:08.908Z</updated>
-    
-    <content type="html"><![CDATA[<p>ab -n2000 -c40 -H “Authorization:Bearer 4702ccaa-8250-43e1-b70b-b4ea5904b9d4” youletter.cn/api/me</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;ab -n2000 -c40 -H “Authorization:Bearer 4702ccaa-8250-43e1-b70b-b4ea5904b9d4” youletter.cn/api/me&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>sentences</title>
-    <link href="http://www.youletter.cn/2018/04/03/sentences/"/>
-    <id>http://www.youletter.cn/2018/04/03/sentences/</id>
-    <published>2018-04-03T09:48:29.000Z</published>
-    <updated>2018-04-03T10:35:10.517Z</updated>
-    
-    <content type="html"><![CDATA[<p>The straight line belongs to men, the curved one to God. – Antoni Gaudi.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;The straight line belongs to men, the curved one to God. – Antoni Gaudi.&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Docker 学习</title>
-    <link href="http://www.youletter.cn/2018/03/26/Docker-%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://www.youletter.cn/2018/03/26/Docker-学习/</id>
-    <published>2018-03-26T15:55:54.000Z</published>
-    <updated>2018-03-27T07:01:54.477Z</updated>
-    
-    <content type="html"><![CDATA[<p>Docker 守护进程会 监听 /var/run/docker.sock 这个socket， 来获取来自 客户端的 Docker请求。</p><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p>docker info  返回docker 基本信息 </p><p>docker run -i -t ubuntu /bin/bash</p><p>-i 打开 STDIN</p><p>-t 创建一个 伪tty ，提供交互式 SHELL。</p><p>重新启动一起 exit的容器<br>docker restart 82e856f8f48b</p><p>查看所有容器列表<br>docker ps -a<br>只显示当前运行的容器<br>docker ps </p><p>容器命名。 –name<br>docker run -it –name fupeng_ubuntu -d ubuntu /bin/bash</p><p>创建tty ，接入容器<br>docker exec -it fupeng_ubuntu bash</p><p>删除容器<br>docker rm</p><p>容器也是一个 进程。</p><p>镜像run起来，就是容器。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Docker 守护进程会 监听 /var/run/docker.sock 这个socket， 来获取来自 客户端的 Docker请求。&lt;/p&gt;
-&lt;h3 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>create redis cluster</title>
-    <link href="http://www.youletter.cn/2018/03/26/create-redis-cluster/"/>
-    <id>http://www.youletter.cn/2018/03/26/create-redis-cluster/</id>
-    <published>2018-03-26T03:43:51.000Z</published>
-    <updated>2018-03-27T07:17:38.751Z</updated>
-    
-    <content type="html"><![CDATA[<p>配置目录创建</p><p>mac: cd /usr/local/etc , mkdir redis, cd redis</p><p>other linux: cd /etc/redis</p><p>集群目录创建</p><p>mkdir cluster  为 redis-cluster 创建新目录   </p><p>cd cluster &amp;&amp; mkdir 7000 7001 7002</p><p>将redis的配置文件 redis.conf 复制至 7000-7002目录下</p><p>修改 redis.conf （以 7000/redis.conf 为例）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">port 7000</span><br><span class="line">cluster-enabled yes</span><br><span class="line">cluster-config-file nodes-7000.conf</span><br><span class="line">cluster-node-timeout 5000</span><br><span class="line">appendonly yes</span><br></pre></td></tr></table></figure><p>启动服务<br>redis-server 7000/redis.conf</p><p>redis-server 7001/redis.conf</p><p>redis-server 7002/redis.conf</p><p>节点握手</p><p>redis-cli -c -p 7000</p><p>cluster meet 127.0.0.1 7001</p><p>cluster meet 127.0.0.1 7002</p><p>分配槽</p><p>redis-cli -h 127.0.0.1 -p 7000 cluster addslots {0..5461}</p><p>redis-cli -h 127.0.0.1 -p 7001 cluster addslots {5462..10922}</p><p>redis-cli -h 127.0.0.1 -p 7002 cluster addslots {10923..16383}</p><p>检查</p><p>redis-cli -c -p 7000</p><p>cluster nodes , 是否能看到3个master，且已分配好槽</p><p>set test test，是否能看到写值redirected</p><h3 id="redis-trib创建-cluster（注：需要安装-ruby）"><a href="#redis-trib创建-cluster（注：需要安装-ruby）" class="headerlink" title="redis-trib创建 cluster（注：需要安装 ruby）"></a>redis-trib创建 cluster（注：需要安装 ruby）</h3><p>gem install redis </p><p>wget <a href="http://download.redis.io/redis-stable/src/redis-trib.rb" target="_blank" rel="noopener">http://download.redis.io/redis-stable/src/redis-trib.rb</a> </p><p>ruby redis-trib.rb create –replicas 1 127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005</p><h1 id="Docker-搭建redis-Cluster"><a href="#Docker-搭建redis-Cluster" class="headerlink" title="Docker 搭建redis Cluster"></a>Docker 搭建redis Cluster</h1><p>docker pull grokzen/redis-cluster</p><p>【linux】docker run -d –net=host –name rcluster grokzen/redis-cluster:latest</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;配置目录创建&lt;/p&gt;
-&lt;p&gt;mac: cd /usr/local/etc , mkdir redis, cd redis&lt;/p&gt;
-&lt;p&gt;other linux: cd /etc/redis&lt;/p&gt;
-&lt;p&gt;集群目录创建&lt;/p&gt;
-&lt;p&gt;mkdir cluster  为 redi
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>密码策略要求</title>
-    <link href="http://www.youletter.cn/2018/03/24/%E5%AF%86%E7%A0%81%E7%AD%96%E7%95%A5%E8%A6%81%E6%B1%82/"/>
-    <id>http://www.youletter.cn/2018/03/24/密码策略要求/</id>
-    <published>2018-03-24T13:19:37.000Z</published>
-    <updated>2018-03-24T13:21:42.345Z</updated>
-    
-    <content type="html"><![CDATA[<p>密码策略要求：<br>Password Policy Requirements:</p><p>1．        至少有8个字符长度；<br>At least 8 characters in length;</p><p>2．        至少包含以下四类字符中的三类字符：<br>Contains at least three of the following four types of characters:</p><p>a.    英文大写字母(A 到 Z)；<br>Capital letters (A to Z);</p><p>b.    英文小写字母(a 到 z)；<br>Lowercase letters (a to z);</p><p>c.    10 个基本数字(0 到 9)；<br>          Basic numbers (0 to 9);</p><p>d．非字母字符(例如 @、!、$、#、%等)。<br>Non-alphabetic characters (e.g. @, !, $, #, %, etc.)</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;密码策略要求：&lt;br&gt;Password Policy Requirements:&lt;/p&gt;
-&lt;p&gt;1．        至少有8个字符长度；&lt;br&gt;At least 8 characters in length;&lt;/p&gt;
-&lt;p&gt;2．        至少包含以下四类字符中的三类字
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>english words pronounce</title>
-    <link href="http://www.youletter.cn/2018/03/23/english-words-pronounce/"/>
-    <id>http://www.youletter.cn/2018/03/23/english-words-pronounce/</id>
-    <published>2018-03-23T02:45:56.000Z</published>
-    <updated>2018-03-23T02:48:21.742Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=GoHV4W5vxCo" target="_blank" rel="noopener">https://www.youtube.com/watch?v=GoHV4W5vxCo</a></p><p>1000 words<br><a href="https://www.youtube.com/watch?v=DP5gAh5kA-A" target="_blank" rel="noopener">https://www.youtube.com/watch?v=DP5gAh5kA-A</a></p><p>All English Lessons — build your vocabulary<br><a href="https://www.youtube.com/channel/UC_HytfXJ43beiwZ5rhi0PwA/videos" target="_blank" rel="noopener">https://www.youtube.com/channel/UC_HytfXJ43beiwZ5rhi0PwA/videos</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=GoHV4W5vxCo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=GoHV4W5vxCo&lt;/a&gt;&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SQL effective</title>
-    <link href="http://www.youletter.cn/2018/03/10/SQL-effective/"/>
-    <id>http://www.youletter.cn/2018/03/10/SQL-effective/</id>
-    <published>2018-03-10T07:20:53.000Z</published>
-    <updated>2018-03-10T08:03:11.842Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Data-Model-Design"><a href="#Data-Model-Design" class="headerlink" title="Data Model Design"></a>Data Model Design</h1><p>Item 1 : Verify That all tables have a primary key.</p><p>AUTO_INCREMENT 自增字段</p><p>referential integrity (RI) </p><p>主键尽可能简单，不需要被更新。</p><p>integrity 完整性</p><p>Item 2 : Eliminate Redundant Storage of Data items</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Data-Model-Design&quot;&gt;&lt;a href=&quot;#Data-Model-Design&quot; class=&quot;headerlink&quot; title=&quot;Data Model Design&quot;&gt;&lt;/a&gt;Data Model Design&lt;/h1&gt;&lt;p&gt;Item 1 : V
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SQL cook</title>
-    <link href="http://www.youletter.cn/2018/03/09/SQL-cook/"/>
-    <id>http://www.youletter.cn/2018/03/09/SQL-cook/</id>
-    <published>2018-03-09T02:47:20.000Z</published>
-    <updated>2018-03-09T05:53:30.524Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="为列取有意义的名字-AS"><a href="#为列取有意义的名字-AS" class="headerlink" title="为列取有意义的名字 AS"></a>为列取有意义的名字 AS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select cnt as count from emp;</span><br><span class="line">select cnt count from emp;</span><br></pre></td></tr></table></figure><p>有些数据库不需要as ，如MySQL，但 有as也不错。</p><h2 id="在where子句中使用别名"><a href="#在where子句中使用别名" class="headerlink" title="在where子句中使用别名"></a>在where子句中使用别名</h2><p><code>select cnt as count from emp where count = 2;</code><br>上面这个SQL会失败 ，报找不到count列</p><p>解决方案，将查询作为内联视图就可以使用 其中的别名了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select * from (</span><br><span class="line">select cnt as count from emp</span><br><span class="line">) x</span><br><span class="line">where count = 10004</span><br></pre></td></tr></table></figure></p><p>因为 WHERE子句是在 select 之前处理的， 所以在处理 where子句之前， count并不存在 。要在where处理完后，count才能生效。 然后，from 子句是在  where 之前处理的。把原查询放到  from 子句中， 在最外层的 where子句之前  。 这样最外层的where子句就能 看到 count 了。 </p><p>本例将 内联视图 命名为 x ，并不是所有数据库都需要。 MySQL 需要。</p><h2 id="在select语句中使用条件逻辑"><a href="#在select语句中使用条件逻辑" class="headerlink" title="在select语句中使用条件逻辑"></a>在select语句中使用条件逻辑</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select ename ,</span><br><span class="line">case </span><br><span class="line">where sal &lt; 2000 then &apos;under&apos;</span><br><span class="line">where sal &gt; 4000 then &apos;over&apos;</span><br><span class="line">else &apos;ok&apos;</span><br><span class="line">end as status</span><br><span class="line">from emp</span><br></pre></td></tr></table></figure><h2 id="限制返回的行"><a href="#限制返回的行" class="headerlink" title="限制返回的行"></a>限制返回的行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select  * from emp limit 5</span><br></pre></td></tr></table></figure><h2 id="查找空值"><a href="#查找空值" class="headerlink" title="查找空值"></a>查找空值</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select * from emp where comm is null;</span><br><span class="line"></span><br><span class="line">select * from emp where comm is not null;</span><br></pre></td></tr></table></figure><p>null 不等于 任何值， 包括自身， 所以不能用 = 或者 != 来比较 。只能用 is null 或者 is not null 来判断。</p><h2 id="按模式搜索"><a href="#按模式搜索" class="headerlink" title="按模式搜索  %"></a>按模式搜索  %</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from emp where depto like &quot;%er%%&quot;</span><br></pre></td></tr></table></figure><p>% 可以匹配任何字符序列。 上面这个SQL表示 包含er的字符串。</p><h2 id="已指定次序返回查询结果-order-by"><a href="#已指定次序返回查询结果-order-by" class="headerlink" title="已指定次序返回查询结果 order by"></a>已指定次序返回查询结果 order by</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ename from emp where depto = 10 order by sal;</span><br><span class="line"></span><br><span class="line">select ename from emp where depto = 10 order by sal desc;</span><br></pre></td></tr></table></figure><p>order by 默认以升序排列 asc 。  指定 desc 降序排列   </p><p>按照多个字段排序时 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;为列取有意义的名字-AS&quot;&gt;&lt;a href=&quot;#为列取有意义的名字-AS&quot; class=&quot;headerlink&quot; title=&quot;为列取有意义的名字 AS&quot;&gt;&lt;/a&gt;为列取有意义的名字 AS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;
       
     
     </summary>
