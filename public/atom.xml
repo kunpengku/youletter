@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-06-27T06:30:37.150Z</updated>
+  <updated>2018-07-18T15:50:58.644Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -17,20 +17,153 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何安装pip</title>
+    <link href="http://www.youletter.cn/2018/07/18/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85pip/"/>
+    <id>http://www.youletter.cn/2018/07/18/如何安装pip/</id>
+    <published>2018-07-18T15:50:43.000Z</published>
+    <updated>2018-07-18T15:50:58.644Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://pip.pypa.io/en/stable/installing/" target="_blank" rel="noopener">https://pip.pypa.io/en/stable/installing/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://pip.pypa.io/en/stable/installing/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pip.pypa.io/en/stable/installing/&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Why We Need Lambda Expressions in Java - Part 1</title>
+    <link href="http://www.youletter.cn/2018/07/10/Why-We-Need-Lambda-Expressions-in-Java-Part-1/"/>
+    <id>http://www.youletter.cn/2018/07/10/Why-We-Need-Lambda-Expressions-in-Java-Part-1/</id>
+    <published>2018-07-10T09:44:38.000Z</published>
+    <updated>2018-07-10T11:14:42.976Z</updated>
+    
+    <content type="html"><![CDATA[<p>Lambda 表达式在Java 8 加入了。我计划联合其他几位作者写一本关于这个主题的书。<br>本文的目的是告诉你，为什么现代的编程语言必须要有Lamdba表达式。</p><p>函数式接口</p><p>source:<a href="https://dzone.com/articles/why-we-need-Lambda-expressions" target="_blank" rel="noopener">Why We Need Lambda Expressions in Java - Part 1</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Lambda 表达式在Java 8 加入了。我计划联合其他几位作者写一本关于这个主题的书。&lt;br&gt;本文的目的是告诉你，为什么现代的编程语言必须要有Lamdba表达式。&lt;/p&gt;
+&lt;p&gt;函数式接口&lt;/p&gt;
+&lt;p&gt;source:&lt;a href=&quot;https://dzone.com
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>java Lambda</title>
+    <link href="http://www.youletter.cn/2018/07/10/java-Lambda/"/>
+    <id>http://www.youletter.cn/2018/07/10/java-Lambda/</id>
+    <published>2018-07-10T03:59:11.000Z</published>
+    <updated>2018-07-10T13:49:35.879Z</updated>
+    
+    <content type="html"><![CDATA[<p>接口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">package com.example.kpk.demo_valid;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * DATE 2018/7/10.</span><br><span class="line"> *</span><br><span class="line"> * @author fupeng.</span><br><span class="line"> */</span><br><span class="line">@FunctionalInterface</span><br><span class="line">public interface WorkerInterface &#123;</span><br><span class="line"></span><br><span class="line">    public void doSomeWork();</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>测试类</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">package com.example.kpk.demo_valid;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * DATE 2018/7/10.</span><br><span class="line"> *</span><br><span class="line"> * @author fupeng.</span><br><span class="line"> */</span><br><span class="line">public class TestLambda &#123;</span><br><span class="line"></span><br><span class="line">    public static void execute(WorkerInterface worker) &#123;</span><br><span class="line">        worker.doSomeWork();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;1&quot;);</span><br><span class="line"></span><br><span class="line">        //invoke doSomeWork using Annonymous class</span><br><span class="line">        execute(new WorkerInterface() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void doSomeWork() &#123;</span><br><span class="line">                System.out.println(&quot;Worker invoked using Anonymous class&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        execute(() -&gt; System.out.println(&quot;another invoked using Lambda expression&quot;));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>source: <a href="http://blog.oneapm.com/apm-tech/226.html" target="_blank" rel="noopener">深入浅出 Java 8 Lambda 表达式</a></p><p><a href="http://viralpatel.net/blogs/Lambda-expressions-java-tutorial/" target="_blank" rel="noopener">Java 8 Lambda Expressions Tutorial with Examples</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;接口&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git 常用命令</title>
+    <link href="http://www.youletter.cn/2018/07/06/git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://www.youletter.cn/2018/07/06/git-常用命令/</id>
+    <published>2018-07-06T01:04:16.000Z</published>
+    <updated>2018-07-06T01:04:31.058Z</updated>
+    
+    <content type="html"><![CDATA[<p>git stash<br>git stash pop</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;git stash&lt;br&gt;git stash pop&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>next-word</title>
+    <link href="http://www.youletter.cn/2018/07/01/next-word/"/>
+    <id>http://www.youletter.cn/2018/07/01/next-word/</id>
+    <published>2018-07-01T08:49:06.000Z</published>
+    <updated>2018-07-01T08:51:50.342Z</updated>
+    
+    <content type="html"><![CDATA[<p>确信无疑 quexinwuyi -  certainly</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;确信无疑 quexinwuyi -  certainly&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>月亮和六便士</title>
+    <link href="http://www.youletter.cn/2018/06/28/%E6%9C%88%E4%BA%AE%E5%92%8C%E5%85%AD%E4%BE%BF%E5%A3%AB/"/>
+    <id>http://www.youletter.cn/2018/06/28/月亮和六便士/</id>
+    <published>2018-06-28T13:29:02.000Z</published>
+    <updated>2018-06-28T13:29:33.620Z</updated>
+    
+    <content type="html"><![CDATA[<p>source:<br><a href="http://www.gutenberg.org/files/222/222-h/222-h.htm" target="_blank" rel="noopener">The Moon and Sixpence</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;source:&lt;br&gt;&lt;a href=&quot;http://www.gutenberg.org/files/222/222-h/222-h.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The Moon and Sixpence&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>小程序</title>
     <link href="http://www.youletter.cn/2018/06/27/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     <id>http://www.youletter.cn/2018/06/27/小程序/</id>
     <published>2018-06-27T06:30:08.000Z</published>
-    <updated>2018-06-27T06:30:37.150Z</updated>
+    <updated>2018-06-28T12:25:13.273Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://juejin.im/post/5ac9b72cf265da23906c486a" target="_blank" rel="noopener">手把手教会你小程序登录鉴权</a></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://juejin.im/post/5ac9b72cf265da23906c486a" target="_blank" rel="noopener">手把手教会你小程序登录鉴权</a></p><p><a href="https://github.com/wechat-group/weixin-java-tools" target="_blank" rel="noopener">微信后端工具包</a></p><p><a href="https://github.com/binarywang/weixin-java-miniapp-demo" target="_blank" rel="noopener">weixin-java-miniapp-demo</a></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;&lt;a href=&quot;https://juejin.im/post/5ac9b72cf265da23906c486a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;手把手教会你小程序登录鉴权&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;a href=&quot;https://github
       
     
     </summary>
@@ -322,144 +455,6 @@
         &lt;p&gt;parallel –gnu wget –content-disposition  &amp;lt; u2.txt&lt;/p&gt;
 &lt;p&gt;parallel –gnu tar xzf  &amp;lt; log.txtu&lt;/p&gt;
 &lt;p&gt;parallel –gnu gunzip   &amp;lt; file&lt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>spring boot aop 使用</title>
-    <link href="http://www.youletter.cn/2018/04/17/spring-boot-aop-%E4%BD%BF%E7%94%A8/"/>
-    <id>http://www.youletter.cn/2018/04/17/spring-boot-aop-使用/</id>
-    <published>2018-04-17T11:25:12.000Z</published>
-    <updated>2018-04-17T11:25:31.709Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用Spring Boot的AOP处理自定义注解<br><a href="https://crane-yuan.github.io/2018/01/11/spring-boot-aop-custom-annotation/" target="_blank" rel="noopener">https://crane-yuan.github.io/2018/01/11/spring-boot-aop-custom-annotation/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;使用Spring Boot的AOP处理自定义注解&lt;br&gt;&lt;a href=&quot;https://crane-yuan.github.io/2018/01/11/spring-boot-aop-custom-annotation/&quot; target=&quot;_blank&quot; rel=&quot;noo
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>wh-question</title>
-    <link href="http://www.youletter.cn/2018/04/14/wh-question/"/>
-    <id>http://www.youletter.cn/2018/04/14/wh-question/</id>
-    <published>2018-04-14T07:21:08.000Z</published>
-    <updated>2018-04-14T09:57:16.876Z</updated>
-    
-    <content type="html"><![CDATA[<p>wh-question 指的是 what, when, where, who, whom, which, whose, why and how 这些词开头的句子，用来询问信息 ，他们的回答不可以是 yes 或者 no。</p><h1 id="如何形成-wh-questions"><a href="#如何形成-wh-questions" class="headerlink" title="如何形成 wh-questions"></a>如何形成 wh-questions</h1><ul><li>With an auxiliary verb</li></ul><p>wh- + an auxiliary verb (be, do or have) + subject + main verb  </p><p>wh- + a modal verb + subject + main verb</p><ul><li>Without an auxiliary verb</li></ul><p>当what, who, which or whose是主语，或主语的一部分时，不需要助动词。</p><p>What fell off the wall? </p><p>Which horse won?</p><p>Who bought this? </p><p>Whose phone rang?</p><p># </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;wh-question 指的是 what, when, where, who, whom, which, whose, why and how 这些词开头的句子，用来询问信息 ，他们的回答不可以是 yes 或者 no。&lt;/p&gt;
-&lt;h1 id=&quot;如何形成-wh-questio
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>what drives everything going</title>
-    <link href="http://www.youletter.cn/2018/04/14/what-drives-everything-going/"/>
-    <id>http://www.youletter.cn/2018/04/14/what-drives-everything-going/</id>
-    <published>2018-04-14T07:18:56.000Z</published>
-    <updated>2018-04-14T07:19:52.934Z</updated>
-    
-    <content type="html"><![CDATA[<p>what drives everything going</p><p>Electricity</p><p>what drives electircity going?</p><p>Time.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;what drives everything going&lt;/p&gt;
-&lt;p&gt;Electricity&lt;/p&gt;
-&lt;p&gt;what drives electircity going?&lt;/p&gt;
-&lt;p&gt;Time.&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Verb phrases</title>
-    <link href="http://www.youletter.cn/2018/04/14/Verb-phrases/"/>
-    <id>http://www.youletter.cn/2018/04/14/Verb-phrases/</id>
-    <published>2018-04-14T05:49:49.000Z</published>
-    <updated>2018-04-14T07:14:40.210Z</updated>
-    
-    <content type="html"><![CDATA[<p>Verb phrases = [modal verb] + [auxiliary verb] + main verb</p><pre><code>| 1 | 2 | 3 | 4 | 5 </code></pre><p>—     |—|—|—|—|—-<br>subject |modal verb|perfect have | continuous be| passive be| main verb<br>        |followed by base form | followed by -ed form | followed by -ing form | followed by -ed form<br>    Prices | | | | | up<br>    He | will | | | | understand<br>    The builders |  | had | | | arrived<br>    The show | |  | is | | starting<br>    Four people | | | | were | arrested<br>    Seats | can’t | | | be | reserved</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Verb phrases = [modal verb] + [auxiliary verb] + main verb&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;| 1 | 2 | 3 | 4 | 5 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;—     |—|—|—|—|—-&lt;br&gt;subje
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>determiner</title>
-    <link href="http://www.youletter.cn/2018/04/12/determiner/"/>
-    <id>http://www.youletter.cn/2018/04/12/determiner/</id>
-    <published>2018-04-12T10:11:57.000Z</published>
-    <updated>2018-04-12T10:15:21.085Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="A-an-and-the"><a href="#A-an-and-the" class="headerlink" title="A/an and the"></a>A/an and the</h2><p>A/an 表示说话的参与者不知道的东西。</p><p>The before a noun shows that what is referred to is already known to the speaker, listener, writer and/or reader (it is the definite article):</p><p>The before a noun shows that what is referred to is already known to the speaker, listener, writer and/or reader (it is the definite article):</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;A-an-and-the&quot;&gt;&lt;a href=&quot;#A-an-and-the&quot; class=&quot;headerlink&quot; title=&quot;A/an and the&quot;&gt;&lt;/a&gt;A/an and the&lt;/h2&gt;&lt;p&gt;A/an 表示说话的参与者不知道的东西。&lt;/p&gt;
-&lt;p&gt;Th
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>nouns 名词</title>
-    <link href="http://www.youletter.cn/2018/04/12/nouns-%E5%90%8D%E8%AF%8D/"/>
-    <id>http://www.youletter.cn/2018/04/12/nouns-名词/</id>
-    <published>2018-04-12T03:01:59.000Z</published>
-    <updated>2018-04-12T03:27:22.745Z</updated>
-    
-    <content type="html"><![CDATA[<p>名词来指示一个人，动物，或东西。</p><p>指人 boy , girl<br>指动物和东西 cat, book ,tree</p><p>Proper nouns 专有名词，首字母大写。</p><p>Concrete nouns 具体名词， table</p><p>Abstract nouns 抽象名词 ， love， feelings</p><p>识别名词并不容易通过他们的形式看出来。但还是有一些后缀，很大可能就是名词。</p><p><a href="https://dictionary.cambridge.org/zht/%E8%AA%9E%E6%B3%95/%E8%8B%B1%E5%BC%8F%E8%AA%9E%E6%B3%95/about-nouns/nouns" target="_blank" rel="noopener">https://dictionary.cambridge.org/zht/%E8%AA%9E%E6%B3%95/%E8%8B%B1%E5%BC%8F%E8%AA%9E%E6%B3%95/about-nouns/nouns</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;名词来指示一个人，动物，或东西。&lt;/p&gt;
-&lt;p&gt;指人 boy , girl&lt;br&gt;指动物和东西 cat, book ,tree&lt;/p&gt;
-&lt;p&gt;Proper nouns 专有名词，首字母大写。&lt;/p&gt;
-&lt;p&gt;Concrete nouns 具体名词， table&lt;/p&gt;
-&lt;p&gt;
       
     
     </summary>
