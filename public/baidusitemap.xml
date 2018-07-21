@@ -4,6 +4,51 @@
 
     
   <url>
+    <loc>http://www.youletter.cn/2018/07/19/Java-8-%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
+    <lastmod>2018-07-21T07:38:10.259Z</lastmod>
+    <data>
+        <display>
+        <title>Java 8 新特性</title>
+        <pubTime>2018-07-19T09:10:07.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/07/19/Java%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
+    <lastmod>2018-07-19T02:40:08.968Z</lastmod>
+    <data>
+        <display>
+        <title>Java工具类</title>
+        <pubTime>2018-07-19T02:39:41.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.youletter.cn/2018/07/19/%E5%A6%82%E4%BD%95%E6%9E%84%E6%88%90%E4%B8%80%E4%B8%AA%E4%BC%A0%E7%BB%9Fweb%E6%9C%8D%E5%8A%A1/</loc>
+    <lastmod>2018-07-18T16:10:59.508Z</lastmod>
+    <data>
+        <display>
+        <title>如何构成一个传统web服务</title>
+        <pubTime>2018-07-18T16:00:12.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.youletter.cn/2018/07/18/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85pip/</loc>
     <lastmod>2018-07-18T15:50:58.644Z</lastmod>
     <data>
@@ -1321,12 +1366,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
+    <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     <data>
         <display>
-        <title>spring-cloud-netflix之服务发现Eureka Client</title>
-        <pubTime>2017-11-18T14:38:44.000Z</pubTime>
+        <title>spring-cloud-netflix之服务发现Eureka Server</title>
+        <pubTime>2017-11-16T14:44:05.000Z</pubTime>
         
          
            
@@ -1336,12 +1381,12 @@
 
     
   <url>
-    <loc>http://www.youletter.cn/2017/11/16/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Server/</loc>
+    <loc>http://www.youletter.cn/2017/11/18/spring-cloud-netflix%E4%B9%8B%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0Eureka-Client/</loc>
     <lastmod>2017-11-24T02:11:55.000Z</lastmod>
     <data>
         <display>
-        <title>spring-cloud-netflix之服务发现Eureka Server</title>
-        <pubTime>2017-11-16T14:44:05.000Z</pubTime>
+        <title>spring-cloud-netflix之服务发现Eureka Client</title>
+        <pubTime>2017-11-18T14:38:44.000Z</pubTime>
         
          
            

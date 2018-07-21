@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-07-18T15:50:58.644Z</updated>
+  <updated>2018-07-21T07:38:10.259Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 8 新特性</title>
+    <link href="http://www.youletter.cn/2018/07/19/Java-8-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <id>http://www.youletter.cn/2018/07/19/Java-8-新特性/</id>
+    <published>2018-07-19T09:10:07.000Z</published>
+    <updated>2018-07-21T07:38:10.259Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="forEach-方法"><a href="#forEach-方法" class="headerlink" title="forEach() 方法"></a>forEach() 方法</h1><p>example </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">package com.vipkid.school.account.utils;</span><br><span class="line"></span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.Iterator;</span><br><span class="line">import java.util.List;</span><br><span class="line">import java.util.function.Consumer;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * DATE 2018/7/19.</span><br><span class="line"> *</span><br><span class="line"> * @author fupeng.</span><br><span class="line"> */</span><br><span class="line">public class TTTT &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        //creating sample Collection</span><br><span class="line">        List&lt;Integer&gt; myList = new ArrayList&lt;Integer&gt;();</span><br><span class="line">        for (int i = 0; i &lt; 5; i++) myList.add(i);</span><br><span class="line"></span><br><span class="line">        System.out.println(myList);</span><br><span class="line"></span><br><span class="line">        //traversing using Iterator</span><br><span class="line">        Iterator&lt;Integer&gt; it = myList.iterator();</span><br><span class="line">        while (it.hasNext()) &#123;</span><br><span class="line">            Integer i = it.next();</span><br><span class="line">            System.out.println(&quot;Iterator Value::&quot; + i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        //traversing through forEach method of Iterable with anonymous class</span><br><span class="line">        myList.forEach(new Consumer&lt;Integer&gt;() &#123;</span><br><span class="line"></span><br><span class="line">            @Override</span><br><span class="line">            public void accept(Integer t) &#123;</span><br><span class="line">                System.out.println(&quot;forEach with anonymous class ::&quot; + t);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        //traversing through forEach method of Iterable with lambda expression</span><br><span class="line">        myList.forEach(t -&gt; System.out.println(&quot;forEach lambda Value::&quot; + t));</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="Java-8-对interface的修改"><a href="#Java-8-对interface的修改" class="headerlink" title="Java 8 对interface的修改"></a>Java 8 对interface的修改</h1><p>增加 接口中方法的 默认实现。</p><p>以前 接口的方法是 不能实现的。</p><p>Interface1</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">@FunctionalInterface</span><br><span class="line">public interface Interface1 &#123;</span><br><span class="line"></span><br><span class="line">    void method1(String str);</span><br><span class="line"></span><br><span class="line">    default void log(String str)&#123;</span><br><span class="line">        System.out.println(&quot;I1 logging::&quot;+str);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    static void print(String str)&#123;</span><br><span class="line">        System.out.println(&quot;Printing 1 &quot;+str);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //trying to override Object method gives compile time error as</span><br><span class="line">    //&quot;A default method cannot override a method from java.lang.Object&quot;  接口中的方法，不能重写 Object中的方法。</span><br><span class="line"></span><br><span class="line">//default String toString()&#123;</span><br><span class="line">//return &quot;i1&quot;;</span><br><span class="line">//&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Interface2</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@FunctionalInterface</span><br><span class="line">public interface Interface2 &#123;</span><br><span class="line"></span><br><span class="line">    void method2();</span><br><span class="line"></span><br><span class="line">    default void log(String str)&#123;</span><br><span class="line">        System.out.println(&quot;I2 logging::&quot;+str);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>现在假设有两个接口 Interface1 和 Interface2.  有一个类要实现这两个接口。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public class MyClass implements Interface1, Interface2 &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void method2() &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void method1(String str) &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //MyClass won&apos;t compile without having it&apos;s own log() implementation</span><br><span class="line">    @Override</span><br><span class="line">    public void log(String str)&#123;</span><br><span class="line">        System.out.println(&quot;MyClass logging::&quot;+str);</span><br><span class="line">        Interface1.print(&quot;abc&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>发现，除了要实现method1 和 method2 意外，还需要实现 log 这个方法 。 如果 不是这种多继承 ，这个方法是不用实现的。因为 log已经有 默认实现了。 但是 ，发现，这两个接口都有这个 方法 ，而且都有默认实现。所以，对于log，MyClass 需要 再重写一下 。</p><p>接口中的方法，想要实现，可以用 default 或者 static 关键字。 区别就是 ，default的方法是一个 实例方法。 static是一个 静态方法，类方法。不需要实例就可以调用。可以在接口中直接调用。 但是不能被实例调用。 (Java interface static method is visible to interface methods only) <a href="https://www.journaldev.com/2752/java-8-interface-changes-static-method-default-method#java-interface-static-method" target="_blank" rel="noopener">Java 8 Interface Changes – static method, default method</a></p><p>参考：<br><a href="https://www.journaldev.com/2389/java-8-features-with-examples" target="_blank" rel="noopener">Java 8 Features with Examples</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;forEach-方法&quot;&gt;&lt;a href=&quot;#forEach-方法&quot; class=&quot;headerlink&quot; title=&quot;forEach() 方法&quot;&gt;&lt;/a&gt;forEach() 方法&lt;/h1&gt;&lt;p&gt;example &lt;/p&gt;
+&lt;figure class=&quot;highli
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java工具类</title>
+    <link href="http://www.youletter.cn/2018/07/19/Java%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    <id>http://www.youletter.cn/2018/07/19/Java工具类/</id>
+    <published>2018-07-19T02:39:41.000Z</published>
+    <updated>2018-07-19T02:40:08.968Z</updated>
+    
+    <content type="html"><![CDATA[<p>时间相关</p><p>SimpleDateFormat</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;时间相关&lt;/p&gt;
+&lt;p&gt;SimpleDateFormat&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何构成一个传统web服务</title>
+    <link href="http://www.youletter.cn/2018/07/19/%E5%A6%82%E4%BD%95%E6%9E%84%E6%88%90%E4%B8%80%E4%B8%AA%E4%BC%A0%E7%BB%9Fweb%E6%9C%8D%E5%8A%A1/"/>
+    <id>http://www.youletter.cn/2018/07/19/如何构成一个传统web服务/</id>
+    <published>2018-07-18T16:00:12.000Z</published>
+    <updated>2018-07-18T16:10:59.508Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><p>数据存在哪儿， Mysql等保存持久化数据。 redis，作为缓存。ES来提供搜索。</p><h1 id="HTTP-Server"><a href="#HTTP-Server" class="headerlink" title="HTTP Server"></a>HTTP Server</h1><p>用一个服务程序，来进行数据读写。进行一些逻辑动作。<br>这个服务可以是 Java 用 Spring boot 快速搭建。<br>Python Gunicorn等。 </p><h1 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h1><p>展示到浏览器上。 </p><p>微信小程序。</p><p>APP （IOS， Android）</p><h1 id="工具-utils"><a href="#工具-utils" class="headerlink" title="工具 utils"></a>工具 utils</h1><p>短信</p><p>邮件</p><p>支付</p><p>文件</p><p>视频直播</p><h1 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h1><p>服务器， 云主机， CDN， 域名。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;数据&quot;&gt;&lt;a href=&quot;#数据&quot; class=&quot;headerlink&quot; title=&quot;数据&quot;&gt;&lt;/a&gt;数据&lt;/h1&gt;&lt;p&gt;数据存在哪儿， Mysql等保存持久化数据。 redis，作为缓存。ES来提供搜索。&lt;/p&gt;
+&lt;h1 id=&quot;HTTP-Server&quot;&gt;&lt;a
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>如何安装pip</title>
@@ -387,74 +454,6 @@
         &lt;p&gt;npm 允许在package.json文件里面，使用scripts字段定义脚本命令。&lt;/p&gt;
 &lt;p&gt;{&lt;br&gt;  // …&lt;br&gt;  “scripts”: {&lt;br&gt;    “build”: “node build.js”&lt;br&gt;  }&lt;br&gt;}&lt;/p&gt;
 &lt;p&gt;$ npm 
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>spring boot reference</title>
-    <link href="http://www.youletter.cn/2018/04/28/spring-boot-reference/"/>
-    <id>http://www.youletter.cn/2018/04/28/spring-boot-reference/</id>
-    <published>2018-04-28T02:51:21.000Z</published>
-    <updated>2018-04-28T02:51:50.534Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.5.8 </p><p><a href="https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/" target="_blank" rel="noopener">https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1.5.8 &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https:
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql导出表结构</title>
-    <link href="http://www.youletter.cn/2018/04/26/Mysql%E5%AF%BC%E5%87%BA%E8%A1%A8%E7%BB%93%E6%9E%84/"/>
-    <id>http://www.youletter.cn/2018/04/26/Mysql导出表结构/</id>
-    <published>2018-04-26T10:05:58.000Z</published>
-    <updated>2018-04-26T10:10:12.787Z</updated>
-    
-    <content type="html"><![CDATA[<p>-d 参数，告诉mysqldump 不要去导出数据。</p><p>mysqldump -d -h localhost -u root -pmypassword databasename &gt; dumpfile.sql</p><p>如果不加参数 -d  那么 会把 建表语句  和  数据一起导出。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;-d 参数，告诉mysqldump 不要去导出数据。&lt;/p&gt;
-&lt;p&gt;mysqldump -d -h localhost -u root -pmypassword databasename &amp;gt; dumpfile.sql&lt;/p&gt;
-&lt;p&gt;如果不加参数 -d  那么 会把 建
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>parallel 命令</title>
-    <link href="http://www.youletter.cn/2018/04/25/parallel-%E5%91%BD%E4%BB%A4/"/>
-    <id>http://www.youletter.cn/2018/04/25/parallel-命令/</id>
-    <published>2018-04-25T07:36:38.000Z</published>
-    <updated>2018-04-25T07:36:56.433Z</updated>
-    
-    <content type="html"><![CDATA[<p>parallel –gnu wget –content-disposition  &lt; u2.txt</p><p>parallel –gnu tar xzf  &lt; log.txtu</p><p>parallel –gnu gunzip   &lt; file</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;parallel –gnu wget –content-disposition  &amp;lt; u2.txt&lt;/p&gt;
-&lt;p&gt;parallel –gnu tar xzf  &amp;lt; log.txtu&lt;/p&gt;
-&lt;p&gt;parallel –gnu gunzip   &amp;lt; file&lt;
       
     
     </summary>
