@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-7674654031652018",
+enable_page_level_ads: true
+});
+</script><script>(function(){
+var bp = document.createElement('script');
+var curProtocol = window.location.protocol.split(':')[0];
+if (curProtocol === 'https'){
+bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+}
+else{
+bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+}
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(bp, s);
+})();
+</script><title> maven-依赖机制 · 由来</title><meta name="description" content="maven-依赖机制 - kunpengku"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="http://www.youletter.cn/atom.xml" title="由来"></head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">由来</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p>主页</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>归档</p></a><a href="/about" target="_self" class="li component-nav-item"><p>关于我</p></a><ul class="shortcut-icons"><a href="https://github.com/kunpengku" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="post-container"><div class="post"><article class="post-block"><h1 class="post-title">maven-依赖机制</h1><div class="post-info">2018年7月22日</div><div class="post-content"><p>我认识到Maven的第一个功能就是自动处理包依赖的能力。这也是Maven最擅长的。</p>
+<h1 id="传递依赖-Transitive-Dependencies"><a href="#传递依赖-Transitive-Dependencies" class="headerlink" title="传递依赖 Transitive Dependencies"></a>传递依赖 Transitive Dependencies</h1><p>传递依赖是Maven2.0新增的一个特性。这避免了你需要去发现和指定你的依赖包所依赖的库。它会自动包含这些库。</p>
+<p>这个特性会通过读取指定的远程仓库的项目文件来完成。通常，所有这些项目的依赖都会用到你的项目中。例如从父项目继承的，从依赖中继承的等等。</p>
+<p>没有限制依赖可以收集的层次数量，只是会在出现循环依赖时导致问题。</p>
+<p>使用传递依赖，可包含的库的结构图会快速变得很大。由于这个原因，有一些附加的特性来限制哪些依赖应该被引用。</p>
+<ul>
+<li><p>依赖冲突（Dependency mediation）。 当某个依赖有多个版本被指定时，决定该使用哪个版本。目前，Maven2.0只支持“最近定义”原则。它的意思是使用依赖树中距离最近的版本。如果你不像这样，可以在POM文件中显示的声明某个依赖的版本号。注意，如果两个版本在依赖树中的距离一样。在Maven2.0.8以前不确定哪个版本会胜出，但是自从2.0.9开始，根据定义的顺序，先定义的胜出。</p>
+<ul>
+<li>最近定义（nearest definition）：举个例子，对于依赖A，B，C 有一下关系：A -&gt; B -&gt; C -&gt; D 2.0 and A -&gt; E -&gt; D 1.0 。那么，D 1.0 胜出。因为A通过E到D距离更近。如果需要强制使用D2.0，可以显示的增加对D2.0的依赖。</li>
+</ul>
+</li>
+<li><p>依赖管理 (dependencyManagement) - 允许项目的开发者在遇到传递依赖时，直接指定依赖的版本。在之前的例子里，虽然A没有直接引用D，但可以在dependencyManagement中直接增加对D的引用，来显示的控制D的版本。</p>
+</li>
+</ul>
+<h5 id="译者注："><a href="#译者注：" class="headerlink" title="译者注："></a>译者注：</h5><p>在pom中增加dependencyManagement 这一节，就是为了管理 依赖中潜在引用的依赖的版本的。如果对于自动传递依赖的版本不满意或不适合，那么可以在这一节里再进一步显示的控制。等于是对dependency的微调。</p>
+<ul>
+<li><p>scope - 这个属性用来控制，只在在构建的每个阶段，加入合适的依赖。详细说明在后面。</p>
+</li>
+<li><p>排除依赖(Excluded dependencies) - 如果X依赖Y，Y依赖Z。这是X想要排除Z，就可以用这个标签<code>&lt;exclusions&gt;</code></p>
+</li>
+<li><p>可选的依赖(Optional dependencies) - 如果Y依赖了Z，但是Y把Z标记为可选的。那么当X再依赖Y时，就不会将Z也引进来。可以认为X默认会排除Z。如果X就是需要用到Z，应该在POM中显示添加对Z的依赖。</p>
+</li>
+</ul>
+<h1 id="Dependency-Scope"><a href="#Dependency-Scope" class="headerlink" title="Dependency Scope"></a>Dependency Scope</h1><p>scope用来定义依赖的传递性，也会影响执行不同阶段的任务的classpath。</p>
+<p>有6中scope</p>
+<ul>
+<li>compile</li>
+</ul>
+<p>如果没有指定，这是默认的scope。这种依赖在项目所有的classpath都可用，此外，还会传播到依赖的项目中。</p>
+<ul>
+<li>provided</li>
+</ul>
+<p>很像<code>compile</code>，但是显示告诉你，希望在运行时JDK或者容器能够提供这个依赖。比如，可以把Servlet API 和Java EE API相关的依赖设置为<code>provided</code>。因为web容器提供了这些类了。这个scope只在编译和test classpath上可用，而且无传递性。</p>
+<ul>
+<li>runtime</li>
+</ul>
+<p>表示这个依赖编译时不需要，但运行时需要。所以在运行和测试classpath，不在编译classpath</p>
+<ul>
+<li>test</li>
+</ul>
+<p>表示依赖对于正常的应用不需要，但是在test的编译和执行时有用。不传递。</p>
+<ul>
+<li>system</li>
+</ul>
+<p>很像 <code>provided</code> 但是，你必须显示的提供一个JAR包，因为这个依赖不在Maven远程仓库里。 不推荐了。</p>
+<ul>
+<li>import （Maven 2.0.9以后支持）</li>
+</ul>
+<p>只有在<code>&lt;dependencyManagement&gt;</code>中的依赖才支持这个scope。 表示此处依赖会被指定的POM文件中的<code>&lt;dependencyManagement&gt;</code>中的有效的依赖列表替换。由于被替换了，所以这种依赖实际上不参与对依赖传递性的限制。</p>
+<p>scope 也会影响该依赖的依赖。 原文这里有一个表格。 左边一竖列表示依赖包的scope，顶部一行列表示依赖的依赖的scope。在相交处的scope表示其状态，如果相交处没有scope，说明这个依赖的依赖会被忽略。</p>
+<p><a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html" target="_blank" rel="noopener">Introduction to the Dependency Mechanism</a></p>
+<h1 id="依赖管理-Dependency-Management"><a href="#依赖管理-Dependency-Management" class="headerlink" title="依赖管理 Dependency Management"></a>依赖管理 Dependency Management</h1><p>dependencyManagement这个模块，是来集中管理依赖的一种机制。当你有一些项目都继承一个父项目时，可以把所有的依赖信息都放在一个公用的POM的，</p>
+<p>原文地址</p>
+<p><a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html" target="_blank" rel="noopener">Introduction to the Dependency Mechanism</a></p>
+<p>参考：<br><a href="http://ifeve.com/maven-index-2/" target="_blank" rel="noopener">《Maven官方文档》目录指南</a></p>
+</div></article></div><div id="disqus_thread"></div></div><div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;"><img src="/images/WechatIMG5.jpeg" width="180px"><p>简单点，讨钱的方式简单点</p><button style="display: inline-block;      width: 80px;      height: 35px;      border-radius: 5px;      color: #fff;      font-weight: 400;      font-style: normal;      font-variant: normal;      font-stretch: normal;      font-size: 18px;      background: #f44336;"><span>赏</span></button></div><div id="ads"></div><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- 底部01--><ins style="display:block" data-ad-client="ca-pub-7674654031652018" data-ad-slot="3127803056" data-ad-format="auto" class="adsbygoogle"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});
+
+</script><div id="SOHUCS"></div><script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script><script type="text/javascript">window.changyan.api.config({
+appid: 'cytkri3BC',
+conf: 'prod_1e787a373da7a5fa9ef7156a6dae5e6b'
+});
+</script></main><footer class="footer-container"><div class="paginator"><a href="/2018/07/27/如何在linux安装Maven/" class="prev">PREV</a><a href="/2018/07/19/Java-8-新特性/" class="next">NEXT</a></div><div class="copyright"><p>© 2017 - 2018 <a href="mailto:fupeng_2005@126.com">kunpengku</a>, <a href="http://www.miitbeian.gov.cn">京ICP备17058936号-1</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"angrypowman",'auto');ga('send','pageview');</script></body></html>
