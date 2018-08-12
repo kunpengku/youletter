@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-07-28T22:52:00.652Z</updated>
+  <updated>2018-08-10T09:23:05.838Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,97 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>english grammar-句子</title>
+    <link href="http://www.youletter.cn/2018/08/10/english-grammar-%E5%8F%A5%E5%AD%90/"/>
+    <id>http://www.youletter.cn/2018/08/10/english-grammar-句子/</id>
+    <published>2018-08-10T08:56:42.000Z</published>
+    <updated>2018-08-10T09:23:05.838Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="句子结构"><a href="#句子结构" class="headerlink" title="句子结构"></a>句子结构</h2><p>clause 是 小句子，是英语的基本单位。</p><p>clause 是由phrase构成的，phrase 为短语。</p><p>多个clause合在一起组成sentences。sentences 是 复杂句子。</p><p>–</p><p>所有的 clause 至少有2部分  名词 phrase 和 动词 phrase 。 </p><table><thead><tr><th>Noun phrase (subject)</th><th>Verb phrase</th></tr></thead><tbody><tr><td>The children</td><td>laughed</td></tr><tr><td>All the people in the bus</td><td>were watching</td></tr></tbody></table><p>但大部分clause 要多于这两部分，还有其他的。</p><p>第一部分的 名词性从句 是句子的主语。大部分句子都有主语。</p><p>The children laughed。 孩子们笑。 孩子们就是主语。</p><p>但是有个例外就是 命令的句子（imperative）如</p><p>Stop</p><p>Go away. 这样的句子就没有主语。</p><p>或者像 “软命令” 诸如 邀请 和 请求的句子 就没有主语。</p><p>Please come to dinner tomorrow. 明天请来吃饭</p><p>Play it again please. 请再玩一次。</p><p>–<br>如果没有主语 ，可以使用 “there” 或 “it” 来作为主语。称作“dummy subject”。这个主语没有含义，就是形成主语。 比如。</p><p>It’s a lovely day.</p><p>There were twenty people at the meeting.</p><p><a href="http://learnenglish.britishcouncil.org/en/english-grammar/clause-structure" target="_blank" rel="noopener">clause structure</a></p><p>–</p><h2 id="动词模板（verb-patterns"><a href="#动词模板（verb-patterns" class="headerlink" title="动词模板（verb patterns)"></a>动词模板（verb patterns)</h2><h2 id="名词短语"><a href="#名词短语" class="headerlink" title="名词短语"></a>名词短语</h2><p>通常名字短语就是一个名词或代词。如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">People like to have money.</span><br><span class="line">I am tired.</span><br><span class="line">It is getting late.</span><br></pre></td></tr></table></figure><p>或者一个定语+一个名词</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">My friends is Chiral.</span><br></pre></td></tr></table></figure><p>可能还有一个形容词</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A beautiful girl is over there.</span><br></pre></td></tr></table></figure><p>有时候，名词短语以一个量词开始</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Some people are in the roo.</span><br></pre></td></tr></table></figure><p>关于数字</p><p>量词在定语前，但是数字在定语后面。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">My four children go to school here. (All my children go to school here.)</span><br><span class="line">Those two suitcases are mine. (Both those suitcases are mine)</span><br></pre></td></tr></table></figure><p>还有一种情况是 在名词的后面修饰名词，这叫后置修饰。</p><p><a href="http://learnenglish.britishcouncil.org/en/english-grammar/noun-phrase" target="_blank" rel="noopener">noun-phrase</a></p><p>参考：<br><a href="http://learnenglish.britishcouncil.org/en/english-grammar/clause-phrase-and-sentence" target="_blank" rel="noopener">Clause, phrase and sentence</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;句子结构&quot;&gt;&lt;a href=&quot;#句子结构&quot; class=&quot;headerlink&quot; title=&quot;句子结构&quot;&gt;&lt;/a&gt;句子结构&lt;/h2&gt;&lt;p&gt;clause 是 小句子，是英语的基本单位。&lt;/p&gt;
+&lt;p&gt;clause 是由phrase构成的，phrase 为短语。&lt;/
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git入门操作</title>
+    <link href="http://www.youletter.cn/2018/08/09/git%E5%85%A5%E9%97%A8%E6%93%8D%E4%BD%9C/"/>
+    <id>http://www.youletter.cn/2018/08/09/git入门操作/</id>
+    <published>2018-08-09T14:08:26.000Z</published>
+    <updated>2018-08-10T09:27:13.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>本教程适合，第一次使用git。</p><h2 id="step-1-安装git"><a href="#step-1-安装git" class="headerlink" title="step 1 安装git"></a>step 1 安装git</h2><p>无论你是在Mac，还是Linux，还是Windows上，如果还没有安装git。第一步要做的就是安装git。</p><p>打开 git官网 <a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p><p>根据你的操作系统，选择合适的安装方法。</p><h2 id="step-2-检查版本"><a href="#step-2-检查版本" class="headerlink" title="step 2 检查版本"></a>step 2 检查版本</h2><p>打开终端</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br><span class="line">git version 2.14.3 (Apple Git-98)</span><br></pre></td></tr></table></figure><p>这样的提示 说明git已经安装成功</p><h2 id="step-3-配置用户名和邮箱"><a href="#step-3-配置用户名和邮箱" class="headerlink" title="step 3 配置用户名和邮箱"></a>step 3 配置用户名和邮箱</h2><p>如果不配置用户名和邮箱，是不能够提交的。所以需要先配置一下这两项。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;fupeng&quot;</span><br><span class="line">git config --global user.email &quot;fupeng10101@gmail.com&quot;</span><br><span class="line"></span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure><p>这样就配置好了 全局的用户名和邮箱。</p><h2 id="step-4-初始化仓库"><a href="#step-4-初始化仓库" class="headerlink" title="step 4 初始化仓库"></a>step 4 初始化仓库</h2><p>使用git有两种场景。一是 本地有一些文件，需要用git把它们管理起来。 二是，已经有一个远程的仓库了，需要先把代码拉下来，然后在上面开发。</p><p>先说从 本地已有的代码上 初始化一个git仓库的情况。</p><p>首先进入 项目的文件夹，执行 git init.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd ~/test/test_git</span><br><span class="line"></span><br><span class="line">git init</span><br><span class="line">Initialized empty Git repository in /Users/fupeng/test/test_git/.git/</span><br></pre></td></tr></table></figure><p>现在一个空的git仓库就建好了。</p><h2 id="step-5-添加文件"><a href="#step-5-添加文件" class="headerlink" title="step 5 添加文件"></a>step 5 添加文件</h2><p>刚建好的这个仓库还是空的，一次提交都没有。现在进行第一次提交。</p><p>现在目录下有一个README文件，第一次要把这个文件存起来作为第一个版本。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add README</span><br></pre></td></tr></table></figure><p>现在，README这个文件已经进入了 暂存区， 暂存区就是存放下一个版本要提交哪些东西的区域。</p><h2 id="step-6-提交"><a href="#step-6-提交" class="headerlink" title="step 6 提交"></a>step 6 提交</h2><p>首先用git status 看一下当前的状态</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch master</span><br><span class="line">Changes to be committed:</span><br><span class="line">  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)</span><br><span class="line"></span><br><span class="line">new file:   README</span><br></pre></td></tr></table></figure><p>显示说 现在有1个新文件，准备被提交了。</p><p>提交使用 git commit命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;第一次提交&quot;</span><br><span class="line">[master cc3b6f9] 第一次提交</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 README</span><br></pre></td></tr></table></figure><p>现在，就提交完成了， 可以通过 git log 查看提交记录。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git log</span><br><span class="line">commit cc3b6f978ea3c4a1d473f09a64dfaba4b4ef7ce6 (HEAD -&gt; master)</span><br><span class="line">Author: fupeng &lt;fupeng@vipkid.com.cn&gt;</span><br><span class="line">Date:   Fri Aug 10 06:28:46 2018 +0800</span><br><span class="line"></span><br><span class="line">    第一次提交</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;本教程适合，第一次使用git。&lt;/p&gt;
+&lt;h2 id=&quot;step-1-安装git&quot;&gt;&lt;a href=&quot;#step-1-安装git&quot; class=&quot;headerlink&quot; title=&quot;step 1 安装git&quot;&gt;&lt;/a&gt;step 1 安装git&lt;/h2&gt;&lt;p&gt;无论你是在Ma
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git 初学</title>
+    <link href="http://www.youletter.cn/2018/08/07/git-%E5%88%9D%E5%AD%A6/"/>
+    <id>http://www.youletter.cn/2018/08/07/git-初学/</id>
+    <published>2018-08-07T05:12:02.000Z</published>
+    <updated>2018-08-08T02:00:46.686Z</updated>
+    
+    <content type="html"><![CDATA[<p>git 官网 <a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p><p>SCM - Software Configuration Management. </p><p>查看 git 版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br><span class="line">git version 2.14.3 (Apple Git-98)</span><br></pre></td></tr></table></figure><p>git 的所有操作几乎都是本地的。</p><p>git 是完整的记录你的变化。几乎不可能有漏掉。通过对使用SHA-1 hash文件内容进行求和验证。</p><p>文件在git中有三种状态<br>committed, modified, and staged</p><p>配置git用户名和邮箱</p><p>git config –global user.name “fupeng”</p><p>git config –global user.email “<a href="mailto:fupeng@126.com" target="_blank" rel="noopener">fupeng@126.com</a>“</p><p>查看配置</p><p>git config –list</p><h3 id="使用git的两种场景，一是从本地已经存在的代码中创建仓库。二是从远程仓库拉取"><a href="#使用git的两种场景，一是从本地已经存在的代码中创建仓库。二是从远程仓库拉取" class="headerlink" title="使用git的两种场景，一是从本地已经存在的代码中创建仓库。二是从远程仓库拉取"></a>使用git的两种场景，一是从本地已经存在的代码中创建仓库。二是从远程仓库拉取</h3><h4 id="从存在的代码中创建"><a href="#从存在的代码中创建" class="headerlink" title="从存在的代码中创建"></a>从存在的代码中创建</h4><p>git init</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;git 官网 &lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SCM - Software Configuration Managem
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://www.youletter.cn/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx新手指南</title>
+    <link href="http://www.youletter.cn/2018/07/31/nginx%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/"/>
+    <id>http://www.youletter.cn/2018/07/31/nginx新手指南/</id>
+    <published>2018-07-31T11:18:26.000Z</published>
+    <updated>2018-08-12T08:18:17.383Z</updated>
+    
+    <content type="html"><![CDATA[<p>ngnix有一个主进程和多个工作进程。主进程的工作是读取和验证配置文件，和维护工作进程。工作进程处理实际的请求。nginx应用基于事件的模型和系统相关的机制来有效地将请求分配给工作进程。工作进程的数量在配置文件中定义，可以给一个固定的数字，也可以根据可用的CPU核心数动态调整。</p><p>nginx和其模块的工作方式是由配置文件决定的。默认的配置文件名是nginx.conf。默认的放置路径在 /usr/local/nginx/conf, /etc/nginx (CentOS), 或者 /usr/local/etc/nginx (MAC OS). 根据你的系统而有所不同。</p><h2 id="启动，停止，重新加载配置文件"><a href="#启动，停止，重新加载配置文件" class="headerlink" title="启动，停止，重新加载配置文件"></a>启动，停止，重新加载配置文件</h2><p>启动， 直接运行nginx就启动了。</p><p>一旦程序启动了，可以执行如下命令来控制nginx</p><p>nginx -s signal</p><p>其中signal是下面其中之一。</p><p>stop — 快速关闭<br>quit — 优雅关闭<br>reload — 重新加载配置文件<br>reopen — 重新打开log文件</p><p>举个例子，关闭进程并且等待工作进程完成当前的请求，使用如下命令</p><p>nginx -s quit</p><p>这个命令应该使用启动nginx时的用户来执行。</p><p>直接修改配置文件，并不会立刻生效。必须要重启nginx或者执行如下命令</p><p>nginx -s reload</p><p>一旦主进程接收到重新加载配置文件的信号，它会检查新配置文件的合法性，然后试着应用其中的配置。如果成功的话，主进程启动新的工作进程，然后发送消息给老的工作进程，要求他们关闭。否则，主进程回滚更改，然后继续用旧的配置文件来工作。老的工作进程收到关闭命令后，停止接收新的连接，继续服务当前的请求，直到所有的请求都结束了，之后，老的工作进程退出。</p><p>也可以是用linux的 kill命令给nginx的进程发信号。这种情况下直接给进程号发信号，应该给主进程发信号，进程号在nginx.pid文件中，这个文件在  /usr/local/nginx/logs ，/var/run  或者 /usr/local/var/run/ （MAC）下。</p><p>假设进程号是 1628 ，执行如下命令来关闭nginx</p><p>kill -s QUIT 1628</p><p>也可以用ps命令来找进程号</p><p>ps -ax | grep nginx</p><h2 id="配置文件的结构"><a href="#配置文件的结构" class="headerlink" title="配置文件的结构"></a>配置文件的结构</h2><p>nginx包含许多模块。模块由配置文件中指令控制。指令分为简单指令和块指令。一条简单指令包含名字和参数，以空格分开，分号结尾。块指令和单条指令的结构一样，但是结尾不是分号，而是用一对大括号包起来。如果一个块命令的大括号中包含其他指令，构成一个上下文。 (如: events, http, server, and location).</p><p>如果一个指令不在任何一个大括号里，那这个指令就是在main上下文。<br>event和http在main上下文， server在http中，location在server中。</p><p>在<code>#</code>后面的是注释内容。</p><h2 id="静态资源服务器"><a href="#静态资源服务器" class="headerlink" title="静态资源服务器"></a>静态资源服务器</h2><p>web服务器的一个重要任务就是提供文件服务（如图片和静态的html网页）。</p><p>首先创建一个/data/www文件夹，里面放一个index.html文件。在建一个/data/images文件夹，里面放一些图片。</p><p>然后，打开配置文件。默认的配置文件中已经有几个 server块了，还有大量被注释的配置。现在将server的配置都注释掉，或删除也行。然后开始一个新的server快。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line">    server &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>然后在server中再添加一个 location块， 现在配置文件变成这样</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">    root /data/www;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个location块指定了<code>&#39;/&#39;</code>前缀的请求。为了匹配请求，URI 会加上在root指令中的path。即 /data/www ，这样构成了请求的文件 在 本地文件系统的路径。如果有多个匹配的本地location块，nginx会选择最长的前缀匹配。上面例子中的前缀是最短的前缀，只有1个长度。只有所有其他的都无法匹配时，才会选择这个。</p><p>下面 添加第二个 location 块</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location /images/ &#123;</span><br><span class="line">    root /data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个块会匹配以“/images/” 开头的请求。</p><p>现在server的配置看起来像是这样</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line">server &#123;</span><br><span class="line">location / &#123;</span><br><span class="line">root /data/www;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">location /images/ &#123;</span><br><span class="line">root /data;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>现在这已经是一个可以工作的配置了。默认会绑定80端口。可以在机器上访问 <a href="http://localhost/" target="_blank" rel="noopener">http://localhost/</a> 打开。也可以用 <a href="http://localhost/images/example.png" target="_blank" rel="noopener">http://localhost/images/example.png</a> 来访问 文件 /data/images/example.png。</p><p>使配置生效的方法是 给Master进程发信号</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure><p>备注：</p><p>有时候，你这样做了之后，还是不能访问，具体的原因就需要看一下 nginx的错误日志了。错误日志error.log可能在 /usr/local/nginx/logs 或 /var/log/nginx 下面 。如果你在nginx配置中指定错误日志的地方的话，那就去那里看。</p><p>备注1：<br>配置文件中 user 这个指令 接口两个参数。username 和 group username。 如果你只写一个参数，它会假定你的 group name 和 username 一样。 但是在mac上 root的 group name 是 wheel. 所以，你需要显示的都写出来，不然在启动的时候，会报</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx: [emerg] getgrnam(&quot;root&quot;) failed in /usr/local/etc/nginx/nginx.conf:2</span><br></pre></td></tr></table></figure><p>应写成</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user root wheel</span><br></pre></td></tr></table></figure><p>备注2 </p><p>如果你执行 nginx -s reload后在nginx的错入日志里看到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2018/08/11 12:06:14 [emerg] 460#0: bind() to 0.0.0.0:80 failed (13: Permission denied)</span><br></pre></td></tr></table></figure></p><p>说明你的nginx启动时，不是用的root用户，这是，即使已经切换到root用户 再执行这个命令也是没用的了。 正确的做法是，先把原来的nginx停掉 ，然后再用root用户启动，这样就可以了。</p><h2 id="设置一个简单的代理服务"><a href="#设置一个简单的代理服务" class="headerlink" title="设置一个简单的代理服务"></a>设置一个简单的代理服务</h2><p>nginx经常被用来作为一个代理服务，代理服务的意思是，收到请求，然后转到一个被代理的服务上面，然后从被代理服务上获得响应，再返回给客户端。</p><p>首先再增加一个server块到配置文件中</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 8080;</span><br><span class="line">    root /data/up1;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这是一个简单的服务，监听8080端口，之前的配置中没有指定监听端口，那就会使用默认的80端口。把所有的请求都映射到 /data/up1 目录上。在本地创建这个目录，然后放一个index.html到里面。注意，root指令是在server上下文中的。</p><p>接下来，修改前一部分的server配置，把它作为一个代理服务的配置。在第一个location块中， 增加一个 proxy_pass 指令。参数是 protocal,name,port。 在我们的例子中是<br><a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a></p><p>如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://localhost:8080;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location /images/ &#123;</span><br><span class="line">        root /data;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>还要修改第二个location块，当前是映射以 /images/ 开头的 到 /data/images 目录。要改成匹配特定的文件扩展名。如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location ~ \.(gif|jpg|png)$ &#123;</span><br><span class="line">    root /data/images;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>参数是一个正则表达式，匹配所有以.gif, .jpg, .png结尾的URI。正则表达式应该以 ~ 开始。关联的请求会映射到  /data/images 目录下。</p><p>当nginx选择一个location块去处理请求时，首先检查指定的前缀。记住，最长前缀的location匹配原则。然后检查正则表达式。 如果有一个正则表达式匹配成功，nginx会选择这个，否则，选择之前的一个。</p><p>现在代理服务器server的配置如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://localhost:8080/;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ \.(gif|jpg|png)$ &#123;</span><br><span class="line">        root /data/images;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个服务会把 .gif, .jpg, or .png 结尾的映射到 /data/images目录，其他的代理到 8080 的服务上。</p><p>现在重启nginx来让 配置文件生效吧。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure><p>现在访问 <a href="http://localhost" target="_blank" rel="noopener">http://localhost</a>  会发现 去到了和 <a href="http://localhost:8080/" target="_blank" rel="noopener">http://localhost:8080/</a> 一样的地方。</p><p>参考：<br><a href="https://nginx.org/en/docs/beginners_guide.html" target="_blank" rel="noopener">Beginner’s Guide</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ngnix有一个主进程和多个工作进程。主进程的工作是读取和验证配置文件，和维护工作进程。工作进程处理实际的请求。nginx应用基于事件的模型和系统相关的机制来有效地将请求分配给工作进程。工作进程的数量在配置文件中定义，可以给一个固定的数字，也可以根据可用的CPU核心数动态调
+      
+    
+    </summary>
+    
+    
+      <category term="nginx" scheme="http://www.youletter.cn/tags/nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>前端学习</title>
@@ -368,92 +459,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>java 密码校验</title>
-    <link href="http://www.youletter.cn/2018/05/25/java-%E5%AF%86%E7%A0%81%E6%A0%A1%E9%AA%8C/"/>
-    <id>http://www.youletter.cn/2018/05/25/java-密码校验/</id>
-    <published>2018-05-25T09:47:17.000Z</published>
-    <updated>2018-05-25T09:47:39.434Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">private static int calculatePasswordStrength(String password) &#123;</span><br><span class="line">       //total score of password</span><br><span class="line">       int iPasswordScore = 0;</span><br><span class="line"></span><br><span class="line">       if (password.length() &lt; 8 || password.length() &gt; 20) &#123;</span><br><span class="line">           return 0;</span><br><span class="line">       &#125; else &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       //if it contains one digit, add 1 to total score</span><br><span class="line">       if (password.matches(&quot;(?=.*[0-9]).*&quot;)) &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       //if it contains one lower case letter, add 1 to total score</span><br><span class="line">       if (password.matches(&quot;(?=.*[a-z]).*&quot;)) &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       //if it contains one upper case letter, add 1 to total score</span><br><span class="line">       if (password.matches(&quot;(?=.*[A-Z]).*&quot;)) &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       //if it contains one special character, add 1 to total score</span><br><span class="line">       if (password.matches(&quot;(?=.*[~!@#$%^&amp;*()_-]).*&quot;)) &#123;</span><br><span class="line">           iPasswordScore += 1;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       return iPasswordScore;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ab 压测性能</title>
-    <link href="http://www.youletter.cn/2018/05/24/ab-%E5%8E%8B%E6%B5%8B%E6%80%A7%E8%83%BD/"/>
-    <id>http://www.youletter.cn/2018/05/24/ab-压测性能/</id>
-    <published>2018-05-24T10:09:25.000Z</published>
-    <updated>2018-05-24T10:11:00.495Z</updated>
-    
-    <content type="html"><![CDATA[<p>POST  请求</p><p>ab -n 200 -c 5  -p para_tch  -A user:abcdedfpassword -T application/x-www-form-urlencoded <a href="http://10.1.5.114:80/api/login" target="_blank" rel="noopener">http://10.1.5.114:80/api/login</a></p><p>参数写在para_tch中</p><p>para_tch 的内容<br><a href="mailto:username=one@qq.com" target="_blank" rel="noopener">username=one@qq.com</a>&amp;password=000999&amp;grant_type=password</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;POST  请求&lt;/p&gt;
-&lt;p&gt;ab -n 200 -c 5  -p para_tch  -A user:abcdedfpassword -T application/x-www-form-urlencoded &lt;a href=&quot;http://10.1.5.114:80/a
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Chapter1 Banjamin Button is born</title>
-    <link href="http://www.youletter.cn/2018/05/18/Chapter1-Banjamin-Button-is-born/"/>
-    <id>http://www.youletter.cn/2018/05/18/Chapter1-Banjamin-Button-is-born/</id>
-    <published>2018-05-18T02:14:26.000Z</published>
-    <updated>2018-05-20T09:30:06.685Z</updated>
-    
-    <content type="html"><![CDATA[<p>在1860那么久以前，在家中生孩子是很正常的事情。而现在，据我所知，掌管医学的神规定小孩的第一声哭声应该在医院的混杂着麻醉药的空气中发出。最好还是一家现代化的医院。所以，当年轻的Roger先生和太太，在1860夏季的一天，决定他们的第一个小孩应在医院出生时，他们领先了这种时尚50年的时间。是否这种时空错乱和我将要讲述的这段令人吃惊的历史有关联已经无法知晓了。</p><p>现在我负责讲述都发生了什么，让你自己决定要不要相信。</p><p>Roger Button在战前的Baltimore，无论是社会地位还是财富方面都有着令人羡慕程度。<br>他们和许多家族都有联系。每个南方人都知道，那些家族有权让他们成为众多贵族中的一员，而联邦政府就是由这些贵族中的大部分人组成的。这是他们第一次经历生小孩这种古老的，让人开心的传统，Button先生自然有些紧张。他希望能生一个男孩，这样就可以去位于康涅狄格的耶鲁上学。当前Button先生在那儿可是被叫了四年天才呢</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;在1860那么久以前，在家中生孩子是很正常的事情。而现在，据我所知，掌管医学的神规定小孩的第一声哭声应该在医院的混杂着麻醉药的空气中发出。最好还是一家现代化的医院。所以，当年轻的Roger先生和太太，在1860夏季的一天，决定他们的第一个小孩应在医院出生时，他们领先了这种时
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>sprint boot restTemplate usage</title>
-    <link href="http://www.youletter.cn/2018/05/08/sprint-boot-restTemplate-usage/"/>
-    <id>http://www.youletter.cn/2018/05/08/sprint-boot-restTemplate-usage/</id>
-    <published>2018-05-08T10:44:07.000Z</published>
-    <updated>2018-05-09T07:39:20.750Z</updated>
-    
-    <content type="html"><![CDATA[<p>POST form-urlencoded</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">RestTemplate restTemplate = new RestTemplate();</span><br><span class="line">String url = &quot;http://localhost:1450/cls/login&quot;;</span><br><span class="line">HttpHeaders headers = new HttpHeaders();</span><br><span class="line">headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);</span><br><span class="line"></span><br><span class="line">MultiValueMap&lt;String, String&gt; hashMap= new LinkedMultiValueMap&lt;String, String&gt;();</span><br><span class="line">hashMap.add(&quot;username&quot;, &quot;cla10002&quot;);</span><br><span class="line">hashMap.add(&quot;password&quot;, &quot;xxxx&quot;);</span><br><span class="line">hashMap.add(&quot;grant_type&quot;,&quot;password&quot;);</span><br><span class="line">HttpEntity&lt;MultiValueMap&lt;String, String&gt;&gt; request = new HttpEntity&lt;MultiValueMap&lt;String, String&gt;&gt;(hashMap, headers);</span><br><span class="line"></span><br><span class="line">ResponseEntity&lt;String&gt; response = restTemplate.postForEntity( url, request , String.class );</span><br><span class="line"></span><br><span class="line">//获得返回值</span><br><span class="line">String body = response.getBody();</span><br><span class="line">System.out.println(body.toString());</span><br></pre></td></tr></table></figure><p>GET </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">HttpHeaders headers = new HttpHeaders();</span><br><span class="line">headers.set(&quot;Accept&quot;, MediaType.APPLICATION_JSON_VALUE);</span><br><span class="line"></span><br><span class="line">UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url)</span><br><span class="line">.queryParam(&quot;msisdn&quot;, msisdn)</span><br><span class="line">.queryParam(&quot;email&quot;, email)</span><br><span class="line">.queryParam(&quot;clientVersion&quot;, clientVersion)</span><br><span class="line">.queryParam(&quot;clientType&quot;, clientType)</span><br><span class="line">.queryParam(&quot;issuerName&quot;, issuerName)</span><br><span class="line">.queryParam(&quot;applicationName&quot;, applicationName);</span><br><span class="line"></span><br><span class="line">HttpEntity&lt;?&gt; entity = new HttpEntity&lt;&gt;(headers);</span><br><span class="line"></span><br><span class="line">HttpEntity&lt;String&gt; response = restTemplate.exchange(</span><br><span class="line">builder.toUriString(), </span><br><span class="line">HttpMethod.GET, </span><br><span class="line">entity, </span><br><span class="line">String.class);</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;POST form-urlencoded&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l
       
     
     </summary>

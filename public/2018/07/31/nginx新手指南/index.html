@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-7674654031652018",
+enable_page_level_ads: true
+});
+</script><script>(function(){
+var bp = document.createElement('script');
+var curProtocol = window.location.protocol.split(':')[0];
+if (curProtocol === 'https'){
+bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+}
+else{
+bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+}
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(bp, s);
+})();
+</script><title> nginx新手指南 · 由来</title><meta name="description" content="nginx新手指南 - kunpengku"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="http://www.youletter.cn/atom.xml" title="由来"></head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">由来</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p>主页</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>归档</p></a><a href="/about" target="_self" class="li component-nav-item"><p>关于我</p></a><ul class="shortcut-icons"><a href="https://github.com/kunpengku" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="post-container"><div class="post"><article class="post-block"><h1 class="post-title">nginx新手指南</h1><div class="post-info">2018年7月31日</div><div class="post-content"><p>ngnix有一个主进程和多个工作进程。主进程的工作是读取和验证配置文件，和维护工作进程。工作进程处理实际的请求。nginx应用基于事件的模型和系统相关的机制来有效地将请求分配给工作进程。工作进程的数量在配置文件中定义，可以给一个固定的数字，也可以根据可用的CPU核心数动态调整。</p>
+<p>nginx和其模块的工作方式是由配置文件决定的。默认的配置文件名是nginx.conf。默认的放置路径在 /usr/local/nginx/conf, /etc/nginx (CentOS), 或者 /usr/local/etc/nginx (MAC OS). 根据你的系统而有所不同。</p>
+<h2 id="启动，停止，重新加载配置文件"><a href="#启动，停止，重新加载配置文件" class="headerlink" title="启动，停止，重新加载配置文件"></a>启动，停止，重新加载配置文件</h2><p>启动， 直接运行nginx就启动了。</p>
+<p>一旦程序启动了，可以执行如下命令来控制nginx</p>
+<p>nginx -s signal</p>
+<p>其中signal是下面其中之一。</p>
+<p>stop — 快速关闭<br>quit — 优雅关闭<br>reload — 重新加载配置文件<br>reopen — 重新打开log文件</p>
+<p>举个例子，关闭进程并且等待工作进程完成当前的请求，使用如下命令</p>
+<p>nginx -s quit</p>
+<p>这个命令应该使用启动nginx时的用户来执行。</p>
+<p>直接修改配置文件，并不会立刻生效。必须要重启nginx或者执行如下命令</p>
+<p>nginx -s reload</p>
+<p>一旦主进程接收到重新加载配置文件的信号，它会检查新配置文件的合法性，然后试着应用其中的配置。如果成功的话，主进程启动新的工作进程，然后发送消息给老的工作进程，要求他们关闭。否则，主进程回滚更改，然后继续用旧的配置文件来工作。老的工作进程收到关闭命令后，停止接收新的连接，继续服务当前的请求，直到所有的请求都结束了，之后，老的工作进程退出。</p>
+<p>也可以是用linux的 kill命令给nginx的进程发信号。这种情况下直接给进程号发信号，应该给主进程发信号，进程号在nginx.pid文件中，这个文件在  /usr/local/nginx/logs ，/var/run  或者 /usr/local/var/run/ （MAC）下。</p>
+<p>假设进程号是 1628 ，执行如下命令来关闭nginx</p>
+<p>kill -s QUIT 1628</p>
+<p>也可以用ps命令来找进程号</p>
+<p>ps -ax | grep nginx</p>
+<h2 id="配置文件的结构"><a href="#配置文件的结构" class="headerlink" title="配置文件的结构"></a>配置文件的结构</h2><p>nginx包含许多模块。模块由配置文件中指令控制。指令分为简单指令和块指令。一条简单指令包含名字和参数，以空格分开，分号结尾。块指令和单条指令的结构一样，但是结尾不是分号，而是用一对大括号包起来。如果一个块命令的大括号中包含其他指令，构成一个上下文。 (如: events, http, server, and location).</p>
+<p>如果一个指令不在任何一个大括号里，那这个指令就是在main上下文。<br>event和http在main上下文， server在http中，location在server中。</p>
+<p>在<code>#</code>后面的是注释内容。</p>
+<h2 id="静态资源服务器"><a href="#静态资源服务器" class="headerlink" title="静态资源服务器"></a>静态资源服务器</h2><p>web服务器的一个重要任务就是提供文件服务（如图片和静态的html网页）。</p>
+<p>首先创建一个/data/www文件夹，里面放一个index.html文件。在建一个/data/images文件夹，里面放一些图片。</p>
+<p>然后，打开配置文件。默认的配置文件中已经有几个 server块了，还有大量被注释的配置。现在将server的配置都注释掉，或删除也行。然后开始一个新的server快。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line">    server &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后在server中再添加一个 location块， 现在配置文件变成这样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">    root /data/www;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个location块指定了<code>&#39;/&#39;</code>前缀的请求。为了匹配请求，URI 会加上在root指令中的path。即 /data/www ，这样构成了请求的文件 在 本地文件系统的路径。如果有多个匹配的本地location块，nginx会选择最长的前缀匹配。上面例子中的前缀是最短的前缀，只有1个长度。只有所有其他的都无法匹配时，才会选择这个。</p>
+<p>下面 添加第二个 location 块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location /images/ &#123;</span><br><span class="line">    root /data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个块会匹配以“/images/” 开头的请求。</p>
+<p>现在server的配置看起来像是这样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line">	server &#123;</span><br><span class="line">		location / &#123;</span><br><span class="line">			root /data/www;</span><br><span class="line">		&#125;</span><br><span class="line">			</span><br><span class="line">		location /images/ &#123;</span><br><span class="line">			root /data;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在这已经是一个可以工作的配置了。默认会绑定80端口。可以在机器上访问 <a href="http://localhost/" target="_blank" rel="noopener">http://localhost/</a> 打开。也可以用 <a href="http://localhost/images/example.png" target="_blank" rel="noopener">http://localhost/images/example.png</a> 来访问 文件 /data/images/example.png。</p>
+<p>使配置生效的方法是 给Master进程发信号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure>
+<p>备注：</p>
+<p>有时候，你这样做了之后，还是不能访问，具体的原因就需要看一下 nginx的错误日志了。错误日志error.log可能在 /usr/local/nginx/logs 或 /var/log/nginx 下面 。如果你在nginx配置中指定错误日志的地方的话，那就去那里看。</p>
+<p>备注1：<br>配置文件中 user 这个指令 接口两个参数。username 和 group username。 如果你只写一个参数，它会假定你的 group name 和 username 一样。 但是在mac上 root的 group name 是 wheel. 所以，你需要显示的都写出来，不然在启动的时候，会报</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx: [emerg] getgrnam(&quot;root&quot;) failed in /usr/local/etc/nginx/nginx.conf:2</span><br></pre></td></tr></table></figure>
+<p>应写成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user root wheel</span><br></pre></td></tr></table></figure>
+<p>备注2 </p>
+<p>如果你执行 nginx -s reload后在nginx的错入日志里看到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2018/08/11 12:06:14 [emerg] 460#0: bind() to 0.0.0.0:80 failed (13: Permission denied)</span><br></pre></td></tr></table></figure></p>
+<p>说明你的nginx启动时，不是用的root用户，这是，即使已经切换到root用户 再执行这个命令也是没用的了。 正确的做法是，先把原来的nginx停掉 ，然后再用root用户启动，这样就可以了。</p>
+<h2 id="设置一个简单的代理服务"><a href="#设置一个简单的代理服务" class="headerlink" title="设置一个简单的代理服务"></a>设置一个简单的代理服务</h2><p>nginx经常被用来作为一个代理服务，代理服务的意思是，收到请求，然后转到一个被代理的服务上面，然后从被代理服务上获得响应，再返回给客户端。</p>
+<p>首先再增加一个server块到配置文件中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 8080;</span><br><span class="line">    root /data/up1;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这是一个简单的服务，监听8080端口，之前的配置中没有指定监听端口，那就会使用默认的80端口。把所有的请求都映射到 /data/up1 目录上。在本地创建这个目录，然后放一个index.html到里面。注意，root指令是在server上下文中的。</p>
+<p>接下来，修改前一部分的server配置，把它作为一个代理服务的配置。在第一个location块中， 增加一个 proxy_pass 指令。参数是 protocal,name,port。 在我们的例子中是<br><a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a></p>
+<p>如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://localhost:8080;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location /images/ &#123;</span><br><span class="line">        root /data;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>还要修改第二个location块，当前是映射以 /images/ 开头的 到 /data/images 目录。要改成匹配特定的文件扩展名。如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location ~ \.(gif|jpg|png)$ &#123;</span><br><span class="line">    root /data/images;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参数是一个正则表达式，匹配所有以.gif, .jpg, .png结尾的URI。正则表达式应该以 ~ 开始。关联的请求会映射到  /data/images 目录下。</p>
+<p>当nginx选择一个location块去处理请求时，首先检查指定的前缀。记住，最长前缀的location匹配原则。然后检查正则表达式。 如果有一个正则表达式匹配成功，nginx会选择这个，否则，选择之前的一个。</p>
+<p>现在代理服务器server的配置如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://localhost:8080/;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ \.(gif|jpg|png)$ &#123;</span><br><span class="line">        root /data/images;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个服务会把 .gif, .jpg, or .png 结尾的映射到 /data/images目录，其他的代理到 8080 的服务上。</p>
+<p>现在重启nginx来让 配置文件生效吧。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure>
+<p>现在访问 <a href="http://localhost" target="_blank" rel="noopener">http://localhost</a>  会发现 去到了和 <a href="http://localhost:8080/" target="_blank" rel="noopener">http://localhost:8080/</a> 一样的地方。</p>
+<p>参考：<br><a href="https://nginx.org/en/docs/beginners_guide.html" target="_blank" rel="noopener">Beginner’s Guide</a></p>
+</div></article></div><div id="disqus_thread"></div></div><div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;"><img src="/images/WechatIMG5.jpeg" width="180px"></div><div id="ads"></div><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- 底部01--><ins style="display:block" data-ad-client="ca-pub-7674654031652018" data-ad-slot="3127803056" data-ad-format="auto" class="adsbygoogle"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});
+
+</script><div id="SOHUCS"></div><script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script><script type="text/javascript">window.changyan.api.config({
+appid: 'cytkri3BC',
+conf: 'prod_1e787a373da7a5fa9ef7156a6dae5e6b'
+});
+</script></main><footer class="footer-container"><div class="paginator"><a href="/2018/08/07/git-初学/" class="prev">PREV</a><a href="/2018/07/29/前端学习/" class="next">NEXT</a></div><div class="copyright"><p>© 2017 - 2018 <a href="mailto:fupeng_2005@126.com">kunpengku</a>, <a href="http://www.miitbeian.gov.cn">京ICP备17058936号-1</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"angrypowman",'auto');ga('send','pageview');</script></body></html>
