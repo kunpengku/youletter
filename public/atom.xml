@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.youletter.cn/"/>
-  <updated>2018-08-10T09:23:05.838Z</updated>
+  <updated>2018-08-14T14:08:32.562Z</updated>
   <id>http://www.youletter.cn/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Controller和RestController的区别</title>
+    <link href="http://www.youletter.cn/2018/08/14/Controller%E5%92%8CRestController%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://www.youletter.cn/2018/08/14/Controller和RestController的区别/</id>
+    <published>2018-08-14T13:58:21.000Z</published>
+    <updated>2018-08-14T14:08:32.562Z</updated>
+    
+    <content type="html"><![CDATA[<p>某年月日，某兄发现他的接口上需要加上@ResponseBody注解才能返回数据，否则就会报404的错误。</p><p>而之前的接口上都没有加过@ResponseBody这个注解。</p><p>于是我苦查了半天，才发现，原来他的接口上用的是@Controller注解，而我用的是@RestController。</p><p>再仔细一看，@RestController 就是 @Controller + @ResponseBody。人家注释都说了RestController就是 为了方便 @Controller + @ResponseBody 才推出的新注解。</p><p>@RestController 4.0加入</p><p>@Controller 2.5加入</p><p>这就是二者的关系。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;某年月日，某兄发现他的接口上需要加上@ResponseBody注解才能返回数据，否则就会报404的错误。&lt;/p&gt;
+&lt;p&gt;而之前的接口上都没有加过@ResponseBody这个注解。&lt;/p&gt;
+&lt;p&gt;于是我苦查了半天，才发现，原来他的接口上用的是@Controller注解，而我
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jenkins 指南旅行</title>
+    <link href="http://www.youletter.cn/2018/08/14/jenkins-%E6%8C%87%E5%8D%97%E6%97%85%E8%A1%8C/"/>
+    <id>http://www.youletter.cn/2018/08/14/jenkins-指南旅行/</id>
+    <published>2018-08-14T02:14:50.000Z</published>
+    <updated>2018-08-14T02:42:04.931Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="下载然后运行Jenkins"><a href="#下载然后运行Jenkins" class="headerlink" title="下载然后运行Jenkins"></a>下载然后运行Jenkins</h2><ul><li>1， <a href="http://mirrors.jenkins.io/war-stable/latest/jenkins.war" target="_blank" rel="noopener">下载 Jenkins</a></li><li>2， 打开终端，进入下载目录</li><li>3， 运行 java -jar jenkins.war –httpPort=8080</li><li>4， 打开浏览器 <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a></li><li>5， 按照后面的步骤完成安装，需要在 ~/.jenkins/secrets/initialAdminPassword中找到激活密码，激活后，会安装一些插件。</li><li>6， 装完插件后，会创建第一个管理员账户。</li><li>7， 开始使用jenkins。</li></ul><p>备注：<br>如果是用Mac OS的安装方式， 这个jenkins是杀不死的，杀死系统会又拉起来。启动和停止的命令如下</p><p>启动<br>sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist</p><p>停止<br>sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</p><p>参考<br><a href="https://jenkins.io/doc/pipeline/tour/getting-started/#prerequisites" target="_blank" rel="noopener">Getting started with the Guided Tour</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;下载然后运行Jenkins&quot;&gt;&lt;a href=&quot;#下载然后运行Jenkins&quot; class=&quot;headerlink&quot; title=&quot;下载然后运行Jenkins&quot;&gt;&lt;/a&gt;下载然后运行Jenkins&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;1， &lt;a href=&quot;http://m
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>english grammar-句子</title>
@@ -415,50 +460,6 @@
 &lt;li&gt;谁说这种实践不能做得更佳？&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;有个从事石油工业的人跟我说，通常合同中会指定应该使用的“最佳实践”，但实际的实践却很
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>故事从HTTP request开始</title>
-    <link href="http://www.youletter.cn/2018/06/13/%E6%95%85%E4%BA%8B%E4%BB%8EHTTP-request%E5%BC%80%E5%A7%8B/"/>
-    <id>http://www.youletter.cn/2018/06/13/故事从HTTP-request开始/</id>
-    <published>2018-06-13T07:33:02.000Z</published>
-    <updated>2018-06-13T07:40:16.619Z</updated>
-    
-    <content type="html"><![CDATA[<p>HTTP 1.0</p><p><a href="https://tools.ietf.org/html/rfc1945" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc1945</a></p><p>HTTP 1.1</p><p><a href="https://tools.ietf.org/html/rfc2616" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc2616</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;HTTP 1.0&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://tools.ietf.org/html/rfc1945&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tools.ietf.org/html/rfc1945&lt;/a&gt;&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>js encodeURI</title>
-    <link href="http://www.youletter.cn/2018/06/06/js-encodeURI/"/>
-    <id>http://www.youletter.cn/2018/06/06/js-encodeURI/</id>
-    <published>2018-06-06T07:28:23.000Z</published>
-    <updated>2018-06-06T07:28:42.271Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI</a></p><p>类型    包含<br>保留字符    ; , / ? : @ &amp; = + $<br>非转义的字符    字母 数字 - _ . ! ~ * ‘ ( )<br>数字符号    #</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https
       
     
     </summary>
